@@ -20,9 +20,232 @@
 	<description>Spring IO platform</description>
 	
 	<properties>
-		<aspectj.version>1.8.0</aspectj.version>
-		<reactor.version>1.1.0.RELEASE</reactor.version>
+		<spring-cloud.version>0.9.9.BUILD-SNAPSHOT</spring-cloud.version>
+		<spring-data-hadoop.version>2.0.0.RC3</spring-data-hadoop.version>
+		<spring-ldap.version>2.0.1.RELEASE</spring-ldap.version>
+		<spring-plugin.version>1.1.0.RELEASE</spring-plugin.version>
+		<spring-retry.version>1.1.0.RC1</spring-retry.version>
+		<spring-social.version>1.1.0.RELEASE</spring-social.version>
+		<spring-web-flow.version>2.4.0.RC1</spring-web-flow.version>
+		<spring-web-services.version>2.2.0.RC1</spring-web-services.version>
 	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+
+			<!-- Spring for Apache Hadoop -->
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-hadoop</artifactId>
+				<version>${spring-data-hadoop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-hadoop-batch</artifactId>
+				<version>${spring-data-hadoop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-hadoop-core</artifactId>
+				<version>${spring-data-hadoop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-hadoop-store</artifactId>
+				<version>${spring-data-hadoop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-yarn-batch</artifactId>
+				<version>${spring-data-hadoop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-yarn-boot</artifactId>
+				<version>${spring-data-hadoop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-yarn-core</artifactId>
+				<version>${spring-data-hadoop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-yarn-integration</artifactId>
+				<version>${spring-data-hadoop.version}</version>
+			</dependency>
+
+			<!-- Spring Cloud -->
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>core</artifactId>
+				<version>${spring-cloud.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>cloudfoundry-connector</artifactId>
+				<version>${spring-cloud.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>cloudfoundry-ups-connector</artifactId>
+				<version>${spring-cloud.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>heroku-connector</artifactId>
+				<version>${spring-cloud.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.cloud</groupId>
+				<artifactId>spring-service-connector</artifactId>
+				<version>${spring-cloud.version}</version>
+			</dependency>
+
+			<!-- Spring LDAP -->
+			<dependency>
+				<groupId>org.springframework.ldap</groupId>
+				<artifactId>spring-ldap-core</artifactId>
+				<version>${spring-ldap.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.ldap</groupId>
+				<artifactId>spring-ldap-core-tiger</artifactId>
+				<version>${spring-ldap.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.ldap</groupId>
+				<artifactId>spring-ldap-ldif-batch</artifactId>
+				<version>${spring-ldap.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.ldap</groupId>
+				<artifactId>spring-ldap-ldif-core</artifactId>
+				<version>${spring-ldap.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.ldap</groupId>
+				<artifactId>spring-ldap-odm</artifactId>
+				<version>${spring-ldap.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.ldap</groupId>
+				<artifactId>spring-ldap-test</artifactId>
+				<version>${spring-ldap.version}</version>
+			</dependency>
+
+			<!-- Spring Plugin -->
+			<dependency>
+				<groupId>org.springframework.plugin</groupId>
+				<artifactId>spring-plugin-core</artifactId>
+				<version>${spring-plugin.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.plugin</groupId>
+				<artifactId>spring-plugin-metadata</artifactId>
+				<version>${spring-plugin.version}</version>
+			</dependency>
+
+			<!-- Spring Retry -->
+			<dependency>
+				<groupId>org.springframework.retry</groupId>
+				<artifactId>spring-retry</artifactId>
+				<version>${spring-retry.version}</version>
+			</dependency>
+
+			<!-- Spring Social -->
+			<dependency>
+				<groupId>org.springframework.social</groupId>
+				<artifactId>spring-social-config</artifactId>
+				<version>${spring-social.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.social</groupId>
+				<artifactId>spring-social-core</artifactId>
+				<version>${spring-social.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.social</groupId>
+				<artifactId>spring-social-security</artifactId>
+				<version>${spring-social.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.social</groupId>
+				<artifactId>spring-social-web</artifactId>
+				<version>${spring-social.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.social</groupId>
+				<artifactId>spring-social-facebook</artifactId>
+				<version>${spring-social.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.social</groupId>
+				<artifactId>spring-social-facebook-web</artifactId>
+				<version>${spring-social.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.social</groupId>
+				<artifactId>spring-social-twitter</artifactId>
+				<version>${spring-social.version}</version>
+			</dependency>
+
+			<!-- Spring Web Flow -->
+			<dependency>
+				<groupId>org.springframework.webflow</groupId>
+				<artifactId>spring-binding</artifactId>
+				<version>${spring-web-flow.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.webflow</groupId>
+				<artifactId>spring-faces</artifactId>
+				<version>${spring-web-flow.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.webflow</groupId>
+				<artifactId>spring-js</artifactId>
+				<version>${spring-web-flow.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.webflow</groupId>
+				<artifactId>spring-js-resources</artifactId>
+				<version>${spring-web-flow.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.webflow</groupId>
+				<artifactId>spring-webflow</artifactId>
+				<version>${spring-web-flow.version}</version>
+			</dependency>
+
+			<!-- Spring Web Services -->
+			<dependency>
+				<groupId>org.springframework.ws</groupId>
+				<artifactId>spring-ws-core</artifactId>
+				<version>${spring-web-services.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.ws</groupId>
+				<artifactId>spring-ws-security</artifactId>
+				<version>${spring-web-services.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.ws</groupId>
+				<artifactId>spring-ws-support</artifactId>
+				<version>${spring-web-services.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.ws</groupId>
+				<artifactId>spring-ws-test</artifactId>
+				<version>${spring-web-services.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.ws</groupId>
+				<artifactId>spring-xml</artifactId>
+				<version>${spring-web-services.version}</version>
+			</dependency>
+
+		</dependencies>
+	</dependencyManagement>
 
 	<repositories>
 		<repository>
