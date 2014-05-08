@@ -15,6 +15,7 @@
 	<modules>
 		<module>platform</module>
 		<module>platform-versions</module>
+		<module>pom-tests</module>
 	</modules>
 
 </project>
