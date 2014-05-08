@@ -58,6 +58,11 @@
 			</dependency>
 			<dependency>
 				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-data-hadoop-test</artifactId>
+				<version>${spring-data-hadoop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-yarn-batch</artifactId>
 				<version>${spring-data-hadoop.version}</version>
 			</dependency>
@@ -74,6 +79,11 @@
 			<dependency>
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-yarn-integration</artifactId>
+				<version>${spring-data-hadoop.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.data</groupId>
+				<artifactId>spring-yarn-test</artifactId>
 				<version>${spring-data-hadoop.version}</version>
 			</dependency>
 
