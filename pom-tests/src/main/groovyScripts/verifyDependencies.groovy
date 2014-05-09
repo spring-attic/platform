@@ -41,6 +41,7 @@ def pomFooter = """    </dependencies>
 			</snapshots>
 		</repository>
 	</repositories>
+
 </project>"""
 
 new File(targetDir, "pom.xml").withWriter { writer ->
@@ -53,6 +54,14 @@ new File(targetDir, "pom.xml").withWriter { writer ->
 		writer.println "			<artifactId>${dependency.artifactId}</artifactId>"
 		if (dependency.type.size()) {
 			writer.println "			<type>${dependency.type}</type>"
+		}
+		if (dependency.artifactId == 'openid4java-nodeps') {
+			writer.println """			<exclusions>
+				<exclusion>
+					<groupId>com.google.code.guice</groupId>
+					<artifactId>guice</artifactId>
+				</exclusion>
+			</exclusions>"""
 		}
 		writer.println "		</dependency>"
 	}
