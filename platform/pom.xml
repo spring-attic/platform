@@ -126,6 +126,7 @@
 		<objenesis.version>2.1</objenesis.version>
 		<ognl.version>2.6.11</ognl.version>
 		<openid4java.version>0.9.6</openid4java.version>
+		<paho-mqtt-client.version>0.4.0</paho-mqtt-client.version>
 		<pig.version>0.12.0</pig.version>
 		<poi.version>3.10-FINAL</poi.version>
 		<qdox.version>1.12.1</qdox.version>
@@ -1093,6 +1094,11 @@
 				<groupId>org.codehaus.woodstox</groupId>
 				<artifactId>woodstox-core-asl</artifactId>
 				<version>${woodstox.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.eclipse.paho</groupId>
+				<artifactId>mqtt-client</artifactId>
+				<version>${paho-mqtt-client.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.eclipse.persistence</groupId>
