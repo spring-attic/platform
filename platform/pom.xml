@@ -20,6 +20,8 @@
 	<description>Spring IO platform</description>
 	
 	<properties>
+
+		<spring-batch.version>3.0.0.BUILD-SNAPSHOT</spring-batch.version>
 		<spring-cloud.version>0.9.9.BUILD-SNAPSHOT</spring-cloud.version>
 		<spring-data-hadoop.version>2.0.0.RC3</spring-data-hadoop.version>
 		<spring-ldap.version>2.0.1.RELEASE</spring-ldap.version>
@@ -209,6 +211,23 @@
 				<groupId>org.springframework.data</groupId>
 				<artifactId>spring-yarn-test</artifactId>
 				<version>${spring-data-hadoop.version}</version>
+			</dependency>
+
+			<!-- Spring Batch -->
+			<dependency>
+				<groupId>org.springframework.batch</groupId>
+				<artifactId>spring-batch-infrastructure</artifactId>
+				<version>${spring-batch.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.batch</groupId>
+				<artifactId>spring-batch-integration</artifactId>
+				<version>${spring-batch.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.batch</groupId>
+				<artifactId>spring-batch-test</artifactId>
+				<version>${spring-batch.version}</version>
 			</dependency>
 
 			<!-- Spring Cloud -->
