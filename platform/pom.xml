@@ -38,6 +38,7 @@
 		<aopalliance.version>1.0</aopalliance.version>
 		<apacheds.version>1.5.5</apacheds.version>
 		<apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
+		<axiom.version>1.2.14</axiom.version>
 		<bouncycastle.version>1.47</bouncycastle.version>
 		<bsf.version>2.4.0</bsf.version>
 		<bsh.version>2.0b4</bsh.version>
@@ -53,10 +54,12 @@
 		<commons-pool2.version>2.2</commons-pool2.version>
 		<commons-fileupload.version>1.3.1</commons-fileupload.version>
 		<commons-io.version>2.4</commons-io.version>
+		<commons-httpclient.version>3.1</commons-httpclient.version>
 		<commons-lang.version>2.6</commons-lang.version>
 		<commons-logging.version>1.1.3</commons-logging.version>
 		<commons-net.version>3.3</commons-net.version>
 		<derby.version>10.10.2.0</derby.version>
+		<dom4j.version>1.6.1</dom4j.version>
 		<eclipselink.version>2.5.1</eclipselink.version>
 		<eclipselink-javax-persistence.version>2.1.0</eclipselink-javax-persistence.version>
 		<ehcache-core.version>2.6.5</ehcache-core.version>
@@ -98,8 +101,10 @@
 		<javax-transaction.version>1.2</javax-transaction.version>
 		<javax-validation.version>1.0.0.GA</javax-validation.version>
 		<javax-websocket.version>1.0</javax-websocket.version>
+		<jaxen.version>1.1.4</jaxen.version>
 		<jbatch-tck.version>1.0</jbatch-tck.version>
 		<jcommander.version>1.35</jcommander.version>
+		<jdom.version>2.0.2</jdom.version>
 		<jeromq.version>0.3.3</jeromq.version>
 		<jettison.version>1.2</jettison.version>
 		<jibx.version>1.2.5</jibx.version>
@@ -154,9 +159,14 @@
 		<velocity-tools.version>1.4</velocity-tools.version>
 		<websphere-uow.version>6.0.2.17</websphere-uow.version>
 		<woodstox.version>4.2.0</woodstox.version>
+		<wsdl4j.version>1.6.1</wsdl4j.version>
+		<wss4j.version>1.6.15</wss4j.version>
 		<xmlbeans.version>2.6.0</xmlbeans.version>
+		<xmlschema.version>2.1.0</xmlschema.version>
 		<xmlunit.version>1.5</xmlunit.version>
+		<xom.version>1.2.5</xom.version>
 		<xstream.version>1.4.7</xstream.version>
+		<xws-security.version>3.0</xws-security.version>
 	</properties>
 
 	<dependencyManagement>
@@ -555,9 +565,19 @@
 				<version>${sun-mail.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.sun.mail</groupId>
+				<artifactId>javax.mail</artifactId>
+				<version>${sun-mail.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>com.sun.xml.messaging.saaj</groupId>
 				<artifactId>saaj-impl</artifactId>
 				<version>${sun-saaj.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun.xml.wss</groupId>
+				<artifactId>xws-security</artifactId>
+				<version>${xws-security.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.thoughtworks.qdox</groupId>
@@ -595,6 +615,11 @@
 				<version>${commons-fileupload.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>commons-httpclient</groupId>
+				<artifactId>commons-httpclient</artifactId>
+				<version>${commons-httpclient.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>commons-io</groupId>
 				<artifactId>commons-io</artifactId>
 				<version>${commons-io.version}</version>
@@ -613,6 +638,11 @@
 				<groupId>commons-net</groupId>
 				<artifactId>commons-net</artifactId>
 				<version>${commons-net.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>dom4j</groupId>
+				<artifactId>dom4j</artifactId>
+				<version>${dom4j.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>io.netty</groupId>
@@ -738,6 +768,11 @@
 				<groupId>javax.xml.soap</groupId>
 				<artifactId>saaj-api</artifactId>
 				<version>${javax-saaj.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>jaxen</groupId>
+				<artifactId>jaxen</artifactId>
+				<version>${jaxen.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>jline</groupId>
@@ -1046,6 +1081,26 @@
 				<version>${xmlbeans.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.apache.ws.commons.axiom</groupId>
+				<artifactId>axiom-api</artifactId>
+				<version>${axiom.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.ws.commons.axiom</groupId>
+				<artifactId>axiom-impl</artifactId>
+				<version>${axiom.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.ws.security</groupId>
+				<artifactId>wss4j</artifactId>
+				<version>${wss4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.ws.xmlschema</groupId>
+				<artifactId>xmlschema-core</artifactId>
+				<version>${xmlschema.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.atteo</groupId>
 				<artifactId>evo-inflector</artifactId>
 				<version>${evo-inflector.version}</version>
@@ -1166,6 +1221,11 @@
 				<version>${cas-client.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.jdom</groupId>
+				<artifactId>jdom</artifactId>
+				<version>${jdom.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.jibx</groupId>
 				<artifactId>jibx-run</artifactId>
 				<version>${jibx.version}</version>
@@ -1229,6 +1289,16 @@
 				<groupId>velocity-tools</groupId>
 				<artifactId>velocity-tools-view</artifactId>
 				<version>${velocity-tools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>wsdl4j</groupId>
+				<artifactId>wsdl4j</artifactId>
+				<version>${wsdl4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>xom</groupId>
+				<artifactId>xom</artifactId>
+				<version>${xom.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>xmlunit</groupId>

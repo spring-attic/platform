@@ -2,6 +2,11 @@ def targetDir = new File(project.build.outputDirectory).absoluteFile
 def effectivePom = new File(targetDir, "effective-pom.xml")
 def platformProjectDir = new File(project.basedir, "../platform").absoluteFile
 
+def exclusions = [
+	'openid4java-nodeps':['groupId':'com.google.code.guice', 'artifactId':'guice'],
+	'xws-security':['groupId':'javax.xml.crypto', 'artifactId':'xmldsig']
+]
+
 println "mvn help:effective-pom -Doutput=$effectivePom".execute(null, platformProjectDir).text
 
 def pomHeader = """
@@ -55,11 +60,12 @@ new File(targetDir, "pom.xml").withWriter { writer ->
 		if (dependency.type.size()) {
 			writer.println "			<type>${dependency.type}</type>"
 		}
-		if (dependency.artifactId == 'openid4java-nodeps') {
+		def exclusion = exclusions[dependency.artifactId.text()]
+		if (exclusion) {
 			writer.println """			<exclusions>
 				<exclusion>
-					<groupId>com.google.code.guice</groupId>
-					<artifactId>guice</artifactId>
+					<groupId>${exclusion.groupId}</groupId>
+					<artifactId>${exclusion.artifactId}</artifactId>
 				</exclusion>
 			</exclusions>"""
 		}
