@@ -1,0 +1,95 @@
+---
+# The name of your project
+title: Spring IO Platform
+
+badges:
+
+  # Specify your project's twitter handle, if any. Delete if none.
+  # twitter: SpringData
+
+  # Customize your project's badges. Delete any entries that do not apply.
+  custom:
+    - name: Source (GitHub)
+      url:  https://github.com/spring-io/platform
+      icon: github
+
+    - name: Issues (JIRA)
+      url:  https://github.com/spring-io/platform/issues
+      icon: tracking
+
+    - name: CI (Bamboo)
+      url:  https://build.spring.io/browse/PLATFORM
+      icon: ci
+
+#    - name: Forum
+#      url:  http://forum.spring.io/forum/spring-projects/data
+#      icon: forum
+
+    - name: StackOverflow
+      url:  http://stackoverflow.com/questions/tagged/spring-data-jpa
+      icon: stackoverflow
+
+#    - name: Metrics (SonarQube)
+#      url:  https://sonar.springsource.org/dashboard/index/org.springframework.data:spring-data-jpa
+#      icon: metrics
+
+---
+<!DOCTYPE HTML>
+<html lang="en-US">
+
+<!-- Specify the parent of this project (or delete if none) to influence the rendering of the breadcrumb -->
+{% capture parent_link %}
+[Spring Parent]({{ site.projects_site_url }}/spring-parent)
+{% endcapture %}
+
+
+{% capture billboard_description %}
+
+Spring IO brings together the core Spring APIs into a cohesive platform for modern applications. 
+
+{% endcapture %}
+
+{% capture main_content %}
+
+The Spring IO platform provides domain-specific runtime environments (DSRs) optimized for selected application
+types. Spring IO is comprised of the Spring IO Foundation and Spring IO Execution layers. Spring IO is 100% open
+source, lean, and modular. You can deploy the parts you need, and only what you need.
+
+<span id="quick-start"></span>
+## Quick Start
+
+{% include download_widget.md %}
+
+### Using the Platform
+
+The Spring IO platform provides versions of the various Spring projects and their dependencies. With the
+configuration shown above added to your build script, you're ready to declare your dependencies without
+having to worry about version numbers:
+
+#### Maven
+```xml
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-core</artifactId>
+</dependency>
+```
+
+#### Gradle
+```groovy
+dependencies {
+    compile 'org.springframework:spring-core'
+}
+
+{% endcapture %}
+
+{% capture related_resources %}
+
+### More information
+
+* [Overview](http://spring.io/platform)
+
+{% endcapture %}
+
+
+{% include project_page.html %}
+</html>
