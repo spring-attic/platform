@@ -73,21 +73,21 @@ If you prefer to use your own parent pom, you can still make use of the Platform
 
 ### Using the Platform With Gradle
 
-The Platform provides a properties file that lists versions of all of the Platform's components and
-their dependencies. The plan is that you will be able to use these versions with
-[Spring Boot's Gradle plugin][] using an approach similar to the following:
+The Platform provides a properties file that lists versions of all of the Platform's components and their dependencies.
+This properties file can be used in conjuction with [Spring Boot's Gradle plugin][] to provide dependency versions by
+declaring a dependency upon it in the `versionManagement` configuration:
 
 ```
 buildscript {
     dependencies {
-        classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.1.0.BUILD-SNAPSHOT'
+        classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.1.0.M1'
     }
 }
 
 apply plugin: 'spring-boot'
 
-springBoot {
-	versions = 'io.spring.platform:platform-versions:1.0.0.BUILD-SNAPSHOT'
+dependencies {
+	versionManagement = 'io.spring.platform:platform-versions:1.0.0.BUILD-SNAPSHOT@properties'
 }
 …
 ```
@@ -96,7 +96,7 @@ springBoot {
 Spring IO Platform is released under version 2.0 of the [Apache License][].
 
 [platform website]: http://spring.io/platform
-[Spring Boot's starter parent]: http://docs.spring.io/spring-boot/docs/1.1.0.BUILD-SNAPSHOT/reference/html/using-boot-build-systems.html#using-boot-maven-parent-pom
-[Spring Boot's Maven plugin]: http://docs.spring.io/spring-boot/docs/1.1.0.BUILD-SNAPSHOT/reference/html/build-tool-plugins-maven-plugin.html
-[Spring Boot's Gradle plugin]: http://docs.spring.io/spring-boot/docs/1.1.0.BUILD-SNAPSHOT/reference/html/build-tool-plugins-gradle-plugin.html
+[Spring Boot's starter parent]: http://docs.spring.io/spring-boot/docs/1.1.0.M1/reference/html/using-boot-build-systems.html#using-boot-maven-parent-pom
+[Spring Boot's Maven plugin]: http://docs.spring.io/spring-boot/docs/1.1.0.M1/reference/html/build-tool-plugins-maven-plugin.html
+[Spring Boot's Gradle plugin]: http://docs.spring.io/spring-boot/docs/1.1.0.M1/reference/html/build-tool-plugins-gradle-plugin.html
 [Apache License]: http://www.apache.org/licenses/LICENSE-2.0
