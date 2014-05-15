@@ -14,6 +14,7 @@
 
 	<modules>
 		<module>platform</module>
+		<module>platform-docs</module>
 		<module>platform-versions</module>
 		<module>pom-tests</module>
 	</modules>

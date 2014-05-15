@@ -1,0 +1,4 @@
+[[appendix]]
+= Appendices
+
+include::appendix-dependency-versions.adoc[]

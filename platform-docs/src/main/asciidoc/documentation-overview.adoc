@@ -1,0 +1,34 @@
+[[platform-documentation]]
+= Spring IO Platform Documentation
+
+[partintro]
+--
+This section provides a brief overview of Spring IO Platform reference documentation.
+--
+
+
+
+[[boot-documentation-about]]
+== About the documentation
+Spring IO Platform reference documentation is available as {platform-docs}/html[html],
+{platform-docs}/pdf/platform-reference.pdf[pdf] and
+{platform-docs}/epub/platform-reference.epub[epub] documents. The latest copy is available at
+{platform-docs-current}.
+
+Copies of this document may be made for your own use and for distribution to others, provided
+that you do not charge any fee for such copies and further provided that each copy contains this
+Copyright Notice, whether distributed in print or electronically.
+
+
+
+[[boot-documentation-getting-help]]
+== Getting help
+If you're having trouble with Spring IO Platform, we'd like to help:
+
+* Learn the Spring basics -- Spring IO Platform brings together many Spring projects, check the
+  http://spring.io[spring.io] website for a wealth of reference documentation. If you are just
+  starting out with Spring, try one of the http://spring.io/guides[guides].
+* Report bugs with the Spring IO Platform at {github-issues}.
+
+NOTE: All of Spring IO Platform is open source, including this documentation. If you find problems
+with the documentation, or if you just want to improve them, please {github-code}[get involved].
