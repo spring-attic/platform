@@ -1,0 +1,23 @@
+= Spring IO Platform Reference Guide
+Andy Wilkinson
+:doctype: book
+:toc:
+:toclevels: 4
+:source-highlighter: prettify
+:numbered:
+:icons: font
+:platform-repo: snapshot
+:github-tag: master
+:platform-docs-version: current
+:platform-docs: http://docs.spring.io/platform/docs/{platform-docs-version}/reference
+:platform-docs-current: http://docs.spring.io/platform/docs/current/reference
+:github-repo: spring-io/platform
+:github-raw: http://raw.github.com/{github-repo}/{github-tag}
+:github-code: http://github.com/{github-repo}/tree/{github-tag}
+:github-master-code: http://github.com/{github-repo}/tree/master
+
+// ======================================================================================
+
+= Spring IO Platform
+
+// ======================================================================================
