@@ -307,7 +307,7 @@
 									<artifacts>
 										<artifact>
 											<file>${project.build.directory}/${project.artifactId}-${project.version}.zip</file>
-											<type>zip;zip.name=spring-io-platform;zip.type=docs;zip.deployed=false</type>
+											<type>zip;zip.name=spring-io-platform;zip.displayname=Spring IO Platform;zip.type=docs;zip.deployed=false</type>
 										</artifact>
 									</artifacts>
 								</configuration>
