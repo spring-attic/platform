@@ -1,0 +1,220 @@
+[[getting-started]]
+= Getting Started
+
+[partintro]
+--
+This section provides all you need to know to get started with Spring IO Platform.
+--
+
+
+[[getting-started-introducing-spring-io-platform]]
+== Introducing Spring IO Platform
+Spring IO Platform brings together the core Spring APIs into a cohesive platform for modern
+applications. It provides versions of numerous projects in the Spring portfolio along with their
+dependencies that are tested and known to work together. 
+
+[[getting-started-using-spring-io-platform]]
+== Using Spring IO Platform
+Spring IO Platform is primarily intended to be used with a dependency management system. It works
+well with both Maven and Gradle.
+
+[[getting-started-using-spring-io-platform-maven]]
+=== Using Spring IO Platform with Maven
+The Platform uses Maven's support for {maven-dependency-management}[dependency management] to
+provide dependency versions to your application's build. To consume this dependency management you
+can import the Platform's pom into your application's pom:
+
+[source,xml,indent=0,subs="verbatim,quotes,attributes"]
+----
+	<?xml version="1.0" encoding="UTF-8"?>
+	<project xmlns="http://maven.apache.org/POM/4.0.0"
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+		<modelVersion>4.0.0</modelVersion>
+
+		<groupId>com.example</groupId>
+		<artifactId>your-application</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+
+		<dependencyManagement>
+			<dependencies>
+				<dependency>
+					<groupId>io.spring.platform</groupId>
+					<artifactId>platform</artifactId>
+					<version>{platform-version}</version>
+					<type>pom</type>
+					<scope>import</scope>
+				</dependency>
+			</dependencies>
+		</dependencyManagement>
+
+		…
+
+ifndef::release[]
+		<!-- Add Spring repositories -->
+		<!-- (you don't need this if you are using a .RELEASE version) -->
+		<repositories>
+			<repository>
+				<id>spring-snapshots</id>
+				<url>http://repo.spring.io/libs-snapshot</url>
+				<snapshots><enabled>true</enabled></snapshots>
+			</repository>
+			<repository>
+				<id>spring-milestones</id>
+				<url>http://repo.spring.io/milestone</url>
+			</repository>
+		</repositories>
+
+		<pluginRepositories>
+			<pluginRepository>
+				<id>spring-snapshots</id>
+				<url>http://repo.spring.io/snapshot</url>
+				<snapshots><enabled>true</enabled></snapshots>
+			</pluginRepository>
+			<pluginRepository>
+				<id>spring-milestones</id>
+				<url>http://repo.spring.io/milestone</url>
+			</pluginRepository>
+		</pluginRepositories>
+endif::release[]
+
+	</project>
+----
+
+Alternatively, rather than importing the Platform's pom, you may prefer to use it as your pom's
+parent:
+
+[source,xml,indent=0,subs="verbatim,quotes,attributes"]
+----
+	<?xml version="1.0" encoding="UTF-8"?>
+	<project xmlns="http://maven.apache.org/POM/4.0.0"
+			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+		<modelVersion>4.0.0</modelVersion>
+
+		<groupId>com.example</groupId>
+		<artifactId>your-application</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+
+		<parent>
+			<groupId>io.spring.platform</groupId>
+			<artifactId>platform</artifactId>
+			<version>{platform-version}</version>
+		</parent>
+
+		…
+
+ifndef::release[]
+		<!-- Add Spring repositories -->
+		<!-- (you don't need this if you are using a .RELEASE version) -->
+		<repositories>
+			<repository>
+				<id>spring-snapshots</id>
+				<url>http://repo.spring.io/libs-snapshot</url>
+				<snapshots><enabled>true</enabled></snapshots>
+			</repository>
+			<repository>
+				<id>spring-milestones</id>
+				<url>http://repo.spring.io/milestone</url>
+			</repository>
+		</repositories>
+
+		<pluginRepositories>
+			<pluginRepository>
+				<id>spring-snapshots</id>
+				<url>http://repo.spring.io/snapshot</url>
+				<snapshots><enabled>true</enabled></snapshots>
+			</pluginRepository>
+			<pluginRepository>
+				<id>spring-milestones</id>
+				<url>http://repo.spring.io/milestone</url>
+			</pluginRepository>
+		</pluginRepositories>
+endif::release[]
+	
+	</project>
+----
+
+Taking this approach, in addition to the dependency management that importing the pom provides, your
+application will also gain some plugin management that provides sensible defaults for a number of
+plugins, including {spring-boot-docs-maven-plugin}[Spring Boot's Maven Plugin]. To take advantage of
+this default configuration, all you then need to do is to include the plugin in the `<plugins>`
+section of your pom:
+
+[source,xml,indent=0,subs="verbatim,quotes,attributes"]
+----
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+----
+
+If you want to use the Platform and Spring Boot together, you don't have to use the Platform's pom
+as the parent. Instead, you can import the Platform's pom as described above and then perform the
+rest of the configuration manually. {spring-boot-docs-maven}[Spring Boot's documentation on using
+it with Maven] will show you how.
+
+Whichever approach you choose, no dependencies will be added to your application. However, when you
+do delcare a dependency on something that's part of the Platform, you will now be able to omit the
+version number. For example:
+
+[source,xml,indent=0,subs="verbatim,quotes,attributes"]
+----
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-core</artifactId>
+		<dependency>
+	</dependencies>
+----
+
+For more details of the what's included in the platform and the versions that are provided, please
+refer to the <<appendix-dependency-versions, appendix>>.
+
+[[getting-started-using-spring-io-platform-gradle]]
+=== Using Spring IO Platform with Gradle
+To use the Platform with Gradle, you configure your build to apply
+{spring-boot-docs-gradle-plugin}[Spring Boot's Gradle plugin] and, in the `versionManagement`
+configuration that it provides, declare a dependency on the Platform's `platform-versions`
+artifact:
+
+[source,groovy,indent=0,subs="verbatim,attributes"]
+----
+	buildscript {
+		repositories {
+			mavenCentral()
+ifndef::release[]
+			maven { url "http://repo.spring.io/snapshot" }
+			maven { url "http://repo.spring.io/milestone" }
+endif::release[]
+		}
+		dependencies {
+			classpath("org.springframework.boot:spring-boot-gradle-plugin:{spring-boot-version}")
+		}
+	}
+
+	apply plugin: 'spring-boot'
+
+	dependencies {
+		versionManagement 'io.spring.platform:platform-versions:{platform-version}@properties'
+	}
+----
+
+With this configuration in place you can then declare a dependency on an artifact that's part of
+the Platform without specifying a version:
+
+[source,groovy,indent=0,subs="verbatim,attributes"]
+----
+	dependencies {
+		compile 'org.springframework:spring-core'
+	}
+----
+
+For more details of the what's included in the platform and the versions that are provided, please
+refer to the <<appendix-dependency-versions, appendix>>.
