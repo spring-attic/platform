@@ -21,6 +21,8 @@
 	
 	<properties>
 
+		<grails.version>2.4.0.RC1</grails.version>
+
 		<spring-batch.version>3.0.0.RC1</spring-batch.version>
 		<spring-cloud.version>0.9.9.RELEASE</spring-cloud.version>
 		<spring-data-hadoop.version>2.0.0.RC3</spring-data-hadoop.version>
@@ -171,6 +173,13 @@
 
 	<dependencyManagement>
 		<dependencies>
+
+			<!-- Grails -->
+			<dependency>
+				<groupId>org.grails</groupId>
+				<artifactId>grails-dependencies</artifactId>
+				<version>${grails.version}</version>
+			</dependency>
 
 			<!-- Spring for Apache Hadoop -->
 			<dependency>
