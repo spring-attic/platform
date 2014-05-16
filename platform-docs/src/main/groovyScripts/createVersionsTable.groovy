@@ -10,10 +10,10 @@ generatedResourcesDir.mkdirs()
 new File(generatedResourcesDir, 'versions-table.adoc').withWriter { out ->
 	out.println '[options="header"]'
 	out.println '|============================='
-	out.println '| Group | Artifact | Version |'
+	out.println '| Group | Artifact | Version'
 	versionProperties.keySet().sort { a, b -> a.compareTo(b) }.each {key -> 
 		def (artifact, group) = key.split(':')
-		out.println "| $artifact | $group | ${versionProperties[key]} |"
+		out.println "| $artifact | $group | ${versionProperties[key]}"
 	}
 	out.println '|============================='
 }
