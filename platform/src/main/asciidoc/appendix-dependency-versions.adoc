@@ -1,7 +1,7 @@
 [appendix]
 [[appendix-dependency-versions]]
 == Dependency versions
-The table below provides details of all of the artifacts that are part of Spring IO platform.
+The table below provides details of all of the artifacts that are part of Spring IO Platform.
 When you declare a dependency on one of these artifacts without declaring a version, the version
 that is listed in the table will be used.
 

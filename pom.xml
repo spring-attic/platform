@@ -9,12 +9,12 @@
 	<artifactId>platform-build</artifactId>
 	<version>1.0.0.BUILD-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>Spring IO platform build</name>
-	<description>Spring IO platform build</description>
+	<name>Spring IO Platform build</name>
+	<description>Spring IO Platform build</description>
 
 	<modules>
 		<module>platform</module>
-		<module>platform-docs</module>
+		<module>platform-bom</module>
 		<module>platform-versions</module>
 		<module>pom-tests</module>
 	</modules>

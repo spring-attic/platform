@@ -7,15 +7,15 @@
 
 	<parent>
 		<groupId>io.spring.platform</groupId>
-		<artifactId>platform</artifactId>
+		<artifactId>platform-bom</artifactId>
 		<version>1.0.0.BUILD-SNAPSHOT</version>
-		<relativePath>../platform</relativePath>
+		<relativePath>../platform-bom</relativePath>
 	</parent>
 
 	<artifactId>platform-versions</artifactId>
 	<packaging>pom</packaging>
-	<name>Spring IO platform versions</name>
-	<description>Spring IO platform versions</description>
+	<name>Spring IO Platform versions</name>
+	<description>Spring IO Platform versions</description>
 
 	<build>
 		<resources>

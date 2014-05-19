@@ -41,7 +41,7 @@ can import the Platform's pom into your application's pom:
 			<dependencies>
 				<dependency>
 					<groupId>io.spring.platform</groupId>
-					<artifactId>platform</artifactId>
+					<artifactId>platform-bom</artifactId>
 					<version>{platform-version}</version>
 					<type>pom</type>
 					<scope>import</scope>
@@ -100,7 +100,7 @@ parent:
 
 		<parent>
 			<groupId>io.spring.platform</groupId>
-			<artifactId>platform</artifactId>
+			<artifactId>platform-bom</artifactId>
 			<version>{platform-version}</version>
 		</parent>
 
@@ -174,7 +174,7 @@ version number. For example:
 	</dependencies>
 ----
 
-For more details of the what's included in the platform and the versions that are provided, please
+For more details of the what's included in the Platform and the versions that are provided, please
 refer to the <<appendix-dependency-versions, appendix>>.
 
 [[getting-started-using-spring-io-platform-gradle]]
@@ -216,5 +216,5 @@ the Platform without specifying a version:
 	}
 ----
 
-For more details of the what's included in the platform and the versions that are provided, please
+For more details of the what's included in the Platform and the versions that are provided, please
 refer to the <<appendix-dependency-versions, appendix>>.

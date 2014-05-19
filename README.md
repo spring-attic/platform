@@ -27,7 +27,7 @@ The Platform provides a pom file that you can use as your application's parent p
 
 	<parent>
 		<groupId>io.spring.platform</groupId>
-		<artifactId>platform</artifactId>
+		<artifactId>platform-bom</artifactId>
 		<version>1.0.0.BUILD-SNAPSHOT</version>
 	</parent>
 
@@ -58,7 +58,7 @@ If you prefer to use your own parent pom, you can still make use of the Platform
 		<dependencies>
 			<dependency>
 				<groupId>io.spring.platform</groupId>
-				<artifactId>platform</artifactId>
+				<artifactId>platform-bom</artifactId>
 				<version>1.0.0.BUILD-SNAPSHOT</version>
 				<type>pom</type>
 				<scope>import</scope>
