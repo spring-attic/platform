@@ -1,6 +1,6 @@
-def targetDir = new File(project.build.outputDirectory).absoluteFile
+def targetDir = new File(project.build.directory).absoluteFile
 def effectivePom = new File(targetDir, "effective-pom.xml")
-def platformProjectDir = new File(project.basedir, "../platform").absoluteFile
+def platformProjectDir = new File(project.basedir, "../platform-bom").absoluteFile
 
 def exclusions = [
 	'openid4java-nodeps':['groupId':'com.google.code.guice', 'artifactId':'guice'],
@@ -25,7 +25,7 @@ def pomHeader = """
 		<dependencies>
 			<dependency>
 				<groupId>io.spring.platform</groupId>
-				<artifactId>platform</artifactId>
+				<artifactId>platform-bom</artifactId>
 				<scope>import</scope>
 				<type>pom</type>
 				<version>1.0.0.BUILD-SNAPSHOT</version>
@@ -35,7 +35,7 @@ def pomHeader = """
 
 	<dependencies>"""
 
-def pomFooter = """    </dependencies>
+def pomFooter = """	</dependencies>
 	<repositories>
 		<repository>
 			<id>spring-snapshots</id>

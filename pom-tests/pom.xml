@@ -6,7 +6,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>io.spring.platform</groupId>
-	<artifactId>pom-tests</artifactId>	
+	<artifactId>pom-tests</artifactId>
 	<version>1.0.0.BUILD-SNAPSHOT</version>
 	<name>Spring IO Platform pom tests</name>
 	<description>Performs sanity testing of the Platform's pom</description>
