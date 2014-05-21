@@ -23,22 +23,9 @@
 
 		<grails.version>2.4.0.RC1</grails.version>
 
-		<spring.version>4.0.5.BUILD-SNAPSHOT</spring.version>
 		<spring-batch.version>3.0.0.BUILD-SNAPSHOT</spring-batch.version>
 		<spring-cloud.version>1.0.0.BUILD-SNAPSHOT</spring-cloud.version>
-		<spring-data-cassandra.version>1.0.0.BUILD-SNAPSHOT</spring-data-cassandra.version>
-		<spring-data-commons.version>1.8.0.BUILD-SNAPSHOT</spring-data-commons.version>
-		<spring-data-couchbase.version>1.1.0.BUILD-SNAPSHOT</spring-data-couchbase.version>
-		<spring-data-elasticsearch.version>1.0.0.BUILD-SNAPSHOT</spring-data-elasticsearch.version>
-		<spring-data-gemfire.version>1.4.0.BUILD-SNAPSHOT</spring-data-gemfire.version>
 		<spring-data-hadoop.version>2.0.0.BUILD-SNAPSHOT</spring-data-hadoop.version>
-		<spring-data-jpa.version>1.6.0.BUILD-SNAPSHOT</spring-data-jpa.version>
-		<spring-data-mongodb.version>1.5.0.BUILD-SNAPSHOT</spring-data-mongodb.version>
-		<spring-data-neo4j.version>3.1.0.BUILD-SNAPSHOT</spring-data-neo4j.version>
-		<spring-data-redis.version>1.3.0.BUILD-SNAPSHOT</spring-data-redis.version>
-		<spring-data-rest-webmvc.version>2.1.0.BUILD-SNAPSHOT</spring-data-rest-webmvc.version>
-		<spring-data-solr.version>1.2.0.BUILD-SNAPSHOT</spring-data-solr.version>
-		<spring-hateoas.version>0.12.0.BUILD-SNAPSHOT</spring-hateoas.version>
 		<spring-integration.version>4.0.1.BUILD-SNAPSHOT</spring-integration.version>
 		<spring-ldap.version>2.0.2.CI-SNAPSHOT</spring-ldap.version>
 		<spring-plugin.version>1.1.0.RELEASE</spring-plugin.version>
