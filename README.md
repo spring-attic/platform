@@ -87,7 +87,7 @@ buildscript {
 apply plugin: 'spring-boot'
 
 dependencies {
-	versionManagement = 'io.spring.platform:platform-versions:1.0.0.BUILD-SNAPSHOT@properties'
+	versionManagement 'io.spring.platform:platform-versions:1.0.0.BUILD-SNAPSHOT@properties'
 }
 …
 ```
