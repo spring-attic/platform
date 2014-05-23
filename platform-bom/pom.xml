@@ -161,7 +161,7 @@
 		<sun-jsf.version>2.2.4</sun-jsf.version>
 		<sun-mail.version>1.4.7</sun-mail.version>
 		<sun-saaj.version>1.3.23</sun-saaj.version>
-		<taglibs-standard.version>1.1.2</taglibs-standard.version>
+		<taglibs-standard.version>1.2.1</taglibs-standard.version>
 		<testng.version>6.8.8</testng.version>
 		<tiles.version>3.0.3</tiles.version>
 		<tiles-request.version>1.0.1</tiles-request.version>
@@ -777,6 +777,11 @@
 				<version>${javax-jsp.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>javax.servlet.jsp.jstl</groupId>
+				<artifactId>javax.servlet.jsp.jstl-api</artifactId>
+				<version>${javax-jstl.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>javax.transaction</groupId>
 				<artifactId>javax.transaction-api</artifactId>
 				<version>${javax-transaction.version}</version>
@@ -1073,6 +1078,11 @@
 				<version>${solr.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.apache.taglibs</groupId>
+				<artifactId>taglibs-standard-jstlel</artifactId>
+				<version>${taglibs-standard.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.apache.tiles</groupId>
 				<artifactId>tiles-api</artifactId>
 				<version>${tiles.version}</version>
@@ -1361,11 +1371,6 @@
 				<groupId>org.zeromq</groupId>
 				<artifactId>jeromq</artifactId>
 				<version>${jeromq.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>taglibs</groupId>
-				<artifactId>standard</artifactId>
-				<version>${taglibs-standard.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>velocity-tools</groupId>
