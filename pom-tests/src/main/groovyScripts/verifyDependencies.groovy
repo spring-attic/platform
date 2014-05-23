@@ -45,6 +45,11 @@ def pomFooter = """	</dependencies>
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
+		<repository>
+			<id>opengeo</id>
+			<name>OpenGeo</name>
+			<url>http://repo.opengeo.org</url>
+		</repository>
 	</repositories>
 
 </project>"""
