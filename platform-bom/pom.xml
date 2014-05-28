@@ -28,9 +28,6 @@
 		<spring-ldap.version>2.0.2.RELEASE</spring-ldap.version>
 		<spring-plugin.version>1.1.0.RELEASE</spring-plugin.version>
 		<spring-retry.version>1.1.0.RELEASE</spring-retry.version>
-		<spring-social.version>1.1.0.RELEASE</spring-social.version>
-		<spring-social-facebook.version>1.1.1.RELEASE</spring-social-facebook.version>
-		<spring-social-twitter.version>1.1.0.RELEASE</spring-social-twitter.version>
 		<spring-security-oauth.version>2.0.1.RELEASE</spring-security-oauth.version>
 		<spring-web-flow.version>2.4.0.BUILD-SNAPSHOT</spring-web-flow.version>
 		<spring-web-services.version>2.2.0.RELEASE</spring-web-services.version>
@@ -316,43 +313,6 @@
 				<groupId>org.springframework.retry</groupId>
 				<artifactId>spring-retry</artifactId>
 				<version>${spring-retry.version}</version>
-			</dependency>
-
-			<!-- Spring Social -->
-			<dependency>
-				<groupId>org.springframework.social</groupId>
-				<artifactId>spring-social-config</artifactId>
-				<version>${spring-social.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.social</groupId>
-				<artifactId>spring-social-core</artifactId>
-				<version>${spring-social.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.social</groupId>
-				<artifactId>spring-social-security</artifactId>
-				<version>${spring-social.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.social</groupId>
-				<artifactId>spring-social-web</artifactId>
-				<version>${spring-social.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.social</groupId>
-				<artifactId>spring-social-facebook</artifactId>
-				<version>${spring-social-facebook.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.social</groupId>
-				<artifactId>spring-social-facebook-web</artifactId>
-				<version>${spring-social-facebook.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.social</groupId>
-				<artifactId>spring-social-twitter</artifactId>
-				<version>${spring-social-twitter.version}</version>
 			</dependency>
 
 			<!-- Spring Web Flow -->
