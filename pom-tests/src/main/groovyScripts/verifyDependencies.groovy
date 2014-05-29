@@ -81,7 +81,8 @@ new File(targetDir, "pom.xml").withWriter { writer ->
 }
 
 def build = "mvn clean package".execute(null, targetDir)
-build.in.eachLine { println it }
+System.out << build.in
+System.err << build.err
 
 if (build.exitValue()) {
 	throw new IllegalStateException("Maven build of test project failed")
