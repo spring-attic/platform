@@ -18,12 +18,10 @@ Andy Wilkinson;
 :github-master-code: http://github.com/{github-repo}/tree/master
 :maven-dependency-management: http://maven.apache.org/guides/introduction/introduction-to-dependency-mechanism.html#Dependency_Management
 :spring-boot: http://projects.spring.io/spring-boot
-:spring-boot-docs-version: current
-:spring-boot-docs: http://docs.spring.io/spring-boot/docs/{spring-boot-docs-version}/reference/htmlsingle
+:spring-boot-docs: http://docs.spring.io/spring-boot/docs/{spring-boot-version}/reference/htmlsingle
 :spring-boot-docs-maven: {spring-boot-docs}/#using-boot-maven
 :spring-boot-docs-maven-plugin: {spring-boot-docs}/#build-tool-plugins-maven-plugin
 :spring-boot-docs-gradle-plugin: {spring-boot-docs}/#build-tool-plugins-gradle-plugin
-:spring-boot-version: 1.0.0.M1
 
 // ======================================================================================
 

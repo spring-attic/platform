@@ -12,6 +12,10 @@
 	<name>Spring IO Platform</name>
 	<description>Spring IO Platform</description>
 
+	<properties>
+		<spring-boot.version>1.1.0.BUILD-SNAPSHOT</spring-boot.version>
+	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>io.spring.platform</groupId>
@@ -97,6 +101,8 @@
 										<platform-docs-version>${project.version}</platform-docs-version>
 										<platform-repo>${platform-repo}</platform-repo>
 										<github-tag>${github-tag}</github-tag>
+										<spring-boot-repo>${spring-boot-repo}</spring-boot-repo>
+										<spring-boot-version>${spring-boot.version}</spring-boot-version>
 									</attributes>
 								</configuration>
 							</execution>
@@ -276,16 +282,24 @@
 								<configuration>
 									<exportAntProperties>true</exportAntProperties>
 									<target>
-										<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
-										<taskdef name="stringutil" classname="ise.antelope.tasks.StringUtilTask" />
-										<var name="version-type" value="${project.version}" />
-										<propertyregex property="version-type" override="true" input="${version-type}" regexp=".*\.(.*)" replace="\1" />
-										<propertyregex property="version-type" override="true" input="${version-type}" regexp="(M)\d+" replace="MILESTONE" />
-										<propertyregex property="version-type" override="true" input="${version-type}" regexp="(RC)\d+" replace="MILESTONE" />
-										<propertyregex property="version-type" override="true" input="${version-type}" regexp="BUILD-(.*)" replace="SNAPSHOT" />
-										<stringutil string="${version-type}" property="platform-repo">
-											<lowercase />
-										</stringutil>
+										<macrodef name="version-type">
+											<attribute name="version"/>
+											<attribute name="property"/>
+											<sequential>
+												<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
+												<taskdef name="stringutil" classname="ise.antelope.tasks.StringUtilTask" />
+												<var name="version-type" value="@{version}" />
+												<propertyregex property="version-type" override="true" input="${version-type}" regexp=".*\.(.*)" replace="\1" />
+												<propertyregex property="version-type" override="true" input="${version-type}" regexp="(M)\d+" replace="MILESTONE" />
+												<propertyregex property="version-type" override="true" input="${version-type}" regexp="(RC)\d+" replace="MILESTONE" />
+												<propertyregex property="version-type" override="true" input="${version-type}" regexp="BUILD-(.*)" replace="SNAPSHOT" />
+												<stringutil string="${version-type}" property="@{property}">
+													<lowercase />
+												</stringutil>
+											</sequential>
+										</macrodef>
+										<version-type version="${project.version}" property="platform-repo"/>
+										<version-type version="${spring-boot.version}" property="spring-boot-repo"/>
 										<var name="github-tag" value="v${project.version}" />
 										<propertyregex property="github-tag" override="true" input="${github-tag}" regexp=".*SNAPSHOT" replace="master" />
 									</target>

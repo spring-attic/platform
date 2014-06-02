@@ -51,34 +51,41 @@ can import the Platform's pom into your application's pom:
 
 		…
 
-ifndef::release[]
+ifeval::["{platform-repo}" != "release"]
 		<!-- Add Spring repositories -->
 		<!-- (you don't need this if you are using a .RELEASE version) -->
 		<repositories>
+ifeval::["{platform-repo}" == "snapshot"]
 			<repository>
 				<id>spring-snapshots</id>
 				<url>http://repo.spring.io/libs-snapshot</url>
 				<snapshots><enabled>true</enabled></snapshots>
 			</repository>
+endif::[]
+ifeval::["{platform-repo}" == "milestone"]
 			<repository>
 				<id>spring-milestones</id>
-				<url>http://repo.spring.io/milestone</url>
+				<url>http://repo.spring.io/libs-milestone</url>
 			</repository>
+endif::[]
 		</repositories>
 
 		<pluginRepositories>
+ifeval::["{platform-repo}" == "snapshot"]
 			<pluginRepository>
 				<id>spring-snapshots</id>
-				<url>http://repo.spring.io/snapshot</url>
+				<url>http://repo.spring.io/libs-snapshot</url>
 				<snapshots><enabled>true</enabled></snapshots>
 			</pluginRepository>
+endif::[]
+ifeval::["{platform-repo}" == "milestone"]
 			<pluginRepository>
 				<id>spring-milestones</id>
-				<url>http://repo.spring.io/milestone</url>
+				<url>http://repo.spring.io/libs-milestone</url>
 			</pluginRepository>
+endif::[]
 		</pluginRepositories>
-endif::release[]
-
+endif::[]
 	</project>
 ----
 
@@ -106,34 +113,41 @@ parent:
 
 		…
 
-ifndef::release[]
+ifeval::["{platform-repo}" != "release"]
 		<!-- Add Spring repositories -->
 		<!-- (you don't need this if you are using a .RELEASE version) -->
 		<repositories>
+ifeval::["{platform-repo}" == "snapshot"]
 			<repository>
 				<id>spring-snapshots</id>
 				<url>http://repo.spring.io/libs-snapshot</url>
 				<snapshots><enabled>true</enabled></snapshots>
 			</repository>
+endif::[]
+ifeval::["{platform-repo}" == "milestone"]
 			<repository>
 				<id>spring-milestones</id>
-				<url>http://repo.spring.io/milestone</url>
+				<url>http://repo.spring.io/libs-milestone</url>
 			</repository>
+endif::[]
 		</repositories>
 
 		<pluginRepositories>
+ifeval::["{platform-repo}" == "snapshot"]
 			<pluginRepository>
 				<id>spring-snapshots</id>
-				<url>http://repo.spring.io/snapshot</url>
+				<url>http://repo.spring.io/libs-snapshot</url>
 				<snapshots><enabled>true</enabled></snapshots>
 			</pluginRepository>
+endif::[]
+ifeval::["{platform-repo}" == "milestone"]
 			<pluginRepository>
 				<id>spring-milestones</id>
-				<url>http://repo.spring.io/milestone</url>
+				<url>http://repo.spring.io/libs-milestone</url>
 			</pluginRepository>
+endif::[]
 		</pluginRepositories>
-endif::release[]
-	
+endif::[]
 	</project>
 ----
 
@@ -161,7 +175,7 @@ rest of the configuration manually. {spring-boot-docs-maven}[Spring Boot's docum
 it with Maven] will show you how.
 
 Whichever approach you choose, no dependencies will be added to your application. However, when you
-do delcare a dependency on something that's part of the Platform, you will now be able to omit the
+do declare a dependency on something that's part of the Platform, you will now be able to omit the
 version number. For example:
 
 [source,xml,indent=0,subs="verbatim,quotes,attributes"]
@@ -174,7 +188,7 @@ version number. For example:
 	</dependencies>
 ----
 
-For more details of the what's included in the Platform and the versions that are provided, please
+For more details of what's included in the Platform and the versions that are provided, please
 refer to the <<appendix-dependency-versions, appendix>>.
 
 [[getting-started-using-spring-io-platform-gradle]]
@@ -189,10 +203,12 @@ artifact:
 	buildscript {
 		repositories {
 			mavenCentral()
-ifndef::release[]
-			maven { url "http://repo.spring.io/snapshot" }
-			maven { url "http://repo.spring.io/milestone" }
-endif::release[]
+ifeval::["{spring-boot-repo}" == "snapshot"]
+			maven { url "http://repo.spring.io/libs-snapshot" }
+endif::[]
+ifeval::["{spring-boot-repo}" == "milestone"]
+			maven { url "http://repo.spring.io/libs-milestone" }
+endif::[]
 		}
 		dependencies {
 			classpath("org.springframework.boot:spring-boot-gradle-plugin:{spring-boot-version}")
@@ -200,6 +216,16 @@ endif::release[]
 	}
 
 	apply plugin: 'spring-boot'
+
+	repositories {
+		mavenCentral()
+ifeval::["{platform-repo}" == "snapshot"]
+		maven { url "http://repo.spring.io/libs-snapshot" }
+endif::[]
+ifeval::["{platform-repo}" == "milestone"]
+		maven { url "http://repo.spring.io/milestone" }
+endif::[]
+	}
 
 	dependencies {
 		versionManagement 'io.spring.platform:platform-versions:{platform-version}@properties'
@@ -216,5 +242,5 @@ the Platform without specifying a version:
 	}
 ----
 
-For more details of the what's included in the Platform and the versions that are provided, please
+For more details of what's included in the Platform and the versions that are provided, please
 refer to the <<appendix-dependency-versions, appendix>>.
