@@ -72,8 +72,10 @@
                         href="{{site.main_site_url}}/projects">Projects</a></li>
                     <li class="navbar-link"><a href="{{site.main_site_url}}/blog">Blog</a>
                     </li>
+{% if site.forum_url %}
                     <li class="navbar-link"><a href="{{site.forum_url}}">Forum</a>
                     </li>
+{% endif %}
                     <li class="navbar-link nav-search"><i
                         class="icon-search navbar-search--icon js-search-input-open"></i>
                         <div class="search-input-close js-search-input-close">x</div></li>
