@@ -39,17 +39,38 @@ badges:
 
 {% capture billboard_description %}
 
-Spring IO brings together the core Spring APIs into a cohesive platform for modern applications. 
+Spring IO is a cohesive, versioned platform for building modern applications. It is a modular,
+enterprise-grade distribution that delivers a curated set of dependencies while keeping
+developers in full control of deploying only the parts they need. Spring IO is 100% open source,
+lean, and modular.
 
 {% endcapture %}
 
 {% capture main_content %}
 
-The Spring IO platform provides domain-specific runtime environments (DSRs) optimized for selected application
-types. Spring IO is comprised of the Spring IO Foundation and Spring IO Execution layers. Spring IO is 100% open
-source, lean, and modular. You can deploy the parts you need, and only what you need.
+The Spring IO platform includes Foundation Layer modules and Execution Layer domain-specific runtimes
+(DSRs). The Foundation layer represents the core Spring modules and associated third-party
+dependencies that have been harmonized to ensure a smooth development experience. The DSRs provided by
+the Spring IO Execution Layer dramatically simplify building production-ready, JVM-based workloads.
+The first release of Spring IO includes two DSRs: Spring Boot and Grails. Spring XD will be added to
+the Spring IO platform later in 2014.
 
-<span id="quick-start"></span>
+### Features
+
+ - One platform, many workloads - build web, integration, batch, reactive or big data applications
+ - Radically simplified development experience with Spring Boot
+ - Production-ready features provided out of the box
+ - Curated and harmonized dependencies that just work together
+ - Modular platform that allows developers to deploy only the parts they need
+ - Support for embedded runtimes, classic application server, and PaaS deployments
+ - Depends only on Java SE, and supports Groovy, Grails and some Java EE
+ - Works with your existing dependency management tools such as Maven and Gradle
+ - The Spring IO Platform is certified to work on JDK 7 and 8<sup>*</sup>
+
+<sup>*</sup>While the Spring IO Platform supports JDK 1.7 and 1.8, many individual Spring
+projects support older JDK versions. Please refer to the [individual projects' documentation]
+(http://spring.io/docs) for the specific minimum requirements.
+
 ## Quick Start
 
 {% include download_widget.md %}
