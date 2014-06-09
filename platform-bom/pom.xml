@@ -104,7 +104,7 @@
 		<javax-transaction.version>1.2</javax-transaction.version>
 		<javax-validation.version>1.1.0.Final</javax-validation.version>
 		<javax-websocket.version>1.0</javax-websocket.version>
-		<jaxen.version>1.1.4</jaxen.version>
+		<jaxen.version>1.1.6</jaxen.version>
 		<jbatch-tck.version>1.0</jbatch-tck.version>
 		<jcommander.version>1.35</jcommander.version>
 		<jdom2.version>2.0.5</jdom2.version>
