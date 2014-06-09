@@ -107,7 +107,7 @@
 		<jaxen.version>1.1.4</jaxen.version>
 		<jbatch-tck.version>1.0</jbatch-tck.version>
 		<jcommander.version>1.35</jcommander.version>
-		<jdom.version>2.0.2</jdom.version>
+		<jdom2.version>2.0.5</jdom2.version>
 		<jeromq.version>0.3.3</jeromq.version>
 		<jettison.version>1.2</jettison.version>
 		<jibx.version>1.2.5</jibx.version>
@@ -1215,8 +1215,8 @@
 			</dependency>
 			<dependency>
 				<groupId>org.jdom</groupId>
-				<artifactId>jdom</artifactId>
-				<version>${jdom.version}</version>
+				<artifactId>jdom2</artifactId>
+				<version>${jdom2.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jibx</groupId>
