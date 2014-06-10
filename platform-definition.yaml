@@ -1,0 +1,486 @@
+platform_definition:
+  projects:
+    - name: Aspect J
+      groupId: org.aspectj
+      version: 1.8.0
+      modules:
+        - aspectjweaver
+        - aspectjtools
+        - aspectjrt
+    - name: Grails
+      groupId: org.grails
+      version: 2.4.0
+      modules:
+        - grails-aether
+        - grails-async
+        - grails-bootstrap
+        - grails-core
+        - grails-databinding
+        - grails-dependencies
+        - grails-docs
+        - grails-encoder
+        - grails-logging
+        - grails-plugin-async
+        - grails-plugin-codecs
+        - grails-plugin-controllers
+        - grails-plugin-converters
+        - grails-plugin-databinding
+        - grails-plugin-datasource
+        - grails-plugin-domain-class
+        - grails-plugin-filters
+        - grails-plugin-gsp
+        - grails-plugin-i18n
+        - grails-plugin-log4j
+        - grails-plugin-mimetypes
+        - grails-plugin-rest
+        - grails-plugin-services
+        - grails-plugin-servlets
+        - grails-plugin-testing
+        - grails-plugin-url-mappings
+        - grails-plugin-validation
+        - grails-project-api
+        - grails-resources
+        - grails-scripts
+        - grails-spring
+        - grails-test
+        - grails-validation
+        - grails-web
+        - grails-web-common
+        - grails-web-databinding
+        - grails-web-databinding-spring
+        - grails-web-fileupload
+        - grails-web-gsp
+        - grails-web-jsp
+        - grails-web-mvc
+        - grails-web-sitemesh
+        - grails-web-url-mappings
+        - grails-wrapper-support
+    - name: Groovy
+      groupId: org.codehaus.groovy
+      version: 2.3.2
+      modules:
+        - groovy
+        - groovy-ant
+        - groovy-all
+        - groovy-bsf
+        - groovy-console
+        - groovy-docgenerator
+        - groovy-groovydoc
+        - groovy-groovysh
+        - groovy-jmx
+        - groovy-json
+        - groovy-jsr223
+        - groovy-nio
+        - groovy-servlet
+        - groovy-sql
+        - groovy-swing
+        - groovy-templates
+        - groovy-test
+        - groovy-testng
+        - groovy-xml
+    - name: Reactor
+      groupId: org.projectreactor
+      version: 1.1.2.RELEASE
+      modules:
+        - reactor-core
+        - reactor-groovy
+        - reactor-groovy-extensions
+        - reactor-logback
+        - reactor-net
+      build:
+        repository: https://github.com/reactor/reactor
+        compileWith: jdk8
+        runTestsWith:
+           - jdk8
+    - name: Reactor Spring
+      groupId: org.projectreactor.spring
+      version: 1.1.2.RELEASE
+      modules:
+        - reactor-spring-context
+        - reactor-spring-core
+        - reactor-spring-messaging
+        - reactor-spring-webmvc
+      build:
+        repository: https://github.com/reactor/reactor-spring
+        runTestsWith:
+          - jdk8
+    - name: Spring AMQP
+      groupId: org.springframework.amqp
+      version: 1.3.4.RELEASE
+      modules:
+        - spring-amqp
+        - spring-erlang
+        - spring-rabbit
+      build:
+        repository: https://github.com/spring-projects/spring-amqp
+    - name: Spring Batch
+      groupId: org.springframework.batch
+      version: 3.0.0.RELEASE
+      modules:
+        - spring-batch-core
+        - spring-batch-infrastructure
+        - spring-batch-integration
+        - spring-batch-test
+      build:
+        repository: https://github.com/spring-projects/spring-batch
+        checkout: 3.0.0.RELEASE
+    - name: Spring Boot
+      groupId: org.springframework.boot
+      version: 1.1.0.BUILD-SNAPSHOT
+      modules:
+        - spring-boot
+        - spring-boot-actuator
+        - spring-boot-autoconfigure
+        - spring-boot-cli 
+        - spring-boot-dependencies
+        - spring-boot-dependency-tools
+        - spring-boot-loader
+        - spring-boot-loader-tools
+        - spring-boot-maven-plugin
+        - spring-boot-starter
+        - spring-boot-starter-actuator
+        - spring-boot-starter-amqp
+        - spring-boot-starter-aop
+        - spring-boot-starter-batch
+        - spring-boot-starter-data-elasticsearch
+        - spring-boot-starter-data-gemfire
+        - spring-boot-starter-data-jpa
+        - spring-boot-starter-data-mongodb
+        - spring-boot-starter-data-rest
+        - spring-boot-starter-data-solr
+        - spring-boot-starter-freemarker
+        - spring-boot-starter-groovy-templates
+        - spring-boot-starter-hornetq
+        - spring-boot-starter-integration
+        - spring-boot-starter-jdbc
+        - spring-boot-starter-jetty
+        - spring-boot-starter-log4j
+        - spring-boot-starter-logging
+        - spring-boot-starter-mobile
+        - spring-boot-starter-parent
+        - spring-boot-starter-redis
+        - spring-boot-starter-remote-shell
+        - spring-boot-starter-security
+        - spring-boot-starter-social-facebook
+        - spring-boot-starter-social-linkedin
+        - spring-boot-starter-social-twitter
+        - spring-boot-starter-test
+        - spring-boot-starter-thymeleaf
+        - spring-boot-starter-tomcat
+        - spring-boot-starter-velocity
+        - spring-boot-starter-web
+        - spring-boot-starter-websocket
+        - spring-boot-starter-ws
+    - name: Spring Cloud
+      groupId: org.springframework.cloud
+      version: 1.0.0.RELEASE
+      modules:
+        - spring-cloud-core
+        - spring-cloud-cloudfoundry-connector
+        - spring-cloud-heroku-connector
+        - spring-cloud-spring-service-connector
+      build:
+        repository: https://github.com/spring-projects/spring-cloud
+    - name: Spring Data Cassandra
+      groupId: org.springframework.data
+      version: 1.0.0.RELEASE
+      modules:
+        - spring-cql
+        - spring-data-cassandra
+    - name: Spring Data Commons
+      groupId: org.springframework.data
+      version: 1.8.0.RELEASE
+      modules:
+        - spring-data-commons
+    - name: Spring Data Couchbase
+      groupId: org.springframework.data
+      version: 1.1.0.RELEASE
+      modules:
+        - spring-data-couchbase
+    - name: Spring Data Elasticsearch
+      groupId: org.springframework.data
+      version: 1.0.0.RELEASE
+      modules:
+        - spring-data-elasticsearch
+    - name: Spring Data Gemfire
+      groupId: org.springframework.data
+      version: 1.4.0.RELEASE
+      modules:
+        - spring-data-gemfire
+      build:
+        repository: https://github.com/spring-projects/spring-data-gemfire
+    - name: Spring Data JPA
+      groupId: org.springframework.data
+      version: 1.6.0.RELEASE
+      modules:
+        - spring-data-jpa
+    - name: Spring Data MongoDB
+      groupId: org.springframework.data
+      version: 1.5.0.RELEASE
+      modules:
+        - spring-data-mongodb
+        - spring-data-mongodb-log4j
+        - spring-data-mongodb-cross-store
+    - name: Spring Data Neo4j
+      id: spring.data.neo4j
+      groupId: org.springframework.data
+      version: 3.1.0.RELEASE
+      modules: 
+        - spring-data-neo4j
+    - name: Spring Data Redis
+      groupId: org.springframework.data
+      version: 1.3.0.RELEASE
+      build:
+        repository: https://github.com/spring-projects/spring-data-redis
+      modules:
+        - spring-data-redis
+    - name: Spring Data Rest
+      groupId: org.springframework.data
+      version: 2.1.0.RELEASE
+      modules:
+        - spring-data-rest-core
+        - spring-data-rest-webmvc
+    - name: Spring Data Solr
+      groupId: org.springframework.data
+      version: 1.2.0.RELEASE
+      modules:
+        - spring-data-solr
+    - name: Spring Framework
+      groupId: org.springframework
+      version: 4.0.5.RELEASE
+      modules:
+        - spring-aop
+        - spring-aspects
+        - spring-beans
+        - spring-core
+        - spring-context
+        - spring-context-support
+        - spring-expression
+        - spring-framework-bom
+        - spring-instrument
+        - spring-instrument-tomcat
+        - spring-jdbc
+        - spring-jms
+        - spring-messaging
+        - spring-orm
+        - spring-oxm
+        - spring-test
+        - spring-tx
+        - spring-web
+        - spring-webmvc
+        - spring-webmvc-portlet
+        - spring-websocket
+    - name: Spring Hadoop
+      groupId: org.springframework.data
+      version: 2.0.0.BUILD-SNAPSHOT
+      build:
+        repository: https://github.com/spring-projects/spring-hadoop
+        additional_tasks: build -x test
+      modules:
+        - spring-data-hadoop
+        - spring-data-hadoop-batch
+        - spring-data-hadoop-core
+        - spring-data-hadoop-store
+        - spring-data-hadoop-test
+        - spring-yarn-batch
+        - spring-yarn-boot
+        - spring-yarn-core
+        - spring-yarn-integration
+        - spring-yarn-test
+    - name: Spring HATEOAS
+      groupId: org.springframework.hateoas
+      version: 0.12.0.RELEASE
+      modules:
+        - spring-hateoas
+    - name: Spring Integration
+      groupId: org.springframework.integration
+      version: 4.0.2.RELEASE
+      build:
+        repository: https://github.com/spring-projects/spring-integration
+      modules:
+        - spring-integration-amqp
+        - spring-integration-core
+        - spring-integration-event
+        - spring-integration-feed
+        - spring-integration-file
+        - spring-integration-ftp
+        - spring-integration-gemfire
+        - spring-integration-groovy
+        - spring-integration-http
+        - spring-integration-ip
+        - spring-integration-jdbc
+        - spring-integration-jms
+        - spring-integration-jmx
+        - spring-integration-jpa
+        - spring-integration-mail
+        - spring-integration-mongodb
+        - spring-integration-mqtt
+        - spring-integration-redis
+        - spring-integration-rmi
+        - spring-integration-scripting
+        - spring-integration-security
+        - spring-integration-sftp
+        - spring-integration-stream
+        - spring-integration-syslog
+        - spring-integration-test
+        - spring-integration-twitter
+        - spring-integration-xml
+        - spring-integration-xmpp
+        - spring-integration-ws
+    - name: Spring LDAP
+      groupId: org.springframework.ldap
+      version: 2.0.2.RELEASE
+      build:
+        repository: https://github.com/spring-projects/spring-ldap
+        checkout: 2.0.2.RELEASE
+      modules:
+        - spring-ldap-core
+        - spring-ldap-core-tiger
+        - spring-ldap-ldif-batch
+        - spring-ldap-ldif-core
+        - spring-ldap-odm
+        - spring-ldap-test
+    - name: Spring Loaded
+      groupId: org.springframework
+      version: 1.2.0.RELEASE
+      modules:
+       - springloaded
+    - name: Spring Mobile
+      groupId: org.springframework.mobile
+      version: 1.1.2.RELEASE
+      modules:
+        - spring-mobile-device
+    - name: Spring Plugin
+      groupId: org.springframework.plugin
+      version: 1.1.0.RELEASE
+      modules:
+        - spring-plugin-core
+        - spring-plugin-metadata
+    - name: Spring Retry
+      groupId: org.springframework.retry
+      version: 1.1.0.RELEASE
+      modules:
+        - spring-retry
+    - name: Spring Security
+      groupId: org.springframework.security
+      version: 3.2.4.RELEASE
+      build:
+        repository: https://github.com/spring-projects/spring-security
+        checkout: 3.2.4.RELEASE
+      modules:
+        - spring-security-acl
+        - spring-security-aspects
+        - spring-security-cas
+        - spring-security-config
+        - spring-security-core
+        - spring-security-crypto
+        - spring-security-ldap
+        - spring-security-openid
+        - spring-security-remoting
+        - spring-security-taglibs
+        - spring-security-web
+    - name: Spring Security JWT
+      groupId: org.springframework.security
+      version: 1.0.2.RELEASE
+      modules:
+       - spring-security-jwt
+    - name: Spring Security OAuth
+      groupId: org.springframework.security.oauth
+      version: 2.0.1.RELEASE
+      modules:
+        - spring-security-oauth
+        - spring-security-oauth2
+    - name: Spring Social
+      groupId: org.springframework.social
+      version: 1.1.0.RELEASE
+      modules:
+        - spring-social-config
+        - spring-social-core
+        - spring-social-security
+        - spring-social-web
+    - name: Spring Social Facebook
+      groupId: org.springframework.social
+      version: 1.1.1.RELEASE
+      modules:
+        - spring-social-facebook
+        - spring-social-facebook-web
+    - name: Spring Social LinkedIn
+      groupId: org.springframework.social
+      version: 1.0.1.RELEASE
+      modules:
+        - spring-social-linkedin
+    - name: Spring Social Twitter
+      groupId: org.springframework.social
+      version: 1.1.0.RELEASE
+      modules:
+        - spring-social-twitter
+    - name: Spring Web Services
+      groupId: org.springframework.ws
+      version: 2.2.0.RELEASE
+      build:
+        repository: https://github.com/spring-projects/spring-ws
+        runTestsWith:
+          - jdk8
+      modules:
+        - spring-ws-core
+        - spring-ws-security
+        - spring-ws-support
+        - spring-ws-test
+        - spring-xml
+    - name: Spring Web Flow
+      groupId: org.springframework.webflow
+      version: 2.4.0.RELEASE
+      build:
+        repository: https://github.com/spring-projects/spring-webflow
+      modules:
+        - spring-binding
+        - spring-faces
+        - spring-js
+        - spring-js-resources
+        - spring-webflow
+  dependency_mappings:
+    'javax.servlet:jsp-api': 'javax.servlet.jsp:javax.servlet.jsp-api'
+    'javax.servlet:servlet-api': 'javax.servlet:javax.servlet-api'
+    'org.apache.tomcat:tomcat-websocket': 'org.apache.tomcat:tomcat7-websocket'
+    'org.apache.tomcat:catalina': 'org.apache.tomcat:tomcat-catalina'
+    'org.jdom:jdom': 'org.jdom:jdom2'
+    'org.projectreactor:reactor-tcp': 'org.projectreactor:reactor-net'
+    'rome:rome': 'net.java.dev.rome:rome'
+  missing_dependencies:
+    ignored_dependencies:
+      - 'org.thymeleaf:thymeleaf-spring3' # The Platform is Spring 4+
+      - 'org.springframework:spring-instrument-tomcat' # Only needed with Tomcat 6 and the Platform uses Tomcat 7+
+      - 'org.springframework.data:spring-cql' # Not included in Spring Data Bom
+      - 'org.springframework.data.build:spring-data-java8-stub' # Not included in Spring Data Bom
+      - 'org.springframework.data:spring-data-rest-core' # Not included in Spring Data Bom
+      - 'org.eclipse.jetty*:*:9.*' # The Platform uses Jetty 8
+    ignored_modules:
+      - 'org.grails' # Grails is a special case. As recommended by Graeme, the Platform only contains grails-dependencies
+      - 'org.springframework.boot:spring-boot-cli' # The CLI doesn't expose its dependencies to applications
+      - 'org.springframework.boot:spring-boot-maven-plugin' # The plugin doesn't expose it dependencies to applications
+  unused_dependencies:
+    ignored:
+      # For user convenience, Boot provides extra dependency management for modules that both it
+      # and the rest of the Platform do not depend upon
+      - 'com.codahale.metrics:metrics-graphite'
+      - 'com.codahale.metrics:metrics-ganglia'
+      - 'com.codahale.metrics:metrics-servlets'
+      - 'javax.servlet:jstl'
+      - 'mysql:mysql-connector-java'
+      - 'org.apache.activemq:activemq-client'
+      - 'org.apache.tomcat:tomcat-jsp-api'
+      - 'org.codehaus.janino:janino'
+      - 'org.eclipse.jetty:jetty-annotations'
+      - 'org.eclipse.jetty.orbit:javax.servlet.jsp'
+      - 'org.javassist:javassist'
+      - 'org.slf4j:slf4j-jdk14'
+      - 'org.springframework:springloaded'
+  repositories:
+      - id: central
+        url: http://repo1.maven.org/maven2
+      - id: spring-snapshots
+        url: http://repo.spring.io/libs-snapshot
+      - id: jasper-reports
+        url: http://jasperreports.sourceforge.net/maven2
+      - id: opengeo
+        url: http://repo.opengeo.org
