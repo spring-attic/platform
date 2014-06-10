@@ -1,0 +1,5 @@
+allprojects {
+	repositories {
+		maven { url rootProject.file('../repository') }
+	}
+}
