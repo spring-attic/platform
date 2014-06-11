@@ -26,9 +26,9 @@ on using the Platform with Gradle][Platform Gradle docs] for more information.
 Spring IO Platform is released under version 2.0 of the [Apache License][].
 
 [Spring IO Platform website]: http://spring.io/platform
-[Spring Boot's starter parent]: http://docs.spring.io/spring-boot/docs/1.1.0.RELEASE/reference/html/using-boot-build-systems.html#using-boot-maven-parent-pom
-[Spring Boot's Maven plugin]: http://docs.spring.io/spring-boot/docs/1.1.0.RELEASE/reference/html/build-tool-plugins-maven-plugin.html
-[Spring Boot's Gradle plugin]: http://docs.spring.io/spring-boot/docs/1.1.0.RELEASE/reference/html/build-tool-plugins-gradle-plugin.html
+[Spring Boot's starter parent]: http://docs.spring.io/spring-boot/docs/1.1.1.RELEASE/reference/html/using-boot-build-systems.html#using-boot-maven-parent-pom
+[Spring Boot's Maven plugin]: http://docs.spring.io/spring-boot/docs/1.1.1.RELEASE/reference/html/build-tool-plugins-maven-plugin.html
+[Spring Boot's Gradle plugin]: http://docs.spring.io/spring-boot/docs/1.1.1.RELEASE/reference/html/build-tool-plugins-gradle-plugin.html
 [Platform Maven docs]: http://docs.spring.io/platform/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started-using-spring-io-platform-maven
 [Platform Gradle docs]: http://docs.spring.io/platform/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started-using-spring-io-platform-gradle
 [Apache License]: http://www.apache.org/licenses/LICENSE-2.0
