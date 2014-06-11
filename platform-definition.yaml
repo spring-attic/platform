@@ -131,7 +131,7 @@ platform_definition:
         - spring-boot
         - spring-boot-actuator
         - spring-boot-autoconfigure
-        - spring-boot-cli 
+        - spring-boot-cli
         - spring-boot-dependencies
         - spring-boot-dependency-tools
         - spring-boot-loader
@@ -225,7 +225,7 @@ platform_definition:
       id: spring.data.neo4j
       groupId: org.springframework.data
       version: 3.1.0.RELEASE
-      modules: 
+      modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
