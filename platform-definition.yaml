@@ -272,7 +272,7 @@ platform_definition:
         - spring-websocket
     - name: Spring Hadoop
       groupId: org.springframework.data
-      version: 2.0.0.BUILD-SNAPSHOT
+      version: 2.0.0.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-hadoop
         additional_tasks: build -x test
@@ -478,8 +478,8 @@ platform_definition:
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2
-      - id: spring-snapshots
-        url: http://repo.spring.io/libs-snapshot
+      - id: spring-releases
+        url: http://repo.spring.io/libs-release
       - id: jasper-reports
         url: http://jasperreports.sourceforge.net/maven2
       - id: opengeo

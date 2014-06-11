@@ -28,7 +28,7 @@ def pomHeader = """
 				<artifactId>platform-bom</artifactId>
 				<scope>import</scope>
 				<type>pom</type>
-				<version>1.0.0.BUILD-SNAPSHOT</version>
+				<version>$project.version</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -37,14 +37,13 @@ def pomHeader = """
 
 def pomFooter = """	</dependencies>
 	<repositories>
+		<!-- Required for GemFire -->
 		<repository>
-			<id>spring-snapshots</id>
-			<name>Spring Snapshots</name>
-			<url>http://repo.spring.io/libs-snapshot</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
+			<id>spring-releases</id>
+			<name>Spring Release repository</name>
+			<url>http://repo.spring.io/libs-release</url>
 		</repository>
+		<!-- Required for various Neo4J-related dependencies -->
 		<repository>
 			<id>opengeo</id>
 			<name>OpenGeo</name>
@@ -58,7 +57,7 @@ new File(targetDir, "pom.xml").withWriter { writer ->
 	writer.println pomHeader
 
 	def xml = new XmlSlurper().parseText(effectivePom.text)
-	xml.dependencyManagement.dependencies.dependency.each { dependency -> 
+	xml.dependencyManagement.dependencies.dependency.each { dependency ->
 		writer.println "		<dependency>"
 		writer.println "			<groupId>${dependency.groupId}</groupId>"
 		writer.println "			<artifactId>${dependency.artifactId}</artifactId>"
