@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>io.spring.platform</groupId>
 		<artifactId>platform-build</artifactId>
-		<version>1.0.0.BUILD-SNAPSHOT</version>
+		<version>1.0.0.RC1</version>
 	</parent>
 
 	<artifactId>platform</artifactId>
@@ -47,7 +47,7 @@
 		<dependency>
 			<groupId>io.spring.platform</groupId>
 			<artifactId>platform-versions</artifactId>
-			<version>${project.version}</version>
+			<version>1.0.0.RC1</version>
 			<type>properties</type>
 		</dependency>
 	</dependencies>
@@ -310,8 +310,8 @@
 									<exportAntProperties>true</exportAntProperties>
 									<target>
 										<macrodef name="version-type">
-											<attribute name="version"/>
-											<attribute name="property"/>
+											<attribute name="version" />
+											<attribute name="property" />
 											<sequential>
 												<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
 												<taskdef name="stringutil" classname="ise.antelope.tasks.StringUtilTask" />
@@ -325,8 +325,8 @@
 												</stringutil>
 											</sequential>
 										</macrodef>
-										<version-type version="${project.version}" property="platform-repo"/>
-										<version-type version="${spring-boot.version}" property="spring-boot-repo"/>
+										<version-type version="${project.version}" property="platform-repo" />
+										<version-type version="${spring-boot.version}" property="spring-boot-repo" />
 										<var name="github-tag" value="v${project.version}" />
 										<propertyregex property="github-tag" override="true" input="${github-tag}" regexp=".*SNAPSHOT" replace="master" />
 									</target>
