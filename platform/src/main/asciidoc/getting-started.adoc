@@ -11,7 +11,7 @@ This section provides all you need to know to get started with Spring IO Platfor
 == Introducing Spring IO Platform
 Spring IO Platform brings together the core Spring APIs into a cohesive platform for modern
 applications. It provides versions of numerous projects in the Spring portfolio along with their
-dependencies that are tested and known to work together. 
+dependencies that are tested and known to work together.
 
 [[getting-started-using-spring-io-platform]]
 == Using Spring IO Platform
@@ -109,6 +109,7 @@ parent:
 			<groupId>io.spring.platform</groupId>
 			<artifactId>platform-bom</artifactId>
 			<version>{platform-version}</version>
+			<relativePath/>
 		</parent>
 
 		…
