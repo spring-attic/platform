@@ -23,15 +23,39 @@ def getDependenciesPom() {
 		def snapshot = new XmlSlurper().parse("$uri/maven-metadata.xml").versioning.snapshot
 		version = version.replace('-SNAPSHOT', "-$snapshot.timestamp-$snapshot.buildNumber")
 	}
-	new XmlSlurper().parse("$uri/spring-boot-dependencies-${version}.pom")
+	new URL("$uri/spring-boot-dependencies-${version}.pom").text
 }
 
-def dependencies = dependenciesPom
+def extractDependenciesFromPom(def pom) {
+	new XmlSlurper().parseText(pom)
 		.dependencyManagement.dependencies.dependency
 		.collect { getId(it)}
+}
 
-new XmlSlurper().parseText(new File(rootDir, 'platform-bom/pom.xml').text)
-		.dependencyManagement.dependencies.dependency
-		.collect { getId(it) }
+def extractVersionsFromPom(def pom) {
+	new XmlParser().parseText(pom)
+		.properties[0].children()
+		.collect {it.name().localPart}
+		.findAll{it.endsWith('.version')}
+}
+
+def dependenciesPom = getDependenciesPom()
+def platformBom = new File(rootDir, 'platform-bom/pom.xml').text
+
+def dependencies = extractDependenciesFromPom(dependenciesPom)
+def duplicateDependencies = extractDependenciesFromPom(platformBom)
 		.findAll { dependencies.contains(it) }
-		.each { println it }
+
+if (duplicateDependencies) {
+	println "Duplicate dependencies found:"
+	duplicateDependencies.each { println "    $it"}
+}
+
+def versions = extractVersionsFromPom(dependenciesPom)
+def duplicateVersions = extractVersionsFromPom(platformBom)
+		.findAll {versions.contains(it)}
+
+if (duplicateVersions) {
+	println "Duplicate versions found:"
+	duplicateVersions.each { println "    $it"}
+}
