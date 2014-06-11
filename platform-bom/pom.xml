@@ -28,7 +28,7 @@
 		<spring-ldap.version>2.0.2.RELEASE</spring-ldap.version>
 		<spring-plugin.version>1.1.0.RELEASE</spring-plugin.version>
 		<spring-retry.version>1.1.0.RELEASE</spring-retry.version>
-		<spring-security-oauth.version>2.0.1.RELEASE</spring-security-oauth.version>
+		<spring-security-oauth.version>2.0.2.RELEASE</spring-security-oauth.version>
 		<spring-web-flow.version>2.4.0.RELEASE</spring-web-flow.version>
 		<spring-web-services.version>2.2.0.RELEASE</spring-web-services.version>
 
@@ -305,6 +305,18 @@
 				<groupId>org.springframework.retry</groupId>
 				<artifactId>spring-retry</artifactId>
 				<version>${spring-retry.version}</version>
+			</dependency>
+
+			<!-- Spring Security OAuth -->
+			<dependency>
+				<groupId>org.springframework.security.oauth</groupId>
+				<artifactId>spring-security-oauth</artifactId>
+				<version>${spring-security-oauth.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.security.oauth</groupId>
+				<artifactId>spring-security-oauth2</artifactId>
+				<version>${spring-security-oauth.version}</version>
 			</dependency>
 
 			<!-- Spring Web Flow -->
