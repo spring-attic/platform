@@ -256,7 +256,6 @@ platform_definition:
         - spring-context
         - spring-context-support
         - spring-expression
-        - spring-framework-bom
         - spring-instrument
         - spring-instrument-tomcat
         - spring-jdbc
@@ -450,9 +449,13 @@ platform_definition:
     ignored_dependencies:
       - 'org.thymeleaf:thymeleaf-spring3' # The Platform is Spring 4+
       - 'org.springframework:spring-instrument-tomcat' # Only needed with Tomcat 6 and the Platform uses Tomcat 7+
+      - 'org.springframework.boot:spring-boot-dependencies' # The platform bom is a superset of spring-boot-dependencies
+      - 'org.springframework.boot:spring-boot-starter-parent' # The platform bom is a superset of spring-boot-starter-parent
       - 'org.springframework.data:spring-cql' # Not included in Spring Data Bom
-      - 'org.springframework.data.build:spring-data-java8-stub' # Not included in Spring Data Bom
+      - 'org.springframework.data:spring-data-mongodb-cross-store' # Not included in Spring Data Bom
+      - 'org.springframework.data:spring-data-mongodb-log4j' # Not included in Spring Data Bom
       - 'org.springframework.data:spring-data-rest-core' # Not included in Spring Data Bom
+      - 'org.springframework.data.build:spring-data-java8-stub' # Not included in Spring Data Bom
       - 'org.eclipse.jetty*:*:9.*' # The Platform uses Jetty 8
     ignored_modules:
       - 'org.grails' # Grails is a special case. As recommended by Graeme, the Platform only contains grails-dependencies
