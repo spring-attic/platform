@@ -205,14 +205,14 @@ artifact:
 		repositories {
 			mavenCentral()
 ifeval::["{spring-boot-repo}" == "snapshot"]
-			maven { url "http://repo.spring.io/libs-snapshot" }
+			maven { url 'http://repo.spring.io/libs-snapshot' }
 endif::[]
 ifeval::["{spring-boot-repo}" == "milestone"]
-			maven { url "http://repo.spring.io/libs-milestone" }
+			maven { url 'http://repo.spring.io/libs-milestone' }
 endif::[]
 		}
 		dependencies {
-			classpath("org.springframework.boot:spring-boot-gradle-plugin:{spring-boot-version}")
+			classpath 'org.springframework.boot:spring-boot-gradle-plugin:{spring-boot-version}'
 		}
 	}
 
@@ -221,10 +221,10 @@ endif::[]
 	repositories {
 		mavenCentral()
 ifeval::["{platform-repo}" == "snapshot"]
-		maven { url "http://repo.spring.io/libs-snapshot" }
+		maven { url 'http://repo.spring.io/libs-snapshot' }
 endif::[]
 ifeval::["{platform-repo}" == "milestone"]
-		maven { url "http://repo.spring.io/milestone" }
+		maven { url 'http://repo.spring.io/libs-milestone' }
 endif::[]
 	}
 
