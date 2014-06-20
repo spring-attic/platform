@@ -171,6 +171,7 @@
 		<querydsl.version>3.3.3</querydsl.version>
 		<protobuf.version>2.5.0</protobuf.version>
 		<smack.version>3.2.1</smack.version>
+		<smack4.version>4.0.0</smack4.version>
 		<snappy.version>1.1.0.1</snappy.version>
 		<spullara-redis.version>0.7</spullara-redis.version>
 		<sun-facelets.version>1.1.14</sun-facelets.version>
@@ -1214,6 +1215,21 @@
 				<groupId>org.igniterealtime.smack</groupId>
 				<artifactId>smackx</artifactId>
 				<version>${smack.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.igniterealtime.smack</groupId>
+				<artifactId>smack-extensions</artifactId>
+				<version>${smack4.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.igniterealtime.smack</groupId>
+				<artifactId>smack-resolver-javax</artifactId>
+				<version>${smack4.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.igniterealtime.smack</groupId>
+				<artifactId>smack-tcp</artifactId>
+				<version>${smack4.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jasig.cas.client</groupId>
