@@ -5,7 +5,7 @@
 
 	<groupId>io.spring.platform</groupId>
 	<artifactId>pom-tests</artifactId>
-	<version>1.0.1.BUILD-SNAPSHOT</version>
+	<version>1.1.0.BUILD-SNAPSHOT</version>
 	<name>Spring IO Platform pom tests</name>
 	<description>Performs sanity testing of the Platform's pom</description>
 
