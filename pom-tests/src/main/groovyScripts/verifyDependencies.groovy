@@ -37,11 +37,14 @@ def pomHeader = """
 
 def pomFooter = """	</dependencies>
 	<repositories>
-		<!-- Required for GemFire -->
+		<!-- Required for GemFire and Boot snapshots -->
 		<repository>
-			<id>spring-releases</id>
-			<name>Spring Release repository</name>
-			<url>http://repo.spring.io/libs-release</url>
+			<id>spring-snapshots</id>
+			<name>Spring Snapshots repository</name>
+			<url>http://repo.spring.io/libs-snapshot</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
 		</repository>
 		<!-- Required for various Neo4J-related dependencies -->
 		<repository>
