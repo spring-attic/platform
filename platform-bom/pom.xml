@@ -48,6 +48,7 @@
 
 		<grails.version>2.4.0</grails.version>
 
+		<spring.version>4.1.0.BUILD-SNAPSHOT</spring.version>
 		<spring-cloud.version>1.0.0.RELEASE</spring-cloud.version>
 		<spring-data-hadoop.version>2.0.0.RELEASE</spring-data-hadoop.version>
 		<spring-ldap.version>2.0.2.RELEASE</spring-ldap.version>
