@@ -478,6 +478,9 @@ platform_definition:
       - 'org.javassist:javassist'
       - 'org.slf4j:slf4j-jdk14'
       - 'org.springframework:springloaded'
+      # Additional modules provided by the Platform for user convenience
+      - 'org.hibernate:hibernate-ehcache'
+      - 'org.hibernate:hibernate-envers'
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2
