@@ -194,10 +194,15 @@ refer to the <<appendix-dependency-versions, appendix>>.
 
 [[getting-started-using-spring-io-platform-gradle]]
 === Using Spring IO Platform with Gradle
-To use the Platform with Gradle, you configure your build to apply
-{spring-boot-docs-gradle-plugin}[Spring Boot's Gradle plugin] and, in the `versionManagement`
-configuration that it provides, declare a dependency on the Platform's `platform-versions`
-artifact:
+The Platform uses {spring-boot-docs-gradle-plugin}[Spring Boot's Gradle plugin] to provide
+dependency versions in your build. The use of a plugin is necessary as Gradle does not provide
+an equivalent of Maven's built-in dependency management support. Note that using Spring Boot's
+Gradle plugin to provide version management doesn't require you to use Spring Boot to write
+your application.
+
+To use Spring Boot's Gradle plugin to provide version management, you configure your build to
+apply the plugin and, in the `versionManagement` configuration that it provides, declare a
+dependency on the Platform's `platform-versions` artifact:
 
 [source,groovy,indent=0,subs="verbatim,attributes"]
 ----
@@ -230,6 +235,16 @@ endif::[]
 
 	dependencies {
 		versionManagement 'io.spring.platform:platform-versions:{platform-version}@properties'
+	}
+----
+
+If you're using Spring Boot's Gradle plugin purely for version management you should also disable
+its repackaging of your application:
+
+[source,groovy,indent=0,subs="verbatim,attributes"]
+----
+	bootRepackage {
+		enabled = false
 	}
 ----
 
