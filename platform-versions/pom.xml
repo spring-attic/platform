@@ -41,6 +41,15 @@
 		</developer>
 	</developers>
 
+	<dependencies>
+		<dependency>
+			<groupId>io.spring.platform</groupId>
+			<artifactId>platform-bom</artifactId>
+			<version>${project.version}</version>
+			<type>pom</type>
+		</dependency>
+	</dependencies>
+
 	<build>
 		<resources>
 			<resource>
@@ -55,7 +64,7 @@
 				<executions>
 					<execution>
 						<id>copy</id>
-						<phase>generate-test-resources</phase>
+						<phase>generate-resources</phase>
 						<goals>
 							<goal>copy</goal>
 						</goals>

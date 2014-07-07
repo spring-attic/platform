@@ -37,6 +37,20 @@
 		</developer>
 	</developers>
 
+		<properties>
+		<junit.version>4.11</junit.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>junit</groupId>
+				<artifactId>junit</artifactId>
+				<version>${junit.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<modules>
 		<module>platform</module>
 		<module>platform-bom</module>

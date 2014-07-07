@@ -5,13 +5,13 @@
 
 	<parent>
 		<groupId>io.spring.platform</groupId>
-		<artifactId>platform-foundation-build</artifactId>
+		<artifactId>platform-build</artifactId>
 		<version>1.1.0.BUILD-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>platform-foundation-tests</artifactId>
-	<name>Spring IO Platform Foundation integration tests</name>
-	<description>Performs sanity testing of the Platform Foundation</description>
+	<artifactId>platform-tests</artifactId>
+	<name>Spring IO Platform integration tests</name>
+	<description>Performs sanity testing of the Platform</description>
 	<url>http://platform.spring.io/platform/</url>
 	<organization>
 		<name>Pivotal Software, Inc.</name>
