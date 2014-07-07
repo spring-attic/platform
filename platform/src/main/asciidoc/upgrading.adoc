@@ -1,0 +1,24 @@
+[[upgrading]]
+= Upgrading
+
+[partintro]
+--
+This section provides all you need to know  about upgrading to this version of Spring IO Platform.
+--
+
+
+
+[[upgrading-deprecation]]
+== Deprecation
+
+As of Spring IO Platform 1.1, the `platform-versions` properties artifact is deprecated. It will
+be removed in a future version of the Platform. Maven users are unaffected by this change. If,
+however, you're using the Platform with Gradle, then you should start using the properties file
+published by `platform-bom` instead:
+
+[source,groovy,indent=0,subs="verbatim,attributes"]
+----
+	dependencies {
+		versionManagement 'io.spring.platform:platform-bom:{platform-version}@properties'
+	}
+----

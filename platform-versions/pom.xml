@@ -5,9 +5,8 @@
 
 	<parent>
 		<groupId>io.spring.platform</groupId>
-		<artifactId>platform-bom</artifactId>
+		<artifactId>platform-build</artifactId>
 		<version>1.1.0.BUILD-SNAPSHOT</version>
-		<relativePath>../platform-bom</relativePath>
 	</parent>
 
 	<artifactId>platform-versions</artifactId>
@@ -50,45 +49,31 @@
 		</resources>
 		<plugins>
 			<plugin>
-				<artifactId>maven-help-plugin</artifactId>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>2.8</version>
 				<executions>
 					<execution>
-						<id>generate-effective-dependencies-pom</id>
-						<phase>generate-resources</phase>
+						<id>copy</id>
+						<phase>generate-test-resources</phase>
 						<goals>
-							<goal>effective-pom</goal>
+							<goal>copy</goal>
 						</goals>
 						<configuration>
-							<output>${project.build.directory}/transformation/platform-versions.xml</output>
+							<artifactItems>
+								<artifactItem>
+									<groupId>io.spring.platform</groupId>
+									<artifactId>platform-bom</artifactId>
+									<version>${project.version}</version>
+									<type>properties</type>
+									<overWrite>true</overWrite>
+									<outputDirectory>${project.outputDirectory}</outputDirectory>
+								</artifactItem>
+							</artifactItems>
+							<stripVersion>true</stripVersion>
 						</configuration>
 					</execution>
 				</executions>
-			</plugin>
-			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>xml-maven-plugin</artifactId>
-				<version>1.0</version>
-				<executions>
-					<execution>
-						<goals>
-							<goal>transform</goal>
-						</goals>
-					</execution>
-				</executions>
-				<configuration>
-					<transformationSets>
-						<transformationSet>
-							<dir>${project.build.directory}/transformation</dir>
-							<stylesheet>src/main/stylesheet/dependency-management-to-versions.xsl</stylesheet>
-							<fileMappers>
-								<fileMapper implementation="org.codehaus.plexus.components.io.filemappers.FileExtensionMapper">
-									<targetExtension>.properties</targetExtension>
-								</fileMapper>
-							</fileMappers>
-							<outputDir>${project.build.directory}/generated-resources</outputDir>
-						</transformationSet>
-					</transformationSets>
-				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
@@ -103,7 +88,7 @@
 						<configuration>
 							<artifacts>
 								<artifact>
-									<file>${project.build.directory}/generated-resources/platform-versions.properties</file>
+									<file>${project.build.directory}/dependency/platform-bom.properties</file>
 									<type>properties</type>
 								</artifact>
 							</artifacts>

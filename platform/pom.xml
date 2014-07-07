@@ -72,10 +72,10 @@
 									<artifactItems>
 										<artifactItem>
 											<groupId>io.spring.platform</groupId>
-											<artifactId>platform-versions</artifactId>
+											<artifactId>platform-bom</artifactId>
 											<version>${project.version}</version>
 											<type>properties</type>
-											<destFileName>platform-versions.properties</destFileName>
+											<destFileName>platform-bom.properties</destFileName>
 										</artifactItem>
 									</artifactItems>
 								</configuration>

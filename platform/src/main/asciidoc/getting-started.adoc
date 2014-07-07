@@ -202,7 +202,7 @@ your application.
 
 To use Spring Boot's Gradle plugin to provide version management, you configure your build to
 apply the plugin and, in the `versionManagement` configuration that it provides, declare a
-dependency on the Platform's `platform-versions` artifact:
+dependency on the Platform's `platform-bom` artifact:
 
 [source,groovy,indent=0,subs="verbatim,attributes"]
 ----
@@ -234,7 +234,7 @@ endif::[]
 	}
 
 	dependencies {
-		versionManagement 'io.spring.platform:platform-versions:{platform-version}@properties'
+		versionManagement 'io.spring.platform:platform-bom:{platform-version}@properties'
 	}
 ----
 

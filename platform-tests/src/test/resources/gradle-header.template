@@ -1,0 +1,24 @@
+buildscript {
+	repositories {
+		mavenCentral()
+	}
+	dependencies {
+		classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.1.3.RELEASE'
+	}
+}
+
+apply plugin: 'spring-boot'
+
+springBoot {
+	mainClass = 'com.example.foo.Bar'
+}
+
+repositories {
+	maven { url 'http://repo.opengeo.org'}
+	maven { url 'http://repo.spring.io/libs-snapshot'}
+	maven { url 'http://download.osgeo.org/webdav/geotools'}
+	mavenCentral()
+}
+
+dependencies {
+	versionManagement files('../dependency/platform-bom.properties')

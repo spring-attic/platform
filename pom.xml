@@ -41,7 +41,7 @@
 		<module>platform</module>
 		<module>platform-bom</module>
 		<module>platform-versions</module>
-		<module>pom-tests</module>
+		<module>platform-tests</module>
 	</modules>
 
 </project>
