@@ -17,8 +17,74 @@
 		<name>Pivotal Software, Inc.</name>
 		<url>http://www.spring.io</url>
 	</organization>
+	
+	<properties>
+		<aether.version>1.0.0.v20140518</aether.version>
+		<maven.version>3.2.1</maven.version>
+		<snakeyaml.version>1.13</snakeyaml.version>
+	</properties>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-aether-provider</artifactId>
+			<version>3.1.1</version>
+			<exclusions>
+				<exclusion>
+					<artifactId>org.eclipse.sisu.plexus</artifactId>
+					<groupId>org.eclipse.sisu</groupId>
+				</exclusion>
+			</exclusions>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven</groupId>
+			<artifactId>maven-artifact</artifactId>
+			<version>${maven.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.aether</groupId>
+			<artifactId>aether-api</artifactId>
+			<version>${aether.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.aether</groupId>
+			<artifactId>aether-connector-basic</artifactId>
+			<version>${aether.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.aether</groupId>
+			<artifactId>aether-impl</artifactId>
+			<version>${aether.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.aether</groupId>
+			<artifactId>aether-spi</artifactId>
+			<version>${aether.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.aether</groupId>
+			<artifactId>aether-transport-file</artifactId>
+			<version>${aether.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.aether</groupId>
+			<artifactId>aether-transport-http</artifactId>
+			<version>${aether.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.eclipse.aether</groupId>
+			<artifactId>aether-util</artifactId>
+			<version>${aether.version}</version>
+			<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
@@ -29,6 +95,12 @@
 			<artifactId>maven-invoker</artifactId>
 			<version>2.1.1</version>
 			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.codehaus.plexus</groupId>
+    				<artifactId>plexus-utils</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>org.codehaus.groovy</groupId>
@@ -40,6 +112,12 @@
 			<groupId>org.gradle</groupId>
 			<artifactId>gradle-tooling-api</artifactId>
 			<version>2.1-20140706220021+0000</version> <!-- http://issues.gradle.org//browse/GRADLE-3074 -->
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.yaml</groupId>
+			<artifactId>snakeyaml</artifactId>
+			<version>${snakeyaml.version}</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

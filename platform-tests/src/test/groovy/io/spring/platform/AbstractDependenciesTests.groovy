@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package io.spring.platform;
+package io.spring.platform
 
 import groovy.text.SimpleTemplateEngine
 
@@ -52,7 +52,7 @@ class AbstractDependenciesTests {
 	String templateText(String templateName) {
 		def model = ["projectVersion":projectVersion]
 		return new SimpleTemplateEngine()
-				.createTemplate(new File("src/test/resources/${templateName}.template"))
-				.make(model).toString()
+		.createTemplate(new File("src/test/resources/${templateName}.template"))
+		.make(model).toString()
 	}
 }

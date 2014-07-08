@@ -14,26 +14,11 @@
  * limitations under the License.
  */
 
-package io.spring.platform;
+package io.spring.platform
 
-import groovy.text.SimpleTemplateEngine;
-
-import java.io.File;
-import java.util.Arrays;
-import java.util.Properties;
-
-import javax.xml.parsers.DocumentBuilder;
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.xpath.XPathConstants;
-import javax.xml.xpath.XPathExpression;
-import javax.xml.xpath.XPathFactory;
-
-import org.apache.maven.shared.invoker.DefaultInvocationRequest;
-import org.apache.maven.shared.invoker.DefaultInvoker;
-import org.junit.Test;
-import org.w3c.dom.Document;
-import org.w3c.dom.Node;
-import org.w3c.dom.NodeList;
+import org.apache.maven.shared.invoker.DefaultInvocationRequest
+import org.apache.maven.shared.invoker.DefaultInvoker
+import org.junit.Test
 
 class MavenDependenciesTests extends AbstractDependenciesTests {
 
