@@ -115,7 +115,7 @@ platform_definition:
         repository: https://github.com/spring-projects/spring-amqp
     - name: Spring Batch
       groupId: org.springframework.batch
-      version: 3.0.0.RELEASE
+      version: 3.0.1.RELEASE
       modules:
         - spring-batch-core
         - spring-batch-infrastructure
@@ -123,10 +123,10 @@ platform_definition:
         - spring-batch-test
       build:
         repository: https://github.com/spring-projects/spring-batch
-        checkout: 3.0.0.RELEASE
+        checkout: 3.0.1.RELEASE
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 1.1.4.BUILD-SNAPSHOT
+      version: 1.1.4.RELEASE
       modules:
         - spring-boot
         - spring-boot-actuator
