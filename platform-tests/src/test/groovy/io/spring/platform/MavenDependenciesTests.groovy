@@ -1,4 +1,20 @@
-package io.spring.platform.foundation;
+/*
+ * Copyright 2014 the original author or authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package io.spring.platform;
 
 import groovy.text.SimpleTemplateEngine;
 
@@ -22,7 +38,7 @@ import org.w3c.dom.NodeList;
 class MavenDependenciesTests extends AbstractDependenciesTests {
 
 	@Test
-	public void allManagedDependenciesCanBeResolved() throws Exception {
+	void allManagedDependenciesCanBeResolved() throws Exception {
 		def testDir = new File("target/maven-test")
 		testDir.mkdirs()
 
@@ -54,7 +70,7 @@ class MavenDependenciesTests extends AbstractDependenciesTests {
 		def request = new DefaultInvocationRequest()
 		request.setBaseDirectory(testDir)
 		request.setGoals(["package"])
-		def result = new DefaultInvoker().execute(request);
+		def result = new DefaultInvoker().execute(request)
 		if (result.executionException) {
 			throw result.executionException
 		} else if(result.exitCode != 0) {
