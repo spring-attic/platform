@@ -10,5 +10,5 @@ buildscript {
 apply plugin: 'spring-boot'
 
 dependencies {
-    versionManagement = 'io.spring.platform:platform-versions:{@= version @}@properties'
+    versionManagement 'io.spring.platform:platform-versions:{@= version @}@properties'
 }
