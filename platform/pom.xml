@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>io.spring.platform</groupId>
 		<artifactId>platform-build</artifactId>
-		<version>1.1.0.BUILD-SNAPSHOT</version>
+		<version>1.2.0.BUILD-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>platform</artifactId>
@@ -47,7 +47,7 @@
 		<dependency>
 			<groupId>io.spring.platform</groupId>
 			<artifactId>platform-versions</artifactId>
-			<version>1.1.0.BUILD-SNAPSHOT</version>
+			<version>1.2.0.BUILD-SNAPSHOT</version>
 			<type>properties</type>
 		</dependency>
 	</dependencies>

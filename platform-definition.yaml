@@ -293,7 +293,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.0.2.RELEASE
+      version: 4.1.0.BUILD-SNAPSHOT
       build:
         repository: https://github.com/spring-projects/spring-integration
       modules:
@@ -325,6 +325,7 @@ platform_definition:
         - spring-integration-twitter
         - spring-integration-xml
         - spring-integration-xmpp
+        - spring-integration-websocket
         - spring-integration-ws
     - name: Spring LDAP
       groupId: org.springframework.ldap
@@ -481,6 +482,8 @@ platform_definition:
       # Additional modules provided by the Platform for user convenience
       - 'org.hibernate:hibernate-ehcache'
       - 'org.hibernate:hibernate-envers'
+      # Modules that were previously used and are being retained for backwards compatibility
+      - 'org.igniterealtime.smack:smackx'
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2

@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>io.spring.platform</groupId>
 		<artifactId>platform-build</artifactId>
-		<version>1.1.0.BUILD-SNAPSHOT</version>
+		<version>1.2.0.BUILD-SNAPSHOT</version>
 	</parent>
 
 	<artifactId>platform-tests</artifactId>
@@ -17,7 +17,7 @@
 		<name>Pivotal Software, Inc.</name>
 		<url>http://www.spring.io</url>
 	</organization>
-	
+
 	<properties>
 		<aether.version>1.0.0.v20140518</aether.version>
 		<maven.version>3.2.1</maven.version>

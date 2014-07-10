@@ -6,13 +6,13 @@
 	<parent>
 		<groupId>io.spring.platform</groupId>
 		<artifactId>platform-foundation-bom</artifactId>
-		<version>1.1.0.BUILD-SNAPSHOT</version>
+		<version>1.2.0.BUILD-SNAPSHOT</version>
 		<relativePath />
 	</parent>
 
 	<groupId>io.spring.platform</groupId>
 	<artifactId>platform-bom</artifactId>
-	<version>1.1.0.BUILD-SNAPSHOT</version>
+	<version>1.2.0.BUILD-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Spring IO Platform bill of materials</name>
 	<description>Spring IO Platform bill of materials</description>
