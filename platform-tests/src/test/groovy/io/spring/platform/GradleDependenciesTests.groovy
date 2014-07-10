@@ -16,14 +16,8 @@
 
 package io.spring.platform
 
-import java.io.File;
-
-import groovy.text.SimpleTemplateEngine
-
-import org.apache.maven.shared.invoker.DefaultInvocationRequest
-import org.apache.maven.shared.invoker.DefaultInvoker
-import org.gradle.tooling.GradleConnector;
-import org.gradle.tooling.internal.consumer.DefaultGradleConnector;
+import org.gradle.tooling.GradleConnector
+import org.gradle.tooling.internal.consumer.DefaultGradleConnector
 import org.junit.Test
 
 class GradleDependenciesTests extends AbstractDependenciesTests {
