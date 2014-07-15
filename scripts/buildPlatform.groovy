@@ -84,6 +84,7 @@ def parseArguments(def args) {
 	def optionParser = new OptionParser();
 	optionParser.accepts("jdk7-home", "The path to the home directory of JDK 7").withRequiredArg()
 	optionParser.accepts("jdk8-home", "The path to the home directory of JDK 8").withRequiredArg()
+	optionParser.accepts("project", "The name of a project to build").withRequiredArg()
 
 	try {
 		optionParser.parse(args)
@@ -107,13 +108,26 @@ def options = parseArguments(args)
 def yaml = new Yaml().load(new File(rootDir, 'platform-definition.yaml').text)
 def projects = yaml['platform_definition']['projects']
 
+def selectedProjects = options.valuesOf('project')
+
 def problems = [] as Set
 
+if (selectedProjects) {
+	projects = projects.findAll { selectedProjects.contains(it.name) }
+	if (!projects) {
+		problems << "No matching projects were found"
+	}
+}
+
 projects.each {
-	def jdk = it.build?.'compileWith' ?: 'jdk7'
-	if (jdk == 'jdk7' && !options.has('jdk7-home')) {
+	jdks = []
+	jdks += it.build?.'compileWith' ?: 'jdk7'
+	jdks += it.build?.'runTestsWith' ?: 'jdk7'
+
+	if (jdks.contains('jdk7') && !options.has('jdk7-home')) {
 		problems << "Platform definition requires Java 7. Please use --jdk7-home to provide it"
-	} else if (jdk == 'jdk8' && !options.has('jdk8-home')) {
+	}
+	if (jdks.contains('jdk8') && !options.has('jdk8-home')) {
 		problems << "Platform definition requires Java 8. Please use --jdk8-home to provide it"
 	}
 }
@@ -128,7 +142,7 @@ if (problems) {
 	def buildDir = new File(rootDir, 'build')
 	buildDir.deleteDir()
 
-	def platformVersions = new File(rootDir, 'platform-versions/target/generated-resources/platform-versions.properties')
+	def platformVersions = new File(rootDir, 'platform-bom/target/platform-bom.properties')
 
 	def dir = new File(buildDir, 'repository/io/spring/platform/platform-versions/LOCALTEST')
 	dir.mkdirs()
