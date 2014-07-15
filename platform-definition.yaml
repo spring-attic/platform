@@ -329,6 +329,9 @@ platform_definition:
     - name: Spring Integration Splunk
       groupId: org.springframework.integration
       version: 1.1.0.BUILD-SNAPSHOT
+      build:
+        repository: https://github.com/spring-projects/spring-integration-extensions
+        directory: spring-integration-splunk
       modules:
         - spring-integration-splunk
     - name: Spring LDAP

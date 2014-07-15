@@ -47,12 +47,16 @@ def build(def project, def platformVersion, String jdk7Home, String jdk8Home) {
 		execute("git checkout $checkout", dir)
 	}
 
+	if (project.build['directory']) {
+		dir = "$dir/${project.build['directory']}"
+	}
+
 	def command = "./gradlew -I $initScriptPath clean"
 
 	if (project.build.containsKey('additional_tasks')) {
 		command += " ${project.build['additional_tasks']}"
 	}
-	command += " springIoCheck -PplatformVersion=$platformVersion --continue --refresh-dependencies"
+	command += " springIoCheck -PplatformVersion=$platformVersion -PrepositoryDir=$rootDir/build/repository --continue --refresh-dependencies"
 
 	def runTestsWith = project.build['runTestsWith'] ?: ['jdk7', 'jdk8']
 	if (!runTestsWith) {
