@@ -326,6 +326,11 @@ platform_definition:
         - spring-integration-xml
         - spring-integration-xmpp
         - spring-integration-ws
+    - name: Spring Integration Splunk
+      groupId: org.springframework.integration
+      version: 1.1.0.BUILD-SNAPSHOT
+      modules:
+        - spring-integration-splunk
     - name: Spring LDAP
       groupId: org.springframework.ldap
       version: 2.0.2.RELEASE
@@ -484,8 +489,8 @@ platform_definition:
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2
-      - id: spring-releases
-        url: http://repo.spring.io/libs-release
+      - id: spring-snapshots
+        url: http://repo.spring.io/libs-snapshot
       - id: jasper-reports
         url: http://jasperreports.sourceforge.net/maven2
       - id: opengeo
