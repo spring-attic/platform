@@ -3,7 +3,7 @@
 
 [partintro]
 --
-This section provides all you need to know  about upgrading to this version of Spring IO Platform.
+This section provides all you need to know about upgrading to this version of Spring IO Platform.
 --
 
 
@@ -11,10 +11,15 @@ This section provides all you need to know  about upgrading to this version of S
 [[upgrading-deprecation]]
 == Deprecation
 
-As of Spring IO Platform 1.1, the `platform-versions` properties artifact is deprecated. It will
-be removed in a future version of the Platform. Maven users are unaffected by this change. If,
-however, you're using the Platform with Gradle, then you should start using the properties file
-published by `platform-bom` instead:
+A number of the Platform's components have been deprecated and will be removed in a future release.
+New applications should not use the deprecated components and, to ensure a smooth migration path to
+future releases of the Platform, existing applications should be updated.
+
+=== platform-versions artifact
+
+As of Spring IO Platform 1.1, the `platform-versions` properties artifact is deprecated. Maven
+users are unaffected by this change. If, however, you're using the Platform with Gradle, then you
+should start using the properties file published by `platform-bom` instead:
 
 [source,groovy,indent=0,subs="verbatim,attributes"]
 ----
@@ -22,3 +27,8 @@ published by `platform-bom` instead:
 		versionManagement 'io.spring.platform:platform-bom:{platform-version}@properties'
 	}
 ----
+
+=== net.sf.ehcache:ehcache-core
+
+As of Spring IO Platform 1.1, the dependency management for `net.sf.ehcache:ehcache-core` is
+deprecated with `net.sf.ehcache:ehcache` being its preferred replacement.
