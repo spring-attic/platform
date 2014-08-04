@@ -185,7 +185,7 @@ version number. For example:
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-core</artifactId>
-		<dependency>
+		</dependency>
 	</dependencies>
 ----
 
