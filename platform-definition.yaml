@@ -489,6 +489,8 @@ platform_definition:
       # Additional modules provided by the Platform for user convenience
       - 'org.hibernate:hibernate-ehcache'
       - 'org.hibernate:hibernate-envers'
+      # Modules that were previously used and are being retained for backwards compatibility
+      - 'org.glassfish.tyrus:tyrus-websocket-core'
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2
