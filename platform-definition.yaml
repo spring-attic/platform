@@ -477,6 +477,7 @@ platform_definition:
       - 'com.codahale.metrics:metrics-graphite'
       - 'com.codahale.metrics:metrics-ganglia'
       - 'com.codahale.metrics:metrics-servlets'
+      - 'com.github.mxab.thymeleaf.extras:thymeleaf-extras-data-attribute'
       - 'javax.servlet:jstl'
       - 'mysql:mysql-connector-java'
       - 'org.apache.activemq:activemq-client'
@@ -487,6 +488,7 @@ platform_definition:
       - 'org.javassist:javassist'
       - 'org.slf4j:slf4j-jdk14'
       - 'org.springframework:springloaded'
+      - 'org.spockframework:spock-spring'
       # Additional modules provided by the Platform for user convenience
       - 'org.hibernate:hibernate-ehcache'
       - 'org.hibernate:hibernate-envers'
