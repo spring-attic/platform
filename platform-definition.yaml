@@ -2,7 +2,7 @@ platform_definition:
   projects:
     - name: Aspect J
       groupId: org.aspectj
-      version: 1.8.0
+      version: 1.8.2
       modules:
         - aspectjweaver
         - aspectjtools
@@ -57,7 +57,7 @@ platform_definition:
         - grails-wrapper-support
     - name: Groovy
       groupId: org.codehaus.groovy
-      version: 2.3.2
+      version: 2.3.6
       modules:
         - groovy
         - groovy-ant
@@ -80,7 +80,7 @@ platform_definition:
         - groovy-xml
     - name: Reactor
       groupId: org.projectreactor
-      version: 1.1.2.RELEASE
+      version: 1.1.4.RELEASE
       modules:
         - reactor-core
         - reactor-groovy
@@ -94,7 +94,7 @@ platform_definition:
            - jdk8
     - name: Reactor Spring
       groupId: org.projectreactor.spring
-      version: 1.1.2.RELEASE
+      version: 1.1.3.RELEASE
       modules:
         - reactor-spring-context
         - reactor-spring-core
@@ -173,7 +173,7 @@ platform_definition:
         - spring-boot-starter-ws
     - name: Spring Cloud
       groupId: org.springframework.cloud
-      version: 1.0.0.RELEASE
+      version: 1.1.0.BUILD-SNAPSHOT
       modules:
         - spring-cloud-core
         - spring-cloud-cloudfoundry-connector
@@ -183,40 +183,40 @@ platform_definition:
         repository: https://github.com/spring-projects/spring-cloud
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.0.0.RELEASE
+      version: 1.0.2.RELEASE
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.8.0.RELEASE
+      version: 1.8.2.RELEASE
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 1.1.0.RELEASE
+      version: 1.1.2.RELEASE
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 1.0.0.RELEASE
+      version: 1.0.2.RELEASE
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.4.0.RELEASE
+      version: 1.4.2.RELEASE
       modules:
         - spring-data-gemfire
       build:
         repository: https://github.com/spring-projects/spring-data-gemfire
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.6.0.RELEASE
+      version: 1.6.2.RELEASE
       modules:
         - spring-data-jpa
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.5.0.RELEASE
+      version: 1.5.2.RELEASE
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -224,25 +224,25 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 3.1.0.RELEASE
+      version: 3.1.2.RELEASE
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.3.0.RELEASE
+      version: 1.3.2.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-data-redis
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.1.0.RELEASE
+      version: 2.1.2.RELEASE
       modules:
         - spring-data-rest-core
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 1.2.0.RELEASE
+      version: 1.2.2.RELEASE
       modules:
         - spring-data-solr
     - name: Spring Framework
@@ -288,7 +288,7 @@ platform_definition:
         - spring-yarn-test
     - name: Spring HATEOAS
       groupId: org.springframework.hateoas
-      version: 0.12.0.RELEASE
+      version: 0.16.0.RELEASE
       modules:
         - spring-hateoas
     - name: Spring Integration
@@ -371,10 +371,10 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 3.2.4.RELEASE
+      version: 3.2.5.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-security
-        checkout: 3.2.4.RELEASE
+        checkout: 3.2.5.RELEASE
       modules:
         - spring-security-acl
         - spring-security-aspects
