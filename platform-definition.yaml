@@ -106,7 +106,7 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.3.5.RELEASE
+      version: 1.4.0.BUILD-SNAPSHOT
       modules:
         - spring-amqp
         - spring-erlang
@@ -180,6 +180,7 @@ platform_definition:
         - spring-cloud-core
         - spring-cloud-cloudfoundry-connector
         - spring-cloud-heroku-connector
+        - spring-cloud-localconfig-connector
         - spring-cloud-spring-service-connector
       build:
         repository: https://github.com/spring-projects/spring-cloud
@@ -295,7 +296,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.0.3.RELEASE
+      version: 4.1.0.BUILD-SNAPSHOT
       build:
         repository: https://github.com/spring-projects/spring-integration
       modules:
@@ -327,6 +328,7 @@ platform_definition:
         - spring-integration-twitter
         - spring-integration-xml
         - spring-integration-xmpp
+        - spring-integration-websocket
         - spring-integration-ws
     - name: Spring Integration Splunk
       groupId: org.springframework.integration
@@ -496,6 +498,7 @@ platform_definition:
       - 'org.hibernate:hibernate-envers'
       # Modules that were previously used and are being retained for backwards compatibility
       - 'org.glassfish.tyrus:tyrus-websocket-core'
+      - 'org.igniterealtime.smack:smackx'
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2
