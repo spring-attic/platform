@@ -106,7 +106,7 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 2.0.0.BUILD-SNAPSHOT
+      version: 1.4.0.BUILD-SNAPSHOT
       modules:
         - spring-amqp
         - spring-erlang
@@ -180,6 +180,7 @@ platform_definition:
         - spring-cloud-core
         - spring-cloud-cloudfoundry-connector
         - spring-cloud-heroku-connector
+        - spring-cloud-localconfig-connector
         - spring-cloud-spring-service-connector
       build:
         repository: https://github.com/spring-projects/spring-cloud
