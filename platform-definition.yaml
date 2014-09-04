@@ -142,6 +142,7 @@ platform_definition:
         - spring-boot-starter-amqp
         - spring-boot-starter-aop
         - spring-boot-starter-batch
+        - spring-boot-starter-cloud
         - spring-boot-starter-data-elasticsearch
         - spring-boot-starter-data-gemfire
         - spring-boot-starter-data-jpa
@@ -175,7 +176,7 @@ platform_definition:
         - spring-boot-starter-ws
     - name: Spring Cloud
       groupId: org.springframework.cloud
-      version: 1.1.0.BUILD-SNAPSHOT
+      version: 1.1.0.RELEASE
       modules:
         - spring-cloud-core
         - spring-cloud-cloudfoundry-connector
