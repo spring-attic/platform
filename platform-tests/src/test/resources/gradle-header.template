@@ -17,6 +17,7 @@ repositories {
 	maven { url 'http://repo.opengeo.org'}
 	maven { url 'http://repo.spring.io/libs-snapshot'}
 	maven { url 'http://download.osgeo.org/webdav/geotools'}
+	maven { url 'http://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts'}
 	mavenCentral()
 }
 
