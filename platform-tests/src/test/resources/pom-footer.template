@@ -15,6 +15,12 @@
 			<name>OpenGeo</name>
 			<url>http://repo.opengeo.org</url>
 		</repository>
+		<!-- Required for various JasperReports-related dependencies -->
+		<repository>
+			<id>jasper-reports</id>
+			<name>Jasper Reports</name>
+			<url>http://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts</url>
+		</repository>
 	</repositories>
 
 </project>
