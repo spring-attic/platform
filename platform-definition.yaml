@@ -106,7 +106,7 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.3.5.RELEASE
+      version: 1.3.6.RELEASE
       modules:
         - spring-amqp
         - spring-erlang
