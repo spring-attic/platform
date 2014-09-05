@@ -184,7 +184,7 @@ platform_definition:
         - spring-cloud-localconfig-connector
         - spring-cloud-spring-service-connector
       build:
-        repository: https://github.com/spring-projects/spring-cloud
+        repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
       version: 1.0.4.RELEASE
