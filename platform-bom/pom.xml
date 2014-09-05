@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.1.4.RELEASE</version>
+		<version>1.1.6.RELEASE</version>
 		<relativePath />
 	</parent>
 
@@ -143,6 +143,7 @@
 		<jruby.version>1.7.12</jruby.version>
 		<jsch.version>0.1.51</jsch.version>
 		<json-path.version>0.9.1</json-path.version>
+		<jsr166e.version>1.0</jsr166e.version>
 		<jsr250.version>1.0</jsr250.version>
 		<jxl.version>2.6.12</jxl.version>
 		<kite.version>0.13.0</kite.version>
@@ -150,6 +151,7 @@
 		<ldapsdk.version>4.1</ldapsdk.version>
 		<lettuce.version>2.3.3</lettuce.version>
 		<lmax-disruptor.version>3.2.1</lmax-disruptor.version>
+		<lombok.version>1.14.4</lombok.version>
 		<myfaces.version>2.1.9</myfaces.version>
 		<openhft-chronicle.version>2.0.3</openhft-chronicle.version>
 		<openhft-lang.version>6.1.4</openhft-lang.version>
@@ -170,6 +172,7 @@
 		<quartz.version>2.2.1</quartz.version>
 		<rabbit-amqp-client.version>3.3.1</rabbit-amqp-client.version>
 		<rome.version>1.0.0</rome.version>
+		<rometools.version>1.5.0</rometools.version>
 		<querydsl.version>3.3.3</querydsl.version>
 		<protobuf.version>2.5.0</protobuf.version>
 		<smack.version>3.2.1</smack.version>
@@ -537,6 +540,11 @@
 				<version>${rabbit-amqp-client.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.rometools</groupId>
+				<artifactId>rome</artifactId>
+				<version>${rometools.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>com.sun.facelets</groupId>
 				<artifactId>jsf-facelets</artifactId>
 				<version>${sun-facelets.version}</version>
@@ -635,6 +643,11 @@
 				<groupId>dom4j</groupId>
 				<artifactId>dom4j</artifactId>
 				<version>${dom4j.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.gatling</groupId>
+				<artifactId>jsr166e</artifactId>
+				<version>${jsr166e.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>io.netty</groupId>
@@ -1286,6 +1299,11 @@
 				<groupId>org.openid4java</groupId>
 				<artifactId>openid4java-nodeps</artifactId>
 				<version>${openid4java.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>${lombok.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.quartz-scheduler</groupId>
