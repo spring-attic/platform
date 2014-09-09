@@ -27,6 +27,10 @@ published by `platform-bom` instead:
 	}
 ----
 
+=== org.apache.cassandra:cassandra-all
+
+Dependency management for `org.apache.cassandra:cassandra-all` has been removed.
+
 === org.glassfish.tyrus:tyrus-websocket-core
 
 Dependency management for `org.glassfish.tyrus:tyrus-websocket-core` has been removed. It does
