@@ -494,6 +494,7 @@ platform_definition:
       - 'org.hibernate:hibernate-ehcache'
       - 'org.hibernate:hibernate-envers'
       # Modules that were previously used and are being retained for backwards compatibility
+      - 'org.apache.cassandra:cassandra-all'
       - 'org.glassfish.tyrus:tyrus-websocket-core'
       - 'org.igniterealtime.smack:smackx'
   repositories:
