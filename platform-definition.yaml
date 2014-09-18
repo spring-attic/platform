@@ -505,4 +505,6 @@ platform_definition:
       - id: jasper-reports
         url: http://jasperreports.sourceforge.net/maven2
       - id: opengeo
-        url: http://repo.opengeo.org
+        url: http://repo.boundlessgeo.com
+      - id: geotools-webdav
+        url: http://download.osgeo.org/webdav/geotools

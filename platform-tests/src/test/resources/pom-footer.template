@@ -13,7 +13,7 @@
 		<repository>
 			<id>opengeo</id>
 			<name>OpenGeo</name>
-			<url>http://repo.opengeo.org</url>
+			<url>http://repo.boundlessgeo.com</url>
 		</repository>
 		<!-- Required for various JasperReports-related dependencies -->
 		<repository>
