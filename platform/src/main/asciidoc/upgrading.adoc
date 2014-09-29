@@ -28,6 +28,16 @@ should start using the properties file published by `platform-bom` instead:
 	}
 ----
 
+=== net.java.dev.rome:rome
+
+As of Spring IO Platform 1.1, the dependency management for `net.java.dev.rome:rome` is deprecated
+with `com.rometools:rome` being its preferred replacement.
+
+=== net.java.dev.rome:rome-fetcher
+
+As of Spring IO Platform 1.1, the dependency management for `net.java.dev.rome:rome-fetcher` is
+deprecated with `com.rometools:rome-fetcher` being its preferred replacement.
+
 === net.sf.ehcache:ehcache-core
 
 As of Spring IO Platform 1.1, the dependency management for `net.sf.ehcache:ehcache-core` is
