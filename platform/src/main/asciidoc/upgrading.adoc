@@ -27,6 +27,16 @@ published by `platform-bom` instead:
 	}
 ----
 
+=== net.java.dev.rome:rome
+
+Dependency management for `net.java.dev.rome:rome` has been removed. `com.rometools:rome` should be
+used instead.
+
+=== net.java.dev.rome:rome-fetcher
+
+Dependency management for `net.java.dev.rome:rome-fetcher` has been removed.
+`com.rometools:rome-fetcher` should be used instead.
+
 === org.apache.cassandra:cassandra-all
 
 Dependency management for `org.apache.cassandra:cassandra-all` has been removed.
