@@ -154,6 +154,7 @@ platform_definition:
         - spring-boot-starter-hornetq
         - spring-boot-starter-integration
         - spring-boot-starter-jdbc
+        - spring-boot-starter-jersey
         - spring-boot-starter-jetty
         - spring-boot-starter-jta-atomikos
         - spring-boot-starter-jta-bitronix
@@ -251,7 +252,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.1.1.BUILD-SNAPSHOT
+      version: 4.1.1.RELEASE
       modules:
         - spring-aop
         - spring-aspects
