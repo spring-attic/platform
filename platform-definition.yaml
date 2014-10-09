@@ -159,6 +159,7 @@ platform_definition:
         - spring-boot-starter-jta-atomikos
         - spring-boot-starter-jta-bitronix
         - spring-boot-starter-log4j
+        - spring-boot-starter-log4j2
         - spring-boot-starter-logging
         - spring-boot-starter-mobile
         - spring-boot-starter-parent
