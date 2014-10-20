@@ -480,6 +480,7 @@ platform_definition:
       - 'com.codahale.metrics:metrics-ganglia'
       - 'com.codahale.metrics:metrics-servlets'
       - 'com.github.mxab.thymeleaf.extras:thymeleaf-extras-data-attribute'
+      - 'com.zaxxer:HikariCP'
       - 'javax.servlet:jstl'
       - 'mysql:mysql-connector-java'
       - 'org.apache.activemq:activemq-client'
