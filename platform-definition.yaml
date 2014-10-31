@@ -271,7 +271,7 @@ platform_definition:
         - spring-websocket
     - name: Spring Hadoop
       groupId: org.springframework.data
-      version: 2.0.2.RELEASE
+      version: 2.0.3.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-hadoop
         additional_tasks: build -x test
