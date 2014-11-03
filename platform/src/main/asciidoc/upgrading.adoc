@@ -28,6 +28,23 @@ should start using the properties file published by `platform-bom` instead:
 	}
 ----
 
+=== Codahale metrics
+
+As of Spring IO Platform 1.1, dependency management for four Codahale metrics dependencies is
+deprecated. Those dependencies are:
+
+ * `com.codahale.metrics:metrics-core`
+ * `com.codahale.metrics:metrics-ganglia`
+ * `com.codahale.metrics:metrics-graphite`
+ * `com.codahale.metrics:metrics-servlets`
+
+The preferred replacements are:
+
+ * `io.dropwizard.metrics:metrics-core`
+ * `io.dropwizard.metrics:metrics-ganglia`
+ * `io.dropwizard.metrics:metrics-graphite`
+ * `io.dropwizard.metrics:metrics-servlets`
+
 === net.java.dev.rome:rome
 
 As of Spring IO Platform 1.1, the dependency management for `net.java.dev.rome:rome` is deprecated

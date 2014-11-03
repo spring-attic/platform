@@ -477,11 +477,11 @@ platform_definition:
     ignored:
       # For user convenience, Boot provides extra dependency management for modules that both it
       # and the rest of the Platform do not depend upon
-      - 'com.codahale.metrics:metrics-graphite'
-      - 'com.codahale.metrics:metrics-ganglia'
-      - 'com.codahale.metrics:metrics-servlets'
       - 'com.github.mxab.thymeleaf.extras:thymeleaf-extras-data-attribute'
       - 'com.zaxxer:HikariCP'
+      - 'io.dropwizard.metrics:metrics-ganglia'
+      - 'io.dropwizard.metrics:metrics-graphite'
+      - 'io.dropwizard.metrics:metrics-servlets'
       - 'javax.servlet:jstl'
       - 'mysql:mysql-connector-java'
       - 'org.apache.activemq:activemq-client'
@@ -498,6 +498,10 @@ platform_definition:
       - 'org.hibernate:hibernate-ehcache'
       - 'org.hibernate:hibernate-envers'
       # Modules that were previously used and are being retained for backwards compatibility
+      - 'com.codahale.metrics:metrics-core'
+      - 'com.codahale.metrics:metrics-ganglia'
+      - 'com.codahale.metrics:metrics-graphite'
+      - 'com.codahale.metrics:metrics-servlets'
       - 'net.java.dev.rome:rome'
       - 'net.java.dev.rome:rome-fetcher'
       - 'org.apache.cassandra:cassandra-all'
