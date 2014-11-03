@@ -477,11 +477,11 @@ platform_definition:
     ignored:
       # For user convenience, Boot provides extra dependency management for modules that both it
       # and the rest of the Platform do not depend upon
-      - 'com.codahale.metrics:metrics-graphite'
-      - 'com.codahale.metrics:metrics-ganglia'
-      - 'com.codahale.metrics:metrics-servlets'
       - 'com.github.mxab.thymeleaf.extras:thymeleaf-extras-data-attribute'
       - 'com.zaxxer:HikariCP'
+      - 'io.dropwizard.metrics:metrics-ganglia'
+      - 'io.dropwizard.metrics:metrics-graphite'
+      - 'io.dropwizard.metrics:metrics-servlets'
       - 'javax.servlet:jstl'
       - 'mysql:mysql-connector-java'
       - 'org.apache.activemq:activemq-client'

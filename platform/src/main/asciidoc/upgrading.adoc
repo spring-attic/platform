@@ -27,6 +27,23 @@ published by `platform-bom` instead:
 	}
 ----
 
+=== Codahale metrics
+
+Dependency management for four Codahale metrics dependencies has been removed. Those dependencies
+are:
+
+ * `com.codahale.metrics:metrics-core`
+ * `com.codahale.metrics:metrics-ganglia`
+ * `com.codahale.metrics:metrics-graphite`
+ * `com.codahale.metrics:metrics-servlets`
+
+The following dependencies should be used instead:
+
+ * `io.dropwizard.metrics:metrics-core`
+ * `io.dropwizard.metrics:metrics-ganglia`
+ * `io.dropwizard.metrics:metrics-graphite`
+ * `io.dropwizard.metrics:metrics-servlets`
+
 === net.java.dev.rome:rome
 
 Dependency management for `net.java.dev.rome:rome` has been removed. `com.rometools:rome` should be
