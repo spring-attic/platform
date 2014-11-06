@@ -456,7 +456,6 @@ platform_definition:
   dependency_mappings:
     'javax.servlet:jsp-api': 'javax.servlet.jsp:javax.servlet.jsp-api'
     'javax.servlet:servlet-api': 'javax.servlet:javax.servlet-api'
-    'org.apache.tomcat:tomcat-websocket': 'org.apache.tomcat:tomcat7-websocket'
     'org.apache.tomcat:catalina': 'org.apache.tomcat:tomcat-catalina'
     'org.jdom:jdom': 'org.jdom:jdom2'
     'org.projectreactor:reactor-tcp': 'org.projectreactor:reactor-net'
