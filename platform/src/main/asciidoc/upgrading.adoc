@@ -58,6 +58,11 @@ Dependency management for `net.java.dev.rome:rome-fetcher` has been removed.
 
 Dependency management for `org.apache.cassandra:cassandra-all` has been removed.
 
+=== org.apache.tomcat:tomcat7-websocket
+
+Dependency management for `org.apache.tomcat:tomcat7-websocket` has been removed. The equivalent
+Tomcat 8 dependency, `org.apache.tomcat:tomcat-websocket`, should be used instead.
+
 === org.glassfish.tyrus:tyrus-websocket-core
 
 Dependency management for `org.glassfish.tyrus:tyrus-websocket-core` has been removed. It does
@@ -67,3 +72,7 @@ not exist in the version of Tyrus that is used by the Platform.
 
 Dependency management for `org.igniterealtime.smack:smackx` has been removed. It does not exist in
 the version of Smack that is used by the Platform.
+
+=== org.neo4j:neo4j-graph-collections
+
+Dependency management for `org.neo4j:neo4j-graph-collections` has been removed.
