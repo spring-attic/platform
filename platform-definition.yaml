@@ -507,6 +507,7 @@ platform_definition:
       - 'org.apache.cassandra:cassandra-all'
       - 'org.glassfish.tyrus:tyrus-websocket-core'
       - 'org.igniterealtime.smack:smackx'
+      - 'org.neo4j:neo4j-graph-collections'
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2
