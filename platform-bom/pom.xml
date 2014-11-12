@@ -52,7 +52,7 @@
 		<spring-data-hadoop.version>2.0.3.RELEASE</spring-data-hadoop.version>
 		<spring-ldap.version>2.0.2.RELEASE</spring-ldap.version>
 		<spring-plugin.version>1.1.0.RELEASE</spring-plugin.version>
-		<spring-retry.version>1.1.1.RELEASE</spring-retry.version>
+		<spring-retry.version>1.1.2.RELEASE</spring-retry.version>
 		<spring-security-oauth.version>2.0.4.RELEASE</spring-security-oauth.version>
 		<spring-web-flow.version>2.4.1.RELEASE</spring-web-flow.version>
 		<spring-web-services.version>2.2.0.RELEASE</spring-web-services.version>
