@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Grails
       groupId: org.grails
-      version: 2.4.0
+      version: 2.4.4
       modules:
         - grails-aether
         - grails-async
