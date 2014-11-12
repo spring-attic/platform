@@ -45,7 +45,7 @@
 	</developers>
 
 	<properties>
-		<grails.version>2.4.0</grails.version>
+		<grails.version>2.4.4</grails.version>
 	</properties>
 
 	<dependencyManagement>
