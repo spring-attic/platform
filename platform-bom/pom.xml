@@ -62,7 +62,7 @@
 		<ant.version>1.9.4</ant.version>
 		<antlr.version>2.7.7</antlr.version>
 		<aopalliance.version>1.0</aopalliance.version>
-		<apacheds.version>1.5.7</apacheds.version>
+		<apacheds.version>1.5.5</apacheds.version>
 		<apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
 		<axiom.version>1.2.14</axiom.version>
 		<bouncycastle.version>1.47</bouncycastle.version>
