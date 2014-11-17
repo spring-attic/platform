@@ -412,6 +412,12 @@ platform_definition:
       modules:
         - spring-security-oauth
         - spring-security-oauth2
+    - name: Spring Session
+      groupId: org.springframework.session
+      version: 1.0.0.BUILD-SNAPSHOT
+      modules:
+        - spring-session
+        - spring-session-data-redis
     - name: Spring Social
       groupId: org.springframework.social
       version: 1.1.0.RELEASE
