@@ -25,19 +25,22 @@ class AbstractDependenciesTests {
 
 	def projectVersion = System.getProperty("project.version")
 
+	def ignoredGroups = ['org.eclipse.jetty.websocket']
+
 	def exclusions = [
 		"openid4java-nodeps":["groupId":"com.google.code.guice", "artifactId":"guice"],
-		"xws-security":["groupId":"javax.xml.crypto", "artifactId":"xmldsig"]
+		"xws-security":["groupId":"javax.xml.crypto", "artifactId":"xmldsig"],
+		"spring-boot-starter-jetty":["groupId":"org.eclipse.jetty.websocket", "artifactId":"*"]
 	]
 
 	def eachDependency(Closure closure) {
 		def xml = new XmlSlurper().parse(generateEffectivePom())
 		xml.dependencyManagement.dependencies.dependency
-			.findAll { it.type.text() != 'test-jar'}
-			.each { dependency ->
-				def exclusion = exclusions[dependency.artifactId.text()]
-				closure.call([dependency, exclusion])
-			}
+				.findAll { it.type.text() != 'test-jar' && !ignoredGroups.contains(it.groupId)}
+				.each { dependency ->
+					def exclusion = exclusions[dependency.artifactId.text()]
+					closure.call([dependency, exclusion])
+				}
 	}
 
 	File generateEffectivePom() {

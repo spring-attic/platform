@@ -3,8 +3,9 @@ def effectivePom = new File(targetDir, "effective-pom.xml")
 
 new File(targetDir, "platform-bom.properties").withWriter { writer ->
 	def xml = new XmlSlurper().parseText(effectivePom.text)
-	xml.project.find {it.artifactId.text() == 'platform-bom'}.dependencyManagement.dependencies.dependency
+	xml.project.find { it.artifactId.text() == 'platform-bom' }.dependencyManagement.dependencies.dependency
 		.list()
+		.findAll { dependency -> dependency.groupId != 'org.eclipse.jetty.websocket' }
 		.sort { a, b ->
 			def comparison = a.groupId.text().compareTo(b.groupId.text())
 			if (!comparison) {
