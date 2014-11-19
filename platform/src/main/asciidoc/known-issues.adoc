@@ -1,0 +1,17 @@
+[[known-issues]]
+= Known issues
+
+[partintro]
+--
+This section provides details of any known issues that affect this version of Spring IO Platform.
+--
+
+
+
+[[known-issues-spring-websockets-and-undertow]]
+== Using Spring Framework's WebSocket support with Undertow
+
+This version of Spring IO Platform contains Spring Framework 4.1.2 and Undertow 1.1.0.Final.
+Spring Framework's WebSocket support does not work with this version of Undertow. This will be
+rectified in Spring Framework 4.1.3 and a subsequent maintenance release of Spring IO Platform.
+See https://jira.spring.io/browse/SPR-12302[SPR-12302] for further details.
