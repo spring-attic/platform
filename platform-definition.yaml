@@ -487,6 +487,7 @@ platform_definition:
       - 'org.grails' # Grails is a special case. As recommended by Graeme, the Platform only contains grails-dependencies
       - 'org.springframework.boot:spring-boot-cli' # The CLI doesn't expose its dependencies to applications
       - 'org.springframework.boot:spring-boot-maven-plugin' # The plugin doesn't expose it dependencies to applications
+      - 'org.springframework.boot:spring-boot-configuration-metadata' # Used by the Boot build to generate metadata about @ConfigurationProperties
   unused_dependencies:
     ignored:
       # For user convenience, Boot provides extra dependency management for modules that both it
