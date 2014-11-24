@@ -132,6 +132,7 @@ platform_definition:
         - spring-boot-actuator
         - spring-boot-autoconfigure
         - spring-boot-cli
+        - spring-boot-configuration-metadata
         - spring-boot-dependencies
         - spring-boot-dependency-tools
         - spring-boot-loader
