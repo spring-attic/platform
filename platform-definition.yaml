@@ -106,7 +106,7 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.4.0.BUILD-SNAPSHOT
+      version: 1.4.0.RELEASE
       modules:
         - spring-amqp
         - spring-erlang
@@ -302,7 +302,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.1.0.BUILD-SNAPSHOT
+      version: 4.1.0.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-integration
       modules:
