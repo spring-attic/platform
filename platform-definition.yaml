@@ -338,7 +338,7 @@ platform_definition:
         - spring-integration-ws
     - name: Spring Integration Flow
       groupId: org.springframework.integration
-      version: 1.0.0.BUILD-SNAPSHOT
+      version: 1.0.0.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-integration-flow
       modules:
