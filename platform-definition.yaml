@@ -343,6 +343,16 @@ platform_definition:
         repository: https://github.com/spring-projects/spring-integration-flow
       modules:
         - spring-integration-flow
+    - name: Spring Integration Java DSL
+      groupId: org.springframework.integration
+      version: 1.0.0.RELEASE
+      build:
+        repository: https://github.com/spring-projects/spring-integration-java-dsl
+        compileWith: jdk8
+        runTestsWith:
+           - jdk8
+      modules:
+        - spring-integration-java-dsl
     - name: Spring Integration Splunk
       groupId: org.springframework.integration
       version: 1.1.0.RELEASE
