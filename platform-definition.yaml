@@ -493,6 +493,7 @@ platform_definition:
     ignored:
       # For user convenience, Boot provides extra dependency management for modules that both it
       # and the rest of the Platform do not depend upon
+      - 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
       - 'com.github.mxab.thymeleaf.extras:thymeleaf-extras-data-attribute'
       - 'com.zaxxer:HikariCP'
       - 'io.dropwizard.metrics:metrics-ganglia'
