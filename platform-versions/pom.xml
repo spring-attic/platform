@@ -45,7 +45,7 @@
 		<dependency>
 			<groupId>io.spring.platform</groupId>
 			<artifactId>platform-bom</artifactId>
-			<version>${project.version}</version>
+			<version>1.1.0.BUILD-SNAPSHOT</version>
 			<type>pom</type>
 		</dependency>
 	</dependencies>
