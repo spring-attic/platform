@@ -28,7 +28,6 @@ Andy Wilkinson;
 include::documentation-overview.adoc[]
 include::getting-started.adoc[]
 include::upgrading.adoc[]
-include::known-issues.adoc[]
 include::appendix.adoc[]
 
 // ======================================================================================
