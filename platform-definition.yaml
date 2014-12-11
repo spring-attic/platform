@@ -304,6 +304,9 @@ platform_definition:
       groupId: org.springframework.integration
       version: 4.1.0.RELEASE
       build:
+        compileWith: jdk8
+        runTestsWith:
+          - jdk8
         repository: https://github.com/spring-projects/spring-integration
       modules:
         - spring-integration-amqp
