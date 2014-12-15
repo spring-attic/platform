@@ -51,7 +51,7 @@
 		<spring-data-hadoop.version>2.0.3.RELEASE</spring-data-hadoop.version>
 		<spring-integration.version>4.1.1.RELEASE</spring-integration.version>
 		<spring-integration-flow.version>1.0.0.RELEASE</spring-integration-flow.version>
-		<spring-integration-java-dsl.version>1.0.0.RELEASE</spring-integration-java-dsl.version>
+		<spring-integration-java-dsl.version>1.0.1.RELEASE</spring-integration-java-dsl.version>
 		<spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
 		<spring-ldap.version>2.0.2.RELEASE</spring-ldap.version>
 		<spring-plugin.version>1.1.0.RELEASE</spring-plugin.version>
