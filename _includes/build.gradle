@@ -1,14 +1,16 @@
 buildscript {
     repositories {
-        mavenCentral()
+        jcenter()
     }
     dependencies {
-        classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.1.9.RELEASE'
+        classpath 'io.spring.gradle:dependency-management-plugin:0.3.0.RELEASE'
     }
 }
 
-apply plugin: 'spring-boot'
+apply plugin: 'io.spring.dependency-management'
 
-dependencies {
-    versionManagement 'io.spring.platform:platform-versions:{@= version @}@properties'
+dependencyManagement {
+    imports {
+        mavenBom 'io.spring.platform:platform-bom:{@= version @}'
+    }
 }
