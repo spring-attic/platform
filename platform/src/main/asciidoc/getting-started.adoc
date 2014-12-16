@@ -194,34 +194,26 @@ refer to the <<appendix-dependency-versions, appendix>>.
 
 [[getting-started-using-spring-io-platform-gradle]]
 === Using Spring IO Platform with Gradle
-The Platform uses {spring-boot-docs-gradle-plugin}[Spring Boot's Gradle plugin] to provide
-dependency versions in your build. The use of a plugin is necessary as Gradle does not provide
-an equivalent of Maven's built-in dependency management support. Note that using Spring Boot's
-Gradle plugin to provide version management doesn't require you to use Spring Boot to write
-your application.
+To use the Platform with Gradle, you can use the Gradle
+{dependency-management-plugin}[Dependency Management Plugin] and import the bom in much the same
+way as you would with Maven. The use of a plugin is necessary as Gradle does not provide an
+equivalent of Maven's built-in dependency management support.
 
-To use Spring Boot's Gradle plugin to provide version management, you configure your build to
-apply the plugin and, in the `versionManagement` configuration that it provides, declare a
-dependency on the Platform's `platform-bom` artifact:
+To use the plugin, you configure your build to apply the plugin and then in the
+`dependencyManagement` configuration you import the Platform's bom:
 
 [source,groovy,indent=0,subs="verbatim,attributes"]
 ----
 	buildscript {
 		repositories {
-			mavenCentral()
-ifeval::["{spring-boot-repo}" == "snapshot"]
-			maven { url 'http://repo.spring.io/libs-snapshot' }
-endif::[]
-ifeval::["{spring-boot-repo}" == "milestone"]
-			maven { url 'http://repo.spring.io/libs-milestone' }
-endif::[]
+			jcenter()
 		}
 		dependencies {
-			classpath 'org.springframework.boot:spring-boot-gradle-plugin:{spring-boot-version}'
+			classpath 'io.spring.gradle:dependency-management-plugin:{dependency-management-plugin-version}'
 		}
 	}
 
-	apply plugin: 'spring-boot'
+	apply plugin: 'io.spring.dependency-management'
 
 	repositories {
 		mavenCentral()
@@ -233,18 +225,10 @@ ifeval::["{platform-repo}" == "milestone"]
 endif::[]
 	}
 
-	dependencies {
-		versionManagement 'io.spring.platform:platform-bom:{platform-version}@properties'
-	}
-----
-
-If you're using Spring Boot's Gradle plugin purely for version management you should also disable
-its repackaging of your application:
-
-[source,groovy,indent=0,subs="verbatim,attributes"]
-----
-	bootRepackage {
-		enabled = false
+	dependencyManagement {
+		imports {
+			mavenBom 'io.spring.platform:platform-bom:{platform-version}'
+		}
 	}
 ----
 
