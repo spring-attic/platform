@@ -48,7 +48,7 @@
 		<grails.version>2.4.4</grails.version>
 
 		<spring-amqp.version>1.4.1.RELEASE</spring-amqp.version>
-		<spring-data-hadoop.version>2.0.3.RELEASE</spring-data-hadoop.version>
+		<spring-data-hadoop.version>2.0.4.RELEASE</spring-data-hadoop.version>
 		<spring-integration.version>4.1.1.RELEASE</spring-integration.version>
 		<spring-integration-flow.version>1.0.0.RELEASE</spring-integration-flow.version>
 		<spring-integration-java-dsl.version>1.0.1.RELEASE</spring-integration-java-dsl.version>
