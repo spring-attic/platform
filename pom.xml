@@ -5,7 +5,7 @@
 
 	<groupId>io.spring.platform</groupId>
 	<artifactId>platform-build</artifactId>
-	<version>1.0.4.BUILD-SNAPSHOT</version>
+	<version>1.0.5.BUILD-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Spring IO Platform build</name>
 	<description>Spring IO Platform build</description>
