@@ -57,6 +57,7 @@
 		<spring-plugin.version>1.1.0.RELEASE</spring-plugin.version>
 		<spring-retry.version>1.1.2.RELEASE</spring-retry.version>
 		<spring-security-oauth.version>2.0.5.RELEASE</spring-security-oauth.version>
+		<spring-session.version>1.0.0.RELEASE</spring-session.version>
 		<spring-web-flow.version>2.4.1.RELEASE</spring-web-flow.version>
 		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
 
@@ -341,6 +342,18 @@
 				<groupId>org.springframework.retry</groupId>
 				<artifactId>spring-retry</artifactId>
 				<version>${spring-retry.version}</version>
+			</dependency>
+
+			<!-- Spring Session -->
+			<dependency>
+				<groupId>org.springframework.session</groupId>
+				<artifactId>spring-session</artifactId>
+				<version>${spring-session.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.session</groupId>
+				<artifactId>spring-session-data-redis</artifactId>
+				<version>${spring-session.version}</version>
 			</dependency>
 
 			<!-- Spring Security OAuth -->
