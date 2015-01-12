@@ -39,7 +39,7 @@ public class BomTests {
 	@Test
 	void versionPropertiesAreNotOverridden() {
 		def expectedOverrides = [ 'junit.version',
-				'tomcat.version', 'jetty.version', 'servlet-api.version' ]
+				'tomcat.version', 'jetty.version', 'servlet-api.version', 'spring-amqp.version' ]
 		def versions = extractVersionsFromPom(bootDependenciesPom)
 
 		def overriddenVersions = [:]
