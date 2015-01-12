@@ -177,7 +177,7 @@
 		<qdox.version>1.12.1</qdox.version>
 		<quartz.version>2.2.1</quartz.version>
 		<querydsl.version>3.4.3</querydsl.version>
-		<rabbit-amqp-client.version>3.4.2</rabbit-amqp-client.version>
+		<rabbit-amqp-client.version>3.4.3</rabbit-amqp-client.version>
 		<rome.version>1.0.0</rome.version>
 		<rometools.version>1.5.0</rometools.version>
 		<servlet-api.version>3.0.1</servlet-api.version>
