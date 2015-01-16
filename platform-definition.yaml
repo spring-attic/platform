@@ -181,7 +181,7 @@ platform_definition:
         - spring-boot-starter-ws
     - name: Spring Cloud
       groupId: org.springframework.cloud
-      version: 1.1.0.RELEASE
+      version: 1.1.1.RELEASE
       modules:
         - spring-cloud-core
         - spring-cloud-cloudfoundry-connector
