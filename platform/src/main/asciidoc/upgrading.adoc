@@ -73,6 +73,11 @@ not exist in the version of Tyrus that is used by the Platform.
 Dependency management for `org.igniterealtime.smack:smackx` has been removed. It does not exist in
 the version of Smack that is used by the Platform.
 
+=== org.hibernate.javax.persistence:hibernate-jpa-2.0-api
+
+Dependency management for `org.hibernate.javax.persistence:hibernate-jpa-2.0-api` has been removed.
+`org.eclipse.persistence:javax.persistence` should be used instead.
+
 === org.neo4j:neo4j-graph-collections
 
 Dependency management for `org.neo4j:neo4j-graph-collections` has been removed.
