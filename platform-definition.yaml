@@ -406,7 +406,7 @@ platform_definition:
       version: 3.2.6.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-security
-        checkout: 3.2.5.RELEASE
+        checkout: 3.2.6.RELEASE
       modules:
         - spring-security-acl
         - spring-security-aspects
