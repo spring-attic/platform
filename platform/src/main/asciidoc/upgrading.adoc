@@ -78,6 +78,13 @@ module no longer exists. Dependency management for `org.glassfish.tyrus:tyrus-we
 remains at version 1.2.1 but it is deprecated and applications should be updated to use the
 repackaged 1.3.5 modules instead.
 
+=== org.hibernate.javax.persistence:hibernate-jpa-2.0-api
+
+As of Spring IO Platform 1.1, the dependency management for
+`org.hibernate.javax.persistence:hibernate-jpa-2.0-api` is deprecated due to the use of a version
+number in its artifact ID. `org.eclipse.persistence:javax.persistence` is its preferred
+replacement.
+
 === org.neo4j:neo4j-graph-collections
 
 As of Spring IO Platform 1.1., the dependency management for `org.neo4j:neo4j-graph-collections`
