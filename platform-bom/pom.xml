@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.2.1.RELEASE</version>
+		<version>1.2.2.RELEASE</version>
 		<relativePath />
 	</parent>
 
@@ -47,14 +47,11 @@
 	<properties>
 		<grails.version>2.4.4</grails.version>
 
-		<spring-amqp.version>1.4.2.RELEASE</spring-amqp.version>
 		<spring-data-hadoop.version>2.0.4.RELEASE</spring-data-hadoop.version>
-		<spring-integration.version>4.1.2.RELEASE</spring-integration.version>
 		<spring-integration-flow.version>1.0.0.RELEASE</spring-integration-flow.version>
 		<spring-integration-java-dsl.version>1.0.1.RELEASE</spring-integration-java-dsl.version>
 		<spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
 		<spring-ldap.version>2.0.2.RELEASE</spring-ldap.version>
-		<spring-plugin.version>1.1.0.RELEASE</spring-plugin.version>
 		<spring-retry.version>1.1.2.RELEASE</spring-retry.version>
 		<spring-security-oauth.version>2.0.5.RELEASE</spring-security-oauth.version>
 		<spring-session.version>1.0.0.RELEASE</spring-session.version>
@@ -90,7 +87,6 @@
 		<commons-logging.version>1.2</commons-logging.version>
 		<commons-net.version>3.3</commons-net.version>
 		<couchbase-client.version>1.4.6</couchbase-client.version>
-		<derby.version>10.10.2.0</derby.version>
 		<dom4j.version>1.6.1</dom4j.version>
 		<eclipselink.version>2.5.2</eclipselink.version>
 		<eclipselink-javax-persistence.version>2.1.0</eclipselink-javax-persistence.version>
@@ -325,11 +321,6 @@
 			</dependency>
 
 			<!-- Spring Plugin -->
-			<dependency>
-				<groupId>org.springframework.plugin</groupId>
-				<artifactId>spring-plugin-core</artifactId>
-				<version>${spring-plugin.version}</version>
-			</dependency>
 			<dependency>
 				<groupId>org.springframework.plugin</groupId>
 				<artifactId>spring-plugin-metadata</artifactId>
@@ -891,11 +882,6 @@
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-lang3</artifactId>
 				<version>${commons-lang3.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.derby</groupId>
-				<artifactId>derby</artifactId>
-				<version>${derby.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.derby</groupId>
