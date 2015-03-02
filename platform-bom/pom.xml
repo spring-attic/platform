@@ -149,6 +149,7 @@
 		<lettuce.version>2.3.3</lettuce.version>
 		<lmax-disruptor.version>3.2.1</lmax-disruptor.version>
 		<lombok.version>1.14.8</lombok.version>
+		<mockito.version>1.10.8</mockito.version>
 		<myfaces.version>2.1.17</myfaces.version>
 		<openhft-chronicle.version>2.0.3</openhft-chronicle.version>
 		<openhft-lang.version>6.1.4</openhft-lang.version>

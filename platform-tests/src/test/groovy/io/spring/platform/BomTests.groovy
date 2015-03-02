@@ -38,7 +38,7 @@ public class BomTests {
 
 	@Test
 	void versionPropertiesAreNotOverridden() {
-		def expectedOverrides = [ 'junit.version' ]
+		def expectedOverrides = [ 'junit.version', 'mockito.version' ]
 		def versions = extractVersionsFromPom(bootDependenciesPom)
 
 		def overriddenVersions = [:]
