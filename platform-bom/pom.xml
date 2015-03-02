@@ -53,7 +53,7 @@
 		<spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
 		<spring-ldap.version>2.0.2.RELEASE</spring-ldap.version>
 		<spring-retry.version>1.1.2.RELEASE</spring-retry.version>
-		<spring-security-oauth.version>2.0.5.RELEASE</spring-security-oauth.version>
+		<spring-security-oauth.version>2.0.6.RELEASE</spring-security-oauth.version>
 		<spring-session.version>1.0.0.RELEASE</spring-session.version>
 		<spring-web-flow.version>2.4.1.RELEASE</spring-web-flow.version>
 		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
