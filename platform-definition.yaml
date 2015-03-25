@@ -126,7 +126,7 @@ platform_definition:
         checkout: 3.0.3.RELEASE
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 1.2.2.RELEASE
+      version: 1.2.3.BUILD-SNAPSHOT
       modules:
         - spring-boot
         - spring-boot-actuator
@@ -258,7 +258,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.1.5.RELEASE
+      version: 4.1.6.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
