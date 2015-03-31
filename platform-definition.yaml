@@ -418,6 +418,7 @@ platform_definition:
       version: 2.2.1.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-ws
+        compileWith: jdk8
         runTestsWith:
           - jdk8
       modules:
