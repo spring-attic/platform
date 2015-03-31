@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Grails
       groupId: org.grails
-      version: 2.4.4
+      version: 2.4.5
       modules:
         - grails-aether
         - grails-async
@@ -426,7 +426,7 @@ platform_definition:
        - spring-security-jwt
     - name: Spring Security OAuth
       groupId: org.springframework.security.oauth
-      version: 2.0.6.RELEASE
+      version: 2.0.7.RELEASE
       modules:
         - spring-security-oauth
         - spring-security-oauth2
@@ -479,6 +479,7 @@ platform_definition:
       version: 2.2.1.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-ws
+        compileWith: jdk8
         runTestsWith:
           - jdk8
       modules:
