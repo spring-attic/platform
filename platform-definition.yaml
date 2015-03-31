@@ -57,7 +57,7 @@ platform_definition:
         - grails-wrapper-support
     - name: Groovy
       groupId: org.codehaus.groovy
-      version: 2.3.10
+      version: 2.3.11
       modules:
         - groovy
         - groovy-ant
@@ -80,7 +80,7 @@ platform_definition:
         - groovy-xml
     - name: Reactor
       groupId: org.projectreactor
-      version: 1.1.5.RELEASE
+      version: 1.1.6.RELEASE
       modules:
         - reactor-core
         - reactor-groovy
@@ -126,7 +126,7 @@ platform_definition:
         checkout: 3.0.3.RELEASE
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 1.2.3.BUILD-SNAPSHOT
+      version: 1.2.3.RELEASE
       modules:
         - spring-boot
         - spring-boot-actuator
@@ -258,7 +258,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.1.6.BUILD-SNAPSHOT
+      version: 4.1.6.RELEASE
       modules:
         - spring-aop
         - spring-aspects
@@ -403,10 +403,10 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 3.2.6.RELEASE
+      version: 3.2.7.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-security
-        checkout: 3.2.6.RELEASE
+        checkout: 3.2.7.RELEASE
       modules:
         - spring-security-acl
         - spring-security-aspects
@@ -463,19 +463,6 @@ platform_definition:
       version: 1.1.0.RELEASE
       modules:
         - spring-social-twitter
-    - name: Spring Web Services
-      groupId: org.springframework.ws
-      version: 2.2.0.RELEASE
-      build:
-        repository: https://github.com/spring-projects/spring-ws
-        runTestsWith:
-          - jdk8
-      modules:
-        - spring-ws-core
-        - spring-ws-security
-        - spring-ws-support
-        - spring-ws-test
-        - spring-xml
     - name: Spring Web Flow
       groupId: org.springframework.webflow
       version: 2.4.1.RELEASE
@@ -487,6 +474,19 @@ platform_definition:
         - spring-js
         - spring-js-resources
         - spring-webflow
+    - name: Spring Web Services
+      groupId: org.springframework.ws
+      version: 2.2.1.RELEASE
+      build:
+        repository: https://github.com/spring-projects/spring-ws
+        runTestsWith:
+          - jdk8
+      modules:
+        - spring-ws-core
+        - spring-ws-security
+        - spring-ws-support
+        - spring-ws-test
+        - spring-xml
   dependency_mappings:
     'javax.servlet:jsp-api': 'javax.servlet.jsp:javax.servlet.jsp-api'
     'javax.servlet:servlet-api': 'javax.servlet:javax.servlet-api'
