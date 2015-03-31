@@ -57,7 +57,7 @@ platform_definition:
         - grails-wrapper-support
     - name: Groovy
       groupId: org.codehaus.groovy
-      version: 2.3.10
+      version: 2.3.11
       modules:
         - groovy
         - groovy-ant
@@ -80,7 +80,7 @@ platform_definition:
         - groovy-xml
     - name: Reactor
       groupId: org.projectreactor
-      version: 1.1.5.RELEASE
+      version: 1.1.6.RELEASE
       modules:
         - reactor-core
         - reactor-groovy
@@ -126,7 +126,7 @@ platform_definition:
         checkout: 3.0.2.RELEASE
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 1.1.11.RELEASE
+      version: 1.1.12.RELEASE
       modules:
         - spring-boot
         - spring-boot-actuator
@@ -415,7 +415,7 @@ platform_definition:
         - spring-social-twitter
     - name: Spring Web Services
       groupId: org.springframework.ws
-      version: 2.2.0.RELEASE
+      version: 2.2.1.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-ws
         runTestsWith:
