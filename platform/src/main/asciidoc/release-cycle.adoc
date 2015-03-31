@@ -1,0 +1,28 @@
+[[release-cycle]]
+= Release Cycle
+
+[partintro]
+--
+This section describes the Platform's release cycle.
+--
+
+
+
+[[release-cycle-overview]]
+== Overview
+
+A new maintenance release of the Platform occurs roughly every 6 to 8 weeks. There will,
+however, be occasions when a new release occurs more quickly than this; to address a
+security vulnerability, for example. This schedule will also slow down as a branch ages
+and has been superceded.
+
+In addition to the general maintenance cycle described above, a maintenance release of the
+Platform will often be triggered by a maintenance release of Spring Boot. Furthermore,
+a new maintenance release of Spring Framework will often trigger a maintenance release of
+Spring Boot.
+
+A key goal of the Platform is to provide its users with a stable set of versions that
+maintain backwards compatibility while also being as up-to-date as possible. To allow us
+to strike this balance there may be occasions when a bug in Spring Framework or Spring
+Boot causes the Platform to skip a version and wait for a release which resolves the
+issue.
