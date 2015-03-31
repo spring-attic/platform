@@ -46,7 +46,7 @@
 
 	<properties>
 
-		<grails.version>2.4.4</grails.version>
+		<grails.version>2.4.5</grails.version>
 
 		<spring-cloud.version>1.0.0.RELEASE</spring-cloud.version>
 		<spring-data-hadoop.version>2.0.4.RELEASE</spring-data-hadoop.version>
