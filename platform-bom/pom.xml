@@ -174,7 +174,7 @@
 		<querydsl.version>3.3.4</querydsl.version>
 		<protobuf.version>2.5.0</protobuf.version>
 		<smack.version>3.2.1</smack.version>
-		<snappy.version>1.1.0.1</snappy.version>
+		<snappy.version>1.1.1.6</snappy.version>
 		<spullara-redis.version>0.7</spullara-redis.version>
 		<sun-facelets.version>1.1.14</sun-facelets.version>
 		<sun-jsf.version>2.2.10</sun-jsf.version>
