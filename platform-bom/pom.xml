@@ -139,8 +139,8 @@
 		<jline.version>2.11</jline.version>
 		<jopt-simple.version>4.6</jopt-simple.version>
 		<jredis.version>06052013</jredis.version>
-		<jsch.version>0.1.51</jsch.version>
 		<jruby.version>1.7.19</jruby.version>
+		<jsch.version>0.1.52</jsch.version>
 		<jsr166e.version>1.0</jsr166e.version>
 		<jsr250.version>1.0</jsr250.version>
 		<jxl.version>2.6.12</jxl.version>
