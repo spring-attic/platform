@@ -28,6 +28,7 @@ Andy Wilkinson;
 
 include::documentation-overview.adoc[]
 include::getting-started.adoc[]
+include::release-cycle.adoc[]
 include::appendix.adoc[]
 
 // ======================================================================================
