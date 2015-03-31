@@ -362,7 +362,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 3.2.6.RELEASE
+      version: 3.2.7.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-security
         checkout: 3.2.6.RELEASE
@@ -385,7 +385,7 @@ platform_definition:
        - spring-security-jwt
     - name: Spring Security OAuth
       groupId: org.springframework.security.oauth
-      version: 2.0.6.RELEASE
+      version: 2.0.7.RELEASE
       modules:
         - spring-security-oauth
         - spring-security-oauth2
