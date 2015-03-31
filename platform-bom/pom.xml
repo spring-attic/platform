@@ -170,7 +170,7 @@
 		<qdox.version>1.12.1</qdox.version>
 		<quartz.version>2.2.1</quartz.version>
 		<querydsl.version>3.6.2</querydsl.version>
-		<rabbit-amqp-client.version>3.4.3</rabbit-amqp-client.version>
+		<rabbit-amqp-client.version>3.4.4</rabbit-amqp-client.version>
 		<rometools.version>1.5.0</rometools.version>
 		<smack.version>3.2.1</smack.version>
 		<smack4.version>4.0.6</smack4.version>
