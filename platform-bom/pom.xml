@@ -12,7 +12,7 @@
 
 	<groupId>io.spring.platform</groupId>
 	<artifactId>platform-bom</artifactId>
-	<version>1.0.5.BUILD-SNAPSHOT</version>
+	<version>1.0.6.BUILD-SNAPSHOT</version>
 	<packaging>pom</packaging>
 	<name>Spring IO Platform bill of materials</name>
 	<description>Spring IO Platform bill of materials</description>
