@@ -17,10 +17,9 @@ your application's parent pom. Please refer to the [documentation on using the P
 
 ### Using the Platform With Gradle
 
-The Platform provides a properties file that lists versions of all of the Platform's components and
-their dependencies. This properties file can be used in conjuction with
-[Spring Boot's Gradle plugin][] to provide dependency versions. Please refer to the [documentation
-on using the Platform with Gradle][Platform Gradle docs] for more information.
+Thanks to the [dependency management plugin][], Gradle users can also make use of the Platform's
+pom. Please refer to the [documentation on using the Platform with Gradle][Platform Gradle docs] for
+more information.
 
 ## License
 Spring IO Platform is released under version 2.0 of the [Apache License][].
@@ -30,5 +29,6 @@ Spring IO Platform is released under version 2.0 of the [Apache License][].
 [Spring Boot's Maven plugin]: http://docs.spring.io/spring-boot/docs/1.1.12.RELEASE/reference/html/build-tool-plugins-maven-plugin.html
 [Spring Boot's Gradle plugin]: http://docs.spring.io/spring-boot/docs/1.1.12.RELEASE/reference/html/build-tool-plugins-gradle-plugin.html
 [Platform Maven docs]: http://docs.spring.io/platform/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started-using-spring-io-platform-maven
+[dependency management plugin]: https://plugins.gradle.org/plugin/io.spring.dependency-management
 [Platform Gradle docs]: http://docs.spring.io/platform/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started-using-spring-io-platform-gradle
 [Apache License]: http://www.apache.org/licenses/LICENSE-2.0
