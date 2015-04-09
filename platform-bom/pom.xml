@@ -89,7 +89,6 @@
 		<eclipselink.version>2.5.2</eclipselink.version>
 		<eclipselink-javax-persistence.version>2.1.0</eclipselink-javax-persistence.version>
 		<ehcache-core.version>2.6.10</ehcache-core.version>
-		<elasticsearch.version>1.1.2</elasticsearch.version>
 		<evo-inflector.version>1.1</evo-inflector.version>
 		<findbugs-jsr305.version>2.0.3</findbugs-jsr305.version>
 		<gpars.version>1.2.1</gpars.version>
@@ -1155,11 +1154,6 @@
 				<groupId>org.eclipse.persistence</groupId>
 				<artifactId>org.eclipse.persistence.jpa</artifactId>
 				<version>${eclipselink.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.elasticsearch</groupId>
-				<artifactId>elasticsearch</artifactId>
-				<version>${elasticsearch.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.erlang.otp</groupId>
