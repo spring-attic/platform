@@ -194,40 +194,40 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.2.0.RC1
+      version: 1.2.0.RELEASE
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.10.0.RC1
+      version: 1.10.0.RELEASE
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 1.3.0.RC1
+      version: 1.3.0.RELEASE
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 1.2.0.RC1
+      version: 1.2.0.RELEASE
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.6.0.RC1
+      version: 1.6.0.RELEASE
       modules:
         - spring-data-gemfire
       build:
         repository: https://github.com/spring-projects/spring-data-gemfire
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.8.0.RC1
+      version: 1.8.0.RELEASE
       modules:
         - spring-data-jpa
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.7.0.RC1
+      version: 1.7.0.RELEASE
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -235,25 +235,25 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 3.3.0.RC1
+      version: 3.3.0.RELEASE
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.5.0.RC1
+      version: 1.5.0.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-data-redis
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.3.0.RC1
+      version: 2.3.0.RELEASE
       modules:
         - spring-data-rest-core
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 1.4.0.RC1
+      version: 1.4.0.RELEASE
       modules:
         - spring-data-solr
     - name: Spring Framework
@@ -403,10 +403,10 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 3.2.7.RELEASE
+      version: 4.0.0.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-security
-        checkout: 3.2.7.RELEASE
+        checkout: 4.0.0.RELEASE
       modules:
         - spring-security-acl
         - spring-security-aspects
@@ -414,10 +414,13 @@ platform_definition:
         - spring-security-config
         - spring-security-core
         - spring-security-crypto
+        - spring-security-data
         - spring-security-ldap
+        - spring-security-messaging
         - spring-security-openid
         - spring-security-remoting
         - spring-security-taglibs
+        - spring-security-test
         - spring-security-web
     - name: Spring Security JWT
       groupId: org.springframework.security
@@ -489,6 +492,7 @@ platform_definition:
         - spring-ws-test
         - spring-xml
   dependency_mappings:
+    'org.apache.geronimo.specs:geronimo-jta_1.1_spec': 'javax.transaction:javax.transaction-api' # See https://github.com/spring-projects/spring-data-neo4j/issues/272
     'javax.servlet:jsp-api': 'javax.servlet.jsp:javax.servlet.jsp-api'
     'javax.servlet:servlet-api': 'javax.servlet:javax.servlet-api'
     'org.apache.tomcat:catalina': 'org.apache.tomcat:tomcat-catalina'

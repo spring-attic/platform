@@ -88,7 +88,6 @@
 		<dom4j.version>1.6.1</dom4j.version>
 		<eclipselink.version>2.5.2</eclipselink.version>
 		<eclipselink-javax-persistence.version>2.1.0</eclipselink-javax-persistence.version>
-		<ehcache-core.version>2.6.10</ehcache-core.version>
 		<evo-inflector.version>1.1</evo-inflector.version>
 		<findbugs-jsr305.version>2.0.3</findbugs-jsr305.version>
 		<gpars.version>1.2.1</gpars.version>
@@ -790,11 +789,6 @@
 				<version>${openhft-lang.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>net.sf.ehcache</groupId>
-				<artifactId>ehcache-core</artifactId>
-				<version>${ehcache-core.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>net.sf.jasperreports</groupId>
 				<artifactId>jasperreports</artifactId>
 				<version>${jasperreports.version}</version>
@@ -1248,11 +1242,6 @@
 			<dependency>
 				<groupId>org.neo4j</groupId>
 				<artifactId>neo4j</artifactId>
-				<version>${neo4j.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.neo4j</groupId>
-				<artifactId>neo4j-cypher</artifactId>
 				<version>${neo4j.version}</version>
 			</dependency>
 			<dependency>
