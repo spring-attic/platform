@@ -59,7 +59,6 @@
 		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
 
 		<ant.version>1.9.4</ant.version>
-		<antlr.version>2.7.7</antlr.version>
 		<aopalliance.version>1.0</aopalliance.version>
 		<apacheds.version>1.5.5</apacheds.version>
 		<apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
@@ -383,11 +382,6 @@
 			</dependency>
 
 			<!-- Third Party -->
-			<dependency>
-				<groupId>antlr</groupId>
-				<artifactId>antlr</artifactId>
-				<version>${antlr.version}</version>
-			</dependency>
 			<dependency>
 				<groupId>aopalliance</groupId>
 				<artifactId>aopalliance</artifactId>
