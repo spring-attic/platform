@@ -57,7 +57,7 @@ platform_definition:
         - grails-wrapper-support
     - name: Groovy
       groupId: org.codehaus.groovy
-      version: 2.4.1
+      version: 2.4.3
       modules:
         - groovy
         - groovy-ant
