@@ -136,7 +136,6 @@
 		<jsch.version>0.1.52</jsch.version>
 		<jsonassert.version>1.2.3</jsonassert.version>
 		<json-patch.version>1.7</json-patch.version>
-		<jsr166e.version>1.0</jsr166e.version>
 		<jsr250.version>1.0</jsr250.version>
 		<junit.version>4.11</junit.version>
 		<jxl.version>2.6.12</jxl.version>
@@ -167,6 +166,7 @@
 		<quartz.version>2.2.1</quartz.version>
 		<querydsl.version>3.6.2</querydsl.version>
 		<rabbit-amqp-client.version>3.4.4</rabbit-amqp-client.version>
+		<reactive-streams.version>1.0.0.RC5</reactive-streams.version>
 		<rometools.version>1.5.0</rometools.version>
 		<smack.version>3.2.1</smack.version>
 		<smack4.version>4.0.6</smack4.version>
@@ -656,11 +656,6 @@
 				<groupId>io.fastjson</groupId>
 				<artifactId>boon</artifactId>
 				<version>${boon.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>io.gatling</groupId>
-				<artifactId>jsr166e</artifactId>
-				<version>${jsr166e.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>io.netty</groupId>
@@ -1272,6 +1267,11 @@
 				<groupId>org.quartz-scheduler</groupId>
 				<artifactId>quartz</artifactId>
 				<version>${quartz.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.reactivestreams</groupId>
+				<artifactId>reactive-streams</artifactId>
+				<version>${reactive-streams.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.skyscreamer</groupId>

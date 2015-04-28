@@ -79,22 +79,24 @@ platform_definition:
         - groovy-testng
         - groovy-xml
     - name: Reactor
-      groupId: org.projectreactor
-      version: 1.1.6.RELEASE
+      groupId: io.projectreactor
+      version: 2.0.1.BUILD-SNAPSHOT
       modules:
+        - reactor-bus
         - reactor-core
         - reactor-groovy
         - reactor-groovy-extensions
         - reactor-logback
         - reactor-net
+        - reactor-stream
       build:
         repository: https://github.com/reactor/reactor
         compileWith: jdk8
         runTestsWith:
            - jdk8
     - name: Reactor Spring
-      groupId: org.projectreactor.spring
-      version: 1.1.3.RELEASE
+      groupId: io.projectreactor.spring
+      version: 2.0.1.BUILD-SNAPSHOT
       modules:
         - reactor-spring-context
         - reactor-spring-core
@@ -304,7 +306,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.1.3.RELEASE
+      version: 4.2.0.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         runTestsWith:
@@ -337,10 +339,10 @@ platform_definition:
         - spring-integration-syslog
         - spring-integration-test
         - spring-integration-twitter
-        - spring-integration-xml
-        - spring-integration-xmpp
         - spring-integration-websocket
         - spring-integration-ws
+        - spring-integration-xml
+        - spring-integration-xmpp
     - name: Spring Integration Flow
       groupId: org.springframework.integration
       version: 1.0.0.RELEASE
@@ -515,7 +517,7 @@ platform_definition:
   unused_dependencies:
     ignored:
       # For user convenience, Boot provides extra dependency management for modules that both it
-      # and the rest of the Platform do not depend upon
+      # and the rest of the Platform do not depend upon directly
       - 'ch.qos.logback:logback-access'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml'
@@ -530,6 +532,7 @@ platform_definition:
       - 'org.apache.activemq:activemq-jms-pool'
       - 'org.apache.tomcat:tomcat-jsp-api'
       - 'org.codehaus.janino:janino'
+      - 'org.eclipse.jdt.core.compiler:ecj'
       - 'org.eclipse.jetty:jetty-annotations'
       - 'org.eclipse.jetty:jetty-continuation'
       - 'org.eclipse.jetty:jetty-deploy'
@@ -550,6 +553,7 @@ platform_definition:
       - 'org.slf4j:slf4j-jdk14'
       - 'org.spockframework:spock-spring'
       - 'org.springframework:springloaded'
+      - 'xml-apis:xml-apis'
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2
