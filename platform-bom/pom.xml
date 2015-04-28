@@ -50,7 +50,7 @@
 
 		<spring-cloud.version>1.0.0.RELEASE</spring-cloud.version>
 		<spring-data-hadoop.version>2.0.4.RELEASE</spring-data-hadoop.version>
-		<spring-ldap.version>2.0.2.RELEASE</spring-ldap.version>
+		<spring-ldap.version>2.0.3.CI-SNAPSHOT</spring-ldap.version>
 		<spring-plugin.version>1.1.0.RELEASE</spring-plugin.version>
 		<spring-retry.version>1.1.2.RELEASE</spring-retry.version>
 		<spring-security-oauth.version>2.0.7.RELEASE</spring-security-oauth.version>
@@ -146,6 +146,7 @@
 		<jxl.version>2.6.12</jxl.version>
 		<kite.version>0.13.0</kite.version>
 		<kryo.version>2.22</kryo.version>
+		<ldapbp.version>1.0</ldapbp.version>
 		<ldapsdk.version>4.1</ldapsdk.version>
 		<lettuce.version>2.3.3</lettuce.version>
 		<lmax-disruptor.version>3.2.1</lmax-disruptor.version>
@@ -536,6 +537,11 @@
 				<groupId>com.rometools</groupId>
 				<artifactId>rome</artifactId>
 				<version>${rometools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.sun</groupId>
+				<artifactId>ldapbp</artifactId>
+				<version>${ldapbp.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.sun.facelets</groupId>

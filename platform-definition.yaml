@@ -328,10 +328,10 @@ platform_definition:
         - spring-integration-ws
     - name: Spring LDAP
       groupId: org.springframework.ldap
-      version: 2.0.2.RELEASE
+      version: 2.0.3.CI-SNAPSHOT
       build:
         repository: https://github.com/spring-projects/spring-ldap
-        checkout: 2.0.2.RELEASE
+        checkout: master
       modules:
         - spring-ldap-core
         - spring-ldap-core-tiger
@@ -484,6 +484,8 @@ platform_definition:
       - 'org.slf4j:slf4j-jdk14'
       - 'org.spockframework:spock-spring'
       - 'org.springframework:springloaded'
+      # Modules that were previously used and are retained for backwards compatibility
+      - 'org.apache.directory.server:apacheds-all'
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2
