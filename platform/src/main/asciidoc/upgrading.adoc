@@ -65,6 +65,12 @@ deprecated with `net.sf.ehcache:ehcache` being its preferred replacement.
 As of Spring IO Platform 1.1, the dependency management for `org.apache.cassandra:cassandra-all`
 is deprecated.
 
+=== org.apache.directory.server:apacheds-all
+
+As of Spring IO Platform 1.1, the dependency management for
+`org.apache.directory.server:apacheds-all` is deprecated. Dependencies on the more finely
+grained `org.apache.directory.server` modules should be used instead.
+
 === org.apache.tomcat:tomcat7-websocket
 
 As of Spring IO Platform 1.1, the dependency management for `org.apache.tomcat:tomcat7-websocket`

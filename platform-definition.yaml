@@ -369,10 +369,10 @@ platform_definition:
         - spring-integration-splunk
     - name: Spring LDAP
       groupId: org.springframework.ldap
-      version: 2.0.2.RELEASE
+      version: 2.0.3.CI-SNAPSHOT
       build:
         repository: https://github.com/spring-projects/spring-ldap
-        checkout: 2.0.2.RELEASE
+        checkout: master
       modules:
         - spring-ldap-core
         - spring-ldap-core-tiger
@@ -551,6 +551,7 @@ platform_definition:
       - 'net.java.dev.rome:rome'
       - 'net.java.dev.rome:rome-fetcher'
       - 'org.apache.cassandra:cassandra-all'
+      - 'org.apache.directory.server:apacheds-all'
       - 'org.glassfish.tyrus:tyrus-websocket-core'
       - 'org.hibernate.javax.persistence:hibernate-jpa-2.0-api'
       - 'org.igniterealtime.smack:smackx'
