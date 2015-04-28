@@ -58,6 +58,11 @@ Dependency management for `net.java.dev.rome:rome-fetcher` has been removed.
 
 Dependency management for `org.apache.cassandra:cassandra-all` has been removed.
 
+=== org.apache.directory.server:apacheds-all
+
+Dependency management for `org.apache.directory.server:apacheds-all` has been removed. Dependencies
+on the more finely grained `org.apache.directory.server` modules should be used instead.
+
 === org.apache.tomcat:tomcat7-websocket
 
 Dependency management for `org.apache.tomcat:tomcat7-websocket` has been removed. The equivalent

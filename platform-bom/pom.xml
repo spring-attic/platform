@@ -51,7 +51,7 @@
 		<spring-integration-flow.version>1.0.0.RELEASE</spring-integration-flow.version>
 		<spring-integration-java-dsl.version>1.0.1.RELEASE</spring-integration-java-dsl.version>
 		<spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
-		<spring-ldap.version>2.0.2.RELEASE</spring-ldap.version>
+		<spring-ldap.version>2.0.3.CI-SNAPSHOT</spring-ldap.version>
 		<spring-retry.version>1.1.2.RELEASE</spring-retry.version>
 		<spring-security-oauth.version>2.0.7.RELEASE</spring-security-oauth.version>
 		<spring-session.version>1.0.0.RELEASE</spring-session.version>
@@ -141,6 +141,7 @@
 		<jxl.version>2.6.12</jxl.version>
 		<kite.version>0.13.0</kite.version>
 		<kryo.version>2.22</kryo.version>
+		<ldapbp.version>1.0</ldapbp.version>
 		<ldapsdk.version>4.1</ldapsdk.version>
 		<lettuce.version>2.3.3</lettuce.version>
 		<lmax-disruptor.version>3.2.1</lmax-disruptor.version>
@@ -558,6 +559,11 @@
 				<version>${splunk.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.sun</groupId>
+				<artifactId>ldapbp</artifactId>
+				<version>${ldapbp.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>com.sun.facelets</groupId>
 				<artifactId>jsf-facelets</artifactId>
 				<version>${sun-facelets.version}</version>
@@ -826,11 +832,6 @@
 				<groupId>org.apache.derby</groupId>
 				<artifactId>derbyclient</artifactId>
 				<version>${derby.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.directory.server</groupId>
-				<artifactId>apacheds-all</artifactId>
-				<version>${apacheds.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.directory.server</groupId>
