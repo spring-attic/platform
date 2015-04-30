@@ -328,7 +328,7 @@ platform_definition:
         - spring-integration-ws
     - name: Spring LDAP
       groupId: org.springframework.ldap
-      version: 2.0.3.CI-SNAPSHOT
+      version: 2.0.3.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-ldap
         checkout: master
