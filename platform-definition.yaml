@@ -108,13 +108,14 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.4.4.RELEASE
+      version: 1.5.0.BUILD-SNAPSHOT
       modules:
         - spring-amqp
         - spring-erlang
         - spring-rabbit
       build:
         repository: https://github.com/spring-projects/spring-amqp
+        checkout: master
     - name: Spring Batch
       groupId: org.springframework.batch
       version: 3.0.4.BUILD-SNAPSHOT
@@ -405,10 +406,10 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 4.0.0.RELEASE
+      version: 4.0.1.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-security
-        checkout: 4.0.0.RELEASE
+        checkout: 4.0.1.RELEASE
       modules:
         - spring-security-acl
         - spring-security-aspects
