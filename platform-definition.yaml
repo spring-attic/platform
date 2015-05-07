@@ -455,7 +455,7 @@ platform_definition:
         - spring-social-web
     - name: Spring Social Facebook
       groupId: org.springframework.social
-      version: 1.1.1.RELEASE
+      version: 2.0.1.RELEASE
       modules:
         - spring-social-facebook
         - spring-social-facebook-web
