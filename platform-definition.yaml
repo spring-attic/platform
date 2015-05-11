@@ -137,7 +137,6 @@ platform_definition:
         - spring-boot-cli
         - spring-boot-configuration-processor
         - spring-boot-dependencies
-        - spring-boot-dependency-tools
         - spring-boot-loader
         - spring-boot-loader-tools
         - spring-boot-maven-plugin

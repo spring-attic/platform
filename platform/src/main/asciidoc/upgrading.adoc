@@ -68,6 +68,11 @@ on the more finely grained `org.apache.directory.server` modules should be used 
 Dependency management for `org.apache.tomcat:tomcat7-websocket` has been removed. The equivalent
 Tomcat 8 dependency, `org.apache.tomcat:tomcat-websocket`, should be used instead.
 
+=== org.eclipse.paho:mqtt-client
+
+Dependency management for `org.eclipse.paho:mqtt-client` has been removed.
+`org.eclipse.paho:org.eclipse.paho.client.mqttv3` should be used instead.
+
 === org.glassfish.tyrus:tyrus-websocket-core
 
 Dependency management for `org.glassfish.tyrus:tyrus-websocket-core` has been removed. It does
