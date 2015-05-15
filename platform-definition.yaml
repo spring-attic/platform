@@ -446,7 +446,7 @@ platform_definition:
         checkout: 1.0.0.RELEASE
     - name: Spring Social
       groupId: org.springframework.social
-      version: 1.1.0.RELEASE
+      version: 1.1.1.RELEASE
       modules:
         - spring-social-config
         - spring-social-core
