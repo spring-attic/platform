@@ -80,7 +80,7 @@ platform_definition:
         - groovy-xml
     - name: Reactor
       groupId: io.projectreactor
-      version: 2.0.1.BUILD-SNAPSHOT
+      version: 2.0.1.RELEASE
       modules:
         - reactor-bus
         - reactor-core
@@ -96,7 +96,7 @@ platform_definition:
            - jdk8
     - name: Reactor Spring
       groupId: io.projectreactor.spring
-      version: 2.0.1.BUILD-SNAPSHOT
+      version: 2.0.1.RELEASE
       modules:
         - reactor-spring-context
         - reactor-spring-core
@@ -108,10 +108,9 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.5.0.BUILD-SNAPSHOT
+      version: 1.5.0.M1
       modules:
         - spring-amqp
-        - spring-erlang
         - spring-rabbit
       build:
         repository: https://github.com/spring-projects/spring-amqp
@@ -394,7 +393,7 @@ platform_definition:
         - spring-mobile-device
     - name: Spring Plugin
       groupId: org.springframework.plugin
-      version: 1.1.0.RELEASE
+      version: 1.2.0.RELEASE
       modules:
         - spring-plugin-core
         - spring-plugin-metadata
@@ -520,6 +519,7 @@ platform_definition:
       # and the rest of the Platform do not depend upon directly
       - 'ch.qos.logback:logback-access'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
+      - 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml'
       - 'com.github.mxab.thymeleaf.extras:thymeleaf-extras-data-attribute'
       - 'com.zaxxer:HikariCP'
@@ -530,6 +530,7 @@ platform_definition:
       - 'mysql:mysql-connector-java'
       - 'org.apache.activemq:activemq-client'
       - 'org.apache.activemq:activemq-jms-pool'
+      - 'org.apache.httpcomponents:httpcore'
       - 'org.apache.tomcat:tomcat-jsp-api'
       - 'org.codehaus.janino:janino'
       - 'org.eclipse.jdt.core.compiler:ecj'

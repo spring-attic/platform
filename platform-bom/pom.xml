@@ -128,7 +128,6 @@
 		<jeromq.version>0.3.4</jeromq.version>
 		<jettison.version>1.2</jettison.version>
 		<jibx.version>1.2.6</jibx.version>
-		<jinterface.version>1.5.6</jinterface.version>
 		<jline.version>2.11</jline.version>
 		<jopt-simple.version>4.8</jopt-simple.version>
 		<jredis.version>06052013</jredis.version>
@@ -1144,11 +1143,6 @@
 				<groupId>org.eclipse.persistence</groupId>
 				<artifactId>org.eclipse.persistence.jpa</artifactId>
 				<version>${eclipselink.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.erlang.otp</groupId>
-				<artifactId>jinterface</artifactId>
-				<version>${jinterface.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.fusesource.jansi</groupId>

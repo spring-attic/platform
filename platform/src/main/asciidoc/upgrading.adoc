@@ -73,6 +73,11 @@ Tomcat 8 dependency, `org.apache.tomcat:tomcat-websocket`, should be used instea
 Dependency management for `org.eclipse.paho:mqtt-client` has been removed.
 `org.eclipse.paho:org.eclipse.paho.client.mqttv3` should be used instead.
 
+=== org.erlang.otp:jinterface
+
+Dependency management for `org.erlang.otp:jinterface` has been removed. It is no longer a
+dependency of any of the Platform's projects.
+
 === org.glassfish.tyrus:tyrus-websocket-core
 
 Dependency management for `org.glassfish.tyrus:tyrus-websocket-core` has been removed. It does
@@ -91,3 +96,8 @@ Dependency management for `org.hibernate.javax.persistence:hibernate-jpa-2.0-api
 === org.neo4j:neo4j-graph-collections
 
 Dependency management for `org.neo4j:neo4j-graph-collections` has been removed.
+
+=== org.springframework.amqp:spring-erlang
+
+Dependency management for `org.springframework.amqp:spring-erlang` has been removed. It no longer
+exists in the verison of Spring AMQP that is used by the Platform.
