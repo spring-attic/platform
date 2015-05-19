@@ -382,7 +382,7 @@ platform_definition:
         - spring-ldap-test
     - name: Spring Loaded
       groupId: org.springframework
-      version: 1.2.1.RELEASE
+      version: 1.2.3.RELEASE
       modules:
        - springloaded
     - name: Spring Mobile
