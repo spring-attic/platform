@@ -300,7 +300,7 @@ platform_definition:
         - spring-yarn-test
     - name: Spring HATEOAS
       groupId: org.springframework.hateoas
-      version: 0.16.0.RELEASE
+      version: 0.17.0.RELEASE
       modules:
         - spring-hateoas
     - name: Spring Integration
