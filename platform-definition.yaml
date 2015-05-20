@@ -548,6 +548,7 @@ platform_definition:
       - 'org.hibernate:hibernate-ehcache'
       - 'org.hibernate:hibernate-envers'
       - 'org.hibernate:hibernate-jpamodelgen'
+      - 'org.hibernate:hibernate-validator-annotation-processor'
       - 'org.javassist:javassist'
       - 'org.mariadb.jdbc:mariadb-java-client'
       - 'org.postgresql:postgresql'
