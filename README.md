@@ -25,7 +25,7 @@ more information.
 Spring IO Platform is released under version 2.0 of the [Apache License][].
 
 [Spring IO Platform website]: http://spring.io/platform
-[Platform Maven docs]: http://docs.spring.io/platform/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started-using-spring-io-platform-maven
+[Platform Maven docs]: http://docs.spring.io/platform/docs/1.1.x/reference/htmlsingle/#getting-started-using-spring-io-platform-maven
 [dependency management plugin]: https://plugins.gradle.org/plugin/io.spring.dependency-management
-[Platform Gradle docs]: http://docs.spring.io/platform/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started-using-spring-io-platform-gradle
+[Platform Gradle docs]: http://docs.spring.io/platform/docs/1.1.x/reference/htmlsingle/#getting-started-using-spring-io-platform-gradle
 [Apache License]: http://www.apache.org/licenses/LICENSE-2.0
