@@ -55,14 +55,12 @@
 		<spring-web-flow.version>2.4.1.RELEASE</spring-web-flow.version>
 		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
 
-		<ant.version>1.9.4</ant.version>
 		<aopalliance.version>1.0</aopalliance.version>
 		<apacheds.version>1.5.5</apacheds.version>
 		<apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
 		<axiom.version>1.2.14</axiom.version>
 		<boon.version>0.23</boon.version>
 		<bouncycastle.version>1.47</bouncycastle.version>
-		<bsf.version>2.4.0</bsf.version>
 		<bsh.version>2.0b4</bsh.version>
 		<c3p0.version>0.9.5</c3p0.version>
 		<cas-client.version>3.2.2</cas-client.version>
@@ -86,7 +84,6 @@
 		<eclipselink-javax-persistence.version>2.1.0</eclipselink-javax-persistence.version>
 		<evo-inflector.version>1.1</evo-inflector.version>
 		<findbugs-jsr305.version>2.0.3</findbugs-jsr305.version>
-		<gpars.version>1.2.1</gpars.version>
 		<gs-collections.version>5.1.0</gs-collections.version>
 		<guava.version>17.0</guava.version>
 		<guice.version>3.0</guice.version>
@@ -96,11 +93,9 @@
 		<hive.version>0.12.0</hive.version>
 		<ibatis-sqlmap.version>2.3.4.726</ibatis-sqlmap.version>
 		<itext.version>2.1.7</itext.version>
-		<ivy.version>2.3.0</ivy.version>
 		<jackson1.version>1.9.13</jackson1.version>
 		<jasperreports.version>5.5.2</jasperreports.version>
 		<jamon.version>2.4</jamon.version>
-		<jansi.version>1.11</jansi.version>
 		<javax-activation.version>1.1.1</javax-activation.version>
 		<javax-annotation.version>1.0</javax-annotation.version>
 		<javax-batch.version>1.0</javax-batch.version>
@@ -121,7 +116,6 @@
 		<javax-validation.version>1.1.0.Final</javax-validation.version>
 		<javax-websocket.version>1.0</javax-websocket.version>
 		<jbatch-tck.version>1.0</jbatch-tck.version>
-		<jcommander.version>1.35</jcommander.version>
 		<jeromq.version>0.3.4</jeromq.version>
 		<jettison.version>1.2</jettison.version>
 		<jibx.version>1.2.6</jibx.version>
@@ -159,7 +153,6 @@
 		<poi.version>3.11</poi.version>
 		<protobuf.version>2.5.0</protobuf.version>
 		<protobuf-java-format.version>1.2</protobuf-java-format.version>
-		<qdox.version>1.12.1</qdox.version>
 		<quartz.version>2.2.1</quartz.version>
 		<querydsl.version>3.6.2</querydsl.version>
 		<rabbit-amqp-client.version>3.4.4</rabbit-amqp-client.version>
@@ -369,16 +362,6 @@
 				<version>${aopalliance.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>bsf</groupId>
-				<artifactId>bsf</artifactId>
-				<version>${bsf.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.beust</groupId>
-				<artifactId>jcommander</artifactId>
-				<version>${jcommander.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>com.caucho</groupId>
 				<artifactId>hessian</artifactId>
 				<version>${hessian.version}</version>
@@ -577,11 +560,6 @@
 				<groupId>com.sun.xml.wss</groupId>
 				<artifactId>xws-security</artifactId>
 				<version>${xws-security.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.thoughtworks.qdox</groupId>
-				<artifactId>qdox</artifactId>
-				<version>${qdox.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.thoughtworks.xstream</groupId>
@@ -789,26 +767,6 @@
 				<version>${ognl.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.ant</groupId>
-				<artifactId>ant</artifactId>
-				<version>${ant.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.ant</groupId>
-				<artifactId>ant-antlr</artifactId>
-				<version>${ant.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.ant</groupId>
-				<artifactId>ant-junit</artifactId>
-				<version>${ant.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.ant</groupId>
-				<artifactId>ant-launcher</artifactId>
-				<version>${ant.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-lang3</artifactId>
 				<version>${commons-lang3.version}</version>
@@ -933,11 +891,6 @@
 				<groupId>org.apache.ibatis</groupId>
 				<artifactId>ibatis-sqlmap</artifactId>
 				<version>${ibatis-sqlmap.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.ivy</groupId>
-				<artifactId>ivy</artifactId>
-				<version>${ivy.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.myfaces.core</groupId>
@@ -1080,11 +1033,6 @@
 				<version>${commonj.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.codehaus.gpars</groupId>
-				<artifactId>gpars</artifactId>
-				<version>${gpars.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.codehaus.jackson</groupId>
 				<artifactId>jackson-core-asl</artifactId>
 				<version>${jackson1.version}</version>
@@ -1123,11 +1071,6 @@
 				<groupId>org.eclipse.persistence</groupId>
 				<artifactId>org.eclipse.persistence.jpa</artifactId>
 				<version>${eclipselink.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.fusesource.jansi</groupId>
-				<artifactId>jansi</artifactId>
-				<version>${jansi.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.glassfish.tyrus</groupId>

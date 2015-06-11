@@ -27,6 +27,22 @@ published by `platform-bom` instead:
 	}
 ----
 
+=== Ant
+
+Dependency management for four Ant dependencies has been removed. Thoses dependencies are:
+
+ * `org.apache.ant:ant`
+ * `org.apache.ant:ant-antlr`
+ * `org.apache.ant:ant-junit`
+ * `org.apache.ant:ant-launcher`
+
+ They are no longer a dependency of any of the Platform's projects.
+
+=== bsf:bsf
+
+Dependency management for `bsf:bsf` has been removed. It is no longer a dependency of any of the
+Platform's projects.
+
 === Codahale metrics
 
 Dependency management for four Codahale metrics dependencies has been removed. Those dependencies
@@ -44,11 +60,21 @@ The following dependencies should be used instead:
  * `io.dropwizard.metrics:metrics-graphite`
  * `io.dropwizard.metrics:metrics-servlets`
 
+=== com.beust:jcommander
+
+Dependency management for `com.beust:jcommander` has been removed. It is no longer a dependency of
+any of the Platform's projects.
+
 === com.lmax:disruptor
 
 Dependency management for `com.lmax:disruptor` has been removed. Reactor now embeds a
 repackaged version of the library so a dependency on `com.lmax:disruptor` is no longer
 required.
+
+=== com.thoughtworks.qdox:qdox
+
+Dependency management for `com.thoughtworks.qdox:qdox` has been removed. It is no longer a
+dependency of any of the Platform's projects.
 
 === net.java.dev.rome:rome
 
@@ -69,10 +95,20 @@ Dependency management for `org.apache.cassandra:cassandra-all` has been removed.
 Dependency management for `org.apache.directory.server:apacheds-all` has been removed. Dependencies
 on the more finely grained `org.apache.directory.server` modules should be used instead.
 
+=== org.apache.ivy:ivy
+
+Dependency management for `org.apache.ivy:ivy` has been removed. It is no longer a dependency of
+any of the Platform's projects.
+
 === org.apache.tomcat:tomcat7-websocket
 
 Dependency management for `org.apache.tomcat:tomcat7-websocket` has been removed. The equivalent
 Tomcat 8 dependency, `org.apache.tomcat:tomcat-websocket`, should be used instead.
+
+=== org.codehaus.gpars:gpars
+
+Dependency management for `org.codehaus.gpars:gpars` has been removed. It is no longer a
+dependency of any of the Platform's projects.
 
 === org.eclipse.paho:mqtt-client
 
@@ -82,6 +118,11 @@ Dependency management for `org.eclipse.paho:mqtt-client` has been removed.
 === org.erlang.otp:jinterface
 
 Dependency management for `org.erlang.otp:jinterface` has been removed. It is no longer a
+dependency of any of the Platform's projects.
+
+=== org.fusesource.jansi:jansi
+
+Dependency management for `org.fusesource.jansi:jansi` has been removed. It is no longer a
 dependency of any of the Platform's projects.
 
 === org.glassfish.tyrus:tyrus-websocket-core

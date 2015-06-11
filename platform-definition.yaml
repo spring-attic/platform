@@ -7,29 +7,6 @@ platform_definition:
         - aspectjweaver
         - aspectjtools
         - aspectjrt
-    - name: Groovy
-      groupId: org.codehaus.groovy
-      version: 2.4.3
-      modules:
-        - groovy
-        - groovy-ant
-        - groovy-all
-        - groovy-bsf
-        - groovy-console
-        - groovy-docgenerator
-        - groovy-groovydoc
-        - groovy-groovysh
-        - groovy-jmx
-        - groovy-json
-        - groovy-jsr223
-        - groovy-nio
-        - groovy-servlet
-        - groovy-sql
-        - groovy-swing
-        - groovy-templates
-        - groovy-test
-        - groovy-testng
-        - groovy-xml
     - name: Reactor
       groupId: io.projectreactor
       version: 2.0.3.RELEASE
@@ -492,6 +469,22 @@ platform_definition:
       - 'org.apache.activemq:activemq-jms-pool'
       - 'org.apache.httpcomponents:httpcore'
       - 'org.apache.tomcat:tomcat-jsp-api'
+      - 'org.codehaus.groovy:groovy-ant'
+      - 'org.codehaus.groovy:groovy-bsf'
+      - 'org.codehaus.groovy:groovy-console'
+      - 'org.codehaus.groovy:groovy-docgenerator'
+      - 'org.codehaus.groovy:groovy-groovy-bsf'
+      - 'org.codehaus.groovy:groovy-groovydoc'
+      - 'org.codehaus.groovy:groovy-groovysh'
+      - 'org.codehaus.groovy:groovy-jmx'
+      - 'org.codehaus.groovy:groovy-json'
+      - 'org.codehaus.groovy:groovy-jsr223'
+      - 'org.codehaus.groovy:groovy-nio'
+      - 'org.codehaus.groovy:groovy-servlet'
+      - 'org.codehaus.groovy:groovy-sql'
+      - 'org.codehaus.groovy:groovy-swing'
+      - 'org.codehaus.groovy:groovy-test'
+      - 'org.codehaus.groovy:groovy-testng'
       - 'org.codehaus.janino:janino'
       - 'org.eclipse.jdt.core.compiler:ecj'
       - 'org.eclipse.jetty:jetty-annotations'
