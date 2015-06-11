@@ -48,6 +48,7 @@
 		<spring-data-hadoop.version>2.0.4.RELEASE</spring-data-hadoop.version>
 		<spring-integration-flow.version>1.0.0.RELEASE</spring-integration-flow.version>
 		<spring-integration-java-dsl.version>1.0.1.RELEASE</spring-integration-java-dsl.version>
+		<spring-integration-kafka.version>1.2.0.RELEASE</spring-integration-kafka.version>
 		<spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
 		<spring-ldap.version>2.0.3.RELEASE</spring-ldap.version>
 		<spring-retry.version>1.1.2.RELEASE</spring-retry.version>
@@ -58,6 +59,7 @@
 		<aopalliance.version>1.0</aopalliance.version>
 		<apacheds.version>1.5.5</apacheds.version>
 		<apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
+		<avro.version>1.7.6</avro.version>
 		<axiom.version>1.2.14</axiom.version>
 		<boon.version>0.23</boon.version>
 		<bouncycastle.version>1.47</bouncycastle.version>
@@ -129,6 +131,7 @@
 		<jsr250.version>1.0</jsr250.version>
 		<junit.version>4.11</junit.version>
 		<jxl.version>2.6.12</jxl.version>
+		<kafka.version>0.8.2.1</kafka.version>
 		<kite.version>0.13.0</kite.version>
 		<kryo.version>2.22</kryo.version>
 		<ldapbp.version>1.0</ldapbp.version>
@@ -186,6 +189,7 @@
 		<xom.version>1.2.5</xom.version>
 		<xstream.version>1.4.8</xstream.version>
 		<xws-security.version>3.0</xws-security.version>
+		<yammer-metrics.version>2.2.0</yammer-metrics.version>
 	</properties>
 
 	<dependencyManagement>
@@ -254,6 +258,13 @@
 				<groupId>org.springframework.integration</groupId>
 				<artifactId>spring-integration-java-dsl</artifactId>
 				<version>${spring-integration-java-dsl.version}</version>
+			</dependency>
+
+			<!-- Spring Integration Kafka -->
+			<dependency>
+				<groupId>org.springframework.integration</groupId>
+				<artifactId>spring-integration-kafka</artifactId>
+				<version>${spring-integration-kafka.version}</version>
 			</dependency>
 
 			<!-- Spring Integration Splunk -->
@@ -567,6 +578,16 @@
 				<version>${xstream.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.yammer.metrics</groupId>
+				<artifactId>metrics-annotation</artifactId>
+				<version>${yammer-metrics.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.yammer.metrics</groupId>
+				<artifactId>metrics-core</artifactId>
+				<version>${yammer-metrics.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>commons-beanutils</groupId>
 				<artifactId>commons-beanutils-core</artifactId>
 				<version>${commons-beanutils-core.version}</version>
@@ -767,6 +788,16 @@
 				<version>${ognl.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.apache.avro</groupId>
+				<artifactId>avro</artifactId>
+				<version>${avro.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.avro</groupId>
+				<artifactId>avro-compiler</artifactId>
+				<version>${avro.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.apache.commons</groupId>
 				<artifactId>commons-lang3</artifactId>
 				<version>${commons-lang3.version}</version>
@@ -891,6 +922,16 @@
 				<groupId>org.apache.ibatis</groupId>
 				<artifactId>ibatis-sqlmap</artifactId>
 				<version>${ibatis-sqlmap.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>kafka_2.10</artifactId>
+				<version>${kafka.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.kafka</groupId>
+				<artifactId>kafka-clients</artifactId>
+				<version>${kafka.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.myfaces.core</groupId>

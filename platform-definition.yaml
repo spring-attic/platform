@@ -297,6 +297,11 @@ platform_definition:
            - jdk8
       modules:
         - spring-integration-java-dsl
+    - name: Spring Integration Kafka
+      groupId: org.springframework.integration
+      version: 1.2.0.RELEASE
+      modules:
+        - spring-integration-kafka
     - name: Spring Integration Splunk
       groupId: org.springframework.integration
       version: 1.1.0.RELEASE
