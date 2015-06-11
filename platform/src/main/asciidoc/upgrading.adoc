@@ -44,6 +44,12 @@ The following dependencies should be used instead:
  * `io.dropwizard.metrics:metrics-graphite`
  * `io.dropwizard.metrics:metrics-servlets`
 
+=== com.lmax:disruptor
+
+Dependency management for `com.lmax:disruptor` has been removed. Reactor now embeds a
+repackaged version of the library so a dependency on `com.lmax:disruptor` is no longer
+required.
+
 === net.java.dev.rome:rome
 
 Dependency management for `net.java.dev.rome:rome` has been removed. `com.rometools:rome` should be

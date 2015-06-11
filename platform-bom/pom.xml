@@ -142,7 +142,6 @@
 		<ldapbp.version>1.0</ldapbp.version>
 		<ldapsdk.version>4.1</ldapsdk.version>
 		<lettuce.version>2.3.3</lettuce.version>
-		<lmax-disruptor.version>3.2.1</lmax-disruptor.version>
 		<lombok.version>1.14.8</lombok.version>
 		<mockito.version>1.10.8</mockito.version>
 		<myfaces.version>2.1.17</myfaces.version>
@@ -482,11 +481,6 @@
 				<groupId>com.lambdaworks</groupId>
 				<artifactId>lettuce</artifactId>
 				<version>${lettuce.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.lmax</groupId>
-				<artifactId>disruptor</artifactId>
-				<version>${lmax-disruptor.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.lowagie</groupId>

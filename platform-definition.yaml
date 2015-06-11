@@ -2,7 +2,7 @@ platform_definition:
   projects:
     - name: Aspect J
       groupId: org.aspectj
-      version: 1.8.5
+      version: 1.8.6
       modules:
         - aspectjweaver
         - aspectjtools
@@ -80,7 +80,7 @@ platform_definition:
         - groovy-xml
     - name: Reactor
       groupId: io.projectreactor
-      version: 2.0.1.RELEASE
+      version: 2.0.3.RELEASE
       modules:
         - reactor-bus
         - reactor-core
@@ -96,7 +96,7 @@ platform_definition:
            - jdk8
     - name: Reactor Spring
       groupId: io.projectreactor.spring
-      version: 2.0.1.RELEASE
+      version: 2.0.3.RELEASE
       modules:
         - reactor-spring-context
         - reactor-spring-core
