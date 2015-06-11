@@ -36,7 +36,7 @@ Dependency management for four Ant dependencies has been removed. Thoses depende
  * `org.apache.ant:ant-junit`
  * `org.apache.ant:ant-launcher`
 
- They are no longer a dependency of any of the Platform's projects.
+They are no longer a dependency of any of the Platform's projects.
 
 === bsf:bsf
 
