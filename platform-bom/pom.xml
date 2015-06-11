@@ -45,8 +45,6 @@
 	</developers>
 
 	<properties>
-		<grails.version>2.4.5</grails.version>
-
 		<spring-data-hadoop.version>2.0.4.RELEASE</spring-data-hadoop.version>
 		<spring-integration-flow.version>1.0.0.RELEASE</spring-integration-flow.version>
 		<spring-integration-java-dsl.version>1.0.1.RELEASE</spring-integration-java-dsl.version>
@@ -199,13 +197,6 @@
 
 	<dependencyManagement>
 		<dependencies>
-			<!-- Grails -->
-			<dependency>
-				<groupId>org.grails</groupId>
-				<artifactId>grails-dependencies</artifactId>
-				<version>${grails.version}</version>
-				<type>pom</type>
-			</dependency>
 
 			<!-- Spring for Apache Hadoop -->
 			<dependency>

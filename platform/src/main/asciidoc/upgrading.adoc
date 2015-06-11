@@ -89,6 +89,11 @@ dependency of any of the Platform's projects.
 Dependency management for `org.glassfish.tyrus:tyrus-websocket-core` has been removed. It does
 not exist in the version of Tyrus that is used by the Platform.
 
+=== org.grails:grails-dependencies
+
+Dependency management for `org.grails:grails-dependencies has been removed. Grails is no longer a
+part of the Platform.
+
 === org.igniterealtime.smack:smackx
 
 Dependency management for `org.igniterealtime.smack:smackx` has been removed. It does not exist in

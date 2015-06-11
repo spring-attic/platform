@@ -7,54 +7,6 @@ platform_definition:
         - aspectjweaver
         - aspectjtools
         - aspectjrt
-    - name: Grails
-      groupId: org.grails
-      version: 2.4.5
-      modules:
-        - grails-aether
-        - grails-async
-        - grails-bootstrap
-        - grails-core
-        - grails-databinding
-        - grails-dependencies
-        - grails-docs
-        - grails-encoder
-        - grails-logging
-        - grails-plugin-async
-        - grails-plugin-codecs
-        - grails-plugin-controllers
-        - grails-plugin-converters
-        - grails-plugin-databinding
-        - grails-plugin-datasource
-        - grails-plugin-domain-class
-        - grails-plugin-filters
-        - grails-plugin-gsp
-        - grails-plugin-i18n
-        - grails-plugin-log4j
-        - grails-plugin-mimetypes
-        - grails-plugin-rest
-        - grails-plugin-services
-        - grails-plugin-servlets
-        - grails-plugin-testing
-        - grails-plugin-url-mappings
-        - grails-plugin-validation
-        - grails-project-api
-        - grails-resources
-        - grails-scripts
-        - grails-spring
-        - grails-test
-        - grails-validation
-        - grails-web
-        - grails-web-common
-        - grails-web-databinding
-        - grails-web-databinding-spring
-        - grails-web-fileupload
-        - grails-web-gsp
-        - grails-web-jsp
-        - grails-web-mvc
-        - grails-web-sitemesh
-        - grails-web-url-mappings
-        - grails-wrapper-support
     - name: Groovy
       groupId: org.codehaus.groovy
       version: 2.4.3
@@ -518,7 +470,6 @@ platform_definition:
       - 'org.springframework.data.build:spring-data-java8-stub' # Not included in Spring Data Bom
       - 'org.eclipse.jetty*:*:9.*' # The Platform uses Jetty 8
     ignored_modules:
-      - 'org.grails' # Grails is a special case. As recommended by Graeme, the Platform only contains grails-dependencies
       - 'org.springframework.boot:spring-boot-cli' # The CLI doesn't expose its dependencies to applications
       - 'org.springframework.boot:spring-boot-maven-plugin' # The plugin doesn't expose it dependencies to applications
       - 'org.springframework.boot:spring-boot-configuration-processor' # Used by the Boot build to generate metadata about @ConfigurationProperties
@@ -562,6 +513,8 @@ platform_definition:
       - 'org.mariadb.jdbc:mariadb-java-client'
       - 'org.postgresql:postgresql'
       - 'org.slf4j:slf4j-jdk14'
+      - 'org.slf4j:slf4j-simple'
+      - 'org.spockframework:spock-core'
       - 'org.spockframework:spock-spring'
       - 'org.springframework:springloaded'
       - 'xml-apis:xml-apis'
