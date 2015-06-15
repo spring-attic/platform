@@ -285,3 +285,16 @@ Or in `gradle.properties`:
 ----
 	foo.version=1.1.0.RELEASE
 ----
+
+[[getting-started-logging]]
+=== Logging
+
+Spring IO Platform builds on top of Spring Boot which takes a somewhat opinionated view about
+logging in that it aims to prevent Commons Logging from being used by default. Instead, it
+encourages the use of Logback via its `spring-boot-starter-logging` module. Support for other
+logging frameworks, including Log4J and Log4J2, is also provided. Wherever possible, applications
+built using Spring IO Platform adopt this approach.
+
+If you choose not to use Spring Boot's `spring-boot-starter-logging` module but still wish to avoid
+the use of Commons Logging, using SLF4J and its `jcl-over-slf4j` module is recommended along with
+a logging backend such as Logback or Log4J2.
