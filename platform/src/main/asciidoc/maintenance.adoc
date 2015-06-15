@@ -1,15 +1,28 @@
-[[release-cycle]]
-= Release Cycle
+[[maintenance]]
+= Maintenance
 
 [partintro]
 --
-This section describes the Platform's release cycle.
+This section describes the approach taken to the maintenance of the Platform.
 --
 
 
 
-[[release-cycle-overview]]
-== Overview
+[[maintenance-adding-dependencies]]
+== Adding dependencies
+
+The inclusion of a dependency in the Platform is triggered by its usage in one of the
+Platform's projects. When a new project is added to the Platform, or the Platform upgrades
+to a new version of an existing project, any of the project's dependencies that are not
+part of the Platform will be added to the Platform. Furthermore, when a new dependency is
+added to the Platform, any other modules that are part of the same project will typically
+also be added, even if they are not using by any of the Platform's projects. This helps
+to ensure that a consistent version is used across all modules of a third-party project.
+
+
+
+[[maintenance-release-cycle]]
+== Release cycle
 
 A new maintenance release of the Platform occurs roughly every 6 to 8 weeks. There will,
 however, be occasions when a new release occurs more quickly than this; to address a
