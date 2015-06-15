@@ -19,14 +19,8 @@ future releases of the Platform, existing applications should be updated.
 
 As of Spring IO Platform 1.1, the `platform-versions` properties artifact is deprecated. Maven
 users are unaffected by this change. If, however, you're using the Platform with Gradle, then you
-should start using the properties file published by `platform-bom` instead:
-
-[source,groovy,indent=0,subs="verbatim,attributes"]
-----
-	dependencies {
-		versionManagement 'io.spring.platform:platform-bom:{platform-version}@properties'
-	}
-----
+should start using the dependency management plugin and the Platform's bom instead. See
+<<getting-started-using-spring-io-platform-gradle>> for more information.
 
 === Codahale metrics
 
