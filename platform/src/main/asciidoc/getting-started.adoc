@@ -244,3 +244,44 @@ the Platform without specifying a version:
 
 For more details of what's included in the Platform and the versions that are provided, please
 refer to the <<appendix-dependency-versions, appendix>>.
+
+[[getting-started-overriding-versions]]
+== Overriding Spring IO Platform's dependency management
+One of the major benefits of the Spring IO Platform is that it provides a set of versions that are
+known to work together, while also allowing you to override those versions to suit the needs of
+your project.
+
+Both the Spring IO Platform bom, and the Spring Boot bom from which it inherits, use properties to
+define the versions of the managed dependencies. To change the version of a dependency the value of
+its version property can be overridden. To identify the property that you wish to override, consult
+the `<properties>` sections of the Spring IO Platform bom and the Spring Boot bom from which it
+inherits. Exactly how the property is overridden depends on whether your project is built with
+Maven or Gradle.
+
+[[getting-started-overriding-versions-maven]]
+=== Overriding a version using Maven
+To override a property in Maven, declare the property in your pom's `<properties>` section with the
+desired value:
+
+[source,xml,indent=0,subs="verbatim,attributes"]
+----
+	<properties>
+		<foo.version>1.1.0.RELEASE</foo.version>
+	</properties>
+----
+
+[[getting-started-overriding-versions-gradle]]
+=== Overriding a version using Gradle
+To override a property in Gradle, configure its value in your `build.gradle` script:
+
+[source,groovy,indent=0,subs="verbatim,attributes"]
+----
+	ext['foo.version'] = '1.1.0.RELEASE'
+----
+
+Or in `gradle.properties`:
+
+[source,groovy,indent=0,subs="verbatim,attributes"]
+----
+	foo.version=1.1.0.RELEASE
+----
