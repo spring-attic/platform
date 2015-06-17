@@ -3,147 +3,208 @@
 
 [partintro]
 --
-This section provides all you need to know about upgrading to this version of Spring IO Platform.
+This section provides all you need to know about upgrading to this version of Spring IO
+Platform.
 --
 
 
 
-[[upgrading-removal]]
-== Removal of previously deprecated components
+[[upgrading-gradle]]
+== Gradle
 
-A number of the Platform's components that were deprecated in earlier releases have now been
-removed.
+
 
 === platform-versions artifact
 
-The `platform-versions` properties artifact has been removed. Maven users are unaffected by this
-change. If, however, you're using the Platform with Gradle, then you must start using the
-dependency management plugin and the Platform's bom instead. See
-<<getting-started-using-spring-io-platform-gradle>> for more information.
+The `platform-versions` properties artifact has been removed. If you are using the
+Platform with Gradle, then you must start using the dependency management plugin and the
+Platform's bom instead. See <<getting-started-using-spring-io-platform-gradle>> for more
+information.
 
-=== Ant
+[[upgrading-dependency-management]]
+== Changes to dependency management
 
-Dependency management for four Ant dependencies has been removed. Thoses dependencies are:
+[[upgrading-dependency-management-removed]]
+=== Dependency management that has been removed
 
- * `org.apache.ant:ant`
- * `org.apache.ant:ant-antlr`
- * `org.apache.ant:ant-junit`
- * `org.apache.ant:ant-launcher`
+The following table lists dependency management that has been removed. If you project
+uses one of these dependencies, you should configure your own dependency management as
+part of the upgrade process.
 
-They are no longer a dependency of any of the Platform's projects.
+|===
+|Dependency | Explanation
 
-=== bsf:bsf
+| `bsf:bsf`
+| No longer a dependency of any of the Platform's projects
 
-Dependency management for `bsf:bsf` has been removed. It is no longer a dependency of any of the
-Platform's projects.
+| `com.beust:jcommander`
+| No longer a dependency of any of the Platform's projects
 
-=== Codahale metrics
+| `com.lmax:disruptor`
+| Reactor was the sole user of this dependency. It now embeds a repackaged version of the
+  library so the dependency is no longer required
 
-Dependency management for four Codahale metrics dependencies has been removed. Those dependencies
-are:
+| `com.thoughtworks.qdox`
+| No longer a dependency of any of the Platform's projects
 
- * `com.codahale.metrics:metrics-core`
- * `com.codahale.metrics:metrics-ganglia`
- * `com.codahale.metrics:metrics-graphite`
- * `com.codahale.metrics:metrics-servlets`
+| `org.apache.ant:ant`
+| No longer a dependency of any of the Platform's projects
 
-The following dependencies should be used instead:
+| `org.apache.ant:ant-antlr`
+| No longer a dependency of any of the Platform's projects
 
- * `io.dropwizard.metrics:metrics-core`
- * `io.dropwizard.metrics:metrics-ganglia`
- * `io.dropwizard.metrics:metrics-graphite`
- * `io.dropwizard.metrics:metrics-servlets`
+| `org.apache.ant:ant-junit`
+| No longer a dependency of any of the Platform's projects
 
-=== com.beust:jcommander
+| `org.apache.ant:ant-launcher`
+| No longer a dependency of any of the Platform's projects
 
-Dependency management for `com.beust:jcommander` has been removed. It is no longer a dependency of
-any of the Platform's projects.
+| `org.apache.cassandra:cassandra-all`
+| No longer a dependency of any of the Platform's projects
 
-=== com.lmax:disruptor
+| `org.apache.ivy:ivy`
+| No longer a dependency of any of the Platform's projects
 
-Dependency management for `com.lmax:disruptor` has been removed. Reactor now embeds a
-repackaged version of the library so a dependency on `com.lmax:disruptor` is no longer
-required.
+| `org.apache.hadoop:hadoop-common`
+| No longer a dependency of any of the Platform's projects
 
-=== com.thoughtworks.qdox:qdox
+| `org.apache.hadoop:hadoop-distcp`
+| No longer a dependency of any of the Platform's projects
 
-Dependency management for `com.thoughtworks.qdox:qdox` has been removed. It is no longer a
-dependency of any of the Platform's projects.
+| `org.apache.hadoop:hadoop-hdfs`
+| No longer a dependency of any of the Platform's projects
 
-=== net.java.dev.rome:rome
+| `org.apache.hadoop:hadoop-mapreduce-client-app`
+| No longer a dependency of any of the Platform's projects
 
-Dependency management for `net.java.dev.rome:rome` has been removed. `com.rometools:rome` should be
-used instead.
+| `org.apache.hadoop:hadoop-mapreduce-client-core`
+| No longer a dependency of any of the Platform's projects
 
-=== net.java.dev.rome:rome-fetcher
+| `org.apache.hadoop:hadoop-mapreduce-client-hs`
+| No longer a dependency of any of the Platform's projects
 
-Dependency management for `net.java.dev.rome:rome-fetcher` has been removed.
-`com.rometools:rome-fetcher` should be used instead.
+| `org.apache.hadoop:hadoop-mapreduce-client-jobclient`
+| No longer a dependency of any of the Platform's projects
 
-=== org.apache.cassandra:cassandra-all
+| `org.apache.hadoop:hadoop-streaming`
+| No longer a dependency of any of the Platform's projects
 
-Dependency management for `org.apache.cassandra:cassandra-all` has been removed.
+| `org.apache.hadoop:hadoop-yarn-client`
+| No longer a dependency of any of the Platform's projects
 
-=== org.apache.directory.server:apacheds-all
+| `org.apache.hadoop:hadoop-yarn-common`
+| No longer a dependency of any of the Platform's projects
 
-Dependency management for `org.apache.directory.server:apacheds-all` has been removed. Dependencies
-on the more finely grained `org.apache.directory.server` modules should be used instead.
+| `org.apache.hadoop:hadoop-yarn-server-tests`
+| No longer a dependency of any of the Platform's projects
 
-=== org.apache.ivy:ivy
+| `org.apache.hbase:hbase`
+| No longer a dependency of any of the Platform's projects
 
-Dependency management for `org.apache.ivy:ivy` has been removed. It is no longer a dependency of
-any of the Platform's projects.
+| `org.apache.hbase:hbase-client`
+| No longer a dependency of any of the Platform's projects
 
-=== org.apache.tomcat:tomcat7-websocket
+| `org.apache.hbase:hbase-common`
+| No longer a dependency of any of the Platform's projects
 
-Dependency management for `org.apache.tomcat:tomcat7-websocket` has been removed. The equivalent
-Tomcat 8 dependency, `org.apache.tomcat:tomcat-websocket`, should be used instead.
+| `org.apache.hive:hive-service`
+| No longer a dependency of any of the Platform's projects
 
-=== org.codehaus.gpars:gpars
+| `org.apache.pig:pig`
+| No longer a dependency of any of the Platform's projects
 
-Dependency management for `org.codehaus.gpars:gpars` has been removed. It is no longer a
-dependency of any of the Platform's projects.
+| `org.codehaus.gpars:gpars`
+| No longer a dependency of any of the Platform's projects
 
-=== org.eclipse.paho:mqtt-client
+| `org.erlang.otp:jinterface`
+| No longer a dependency of any of the Platform's projects
 
-Dependency management for `org.eclipse.paho:mqtt-client` has been removed.
-`org.eclipse.paho:org.eclipse.paho.client.mqttv3` should be used instead.
+| `org.fusesource.jansi:jansi`
+| No longer a dependency of any of the Platform's projects
 
-=== org.erlang.otp:jinterface
+| `org.glassfish.tyrus:tyrus-websocket-core`
+| Does not exist in the version of Tyrus that is now used by the Platform.
 
-Dependency management for `org.erlang.otp:jinterface` has been removed. It is no longer a
-dependency of any of the Platform's projects.
+| `org.grails:grails-dependencies`
+| Grails is no longer part of the Platform
 
-=== org.fusesource.jansi:jansi
+| `org.igniterealtime.smack:smackx`
+| Does not exist in the version of Smack that is now used by the Platform
 
-Dependency management for `org.fusesource.jansi:jansi` has been removed. It is no longer a
-dependency of any of the Platform's projects.
+| `org.kitesdk:kite-data-core`
+| No longer a dependency of any of the Platform's projects
 
-=== org.glassfish.tyrus:tyrus-websocket-core
+| `org.neo4j:neo4j-graph-collections`
+| No longer a dependency of any of the Platform's projects
 
-Dependency management for `org.glassfish.tyrus:tyrus-websocket-core` has been removed. It does
-not exist in the version of Tyrus that is used by the Platform.
+| `org.springframework.amqp:spring-erlang`
+| Does not exist in the verison of Spring AMQP that is now used by the Platform
 
-=== org.grails:grails-dependencies
+| `org.springframework.data:spring-data-hadoop`
 
-Dependency management for `org.grails:grails-dependencies has been removed. Grails is no longer a
-part of the Platform.
+`org.springframework.data:spring-data-hadoop-batch`
 
-=== org.igniterealtime.smack:smackx
+`org.springframework.data:spring-data-hadoop-core`
 
-Dependency management for `org.igniterealtime.smack:smackx` has been removed. It does not exist in
-the version of Smack that is used by the Platform.
+`org.springframework.data:spring-data-hadoop-store`
 
-=== org.hibernate.javax.persistence:hibernate-jpa-2.0-api
+`org.springframework.data:spring-data-hadoop-test`
 
-Dependency management for `org.hibernate.javax.persistence:hibernate-jpa-2.0-api` has been removed.
-`org.eclipse.persistence:javax.persistence` should be used instead.
+`org.springframework.data:spring-yarn-batch`
 
-=== org.neo4j:neo4j-graph-collections
+`org.springframework.data:spring-yarn-boot`
 
-Dependency management for `org.neo4j:neo4j-graph-collections` has been removed.
+`org.springframework.data:spring-yarn-core`
 
-=== org.springframework.amqp:spring-erlang
+`org.springframework.data:spring-yarn-integration`
 
-Dependency management for `org.springframework.amqp:spring-erlang` has been removed. It no longer
-exists in the verison of Spring AMQP that is used by the Platform.
+`org.springframework.data:spring-yarn-test`
+
+| The wide variety of dependencies used by the different Apache Hadoop distributions
+  supported by Spring for Apache Hadoop has made it impossible to provide generally useful
+  dependency management for the project and its dependencies. As a result, Spring for
+  Apache Hadoop has been removed from the Platform.
+|===
+
+
+
+[[upgrading-dependency-management-replaced]]
+=== Dependency management that has been replaced
+
+The following table lists dependency management that has been replaced. Where possible,
+as part of the upgrade process, you should update your project's dependencies to use the
+replacements.
+
+|===
+| Dependency | Replacement
+
+| `com.codahale.metrics:metrics-core`
+| `io.dropwizard.metrics:metrics-core`
+
+| `com.codahale.metrics:metrics-ganglia`
+| `io.dropwizard.metrics:metrics-ganglia`
+
+| `com.codahale.metrics:metrics-graphite`
+| `io.dropwizard.metrics:metrics-graphite`
+
+| `com.codahale.metrics:metrics-servlets`
+| `io.dropwizard.metrics:metrics-servlets`
+
+| `net.java.dev.rome:rome`
+| `com.rometools:rome`
+
+| `net.java.dev.rome:rome-fetcher`
+| `com.rometools:rome-fetcher`
+
+| `org.apache.directory.server:apacheds-all`
+| Separate, more finely grained `org.apache.directory.server` modules
+
+| `org.apache.tomcat:tomcat7-websocket`
+| `org.apache.tomcat:tomcat-websocket`
+
+| `org.eclipse.paho:mqtt-client`
+| `org.eclipse.paho:org.eclipse.paho.client.mqttv3`
+
+| `org.hibernate.javax.persistence:hibernate-jpa-2.0-api`
+| `org.eclipse.persistence:javax.persistence`
+|===

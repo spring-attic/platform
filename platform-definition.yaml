@@ -218,23 +218,6 @@ platform_definition:
         - spring-webmvc
         - spring-webmvc-portlet
         - spring-websocket
-    - name: Spring Hadoop
-      groupId: org.springframework.data
-      version: 2.0.4.RELEASE
-      build:
-        repository: https://github.com/spring-projects/spring-hadoop
-        additional_tasks: build -x test
-      modules:
-        - spring-data-hadoop
-        - spring-data-hadoop-batch
-        - spring-data-hadoop-core
-        - spring-data-hadoop-store
-        - spring-data-hadoop-test
-        - spring-yarn-batch
-        - spring-yarn-boot
-        - spring-yarn-core
-        - spring-yarn-integration
-        - spring-yarn-test
     - name: Spring HATEOAS
       groupId: org.springframework.hateoas
       version: 0.17.0.RELEASE
