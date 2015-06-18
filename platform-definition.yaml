@@ -234,7 +234,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.2.0.M1
+      version: 4.2.0.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         runTestsWith:
@@ -272,6 +272,7 @@ platform_definition:
         - spring-integration-ws
         - spring-integration-xml
         - spring-integration-xmpp
+        - spring-integration-zookeeper
     - name: Spring Integration Flow
       groupId: org.springframework.integration
       version: 1.0.0.RELEASE

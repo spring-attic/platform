@@ -79,6 +79,7 @@
 		<commons-logging.version>1.2</commons-logging.version>
 		<commons-net.version>3.3</commons-net.version>
 		<couchbase-client.version>1.4.8</couchbase-client.version>
+		<curator.version>2.8.0</curator.version>
 		<dom4j.version>1.6.1</dom4j.version>
 		<eclipselink.version>2.5.2</eclipselink.version>
 		<eclipselink-javax-persistence.version>2.1.0</eclipselink-javax-persistence.version>
@@ -188,6 +189,7 @@
 		<xstream.version>1.4.8</xstream.version>
 		<xws-security.version>3.0</xws-security.version>
 		<yammer-metrics.version>2.2.0</yammer-metrics.version>
+		<zookeeper.version>3.4.6</zookeeper.version>
 	</properties>
 
 	<dependencyManagement>
@@ -747,6 +749,11 @@
 				<version>${commons-lang3.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.apache.curator</groupId>
+				<artifactId>curator-recipes</artifactId>
+				<version>${curator.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.apache.derby</groupId>
 				<artifactId>derbyclient</artifactId>
 				<version>${derby.version}</version>
@@ -910,6 +917,11 @@
 				<groupId>org.apache.ws.xmlschema</groupId>
 				<artifactId>xmlschema-core</artifactId>
 				<version>${xmlschema.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.zookeeper</groupId>
+				<artifactId>zookeeper</artifactId>
+				<version>${zookeeper.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.atteo</groupId>
