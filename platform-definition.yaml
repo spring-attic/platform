@@ -57,7 +57,7 @@ platform_definition:
         checkout: 3.0.4.RELEASE
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 1.3.0.M1
+      version: 1.3.0.BUILD-SNAPSHOT
       modules:
         - spring-boot
         - spring-boot-actuator
@@ -73,6 +73,7 @@ platform_definition:
         - spring-boot-starter-actuator
         - spring-boot-starter-amqp
         - spring-boot-starter-aop
+        - spring-boot-starter-artemis
         - spring-boot-starter-batch
         - spring-boot-starter-cache
         - spring-boot-starter-cloud-connectors
@@ -109,6 +110,7 @@ platform_definition:
         - spring-boot-starter-thymeleaf
         - spring-boot-starter-tomcat
         - spring-boot-starter-undertow
+        - spring-boot-starter-validation
         - spring-boot-starter-velocity
         - spring-boot-starter-web
         - spring-boot-starter-websocket
@@ -133,45 +135,45 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.3.0.M1
+      version: 1.3.0.BUILD-SNAPSHOT
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.11.0.M1
+      version: 1.11.0.BUILD-SNAPSHOT
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 1.4.0.M1
+      version: 1.4.0.BUILD-SNAPSHOT
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 1.3.0.M1
+      version: 1.3.0.BUILD-SNAPSHOT
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.7.0.M1
+      version: 1.7.0.BUILD-SNAPSHOT
       modules:
         - spring-data-gemfire
       build:
         repository: https://github.com/spring-projects/spring-data-gemfire
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.9.0.M1
+      version: 1.9.0.BUILD-SNAPSHOT
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 1.0.0.M1
+      version: 1.0.0.BUILD-SNAPSHOT
       modules:
         - spring-data-keyvalue
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.8.0.M1
+      version: 1.8.0.BUILD-SNAPSHOT
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -179,31 +181,31 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 3.4.0.M1
+      version: 3.4.0.BUILD-SNAPSHOT
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.6.0.M1
+      version: 1.6.0.BUILD-SNAPSHOT
       build:
         repository: https://github.com/spring-projects/spring-data-redis
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.4.0.M1
+      version: 2.4.0.BUILD-SNAPSHOT
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 1.5.0.M1
+      version: 1.5.0.BUILD-SNAPSHOT
       modules:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.2.0.RC1
+      version: 4.2.0.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
@@ -450,9 +452,9 @@ platform_definition:
       # For user convenience, Boot provides extra dependency management for modules that both it
       # and the rest of the Platform do not depend upon directly
       - 'ch.qos.logback:logback-access'
-      - 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml'
+      - 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
       - 'com.github.mxab.thymeleaf.extras:thymeleaf-extras-data-attribute'
       - 'com.zaxxer:HikariCP'
       - 'io.dropwizard.metrics:metrics-ganglia'
@@ -460,8 +462,34 @@ platform_definition:
       - 'io.dropwizard.metrics:metrics-servlets'
       - 'javax.servlet:jstl'
       - 'mysql:mysql-connector-java'
+      - 'org.apache.activemq:activemq-amqp'
+      - 'org.apache.activemq:activemq-blueprint'
+      - 'org.apache.activemq:activemq-camel'
       - 'org.apache.activemq:activemq-client'
+      - 'org.apache.activemq:activemq-console'
+      - 'org.apache.activemq:activemq-fileserver'
+      - 'org.apache.activemq:activemq-http'
+      - 'org.apache.activemq:activemq-jaas'
+      - 'org.apache.activemq:activemq-jdbc-store'
       - 'org.apache.activemq:activemq-jms-pool'
+      - 'org.apache.activemq:activemq-kahadb-store'
+      - 'org.apache.activemq:activemq-karaf'
+      - 'org.apache.activemq:activemq-leveldb-store'
+      - 'org.apache.activemq:activemq-log4j-appender'
+      - 'org.apache.activemq:activemq-mqtt'
+      - 'org.apache.activemq:activemq-openwire-generator'
+      - 'org.apache.activemq:activemq-openwire-legacy'
+      - 'org.apache.activemq:activemq-osgi'
+      - 'org.apache.activemq:activemq-partition'
+      - 'org.apache.activemq:activemq-ra'
+      - 'org.apache.activemq:activemq-rar'
+      - 'org.apache.activemq:activemq-run'
+      - 'org.apache.activemq:activemq-runtime-config'
+      - 'org.apache.activemq:activemq-shiro'
+      - 'org.apache.activemq:activemq-spring'
+      - 'org.apache.activemq:activemq-stomp'
+      - 'org.apache.activemq:activemq-web'
+      - 'org.apache.activemq:activemq-web-console'
       - 'org.apache.httpcomponents:httpcore'
       - 'org.apache.tomcat:tomcat-jsp-api'
       - 'org.codehaus.groovy:groovy-ant'
@@ -482,6 +510,7 @@ platform_definition:
       - 'org.codehaus.groovy:groovy-testng'
       - 'org.codehaus.janino:janino'
       - 'org.eclipse.jdt.core.compiler:ecj'
+      - 'org.eclipse.jetty.orbit:javax.servlet.jsp'
       - 'org.eclipse.jetty:jetty-annotations'
       - 'org.eclipse.jetty:jetty-continuation'
       - 'org.eclipse.jetty:jetty-deploy'
@@ -492,7 +521,9 @@ platform_definition:
       - 'org.eclipse.jetty:jetty-plus'
       - 'org.eclipse.jetty:jetty-security'
       - 'org.eclipse.jetty:jetty-xml'
-      - 'org.eclipse.jetty.orbit:javax.servlet.jsp'
+      - 'org.firebirdsql.jdbc:jaybird-jdk16'
+      - 'org.firebirdsql.jdbc:jaybird-jdk17'
+      - 'org.firebirdsql.jdbc:jaybird-jdk18'
       - 'org.hibernate:hibernate-ehcache'
       - 'org.hibernate:hibernate-envers'
       - 'org.hibernate:hibernate-jpamodelgen'
