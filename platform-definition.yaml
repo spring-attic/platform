@@ -91,6 +91,7 @@ platform_definition:
         - spring-boot-starter-jdbc
         - spring-boot-starter-jersey
         - spring-boot-starter-jetty
+        - spring-boot-starter-jooq
         - spring-boot-starter-jta-atomikos
         - spring-boot-starter-jta-bitronix
         - spring-boot-starter-log4j
@@ -530,6 +531,8 @@ platform_definition:
       - 'org.hibernate:hibernate-jpamodelgen'
       - 'org.hibernate:hibernate-validator-annotation-processor'
       - 'org.javassist:javassist'
+      - 'org.jooq:jooq-codegen'
+      - 'org.jooq:jooq-meta'
       - 'org.mariadb.jdbc:mariadb-java-client'
       - 'org.postgresql:postgresql'
       - 'org.slf4j:slf4j-jdk14'
