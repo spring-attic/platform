@@ -206,7 +206,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.2.0.BUILD-SNAPSHOT
+      version: 4.2.0.RC2
       modules:
         - spring-aop
         - spring-aspects
@@ -458,6 +458,7 @@ platform_definition:
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
       - 'com.github.mxab.thymeleaf.extras:thymeleaf-extras-data-attribute'
+      - 'com.jayway.jsonpath:json-path-assert'
       - 'com.zaxxer:HikariCP'
       - 'io.dropwizard.metrics:metrics-ganglia'
       - 'io.dropwizard.metrics:metrics-graphite'
