@@ -283,7 +283,7 @@ platform_definition:
         - spring-integration-flow
     - name: Spring Integration Java DSL
       groupId: org.springframework.integration
-      version: 1.0.1.RELEASE
+      version: 1.0.2.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-integration-java-dsl
         compileWith: jdk8

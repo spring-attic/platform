@@ -47,7 +47,7 @@
 	<properties>
 		<spring-batch-admin.version>2.0.0.M1</spring-batch-admin.version>
 		<spring-integration-flow.version>1.0.0.RELEASE</spring-integration-flow.version>
-		<spring-integration-java-dsl.version>1.0.1.RELEASE</spring-integration-java-dsl.version>
+		<spring-integration-java-dsl.version>1.0.2.RELEASE</spring-integration-java-dsl.version>
 		<spring-integration-kafka.version>1.2.0.RELEASE</spring-integration-kafka.version>
 		<spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
 		<spring-ldap.version>2.0.3.RELEASE</spring-ldap.version>
