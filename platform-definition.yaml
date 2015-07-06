@@ -123,7 +123,7 @@ platform_definition:
         - spring-batch-test
       build:
         repository: https://github.com/spring-projects/spring-batch
-        checkout: 3.0.4.RELEASE
+        tagPrefix:
     - name: Spring Boot
       groupId: org.springframework.boot
       version: 1.2.5.RELEASE
@@ -220,6 +220,7 @@ platform_definition:
         - spring-data-gemfire
       build:
         repository: https://github.com/spring-projects/spring-data-gemfire
+        tagPrefix:
     - name: Spring Data JPA
       groupId: org.springframework.data
       version: 1.7.3.RELEASE
@@ -243,6 +244,7 @@ platform_definition:
       version: 1.4.3.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-data-redis
+        tagPrefix:
       modules:
         - spring-data-redis
     - name: Spring Data Rest
@@ -363,7 +365,7 @@ platform_definition:
       version: 1.1.0.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-integration-extensions
-        checkout: splunk.v1.1.0.RELEASE
+        tagPrefix: splunk.v
         directory: spring-integration-splunk
       modules:
         - spring-integration-splunk
@@ -372,7 +374,7 @@ platform_definition:
       version: 2.0.3.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-ldap
-        checkout: 2.0.3.RELEASE
+        tagPrefix:
       modules:
         - spring-ldap-core
         - spring-ldap-core-tiger
@@ -406,7 +408,7 @@ platform_definition:
       version: 3.2.7.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-security
-        checkout: 3.2.7.RELEASE
+        tagPrefix:
       modules:
         - spring-security-acl
         - spring-security-aspects
@@ -438,7 +440,7 @@ platform_definition:
         - spring-session-data-redis
       build:
         repository: https://github.com/spring-projects/spring-session
-        checkout: 1.0.1.RELEASE
+        tagPrefix:
     - name: Spring Social
       groupId: org.springframework.social
       version: 1.1.2.RELEASE
