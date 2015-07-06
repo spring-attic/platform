@@ -60,6 +60,7 @@ platform_definition:
       modules:
         - spring-boot
         - spring-boot-actuator
+        - spring-boot-actuator-docs
         - spring-boot-autoconfigure
         - spring-boot-cli
         - spring-boot-configuration-processor

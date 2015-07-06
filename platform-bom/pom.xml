@@ -177,7 +177,6 @@
 		<tyrus.version>1.3.5</tyrus.version>
 		<typica.version>1.3</typica.version>
 		<velocity-tools-view.version>1.4</velocity-tools-view.version>
-		<webjars-hal-browser.version>b7669f1-1</webjars-hal-browser.version>
 		<webjars-locator.version>0.22</webjars-locator.version>
 		<websphere-uow.version>6.0.2.17</websphere-uow.version>
 		<woodstox.version>4.2.1</woodstox.version>
@@ -1117,11 +1116,6 @@
 				<groupId>org.threeten</groupId>
 				<artifactId>threetenbp</artifactId>
 				<version>${threetenbp.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.webjars</groupId>
-				<artifactId>hal-browser</artifactId>
-				<version>${webjars-hal-browser.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.webjars</groupId>
