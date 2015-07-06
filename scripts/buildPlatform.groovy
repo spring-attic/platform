@@ -41,7 +41,11 @@ def build(def project, def platformVersion, String jdk7Home, String jdk8Home) {
 	execute("git clone $project.build.repository $dir")
 	def checkout = project.build['checkout'];
 	if (!checkout && !project.version.endsWith('SNAPSHOT')) {
-		checkout = "v${project.version}"
+		def prefix = project.build.containsKey('tagPrefix') ? project.build['tagPrefix']: 'v'
+		if (!prefix) {
+			prefix = ''
+		}
+		checkout = "${prefix}${project.version}"
 	}
 	if (checkout) {
 		execute("git checkout $checkout", dir)
