@@ -66,8 +66,9 @@ class AetherDependenciesResolver implements DependenciesResolver {
 	}
 
 	private RemoteRepository createRepository(RepositoryDescriptor descriptor) {
-		return new RemoteRepository.Builder(descriptor.getId(), "default",
-		descriptor.getUrl()).setSnapshotPolicy(RepositoryPolicy.UPDATE_POLICY_ALWAYS).build()
+		def repositoryPolicy = new RepositoryPolicy(true, RepositoryPolicy.UPDATE_POLICY_ALWAYS, RepositoryPolicy.CHECKSUM_POLICY_WARN)
+		def builder = new RemoteRepository.Builder(descriptor.getId(), "default", descriptor.getUrl())
+		return builder.setSnapshotPolicy(repositoryPolicy).build()
 	}
 
 	private void processDependency(
