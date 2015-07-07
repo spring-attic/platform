@@ -27,6 +27,7 @@ import org.eclipse.aether.RepositorySystemSession
 import org.eclipse.aether.artifact.Artifact
 import org.eclipse.aether.artifact.DefaultArtifact
 import org.eclipse.aether.repository.RemoteRepository
+import org.eclipse.aether.repository.RepositoryPolicy
 import org.eclipse.aether.resolution.ArtifactDescriptorRequest
 import org.eclipse.aether.resolution.ArtifactDescriptorResult
 import org.eclipse.aether.util.artifact.JavaScopes
@@ -66,7 +67,7 @@ class AetherDependenciesResolver implements DependenciesResolver {
 
 	private RemoteRepository createRepository(RepositoryDescriptor descriptor) {
 		return new RemoteRepository.Builder(descriptor.getId(), "default",
-		descriptor.getUrl()).build()
+		descriptor.getUrl()).setSnapshotPolicy(RepositoryPolicy.UPDATE_POLICY_ALWAYS).build()
 	}
 
 	private void processDependency(

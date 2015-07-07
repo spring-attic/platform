@@ -1,8 +1,8 @@
-package io.spring.platform.foundation
-
-import org.junit.Test
+package io.spring.platform
 
 import static org.junit.Assert.fail
+
+import org.junit.Test
 
 public class BomTests {
 
@@ -90,14 +90,14 @@ public class BomTests {
 
 	String getBootVersion() {
 		new XmlSlurper()
-			.parse(new File('target/dependency/platform-bom.pom'))
-			.parent.version.text()
+				.parse(new File('target/dependency/platform-bom.pom'))
+				.parent.version.text()
 	}
 
 	def extractDependenciesFromPom(def pom) {
 		def dependencies = new XmlSlurper().parseText(pom)
-			.dependencyManagement.dependencies.dependency
-			.collect { getIdForDependency(it)}
+				.dependencyManagement.dependencies.dependency
+				.collect { getIdForDependency(it)}
 	}
 
 	def getIdForDependency(dependency) {
@@ -107,9 +107,9 @@ public class BomTests {
 	Map extractVersionsFromPom(def pom) {
 		Map versions = [:]
 		new XmlParser().parseText(pom)
-			.properties[0].children()
-			.findAll { it.name().localPart.endsWith('.version') }
-			.each { versions[it.name().localPart] = it.text() }
+				.properties[0].children()
+				.findAll { it.name().localPart.endsWith('.version') }
+				.each { versions[it.name().localPart] = it.text() }
 		versions
 	}
 }
