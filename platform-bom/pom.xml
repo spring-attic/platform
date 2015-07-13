@@ -128,7 +128,6 @@
 		<jsonassert.version>1.2.3</jsonassert.version>
 		<json-patch.version>1.7</json-patch.version>
 		<jsr250.version>1.0</jsr250.version>
-		<junit.version>4.11</junit.version>
 		<jxl.version>2.6.12</jxl.version>
 		<kafka.version>0.8.2.1</kafka.version>
 		<kite.version>0.13.0</kite.version>
