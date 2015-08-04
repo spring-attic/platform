@@ -124,9 +124,9 @@ platform_definition:
        - spring-batch-admin-domain
        - spring-batch-admin-manager
        - spring-batch-admin-resources
-    - name: Spring Cloud
+    - name: Spring Cloud Connectors
       groupId: org.springframework.cloud
-      version: 1.1.1.RELEASE
+      version: 1.2.0.RELEASE
       modules:
         - spring-cloud-core
         - spring-cloud-cloudfoundry-connector
