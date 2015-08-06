@@ -190,6 +190,9 @@ replacements.
 | `com.codahale.metrics:metrics-servlets`
 | `io.dropwizard.metrics:metrics-servlets`
 
+| `com.lambdaworks:lettuce`
+| `biz.paluch.redis:lettuce`
+
 | `net.java.dev.rome:rome`
 | `com.rometools:rome`
 

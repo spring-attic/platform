@@ -135,7 +135,7 @@
 		<kryo.version>2.22</kryo.version>
 		<ldapbp.version>1.0</ldapbp.version>
 		<ldapsdk.version>4.1</ldapsdk.version>
-		<lettuce.version>2.3.3</lettuce.version>
+		<lettuce.version>3.2.Final</lettuce.version>
 		<lombok.version>1.14.8</lombok.version>
 		<myfaces.version>2.1.17</myfaces.version>
 		<okhttp.version>2.3.0</okhttp.version>
@@ -408,7 +408,7 @@
 				<version>${jsch.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.lambdaworks</groupId>
+				<groupId>biz.paluch.redis</groupId>
 				<artifactId>lettuce</artifactId>
 				<version>${lettuce.version}</version>
 			</dependency>

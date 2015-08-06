@@ -137,28 +137,28 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.3.0.BUILD-SNAPSHOT
+      version: 1.3.0.RC1
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.11.0.BUILD-SNAPSHOT
+      version: 1.11.0.RC1
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 1.4.0.BUILD-SNAPSHOT
+      version: 1.4.0.RC1
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 1.3.0.BUILD-SNAPSHOT
+      version: 1.3.0.RC1
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.7.0.BUILD-SNAPSHOT
+      version: 1.7.0.RC1
       modules:
         - spring-data-gemfire
       build:
@@ -166,17 +166,17 @@ platform_definition:
         tagPrefix:
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.9.0.BUILD-SNAPSHOT
+      version: 1.9.0.RC1
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 1.0.0.BUILD-SNAPSHOT
+      version: 1.0.0.RC1
       modules:
         - spring-data-keyvalue
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.8.0.BUILD-SNAPSHOT
+      version: 1.8.0.RC1
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -184,12 +184,12 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 3.4.0.BUILD-SNAPSHOT
+      version: 3.4.0.RC1
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.6.0.BUILD-SNAPSHOT
+      version: 1.6.0.RC1
       build:
         repository: https://github.com/spring-projects/spring-data-redis
         tagPrefix:
@@ -197,14 +197,14 @@ platform_definition:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.4.0.BUILD-SNAPSHOT
+      version: 2.4.0.RC1
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 1.5.0.BUILD-SNAPSHOT
+      version: 1.5.0.RC1
       modules:
         - spring-data-solr
     - name: Spring Framework
@@ -233,7 +233,7 @@ platform_definition:
         - spring-websocket
     - name: Spring HATEOAS
       groupId: org.springframework.hateoas
-      version: 0.17.0.RELEASE
+      version: 0.18.0.RELEASE
       modules:
         - spring-hateoas
     - name: Spring Integration
@@ -323,7 +323,7 @@ platform_definition:
         - spring-ldap-test
     - name: Spring Loaded
       groupId: org.springframework
-      version: 1.2.3.RELEASE
+      version: 1.2.4.RELEASE
       modules:
        - springloaded
     - name: Spring Mobile
@@ -344,7 +344,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 4.0.1.RELEASE
+      version: 4.0.2.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-security
         tagPrefix:
@@ -376,7 +376,7 @@ platform_definition:
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 1.0.1.RELEASE
+      version: 1.0.2.RELEASE
       modules:
         - spring-session
         - spring-session-data-redis
@@ -455,6 +455,7 @@ platform_definition:
       - 'org.springframework.data.build:spring-data-java8-stub' # Not included in Spring Data Bom
       - 'org.eclipse.jetty*:*:9.*' # The Platform uses Jetty 8
     ignored_modules:
+      - 'org.springframework.boot:spring-boot-actuator-docs' # Its dependencies are provided
       - 'org.springframework.boot:spring-boot-cli' # The CLI doesn't expose its dependencies to applications
       - 'org.springframework.boot:spring-boot-maven-plugin' # The plugin doesn't expose it dependencies to applications
       - 'org.springframework.boot:spring-boot-configuration-processor' # Used by the Boot build to generate metadata about @ConfigurationProperties
