@@ -193,6 +193,9 @@ replacements.
 | `com.lambdaworks:lettuce`
 | `biz.paluch.redis:lettuce`
 
+| `javax.ws.rs:jsr311-api`
+| `javax.ws.rs:javax.ws.rs-api`
+
 | `net.java.dev.rome:rome`
 | `com.rometools:rome`
 
