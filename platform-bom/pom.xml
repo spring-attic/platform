@@ -132,7 +132,7 @@
 		<jxl.version>2.6.12</jxl.version>
 		<kafka.version>0.8.2.1</kafka.version>
 		<kite.version>0.13.0</kite.version>
-		<kryo.version>2.22</kryo.version>
+		<kryo.version>3.0.3</kryo.version>
 		<ldapbp.version>1.0</ldapbp.version>
 		<ldapsdk.version>4.1</ldapsdk.version>
 		<lettuce.version>3.2.Final</lettuce.version>
@@ -333,8 +333,8 @@
 				<version>${cassandra-driver.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.esotericsoftware.kryo</groupId>
-				<artifactId>kryo</artifactId>
+				<groupId>com.esotericsoftware</groupId>
+				<artifactId>kryo-shaded</artifactId>
 				<version>${kryo.version}</version>
 			</dependency>
 			<dependency>
