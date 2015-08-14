@@ -190,6 +190,9 @@ replacements.
 | `com.codahale.metrics:metrics-servlets`
 | `io.dropwizard.metrics:metrics-servlets`
 
+| `com.esotericsoftware.kryo:kryo`
+| `com.esotericsoftware:kryo`
+
 | `com.lambdaworks:lettuce`
 | `biz.paluch.redis:lettuce`
 

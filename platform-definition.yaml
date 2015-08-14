@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 2.0.4.RELEASE
+      version: 2.0.5.RELEASE
       modules:
         - reactor-bus
         - reactor-core
@@ -25,7 +25,7 @@ platform_definition:
            - jdk8
     - name: Reactor Spring
       groupId: io.projectreactor.spring
-      version: 2.0.4.RELEASE
+      version: 2.0.5.RELEASE
       modules:
         - reactor-spring-context
         - reactor-spring-core
@@ -238,7 +238,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.2.0.M2
+      version: 4.2.0.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         runTestsWith:

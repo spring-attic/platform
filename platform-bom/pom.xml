@@ -132,7 +132,7 @@
 		<jxl.version>2.6.12</jxl.version>
 		<kafka.version>0.8.2.1</kafka.version>
 		<kite.version>0.13.0</kite.version>
-		<kryo.version>2.22</kryo.version>
+		<kryo.version>3.0.3</kryo.version>
 		<ldapbp.version>1.0</ldapbp.version>
 		<ldapsdk.version>4.1</ldapsdk.version>
 		<lettuce.version>3.2.Final</lettuce.version>
@@ -159,12 +159,15 @@
 		<rabbit-amqp-client.version>3.4.4</rabbit-amqp-client.version>
 		<rabbit-http-client.version>1.0.0.M1</rabbit-http-client.version>
 		<reactive-streams.version>1.0.0.RC5</reactive-streams.version>
+		<reactor.version>2.0.5.RELEASE</reactor.version>
+		<reactor-spring.version>2.0.5.RELEASE</reactor-spring.version>
 		<rometools.version>1.5.0</rometools.version>
 		<selenium-htmlunit-driver.version>2.46.0</selenium-htmlunit-driver.version>
 		<smack.version>3.2.1</smack.version>
 		<smack4.version>4.0.6</smack4.version>
 		<snappy.version>1.1.1.6</snappy.version>
 		<splunk.version>1.3.0</splunk.version>
+		<spring-integration.version>4.2.0.BUILD-SNAPSHOT</spring-integration.version>
 		<spullara-redis.version>0.7</spullara-redis.version>
 		<sun-facelets.version>1.1.14</sun-facelets.version>
 		<sun-jsf.version>2.2.10</sun-jsf.version>
@@ -333,8 +336,13 @@
 				<version>${cassandra-driver.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.esotericsoftware.kryo</groupId>
+				<groupId>com.esotericsoftware</groupId>
 				<artifactId>kryo</artifactId>
+				<version>${kryo.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.esotericsoftware</groupId>
+				<artifactId>kryo-shaded</artifactId>
 				<version>${kryo.version}</version>
 			</dependency>
 			<dependency>
