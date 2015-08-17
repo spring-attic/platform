@@ -126,7 +126,6 @@
 		<jredis.version>06052013</jredis.version>
 		<jruby.version>1.7.19</jruby.version>
 		<jsch.version>0.1.52</jsch.version>
-		<jsonassert.version>1.2.3</jsonassert.version>
 		<json-patch.version>1.7</json-patch.version>
 		<jsr250.version>1.0</jsr250.version>
 		<jxl.version>2.6.12</jxl.version>
@@ -159,8 +158,6 @@
 		<rabbit-amqp-client.version>3.4.4</rabbit-amqp-client.version>
 		<rabbit-http-client.version>1.0.0.M1</rabbit-http-client.version>
 		<reactive-streams.version>1.0.0.RC5</reactive-streams.version>
-		<reactor.version>2.0.5.RELEASE</reactor.version>
-		<reactor-spring.version>2.0.5.RELEASE</reactor-spring.version>
 		<rometools.version>1.5.0</rometools.version>
 		<selenium-htmlunit-driver.version>2.46.0</selenium-htmlunit-driver.version>
 		<smack.version>3.2.1</smack.version>
@@ -1114,11 +1111,6 @@
 				<groupId>org.seleniumhq.selenium</groupId>
 				<artifactId>selenium-htmlunit-driver</artifactId>
 				<version>${selenium-htmlunit-driver.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.skyscreamer</groupId>
-				<artifactId>jsonassert</artifactId>
-				<version>${jsonassert.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.testng</groupId>

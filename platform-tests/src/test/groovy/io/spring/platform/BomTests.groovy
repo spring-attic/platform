@@ -38,7 +38,7 @@ public class BomTests {
 
 	@Test
 	void versionPropertiesAreNotOverridden() {
-		def expectedOverrides = [ 'reactor.version', 'reactor-spring.version', 'spring-integration.version' ]
+		def expectedOverrides = [ 'spring-integration.version' ]
 		def versions = extractVersionsFromPom(bootDependenciesPom)
 
 		def overriddenVersions = [:]
