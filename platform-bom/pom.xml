@@ -51,7 +51,7 @@
 		<spring-integration-kafka.version>1.2.0.RELEASE</spring-integration-kafka.version>
 		<spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
 		<spring-ldap.version>2.0.3.RELEASE</spring-ldap.version>
-		<spring-web-flow.version>2.4.1.RELEASE</spring-web-flow.version>
+		<spring-web-flow.version>2.4.2.RELEASE</spring-web-flow.version>
 		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
 
 		<aopalliance.version>1.0</aopalliance.version>
