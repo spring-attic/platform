@@ -47,6 +47,9 @@ part of the upgrade process.
 | `com.thoughtworks.qdox`
 | No longer a dependency of any of the Platform's projects
 
+| `commons-beanutils:commons-beanutils-core`
+| No longer a dependency of any of the Platform's projects
+
 | `org.apache.ant:ant`
 | No longer a dependency of any of the Platform's projects
 
