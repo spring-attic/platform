@@ -395,7 +395,7 @@ platform_definition:
         - spring-social-web
     - name: Spring Social Facebook
       groupId: org.springframework.social
-      version: 2.0.1.RELEASE
+      version: 2.0.2.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-social-facebook
       modules:
@@ -403,7 +403,7 @@ platform_definition:
         - spring-social-facebook-web
     - name: Spring Social LinkedIn
       groupId: org.springframework.social
-      version: 1.0.1.RELEASE
+      version: 1.0.2.RELEASE
       modules:
         - spring-social-linkedin
     - name: Spring Social Twitter
