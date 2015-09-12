@@ -37,7 +37,7 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.5.0.RC1
+      version: 1.5.0.RELEASE
       modules:
         - spring-amqp
         - spring-rabbit
@@ -238,7 +238,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.2.0.RC1
+      version: 4.2.0.RELEASE
       build:
         compileWith: jdk8
         runTestsWith:
