@@ -140,7 +140,7 @@
 		<jopt-simple.version>4.8</jopt-simple.version>
 		<jredis.version>06052013</jredis.version>
 		<jruby.version>1.7.19</jruby.version>
-		<jsch.version>0.1.52</jsch.version>
+		<jsch.version>0.1.53</jsch.version>
 		<jsonassert.version>1.2.3</jsonassert.version>
 		<json-patch.version>1.7</json-patch.version>
 		<jsr166e.version>1.0</jsr166e.version>
