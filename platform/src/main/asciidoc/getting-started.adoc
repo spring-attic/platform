@@ -170,6 +170,10 @@ section of your pom:
 	</build>
 ----
 
+By using the Platform as your pom's parent, you will also be able to make use of the properties
+that it declares and to override those properties to change the version of a dependency, for
+example. See <<getting-started-overriding-versions-maven>> for more information.
+
 If you want to use the Platform and Spring Boot together, you don't have to use the Platform's pom
 as the parent. Instead, you can import the Platform's pom as described above and then perform the
 rest of the configuration manually. {spring-boot-docs-maven}[Spring Boot's documentation on using
@@ -260,8 +264,8 @@ Maven or Gradle.
 
 [[getting-started-overriding-versions-maven]]
 === Overriding a version using Maven
-To override a property in Maven, declare the property in your pom's `<properties>` section with the
-desired value:
+To override a property in Maven you must use the Platform's bom as your pom's parent. You can then
+declare the property in your pom's `<properties>` section with the desired value:
 
 [source,xml,indent=0,subs="verbatim,attributes"]
 ----
