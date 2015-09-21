@@ -133,7 +133,7 @@
 		<jcommander.version>1.35</jcommander.version>
 		<jeromq.version>0.3.4</jeromq.version>
 		<jettison.version>1.2</jettison.version>
-		<jetty.version>8.1.16.v20140903</jetty.version>
+		<jetty.version>8.1.17.v20150415</jetty.version>
 		<jibx.version>1.2.6</jibx.version>
 		<jinterface.version>1.5.6</jinterface.version>
 		<jline.version>2.11</jline.version>
