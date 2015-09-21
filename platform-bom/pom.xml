@@ -63,7 +63,7 @@
 		<aopalliance.version>1.0</aopalliance.version>
 		<apacheds.version>1.5.5</apacheds.version>
 		<apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
-		<axiom.version>1.2.14</axiom.version>
+		<axiom.version>1.2.15</axiom.version>
 		<boon.version>0.23</boon.version>
 		<bouncycastle.version>1.47</bouncycastle.version>
 		<bsf.version>2.4.0</bsf.version>
