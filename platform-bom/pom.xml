@@ -180,7 +180,7 @@
 		<querydsl.version>3.4.3</querydsl.version>
 		<rabbit-amqp-client.version>3.4.4</rabbit-amqp-client.version>
 		<rome.version>1.0.0</rome.version>
-		<rometools.version>1.5.0</rometools.version>
+		<rometools.version>1.5.1</rometools.version>
 		<servlet-api.version>3.0.1</servlet-api.version>
 		<smack.version>3.2.1</smack.version>
 		<smack4.version>4.0.6</smack4.version>
