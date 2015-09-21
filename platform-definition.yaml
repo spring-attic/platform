@@ -310,7 +310,7 @@ platform_definition:
         - spring-integration-splunk
     - name: Spring LDAP
       groupId: org.springframework.ldap
-      version: 2.0.3.RELEASE
+      version: 2.0.4.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-ldap
         tagPrefix:
