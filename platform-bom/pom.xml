@@ -160,7 +160,7 @@
 		<openhft-lang.version>6.1.4</openhft-lang.version>
 		<openjpa.version>2.3.0</openjpa.version>
 		<nekohtml.version>1.9.22</nekohtml.version>
-		<neo4j.version>2.0.4</neo4j.version>
+		<neo4j.version>2.0.5</neo4j.version>
 		<neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
 		<neo4j-graph-collections.version>0.7.1-neo4j-2.0.1</neo4j-graph-collections.version>
 		<neo4j-spatial.version>0.12-neo4j-2.0.1</neo4j-spatial.version>
