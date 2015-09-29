@@ -78,6 +78,7 @@ platform_definition:
         - spring-boot-starter-batch
         - spring-boot-starter-cache
         - spring-boot-starter-cloud-connectors
+        - spring-boot-starter-data-cassandra
         - spring-boot-starter-data-elasticsearch
         - spring-boot-starter-data-gemfire
         - spring-boot-starter-data-jpa
@@ -209,7 +210,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.2.1.RELEASE
+      version: 4.2.2.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
