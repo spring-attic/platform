@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 2.0.5.RELEASE
+      version: 2.0.6.RELEASE
       modules:
         - reactor-bus
         - reactor-core
@@ -25,7 +25,7 @@ platform_definition:
            - jdk8
     - name: Reactor Spring
       groupId: io.projectreactor.spring
-      version: 2.0.5.RELEASE
+      version: 2.0.6.RELEASE
       modules:
         - reactor-spring-context
         - reactor-spring-core
