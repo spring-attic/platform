@@ -338,6 +338,12 @@ platform_definition:
       modules:
         - spring-plugin-core
         - spring-plugin-metadata
+    - name: Spring REST Docs
+      groupId: org.springframework.restdocs
+      version: 1.0.0.RC1
+      modules:
+        - spring-restdocs-core
+        - spring-restdocs-mockmvc
     - name: Spring Retry
       groupId: org.springframework.retry
       version: 1.1.2.RELEASE
