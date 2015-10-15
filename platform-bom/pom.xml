@@ -64,7 +64,6 @@
 		<bsh.version>2.0b4</bsh.version>
 		<c3p0.version>0.9.5</c3p0.version>
 		<cas-client.version>3.2.2</cas-client.version>
-		<cassandra-driver.version>2.0.11</cassandra-driver.version>
 		<castor.version>1.3.3</castor.version>
 		<commonj.version>1.1.1</commonj.version>
 		<commons-cli.version>1.2</commons-cli.version>
@@ -324,11 +323,6 @@
 				<groupId>com.couchbase.client</groupId>
 				<artifactId>couchbase-client</artifactId>
 				<version>${couchbase-client.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.datastax.cassandra</groupId>
-				<artifactId>cassandra-driver-dse</artifactId>
-				<version>${cassandra-driver.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.esotericsoftware</groupId>
