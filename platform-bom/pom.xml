@@ -176,7 +176,7 @@
 		<protobuf.version>2.5.0</protobuf.version>
 		<protobuf-java-format.version>1.2</protobuf-java-format.version>
 		<qdox.version>1.12.1</qdox.version>
-		<quartz.version>2.2.1</quartz.version>
+		<quartz.version>2.2.2</quartz.version>
 		<querydsl.version>3.4.3</querydsl.version>
 		<rabbit-amqp-client.version>3.4.4</rabbit-amqp-client.version>
 		<rome.version>1.0.0</rome.version>
