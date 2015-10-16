@@ -54,6 +54,7 @@
 		<spring-ldap.version>2.0.4.RELEASE</spring-ldap.version>
 		<spring-retry.version>1.1.2.RELEASE</spring-retry.version>
 		<spring-security-oauth.version>2.0.7.RELEASE</spring-security-oauth.version>
+		<spring-social-twitter.version>1.1.2.RELEASE</spring-social-twitter.version>
 		<spring-session.version>1.0.2.RELEASE</spring-session.version>
 		<spring-web-flow.version>2.4.2.RELEASE</spring-web-flow.version>
 		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
@@ -63,7 +64,7 @@
 		<aopalliance.version>1.0</aopalliance.version>
 		<apacheds.version>1.5.5</apacheds.version>
 		<apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
-		<axiom.version>1.2.15</axiom.version>
+		<axiom.version>1.2.14</axiom.version>
 		<boon.version>0.23</boon.version>
 		<bouncycastle.version>1.47</bouncycastle.version>
 		<bsf.version>2.4.0</bsf.version>
@@ -154,7 +155,6 @@
 		<lettuce.version>2.3.3</lettuce.version>
 		<lmax-disruptor.version>3.2.1</lmax-disruptor.version>
 		<lombok.version>1.14.8</lombok.version>
-		<mockito.version>1.10.8</mockito.version>
 		<myfaces.version>2.1.17</myfaces.version>
 		<openhft-chronicle.version>2.0.3</openhft-chronicle.version>
 		<openhft-lang.version>6.1.4</openhft-lang.version>

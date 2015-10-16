@@ -4,6 +4,8 @@ import org.yaml.snakeyaml.Yaml
 @Grab('net.sf.jopt-simple:jopt-simple:4.6')
 import joptsimple.OptionParser
 
+import groovy.xml.XmlUtil
+
 def getRootDir() {
 	@groovy.transform.SourceURI
 	def source
@@ -151,10 +153,15 @@ if (problems) {
 	buildDir.deleteDir()
 
 	def platformVersions = new File(rootDir, 'platform-bom/target/platform-bom.properties')
-
 	def dir = new File(buildDir, 'repository/io/spring/platform/platform-versions/LOCALTEST')
 	dir.mkdirs()
 	new File(dir, 'platform-versions-LOCALTEST.properties') << platformVersions.text
+
+	def platformBom = new XmlParser().parseText(new File(rootDir, 'platform-bom/pom.xml').text)
+	platformBom.version[0].replaceNode { version("LOCALTEST") }
+	dir = new File(buildDir, 'repository/io/spring/platform/platform-bom/LOCALTEST')
+	dir.mkdirs()
+	new File(dir, 'platform-bom-LOCALTEST.pom') << XmlUtil.serialize(platformBom)
 
 	def jdk7Home = options.valueOf('jdk7-home')
 	def jdk8Home = options.valueOf('jdk8-home')
