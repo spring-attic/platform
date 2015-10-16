@@ -131,7 +131,7 @@
 		<javax-websocket.version>1.0</javax-websocket.version>
 		<jbatch-tck.version>1.0</jbatch-tck.version>
 		<jcommander.version>1.35</jcommander.version>
-		<jeromq.version>0.3.4</jeromq.version>
+		<jeromq.version>0.3.5</jeromq.version>
 		<jettison.version>1.2</jettison.version>
 		<jetty.version>8.1.17.v20150415</jetty.version>
 		<jibx.version>1.2.6</jibx.version>
