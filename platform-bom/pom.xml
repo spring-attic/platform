@@ -45,7 +45,6 @@
 	</developers>
 
 	<properties>
-		<spring-batch-admin.version>2.0.0.M1</spring-batch-admin.version>
 		<spring-integration-flow.version>1.0.0.RELEASE</spring-integration-flow.version>
 		<spring-integration-java-dsl.version>1.1.0.RELEASE</spring-integration-java-dsl.version>
 		<spring-integration-kafka.version>1.2.0.RELEASE</spring-integration-kafka.version>
@@ -190,23 +189,6 @@
 
 	<dependencyManagement>
 		<dependencies>
-
-			<!-- Spring Batch Admin -->
-			<dependency>
-				<groupId>org.springframework.batch</groupId>
-				<artifactId>spring-batch-admin-domain</artifactId>
-				<version>${spring-batch-admin.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.batch</groupId>
-				<artifactId>spring-batch-admin-manager</artifactId>
-				<version>${spring-batch-admin.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.batch</groupId>
-				<artifactId>spring-batch-admin-resources</artifactId>
-				<version>${spring-batch-admin.version}</version>
-			</dependency>
 
 			<!-- Spring Integration Flow -->
 			<dependency>

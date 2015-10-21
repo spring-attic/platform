@@ -118,13 +118,6 @@ platform_definition:
         - spring-boot-starter-web
         - spring-boot-starter-websocket
         - spring-boot-starter-ws
-    - name: Spring Batch Admin
-      groupId: org.springframework.batch
-      version: 2.0.0.M1
-      modules:
-       - spring-batch-admin-domain
-       - spring-batch-admin-manager
-       - spring-batch-admin-resources
     - name: Spring Cloud Connectors
       groupId: org.springframework.cloud
       version: 1.2.0.RELEASE
