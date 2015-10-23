@@ -1,0 +1,46 @@
+From a3b25be4030c666c7f353a6aedbd496f7a21804e Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Wed, 21 Oct 2015 14:08:19 +0100
+Subject: [PATCH] Update the tests to use the latest version of JRuby 1.x
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+Previously, the JRuby engine that was being used pulled in an old
+version of JRuby. The engine is incompatible with more recent JRuby 1.x
+releases which causes problems for the Spring IO Platform which uses
+JRuby 1.7.x.
+
+This commit updates the tests to use the latest version of JRuby 1.x
+(1.7.22) which contains its own JSR 223 integration, i.e. there’s no
+need for a separate script engine dependency.
+---
+ build.gradle | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/build.gradle b/build.gradle
+index c12493d..1a912f0 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -89,7 +89,7 @@ allprojects {
+ 		xercesVersion = '2.8.1'
+ 		xmlunitVersion = '1.5'
+ 		xstreamVersion = '1.4.7'
+-		jrubyVersion = '1.1.7'
++		jrubyVersion = '1.7.22'
+ 		beanshellVersion = '2.0b5'
+ 	}
+ }
+@@ -297,7 +297,8 @@ project('spring-batch-infrastructure') {
+ 
+ 		testRuntime "com.sun.mail:javax.mail:$javaMailVersion"
+ 		testRuntime "org.codehaus.groovy:groovy-jsr223:$groovyVersion"
+-		testRuntime "com.sun.script.jruby:jruby-engine:$jrubyVersion"
++		testRuntime "org.jruby:jruby:$jrubyVersion"
++
+ 		testRuntime "org.beanshell:bsh:$beanshellVersion"
+ 
+ 		optional "javax.jms:jms-api:1.1-rev-1"
+-- 
+2.2.1
+

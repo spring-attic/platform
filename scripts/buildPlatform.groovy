@@ -5,6 +5,7 @@ import org.yaml.snakeyaml.Yaml
 import joptsimple.OptionParser
 
 import groovy.xml.XmlUtil
+import groovy.io.FileType
 
 def getRootDir() {
 	@groovy.transform.SourceURI
@@ -39,7 +40,8 @@ def execute(def command, def workingDirectory) {
 def build(def project, def platformVersion, String jdk7Home, String jdk8Home) {
 	println "Building $project.name"
 	println "Cloning $project.build.repository"
-	def dir = "$rootDir/build/${project.name.toLowerCase().replace(' ', '-')}"
+	def projectName = project.name.toLowerCase().replace(' ', '-')
+	def dir = "$rootDir/build/$projectName"
 	execute("git clone $project.build.repository $dir")
 	def checkout = project.build['checkout'];
 	if (!checkout && !project.version.endsWith('SNAPSHOT')) {
@@ -53,6 +55,13 @@ def build(def project, def platformVersion, String jdk7Home, String jdk8Home) {
 		execute("git checkout $checkout", dir)
 	}
 
+	File patchesDir = new File("$rootDir/patches/$projectName")
+	if (patchesDir.exists()) {
+		patchesDir.eachFile(FileType.FILES) { file ->
+			execute("git am --ignore-whitespace ${file.absolutePath}", dir)
+		}
+	}
+
 	if (project.build['directory']) {
 		dir = "$dir/${project.build['directory']}"
 	}
@@ -62,7 +71,7 @@ def build(def project, def platformVersion, String jdk7Home, String jdk8Home) {
 	if (project.build.containsKey('additional_tasks')) {
 		command += " ${project.build['additional_tasks']}"
 	}
-	command += " springIoCheck -PplatformVersion=$platformVersion -PrepositoryDir=$rootDir/build/repository --continue --refresh-dependencies"
+	command += " springIoCheck -PplatformVersion=$platformVersion -PrepositoryDir=$rootDir/build/repository --continue --refresh-dependencies --stacktrace"
 
 	def runTestsWith = project.build['runTestsWith'] ?: ['jdk7', 'jdk8']
 	if (!runTestsWith) {
