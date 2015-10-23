@@ -1,0 +1,59 @@
+From 5e5eb10f627487ed328b6143415e1dfe2591b525 Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Wed, 21 Oct 2015 15:04:46 +0100
+Subject: [PATCH] Update tests to be compatible with latest version of Http
+ Components
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+More recent versions of HTTP components normalise an HTTPHost when it’s
+used to create an HTTPRoute. As part of this normalization the host’s
+port is set to the default port for the host’s scheme, e.g. an https
+scheme will result in a port of 443 and an http scheme will result in
+a port of 80
+
+This commit updates the tests so that they will accept the behaviour
+of HTTP Components 4.3.x (the port is -1) and HTTP Components 4.5.x
+(the port is 80 for http and 443 for https). Compatibility with HTTP
+Components 4.5.x allows Spring Web Services’ tests to pass when
+they’re run as part of the Spring IO Platform 2.0 release process
+which uses a more recent version of HTTP components than the default
+Spring Web Services build.
+---
+ .../transport/http/HttpComponentsMessageSenderIntegrationTest.java   | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+diff --git a/spring-ws-core/src/test/java/org/springframework/ws/transport/http/HttpComponentsMessageSenderIntegrationTest.java b/spring-ws-core/src/test/java/org/springframework/ws/transport/http/HttpComponentsMessageSenderIntegrationTest.java
+index 2a40971..f7f36d0 100644
+--- a/spring-ws-core/src/test/java/org/springframework/ws/transport/http/HttpComponentsMessageSenderIntegrationTest.java
++++ b/spring-ws-core/src/test/java/org/springframework/ws/transport/http/HttpComponentsMessageSenderIntegrationTest.java
+@@ -18,6 +18,7 @@ package org.springframework.ws.transport.http;
+ 
+ import static org.hamcrest.core.IsEqual.*;
+ import static org.springframework.test.util.MatcherAssertionErrors.*;
++import static org.junit.Assert.assertTrue;
+ 
+ import java.io.IOException;
+ import java.net.URI;
+@@ -61,7 +62,7 @@ public class HttpComponentsMessageSenderIntegrationTest extends AbstractHttpWebS
+ 		HttpRoute route1 = new HttpRoute(host1, null, true);
+ 		assertThat(route1.isSecure(), equalTo(true));
+ 		assertThat(route1.getTargetHost().getHostName(), equalTo("www.example.com"));
+-		assertThat(route1.getTargetHost().getPort(), equalTo(-1));
++		assertTrue((route1.getTargetHost().getPort() == -1) || (route1.getTargetHost().getPort() == 443));
+ 
+ 		final String url2 = "http://www.example.com:8080";
+ 		URI uri2 = new URI(url2);
+@@ -77,7 +78,7 @@ public class HttpComponentsMessageSenderIntegrationTest extends AbstractHttpWebS
+ 		HttpRoute route3 = new HttpRoute(host3);
+ 		assertThat(route3.isSecure(), equalTo(false));
+ 		assertThat(route3.getTargetHost().getHostName(), equalTo("www.springframework.org"));
+-		assertThat(route3.getTargetHost().getPort(), equalTo(-1));
++		assertTrue((route3.getTargetHost().getPort() ==  -1) || (route3.getTargetHost().getPort() == 80));
+ 
+ 		HttpComponentsMessageSender messageSender = new HttpComponentsMessageSender();
+ 		messageSender.setMaxTotalConnections(2);
+-- 
+2.2.1
+
