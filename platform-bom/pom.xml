@@ -115,7 +115,7 @@
 		<javax-validation.version>1.1.0.Final</javax-validation.version>
 		<javax-websocket.version>1.0</javax-websocket.version>
 		<jbatch-tck.version>1.0</jbatch-tck.version>
-		<jeromq.version>0.3.5</jeromq.version>
+		<jeromq.version>0.3.4</jeromq.version>
 		<jettison.version>1.2</jettison.version>
 		<jibx.version>1.2.6</jibx.version>
 		<jline.version>2.11</jline.version>
