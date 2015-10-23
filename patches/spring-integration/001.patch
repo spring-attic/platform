@@ -1,0 +1,206 @@
+From 1805c894e37fb41eaec6016a63a42291a19d55ac Mon Sep 17 00:00:00 2001
+From: Artem Bilan <abilan@pivotal.io>
+Date: Mon, 28 Sep 2015 18:46:42 -0400
+Subject: [PATCH] INT-3836: Upgrade to spring-social-twitter-1.1.1
+
+JIRA: https://jira.spring.io/browse/INT-3836
+
+Nothing changed from the module perspective - only tests to apply a new API.
+---
+ build.gradle                                            |  2 +-
+ .../src/test/java/log4j.properties                      |  5 +----
+ .../inbound/SearchReceivingMessageSourceTests.java      | 11 +++++++----
+ .../SearchReceivingMessageSourceWithRedisTests.java     | 17 +++++++++++------
+ .../outbound/StatusUpdatingMessageHandlerTests.java     | 12 +++++++-----
+ .../outbound/TwitterSearchOutboundGatewayTests.java     | 12 ++++++------
+ 6 files changed, 33 insertions(+), 26 deletions(-)
+
+diff --git a/build.gradle b/build.gradle
+index 7a22639..9e2e2a9 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -138,7 +138,7 @@ subprojects { subproject ->
+ 		springDataRedisVersion = '1.5.2.RELEASE'
+ 		springGemfireVersion = '1.6.0.RELEASE'
+ 		springSecurityVersion = project.hasProperty('springSecurityVersion') ? project.springSecurityVersion : '4.0.2.RELEASE'
+-		springSocialTwitterVersion = '1.1.0.RELEASE'
++		springSocialTwitterVersion = '1.1.1.RELEASE'
+ 		springRetryVersion = '1.1.2.RELEASE'
+ 		springVersion = project.hasProperty('springVersion') ? project.springVersion : '4.2.1.RELEASE'
+ 		springWsVersion = '2.2.2.RELEASE'
+diff --git a/spring-integration-twitter/src/test/java/log4j.properties b/spring-integration-twitter/src/test/java/log4j.properties
+index 16b09c3..1ccf72f 100644
+--- a/spring-integration-twitter/src/test/java/log4j.properties
++++ b/spring-integration-twitter/src/test/java/log4j.properties
+@@ -4,8 +4,5 @@ log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+ log4j.appender.stdout.layout=org.apache.log4j.PatternLayout
+ log4j.appender.stdout.layout.ConversionPattern=%d{ABSOLUTE} %5p %t %c{2}:%L - %m%n
+ 
+-
+-log4j.category.org.springframework=WARN
+ # log4j.category.org.springframework.integration=DEBUG
+-# log4j.category.org.springframework.integration.jdbc=DEBUG
+-log4j.category.org.springframework.integration.twitter=DEBUG
++log4j.category.org.springframework.integration.twitter=WARN
+diff --git a/spring-integration-twitter/src/test/java/org/springframework/integration/twitter/inbound/SearchReceivingMessageSourceTests.java b/spring-integration-twitter/src/test/java/org/springframework/integration/twitter/inbound/SearchReceivingMessageSourceTests.java
+index acb5fd2..f9f88f0 100644
+--- a/spring-integration-twitter/src/test/java/org/springframework/integration/twitter/inbound/SearchReceivingMessageSourceTests.java
++++ b/spring-integration-twitter/src/test/java/org/springframework/integration/twitter/inbound/SearchReceivingMessageSourceTests.java
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright 2002-2014 the original author or authors.
++ * Copyright 2002-2015 the original author or authors.
+  *
+  * Licensed under the Apache License, Version 2.0 (the "License");
+  * you may not use this file except in compliance with the License.
+@@ -150,9 +150,12 @@ public class SearchReceivingMessageSourceTests {
+ 
+ 		final SearchOperations so = mock(SearchOperations.class);
+ 
+-		final Tweet tweet1 = new Tweet(1L, "first", new Date(), "fromUser", "profileImageUrl", 888L, 999L, "languageCode", "source");
+-		final Tweet tweet2 = new Tweet(2L, "first", new Date(), "fromUser", "profileImageUrl", 888L, 999L, "languageCode", "source");
+-		final Tweet tweet3 = new Tweet(3L, "first", new Date(), "fromUser", "profileImageUrl", 888L, 999L, "languageCode", "source");
++		final Tweet tweet1 = new Tweet(1L, "1", "first", new Date(), "fromUser", "profileImageUrl", 888L, 999L,
++				"languageCode", "source");
++		final Tweet tweet2 = new Tweet(2L, "2",  "first", new Date(), "fromUser", "profileImageUrl", 888L, 999L,
++				"languageCode", "source");
++		final Tweet tweet3 = new Tweet(3L, "3", "first", new Date(), "fromUser", "profileImageUrl", 888L, 999L,
++				"languageCode", "source");
+ 
+ 		final List<Tweet> tweets = new ArrayList<Tweet>();
+ 
+diff --git a/spring-integration-twitter/src/test/java/org/springframework/integration/twitter/inbound/SearchReceivingMessageSourceWithRedisTests.java b/spring-integration-twitter/src/test/java/org/springframework/integration/twitter/inbound/SearchReceivingMessageSourceWithRedisTests.java
+index 5092a28..7ba75f7 100644
+--- a/spring-integration-twitter/src/test/java/org/springframework/integration/twitter/inbound/SearchReceivingMessageSourceWithRedisTests.java
++++ b/spring-integration-twitter/src/test/java/org/springframework/integration/twitter/inbound/SearchReceivingMessageSourceWithRedisTests.java
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright 2013-2014 the original author or authors.
++ * Copyright 2013-2015 the original author or authors.
+  *
+  * Licensed under the Apache License, Version 2.0 (the "License");
+  * you may not use this file except in compliance with the License.
+@@ -95,8 +95,10 @@ public class SearchReceivingMessageSourceWithRedisTests extends RedisAvailableTe
+ 	@Test
+ 	@RedisAvailable
+ 	public void testPollForTweetsThreeResultsWithRedisMetadataStore() throws Exception {
+-		MetadataStore metadataStore = TestUtils.getPropertyValue(this.twitterSearchAdapter, "source.metadataStore", MetadataStore.class);
+-		assertTrue("Exptected metadataStore to be an instance of RedisMetadataStore", metadataStore instanceof RedisMetadataStore);
++		MetadataStore metadataStore = TestUtils.getPropertyValue(this.twitterSearchAdapter, "source.metadataStore",
++				MetadataStore.class);
++		assertTrue("Expected metadataStore to be an instance of RedisMetadataStore",
++				metadataStore instanceof RedisMetadataStore);
+ 		assertSame(this.metadataStore, metadataStore);
+ 
+ 		assertEquals("twitterSearchAdapter.74", metadataKey);
+@@ -144,9 +146,12 @@ public class SearchReceivingMessageSourceWithRedisTests extends RedisAvailableTe
+ 
+ 			final SearchOperations so = mock(SearchOperations.class);
+ 
+-			final Tweet tweet3 = new Tweet(3L, "first", new GregorianCalendar(2013, 2, 20).getTime(), "fromUser", "profileImageUrl", 888L, 999L, "languageCode", "source");
+-			final Tweet tweet1 = new Tweet(1L, "first", new GregorianCalendar(2013, 0, 20).getTime(), "fromUser", "profileImageUrl", 888L, 999L, "languageCode", "source");
+-			final Tweet tweet2 = new Tweet(2L, "first", new GregorianCalendar(2013, 1, 20).getTime(), "fromUser", "profileImageUrl", 888L, 999L, "languageCode", "source");
++			final Tweet tweet3 = new Tweet(3L, "3", "first", new GregorianCalendar(2013, 2, 20).getTime(), "fromUser",
++					"profileImageUrl", 888L, 999L, "languageCode", "source");
++			final Tweet tweet1 = new Tweet(1L, "1", "first", new GregorianCalendar(2013, 0, 20).getTime(), "fromUser",
++					"profileImageUrl", 888L, 999L, "languageCode", "source");
++			final Tweet tweet2 = new Tweet(2L, "2", "first", new GregorianCalendar(2013, 1, 20).getTime(), "fromUser",
++					"profileImageUrl", 888L, 999L, "languageCode", "source");
+ 
+ 			final List<Tweet> tweets = new ArrayList<Tweet>();
+ 
+diff --git a/spring-integration-twitter/src/test/java/org/springframework/integration/twitter/outbound/StatusUpdatingMessageHandlerTests.java b/spring-integration-twitter/src/test/java/org/springframework/integration/twitter/outbound/StatusUpdatingMessageHandlerTests.java
+index eec218b..02ea546 100644
+--- a/spring-integration-twitter/src/test/java/org/springframework/integration/twitter/outbound/StatusUpdatingMessageHandlerTests.java
++++ b/spring-integration-twitter/src/test/java/org/springframework/integration/twitter/outbound/StatusUpdatingMessageHandlerTests.java
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright 2002-2014 the original author or authors
++ * Copyright 2002-2015 the original author or authors
+  *
+  *     Licensed under the Apache License, Version 2.0 (the "License");
+  *     you may not use this file except in compliance with the License.
+@@ -17,6 +17,7 @@
+ package org.springframework.integration.twitter.outbound;
+ 
+ import static org.junit.Assert.assertEquals;
++import static org.junit.Assert.assertNull;
+ 
+ import java.util.Collections;
+ import java.util.Properties;
+@@ -98,11 +99,12 @@ public class StatusUpdatingMessageHandlerTests {
+ 				.build());
+ 
+ 		Mockito.verify(timelineOperations).updateStatus(argument.capture());
+-		MultiValueMap<String, Object> requestParameters = argument.getValue().toRequestParameters();
++		TweetData tweetData = argument.getValue();
++		MultiValueMap<String, Object> requestParameters = tweetData.toRequestParameters();
+ 		assertEquals("bar", requestParameters.getFirst("status"));
+-		assertEquals(media, requestParameters.getFirst("media"));
+-
+-
++		assertNull(requestParameters.getFirst("media"));
++		MultiValueMap<String, Object> uploadMediaParameters = tweetData.toUploadMediaParameters();
++		assertEquals(media, uploadMediaParameters.getFirst("media"));
+ 	}
+ 
+ }
+diff --git a/spring-integration-twitter/src/test/java/org/springframework/integration/twitter/outbound/TwitterSearchOutboundGatewayTests.java b/spring-integration-twitter/src/test/java/org/springframework/integration/twitter/outbound/TwitterSearchOutboundGatewayTests.java
+index b83bfd2..3959d10 100644
+--- a/spring-integration-twitter/src/test/java/org/springframework/integration/twitter/outbound/TwitterSearchOutboundGatewayTests.java
++++ b/spring-integration-twitter/src/test/java/org/springframework/integration/twitter/outbound/TwitterSearchOutboundGatewayTests.java
+@@ -1,5 +1,5 @@
+ /*
+- * Copyright 2014 the original author or authors.
++ * Copyright 2014-2015 the original author or authors.
+  *
+  * Licensed under the Apache License, Version 2.0 (the "License");
+  * you may not use this file except in compliance with the License.
+@@ -77,7 +77,7 @@ public class TwitterSearchOutboundGatewayTests {
+ 
+ 	@Test
+ 	public void testStringQuery() {
+-		Tweet tweet = new Tweet(1L, "foo", new Date(), "bar", "baz", 0L, 0L, "qux", "fiz");
++		Tweet tweet = new Tweet(1L, "1", "foo", new Date(), "bar", "baz", 0L, 0L, "qux", "fiz");
+ 		SearchMetadata searchMetadata = mock(SearchMetadata.class);
+ 		final SearchResults searchResults = new SearchResults(Collections.singletonList(tweet), searchMetadata);
+ 		doAnswer(new Answer<SearchResults>() {
+@@ -104,7 +104,7 @@ public class TwitterSearchOutboundGatewayTests {
+ 	public void testStringQueryCustomLimit() {
+ 		this.gateway.setSearchArgsExpression(new SpelExpressionParser()
+ 				.parseExpression("{payload, 30}"));
+-		Tweet tweet = new Tweet(1L, "foo", new Date(), "bar", "baz", 0L, 0L, "qux", "fiz");
++		Tweet tweet = new Tweet(1L, "1", "foo", new Date(), "bar", "baz", 0L, 0L, "qux", "fiz");
+ 		SearchMetadata searchMetadata = mock(SearchMetadata.class);
+ 		final SearchResults searchResults = new SearchResults(Collections.singletonList(tweet), searchMetadata);
+ 		doAnswer(new Answer<SearchResults>() {
+@@ -131,7 +131,7 @@ public class TwitterSearchOutboundGatewayTests {
+ 	public void testStringQueryCustomExpression() {
+ 		this.gateway.setSearchArgsExpression(new SpelExpressionParser()
+ 				.parseExpression("{'bar', 1, 2, 3}"));
+-		Tweet tweet = new Tweet(1L, "foo", new Date(), "bar", "baz", 0L, 0L, "qux", "fiz");
++		Tweet tweet = new Tweet(1L, "1", "foo", new Date(), "bar", "baz", 0L, 0L, "qux", "fiz");
+ 		SearchMetadata searchMetadata = mock(SearchMetadata.class);
+ 		final SearchResults searchResults = new SearchResults(Collections.singletonList(tweet), searchMetadata);
+ 		doAnswer(new Answer<SearchResults>() {
+@@ -158,7 +158,7 @@ public class TwitterSearchOutboundGatewayTests {
+ 
+ 	@Test
+ 	public void testSearchParamsQuery() {
+-		Tweet tweet = new Tweet(1L, "foo", new Date(), "bar", "baz", 0L, 0L, "qux", "fiz");
++		Tweet tweet = new Tweet(1L, "1", "foo", new Date(), "bar", "baz", 0L, 0L, "qux", "fiz");
+ 		SearchMetadata searchMetadata = mock(SearchMetadata.class);
+ 		final SearchResults searchResults = new SearchResults(Collections.singletonList(tweet), searchMetadata);
+ 		final SearchParameters parameters = new SearchParameters("bar");
+@@ -185,7 +185,7 @@ public class TwitterSearchOutboundGatewayTests {
+ 	public void testSearchParamsQueryCustomExpression() {
+ 		this.gateway.setSearchArgsExpression(new SpelExpressionParser()
+ 				.parseExpression("new SearchParameters('foo' + payload).count(5).sinceId(11)"));
+-		Tweet tweet = new Tweet(1L, "foo", new Date(), "bar", "baz", 0L, 0L, "qux", "fiz");
++		Tweet tweet = new Tweet(1L, "1", "foo", new Date(), "bar", "baz", 0L, 0L, "qux", "fiz");
+ 		SearchMetadata searchMetadata = mock(SearchMetadata.class);
+ 		final SearchResults searchResults = new SearchResults(Collections.singletonList(tweet), searchMetadata);
+ 		doAnswer(new Answer<SearchResults>() {
+-- 
+2.2.1
+
