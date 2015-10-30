@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.2.7.RELEASE</version>
+		<version>1.2.8.BUILD-SNAPSHOT</version>
 		<relativePath />
 	</parent>
 
@@ -54,7 +54,6 @@
 		<spring-ldap.version>2.0.4.RELEASE</spring-ldap.version>
 		<spring-retry.version>1.1.2.RELEASE</spring-retry.version>
 		<spring-security-oauth.version>2.0.7.RELEASE</spring-security-oauth.version>
-		<spring-social-twitter.version>1.1.2.RELEASE</spring-social-twitter.version>
 		<spring-session.version>1.0.2.RELEASE</spring-session.version>
 		<spring-web-flow.version>2.4.2.RELEASE</spring-web-flow.version>
 		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
@@ -1469,5 +1468,24 @@
 			</plugin>
 		</plugins>
 	</build>
+
+	<profiles>
+		<profile>
+			<id>spring-snapshots</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<repositories>
+				<repository>
+					<id>spring-snapshots</id>
+					<name>Spring Snapshots</name>
+					<url>http://repo.spring.io/libs-snapshot</url>
+					<snapshots>
+						<enabled>true</enabled>
+					</snapshots>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
 
 </project>

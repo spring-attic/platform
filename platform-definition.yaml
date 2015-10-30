@@ -126,7 +126,7 @@ platform_definition:
         tagPrefix:
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 1.2.7.RELEASE
+      version: 1.2.8.BUILD-SNAPSHOT
       modules:
         - spring-boot
         - spring-boot-actuator
