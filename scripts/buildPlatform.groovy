@@ -191,6 +191,7 @@ if (problems) {
 		println "The following projects did not build cleanly:"
 		buildFailures.each { println "    $it"}
 		println "\nExamine the output above and the test results for further details"
+		System.exit(1)
 	}
 }
 
