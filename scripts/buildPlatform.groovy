@@ -120,7 +120,7 @@ def showUsageAndExit(def optionParser) {
 def getInitScriptPath() {
 	@groovy.transform.SourceURI
 	def scriptLocation
-	new File (new File(scriptLocation).parentFile, 'addLocalMavenRepository.gradle').absolutePath
+	new File (new File(scriptLocation).parentFile, 'configureRepositories.gradle').absolutePath
 }
 
 def options = parseArguments(args)

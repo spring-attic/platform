@@ -1,5 +1,6 @@
 allprojects {
 	repositories {
 		maven { url rootProject.file(repositoryDir) }
+		maven { url 'https://repo.spring.io/libs-snapshot' }
 	}
 }
