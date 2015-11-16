@@ -428,7 +428,7 @@ platform_definition:
        - spring-security-jwt
     - name: Spring Security OAuth
       groupId: org.springframework.security.oauth
-      version: 2.0.7.RELEASE
+      version: 2.0.8.RELEASE
       modules:
         - spring-security-oauth
         - spring-security-oauth2
