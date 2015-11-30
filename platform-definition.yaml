@@ -260,7 +260,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.1.8.RELEASE
+      version: 4.1.9.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
@@ -443,7 +443,7 @@ platform_definition:
         tagPrefix:
     - name: Spring Social
       groupId: org.springframework.social
-      version: 1.1.2.RELEASE
+      version: 1.1.4.RELEASE
       modules:
         - spring-social-config
         - spring-social-core
