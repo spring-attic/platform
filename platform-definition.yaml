@@ -319,7 +319,7 @@ platform_definition:
         - spring-ldap-test
     - name: Spring Loaded
       groupId: org.springframework
-      version: 1.2.4.RELEASE
+      version: 1.2.5.RELEASE
       modules:
        - springloaded
     - name: Spring Mobile
@@ -346,7 +346,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 4.0.3.RELEASE
+      version: 3.2.9.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-security
         tagPrefix:
@@ -397,7 +397,7 @@ platform_definition:
         - spring-social-web
     - name: Spring Social Facebook
       groupId: org.springframework.social
-      version: 2.0.2.RELEASE
+      version: 2.0.3.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-social-facebook
       modules:
