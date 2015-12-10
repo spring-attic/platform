@@ -25,7 +25,7 @@ platform_definition:
            - jdk8
     - name: Reactor Spring
       groupId: io.projectreactor.spring
-      version: 2.0.6.RELEASE
+      version: 2.0.7.RELEASE
       modules:
         - reactor-spring-context
         - reactor-spring-core
@@ -122,7 +122,7 @@ platform_definition:
         - spring-boot-starter-ws
     - name: Spring Cloud Connectors
       groupId: org.springframework.cloud
-      version: 1.2.0.RELEASE
+      version: 1.2.1.RELEASE
       modules:
         - spring-cloud-core
         - spring-cloud-cloudfoundry-connector
@@ -205,7 +205,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.2.3.RELEASE
+      version: 4.2.4.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
@@ -234,7 +234,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.2.2.RELEASE
+      version: 4.2.3.RELEASE
       build:
         compileWith: jdk8
         runTestsWith:
@@ -335,7 +335,7 @@ platform_definition:
         - spring-plugin-metadata
     - name: Spring REST Docs
       groupId: org.springframework.restdocs
-      version: 1.0.0.RELEASE
+      version: 1.0.1.RELEASE
       modules:
         - spring-restdocs-core
         - spring-restdocs-mockmvc
@@ -346,7 +346,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 3.2.9.RELEASE
+      version: 4.0.3.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-security
         tagPrefix:
