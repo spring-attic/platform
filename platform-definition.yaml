@@ -115,7 +115,7 @@ platform_definition:
         repository: https://github.com/spring-projects/spring-amqp
     - name: Spring Batch
       groupId: org.springframework.batch
-      version: 3.0.5.RELEASE
+      version: 3.0.6.RELEASE
       modules:
         - spring-batch-core
         - spring-batch-infrastructure
