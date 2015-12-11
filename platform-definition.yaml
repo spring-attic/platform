@@ -234,7 +234,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.2.3.RELEASE
+      version: 4.3.0.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         runTestsWith:
@@ -464,8 +464,8 @@ platform_definition:
       - 'org.springframework.boot:spring-boot-configuration-processor' # Used by the Boot build to generate metadata about @ConfigurationProperties
   unused_dependencies:
     ignored:
-      # For user convenience, Boot provides extra dependency management for modules that both it
-      # and the rest of the Platform do not depend upon directly
+      # For user convenience, Boot and the Platform provide extra dependency management for modules
+      # that both it and the rest of the Platform do not depend upon directly
       - 'ch.qos.logback:logback-access'
       - 'com.datastax.cassandra:cassandra-driver-core'
       - 'com.datastax.cassandra:cassandra-driver-mapping'
@@ -550,6 +550,7 @@ platform_definition:
       - 'org.hibernate:hibernate-envers'
       - 'org.hibernate:hibernate-jpamodelgen'
       - 'org.hibernate:hibernate-validator-annotation-processor'
+      - 'org.igniterealtime.smack:smack-resolver-javax'
       - 'org.javassist:javassist'
       - 'org.jboss.logging:jboss-logging'
       - 'org.jooq:jooq-codegen'
