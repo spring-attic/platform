@@ -13,6 +13,7 @@ Andy Wilkinson;
 :platform-docs-version: current
 :platform-docs: http://docs.spring.io/platform/docs/{platform-docs-version}/reference
 :platform-docs-current: http://docs.spring.io/platform/docs/current/reference
+:platform-docs-20x: http://docs.spring.io/platform/docs/2.0.x/reference
 :github-repo: spring-io/platform
 :github-raw: http://raw.github.com/{github-repo}/{github-tag}
 :github-code: http://github.com/{github-repo}/tree/{github-tag}
