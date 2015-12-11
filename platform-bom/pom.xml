@@ -73,7 +73,7 @@
 		<commons-io.version>2.4</commons-io.version>
 		<commons-httpclient.version>3.1</commons-httpclient.version>
 		<commons-lang.version>2.6</commons-lang.version>
-		<commons-lang3.version>3.3.2</commons-lang3.version>
+		<commons-lang3.version>3.4</commons-lang3.version>
 		<commons-logging.version>1.2</commons-logging.version>
 		<commons-net.version>3.3</commons-net.version>
 		<couchbase-client.version>1.4.10</couchbase-client.version>
