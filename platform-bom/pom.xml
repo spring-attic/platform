@@ -184,7 +184,7 @@
 		<xstream.version>1.4.8</xstream.version>
 		<xws-security.version>3.0</xws-security.version>
 		<yammer-metrics.version>2.2.0</yammer-metrics.version>
-		<zookeeper.version>3.4.6</zookeeper.version>
+		<zookeeper.version>3.4.7</zookeeper.version>
 	</properties>
 
 	<dependencyManagement>
