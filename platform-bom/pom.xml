@@ -135,7 +135,7 @@
 		<lombok.version>1.14.8</lombok.version>
 		<myfaces.version>2.1.17</myfaces.version>
 		<okhttp.version>2.3.0</okhttp.version>
-		<openhft-chronicle.version>3.4.3</openhft-chronicle.version>
+		<openhft-chronicle.version>3.4.4</openhft-chronicle.version>
 		<openhft-lang.version>6.6.4</openhft-lang.version>
 		<openjpa.version>2.3.0</openjpa.version>
 		<neo4j.version>2.0.5</neo4j.version>
