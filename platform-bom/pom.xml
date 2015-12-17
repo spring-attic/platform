@@ -126,7 +126,7 @@
 		<json-patch.version>1.7</json-patch.version>
 		<jsr250.version>1.0</jsr250.version>
 		<jxl.version>2.6.12</jxl.version>
-		<kafka.version>0.8.2.1</kafka.version>
+		<kafka.version>0.8.2.2</kafka.version>
 		<kite.version>0.13.0</kite.version>
 		<kryo.version>3.0.3</kryo.version>
 		<ldapbp.version>1.0</ldapbp.version>
