@@ -234,7 +234,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.2.3.RELEASE
+      version: 4.2.4.RELEASE
       build:
         compileWith: jdk8
         runTestsWith:
