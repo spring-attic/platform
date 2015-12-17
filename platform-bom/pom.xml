@@ -163,7 +163,7 @@
 		<neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
 		<neo4j-graph-collections.version>0.7.1-neo4j-2.0.1</neo4j-graph-collections.version>
 		<neo4j-spatial.version>0.12-neo4j-2.0.1</neo4j-spatial.version>
-		<netty.version>4.0.32.Final</netty.version>
+		<netty.version>4.0.33.Final</netty.version>
 		<objenesis.version>2.1</objenesis.version>
 		<ognl.version>2.6.11</ognl.version>
 		<openbeans.version>1.0</openbeans.version>
