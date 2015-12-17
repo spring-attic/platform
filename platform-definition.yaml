@@ -260,7 +260,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.1.9.BUILD-SNAPSHOT
+      version: 4.1.9.RELEASE
       modules:
         - spring-aop
         - spring-aspects
@@ -478,7 +478,7 @@ platform_definition:
         - spring-webflow
     - name: Spring Web Services
       groupId: org.springframework.ws
-      version: 2.2.4.RELEASE
+      version: 2.2.3.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-ws
         compileWith: jdk8
