@@ -58,7 +58,7 @@ platform_definition:
           - jdk8
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 1.3.1.BUILD-SNAPSHOT
+      version: 1.3.1.RELEASE
       modules:
         - spring-boot
         - spring-boot-actuator
@@ -133,28 +133,28 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.3.1.RELEASE
+      version: 1.3.2.RELEASE
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.11.1.RELEASE
+      version: 1.11.2.RELEASE
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 1.4.1.RELEASE
+      version: 1.4.2.RELEASE
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 1.3.1.RELEASE
+      version: 1.3.2.RELEASE
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.7.1.RELEASE
+      version: 1.7.2.RELEASE
       modules:
         - spring-data-gemfire
       build:
@@ -162,17 +162,17 @@ platform_definition:
         tagPrefix:
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.9.1.RELEASE
+      version: 1.9.2.RELEASE
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 1.0.1.RELEASE
+      version: 1.0.2.RELEASE
       modules:
         - spring-data-keyvalue
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.8.1.RELEASE
+      version: 1.8.2.RELEASE
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -180,12 +180,12 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 3.4.1.RELEASE
+      version: 3.4.2.RELEASE
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.6.1.RELEASE
+      version: 1.6.2.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-data-redis
         tagPrefix:
@@ -193,14 +193,14 @@ platform_definition:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.4.1.RELEASE
+      version: 2.4.2.RELEASE
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 1.5.1.RELEASE
+      version: 1.5.2.RELEASE
       modules:
         - spring-data-solr
     - name: Spring Framework
