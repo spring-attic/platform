@@ -37,7 +37,7 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.5.2.RELEASE
+      version: 1.6.0.BUILD-SNAPSHOT
       modules:
         - spring-amqp
         - spring-rabbit
