@@ -474,6 +474,8 @@ platform_definition:
       - 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate5'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-jdk7'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
+      - 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider'
+      - 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-base'
       - 'com.fasterxml.jackson.module:jackson-module-parameter-names'
       - 'com.github.mxab.thymeleaf.extras:thymeleaf-extras-data-attribute'
       - 'com.hazelcast:hazelcast-hibernate4'
