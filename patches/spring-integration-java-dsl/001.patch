@@ -1,0 +1,43 @@
+From 242ab0d95f11a283b2a6f02edd7e6480b5db8e6c Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Tue, 26 Jan 2016 13:48:36 +0000
+Subject: [PATCH] Update tests to configure ActiveMQ to allow serialization of
+ all packages
+
+---
+ .../springframework/integration/dsl/test/jms/JmsTests.java   | 12 ++++++++++++
+ 1 file changed, 12 insertions(+)
+
+diff --git a/src/test/java/org/springframework/integration/dsl/test/jms/JmsTests.java b/src/test/java/org/springframework/integration/dsl/test/jms/JmsTests.java
+index db806c4..e5c52fe 100644
+--- a/src/test/java/org/springframework/integration/dsl/test/jms/JmsTests.java
++++ b/src/test/java/org/springframework/integration/dsl/test/jms/JmsTests.java
+@@ -27,6 +27,8 @@ import java.util.concurrent.atomic.AtomicInteger;
+ import javax.jms.ConnectionFactory;
+ 
+ import org.hamcrest.Matchers;
++import org.junit.AfterClass;
++import org.junit.BeforeClass;
+ import org.junit.Test;
+ import org.junit.runner.RunWith;
+ 
+@@ -114,6 +116,16 @@ public class JmsTests {
+ 	@Qualifier("jmsOutboundGateway.handler")
+ 	private MessageHandler jmsOutboundGatewayHandler;
+ 
++	@BeforeClass
++	public static void makeAllPackagesSerializable() {
++		System.setProperty("org.apache.activemq.SERIALIZABLE_PACKAGES", "*");
++	}
++
++	@AfterClass
++	public static void restoreSerializablePackageConfiguration() {
++		System.clearProperty("org.apache.activemq.SERIALIZABLE_PACKAGES");
++	}
++
+ 	@Test
+ 	public void testPollingFlow() {
+ 		this.controlBus.send("@integerEndpoint.start()");
+-- 
+2.6.4
+
