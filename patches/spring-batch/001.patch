@@ -1,0 +1,41 @@
+From e0f05d2c36784fc48733ab16d686d0892c23f48e Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Tue, 26 Jan 2016 10:40:55 +0000
+Subject: [PATCH] Configure ActiveMQ to allow packages to be serialized
+
+---
+ .../RemoteChunkFaultTolerantStepJmsIntegrationTests.java      | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+
+diff --git a/spring-batch-integration/src/test/java/org/springframework/batch/integration/chunk/RemoteChunkFaultTolerantStepJmsIntegrationTests.java b/spring-batch-integration/src/test/java/org/springframework/batch/integration/chunk/RemoteChunkFaultTolerantStepJmsIntegrationTests.java
+index 6391c1a..d92f793 100644
+--- a/spring-batch-integration/src/test/java/org/springframework/batch/integration/chunk/RemoteChunkFaultTolerantStepJmsIntegrationTests.java
++++ b/spring-batch-integration/src/test/java/org/springframework/batch/integration/chunk/RemoteChunkFaultTolerantStepJmsIntegrationTests.java
+@@ -5,6 +5,7 @@ import static org.junit.Assert.assertEquals;
+ import java.io.File;
+ import java.util.Collections;
+ 
++import org.junit.AfterClass;
+ import org.junit.BeforeClass;
+ import org.junit.Test;
+ import org.junit.runner.RunWith;
+@@ -32,6 +33,16 @@ public class RemoteChunkFaultTolerantStepJmsIntegrationTests {
+ 		FileSystemUtils.deleteRecursively(new File("activemq-data"));
+ 	}
+ 
++	@BeforeClass
++	public static void makeAllPackagesSerializable() {
++		System.setProperty("org.apache.activemq.SERIALIZABLE_PACKAGES", "*");
++	}
++
++	@AfterClass
++	public static void restoreSerializablePackageConfiguration() {
++		System.clearProperty("org.apache.activemq.SERIALIZABLE_PACKAGES");
++	}
++
+ 	@Autowired
+ 	private JobLauncher jobLauncher;
+ 
+-- 
+2.6.4
+
