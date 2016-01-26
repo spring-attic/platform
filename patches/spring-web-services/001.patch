@@ -1,0 +1,24 @@
+From a9b5fd728985ea3c13d3ecdf12f182088d171935 Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Tue, 26 Jan 2016 09:39:30 +0000
+Subject: [PATCH] Work around change in Axiom's transitive dependencies
+
+---
+ build.gradle | 1 +
+ 1 file changed, 1 insertion(+)
+
+diff --git a/build.gradle b/build.gradle
+index ccf459c..41d0ec9 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -186,6 +186,7 @@ project('spring-ws-core') {
+ 		optional("org.apache.ws.commons.axiom:axiom-impl:$axiomVersion") {
+ 			exclude group: 'org.codehaus.woodstox', module: 'wstx-asl'
+ 		}
++		testCompile("com.sun.mail:javax.mail:1.5.5")
+ 
+ 		// WSDL
+ 		optional("wsdl4j:wsdl4j:1.6.1")
+-- 
+2.6.4
+
