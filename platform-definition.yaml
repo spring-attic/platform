@@ -58,7 +58,7 @@ platform_definition:
           - jdk8
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 1.3.2.RELEASE
+      version: 1.4.0.BUILD-SNAPSHOT
       modules:
         - spring-boot
         - spring-boot-actuator
@@ -85,6 +85,7 @@ platform_definition:
         - spring-boot-starter-data-gemfire
         - spring-boot-starter-data-jpa
         - spring-boot-starter-data-mongodb
+        - spring-boot-starter-data-redis
         - spring-boot-starter-data-rest
         - spring-boot-starter-data-solr
         - spring-boot-starter-freemarker
@@ -98,14 +99,12 @@ platform_definition:
         - spring-boot-starter-jooq
         - spring-boot-starter-jta-atomikos
         - spring-boot-starter-jta-bitronix
-        - spring-boot-starter-log4j
         - spring-boot-starter-log4j2
         - spring-boot-starter-logging
         - spring-boot-starter-mail
         - spring-boot-starter-mobile
         - spring-boot-starter-mustache
         - spring-boot-starter-parent
-        - spring-boot-starter-redis
         - spring-boot-starter-remote-shell
         - spring-boot-starter-security
         - spring-boot-starter-social-facebook
@@ -472,8 +471,10 @@ platform_definition:
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate5'
+      - 'com.fasterxml.jackson.datatype:jackson-datatype-guava'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-jdk7'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
+      - 'com.fasterxml.jackson.datatype:jackson-datatype-json-org'
       - 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider'
       - 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-base'
       - 'com.fasterxml.jackson.module:jackson-module-parameter-names'

@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.3.2.RELEASE</version>
+		<version>1.4.0.BUILD-SNAPSHOT</version>
 		<relativePath />
 	</parent>
 
@@ -134,7 +134,7 @@
 		<ldapbp.version>1.0</ldapbp.version>
 		<ldapsdk.version>4.1</ldapsdk.version>
 		<lettuce.version>3.2.Final</lettuce.version>
-		<lombok.version>1.16.6</lombok.version>
+		<log4j.version>1.2.17</log4j.version>
 		<myfaces.version>2.1.17</myfaces.version>
 		<okhttp.version>2.3.0</okhttp.version>
 		<openhft-chronicle.version>3.4.4</openhft-chronicle.version>
@@ -674,6 +674,11 @@
 				<version>${ldapsdk.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>log4j</groupId>
+				<artifactId>log4j</artifactId>
+				<version>${log4j.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>net.openhft</groupId>
 				<artifactId>chronicle</artifactId>
 				<version>${openhft-chronicle.version}</version>
@@ -1067,11 +1072,6 @@
 				<groupId>org.openid4java</groupId>
 				<artifactId>openid4java-nodeps</artifactId>
 				<version>${openid4java.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.projectlombok</groupId>
-				<artifactId>lombok</artifactId>
-				<version>${lombok.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.quartz-scheduler</groupId>
