@@ -1,0 +1,26 @@
+From 4abb422db7a59d59d0c8b4ee2f274be11ff0b1d1 Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Thu, 28 Jan 2016 09:58:57 +0000
+Subject: [PATCH] Relax ActiveMQ's serialization restrictions during JMS tests
+
+---
+ build.gradle | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/build.gradle b/build.gradle
+index ecb5444..35881e4 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -433,6 +433,9 @@ project('spring-integration-jms') {
+ 		testCompile("org.apache.activemq:activemq-broker:$activeMqVersion")
+ 		testCompile "org.springframework:spring-oxm:$springVersion"
+ 	}
++	tasks.withType(Test).all {
++		systemProperty 'org.apache.activemq.SERIALIZABLE_PACKAGES', '*'
++	}
+ }
+ 
+ project('spring-integration-jmx') {
+-- 
+2.6.4
+
