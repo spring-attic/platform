@@ -2,7 +2,7 @@ platform_definition:
   projects:
     - name: Aspect J
       groupId: org.aspectj
-      version: 1.8.7
+      version: 1.8.8
       modules:
         - aspectjweaver
         - aspectjtools
