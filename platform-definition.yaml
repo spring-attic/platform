@@ -517,6 +517,8 @@ platform_definition:
       - 'org.apache.activemq:activemq-web-console'
       - 'org.apache.httpcomponents:httpcore'
       - 'org.apache.tomcat:tomcat-jsp-api'
+      - 'org.apache.wss4j:wss4j-ws-security-common'
+      - 'org.apache.wss4j:wss4j-ws-security-dom'
       - 'org.codehaus.groovy:groovy-ant'
       - 'org.codehaus.groovy:groovy-bsf'
       - 'org.codehaus.groovy:groovy-console'

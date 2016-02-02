@@ -179,6 +179,7 @@
 		<websphere-uow.version>6.0.2.17</websphere-uow.version>
 		<woodstox.version>4.2.1</woodstox.version>
 		<wss4j.version>1.6.19</wss4j.version>
+		<wss4j2.version>2.0.6</wss4j2.version>
 		<xmlbeans.version>2.6.0</xmlbeans.version>
 		<xmlschema.version>2.1.0</xmlschema.version>
 		<xmlunit.version>1.5</xmlunit.version>
@@ -877,6 +878,16 @@
 				<groupId>org.apache.xmlbeans</groupId>
 				<artifactId>xmlbeans</artifactId>
 				<version>${xmlbeans.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.wss4j</groupId>
+				<artifactId>wss4j-ws-security-common</artifactId>
+				<version>${wss4j2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.wss4j</groupId>
+				<artifactId>wss4j-ws-security-dom</artifactId>
+				<version>${wss4j2.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.ws.commons.axiom</groupId>
