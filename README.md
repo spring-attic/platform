@@ -21,11 +21,19 @@ Thanks to the [dependency management plugin][], Gradle users can also make use o
 pom. Please refer to the [documentation on using the Platform with Gradle][Platform Gradle docs] for
 more information.
 
+## Contributing
+
+Contributors to this project agree to uphold its [code of conduct][].
+[Pull requests][] are welcome. Please see the [contributor guidelines][] for details.
+
 ## License
 Spring IO Platform is released under version 2.0 of the [Apache License][].
 
 [Spring IO Platform website]: http://spring.io/platform
-[Platform Maven docs]: http://docs.spring.io/platform/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started-using-spring-io-platform-maven
+[Platform Maven docs]: http://docs.spring.io/platform/docs/2.0.x/reference/htmlsingle/#getting-started-using-spring-io-platform-maven
 [dependency management plugin]: https://plugins.gradle.org/plugin/io.spring.dependency-management
-[Platform Gradle docs]: http://docs.spring.io/platform/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started-using-spring-io-platform-gradle
+[Platform Gradle docs]: http://docs.spring.io/platform/docs/2.0.x/reference/htmlsingle/#getting-started-using-spring-io-platform-gradle
+[code of conduct]: CODE_OF_CONDUCT.md
+[Pull requests]: https://help.github.com/articles/using-pull-requests/
+[contributor guidelines]: CONTRIBUTING.md
 [Apache License]: http://www.apache.org/licenses/LICENSE-2.0
