@@ -1,5 +1,5 @@
 /*
- * Copyright 2014 the original author or authors.
+ * Copyright 2014-2016 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -22,16 +22,25 @@ import io.spring.platform.model.Module
 
 import org.junit.Test
 
-class MissingDependenciesTests extends AbstractProjectAnalysisTests {
+/**
+ * Tests to verify that the bom contains the correct dependencies.
+ *
+ * @author Andy Wilkinson
+ */
+class BomDependenciesTests extends AbstractProjectAnalysisTests {
 
 	@Test
-	void thereAreNoMissingDependencies() {
+	void dependenciesAreCorrect() {
 
 		def ignoredDependenciesMatchers = yaml['platform_definition']['missing_dependencies']['ignored_dependencies'].collect {
 			new ArtifactCoordinatesMatcher(it)
 		}
 
 		def ignoredModulesMatchers = yaml['platform_definition']['missing_dependencies']['ignored_modules'].collect {
+			new ArtifactCoordinatesMatcher(it)
+		}
+
+		def unusedDependenciesMatchers = yaml['platform_definition']['unused_dependencies']['ignored'].collect {
 			new ArtifactCoordinatesMatcher(it)
 		}
 
@@ -46,19 +55,32 @@ class MissingDependenciesTests extends AbstractProjectAnalysisTests {
 					}
 					module.dependencies.each { dependency ->
 						identifier = dependencyMappings.getMappedIdentifier(dependency)
-						if (!platformArtifacts.contains(identifier) && !isIgnored(dependency, ignoredDependenciesMatchers)) {
-							analysisResult.registerMissingArtifact(identifier, dependency.version, module)
+						if (!platformArtifacts.contains(identifier)) {
+							if (!isIgnored(dependency, ignoredDependenciesMatchers)) {
+								analysisResult.registerMissingArtifact(identifier, dependency.version, module)
+							}
+						}
+						if (isIgnored(dependency, unusedDependenciesMatchers)) {
+							analysisResult.registerUsedArtifact(identifier)
 						}
 					}
 				}
 			}
 		}
 
-		if (analysisResult.missingArtifacts) {
+		if (analysisResult.missingArtifacts || analysisResult.usedArtifacts) {
 			def writer = new StringWriter()
-			analysisResult.write(new PrintWriter(writer))
-			fail("Missing dependencies:\n${writer.toString()}")
+			if (analysisResult.missingArtifacts) {
+				writer.append("Missing dependencies:\n")
+				analysisResult.writeMissing(new PrintWriter(writer))
+			}
+			if (analysisResult.usedArtifacts) {
+				writer.append("Used dependencies:\n")
+				analysisResult.writeUsed(new PrintWriter(writer));
+			}
+			fail(writer.toString())
 		}
+
 	}
 
 	boolean isIgnored(ArtifactCoordinates coordinates, List<ArtifactCoordinatesMatcher> matchers) {
@@ -76,6 +98,8 @@ class MissingDependenciesTests extends AbstractProjectAnalysisTests {
 
 		Map artifactVersions = [:]
 
+		List usedArtifacts = []
+
 		void registerMissingArtifact(String identifier, String version, Module user) {
 			List modules = this.missingArtifacts.get(identifier, [])
 			if (user != null) {
@@ -84,15 +108,25 @@ class MissingDependenciesTests extends AbstractProjectAnalysisTests {
 			registerVersionOfMissingArtifact(identifier, version)
 		}
 
+		void registerUsedArtifact(String identifier) {
+			usedArtifacts << identifier
+		}
+
 		private void registerVersionOfMissingArtifact(String identifier, String version) {
 			Set versions = this.artifactVersions.get(identifier, [] as Set)
 			versions.add(version)
 		}
 
-		void write(PrintWriter writer) {
+		void writeMissing(PrintWriter writer) {
 			this.missingArtifacts.each { key, value ->
 				writer.println "$key ${artifactVersions[key]}"
 				value.each { writer.println "    $it" }
+			}
+		}
+
+		void writeUsed(PrintWriter writer) {
+			this.usedArtifacts.each { id ->
+				writer.println "    $id"
 			}
 		}
 	}

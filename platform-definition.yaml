@@ -477,8 +477,6 @@ platform_definition:
       - 'com.fasterxml.jackson.datatype:jackson-datatype-json-org'
       - 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider'
       - 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-base'
-      - 'com.fasterxml.jackson.module:jackson-module-parameter-names'
-      - 'com.github.mxab.thymeleaf.extras:thymeleaf-extras-data-attribute'
       - 'com.hazelcast:hazelcast-hibernate4'
       - 'com.jayway.jsonpath:json-path-assert'
       - 'com.jayway.restassured:rest-assured'
