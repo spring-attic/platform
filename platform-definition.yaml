@@ -481,6 +481,7 @@ platform_definition:
       - 'com.github.mxab.thymeleaf.extras:thymeleaf-extras-data-attribute'
       - 'com.hazelcast:hazelcast-hibernate4'
       - 'com.jayway.jsonpath:json-path-assert'
+      - 'com.jayway.restassured:rest-assured'
       - 'com.zaxxer:HikariCP'
       - 'io.dropwizard.metrics:metrics-ganglia'
       - 'io.dropwizard.metrics:metrics-graphite'
