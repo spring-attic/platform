@@ -16,7 +16,7 @@ Platform's projects. When a new project is added to the Platform, or the Platfor
 to a new version of an existing project, any of the project's dependencies that are not
 part of the Platform will be added to the Platform. Furthermore, when a new dependency is
 added to the Platform, any other modules that are part of the same project will typically
-also be added, even if they are not using by any of the Platform's projects. This helps
+also be added, even if they are not used by any of the Platform's projects. This helps
 to ensure that a consistent version is used across all modules of a third-party project.
 
 
