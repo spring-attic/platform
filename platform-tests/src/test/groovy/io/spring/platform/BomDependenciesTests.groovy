@@ -32,9 +32,7 @@ class BomDependenciesTests extends AbstractProjectAnalysisTests {
 	@Test
 	void dependenciesAreCorrect() {
 
-		def ignoredDependenciesMatchers = yaml['platform_definition']['missing_dependencies']['ignored_dependencies'].collect {
-			new ArtifactCoordinatesMatcher(it)
-		}
+		def ignoredDependencies = yaml['platform_definition']['missing_dependencies']['ignored_dependencies']
 
 		def ignoredModulesMatchers = yaml['platform_definition']['missing_dependencies']['ignored_modules'].collect {
 			new ArtifactCoordinatesMatcher(it)
@@ -50,13 +48,13 @@ class BomDependenciesTests extends AbstractProjectAnalysisTests {
 			project.modules.each { module ->
 				if (!isIgnored(module, ignoredModulesMatchers)) {
 					def identifier = dependencyMappings.getMappedIdentifier(module)
-					if (!platformArtifacts.contains(identifier) && !isIgnored(module, ignoredDependenciesMatchers)) {
+					if (!platformArtifacts.contains(identifier)) {
 						analysisResult.registerMissingArtifact(identifier, module.version, null)
 					}
 					module.dependencies.each { dependency ->
 						identifier = dependencyMappings.getMappedIdentifier(dependency)
 						if (!platformArtifacts.contains(identifier)) {
-							if (!isIgnored(dependency, ignoredDependenciesMatchers)) {
+							if (!isIgnored(module, dependency, ignoredDependencies)) {
 								analysisResult.registerMissingArtifact(identifier, dependency.version, module)
 							}
 						}
@@ -81,6 +79,12 @@ class BomDependenciesTests extends AbstractProjectAnalysisTests {
 			fail(writer.toString())
 		}
 
+	}
+
+	boolean isIgnored(ArtifactCoordinates module, ArtifactCoordinates dependency, Map ignoredDependencies) {
+		String moduleId = "${module.groupId}:${module.artifactId}"
+		String dependencyId = "${dependency.groupId}:${dependency.artifactId}"
+		ignoredDependencies[moduleId]?.contains(dependencyId)
 	}
 
 	boolean isIgnored(ArtifactCoordinates coordinates, List<ArtifactCoordinatesMatcher> matchers) {
