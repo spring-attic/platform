@@ -69,7 +69,6 @@
 		<commonj.version>1.1.1</commonj.version>
 		<commons-cli.version>1.2</commons-cli.version>
 		<commons-codec.version>1.10</commons-codec.version>
-		<commons-configuration.version>1.6</commons-configuration.version>
 		<commons-fileupload.version>1.3.1</commons-fileupload.version>
 		<commons-io.version>2.4</commons-io.version>
 		<commons-httpclient.version>3.1</commons-httpclient.version>
@@ -77,13 +76,14 @@
 		<commons-lang3.version>3.4</commons-lang3.version>
 		<commons-logging.version>1.2</commons-logging.version>
 		<commons-net.version>3.3</commons-net.version>
-		<couchbase-client.version>1.4.11</couchbase-client.version>
+		<couchbase-client.version>2.2.3</couchbase-client.version>
 		<curator.version>2.8.0</curator.version>
 		<dom4j.version>1.6.1</dom4j.version>
 		<eclipselink.version>2.5.2</eclipselink.version>
 		<eclipselink-javax-persistence.version>2.1.1</eclipselink-javax-persistence.version>
 		<evo-inflector.version>1.1</evo-inflector.version>
 		<findbugs-jsr305.version>3.0.1</findbugs-jsr305.version>
+		<findbugs-annotations.version>2.0.2</findbugs-annotations.version>
 		<gs-collections.version>5.1.0</gs-collections.version>
 		<guava.version>17.0</guava.version>
 		<guice.version>3.0</guice.version>
@@ -140,8 +140,9 @@
 		<openhft-chronicle.version>3.4.4</openhft-chronicle.version>
 		<openhft-lang.version>6.6.16</openhft-lang.version>
 		<openjpa.version>2.3.0</openjpa.version>
-		<neo4j.version>2.0.5</neo4j.version>
+		<neo4j.version>2.3.2</neo4j.version>
 		<neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
+		<neo4j-ogm.version>2.0.0-M02</neo4j-ogm.version>
 		<neo4j-spatial.version>0.12-neo4j-2.0.1</neo4j-spatial.version>
 		<netty.version>4.0.33.Final</netty.version>
 		<objenesis.version>2.1</objenesis.version>
@@ -153,7 +154,8 @@
 		<protobuf.version>2.5.0</protobuf.version>
 		<protobuf-java-format.version>1.2</protobuf-java-format.version>
 		<quartz.version>2.2.2</quartz.version>
-		<querydsl.version>3.6.9</querydsl.version>
+		<querydsl.version>4.0.8</querydsl.version>
+		<querydsl3.version>3.6.9</querydsl3.version>
 		<rabbit-amqp-client.version>3.6.0</rabbit-amqp-client.version>
 		<rabbit-http-client.version>1.0.0.RELEASE</rabbit-http-client.version>
 		<reactive-streams.version>1.0.0</reactive-streams.version>
@@ -307,7 +309,7 @@
 			</dependency>
 			<dependency>
 				<groupId>com.couchbase.client</groupId>
-				<artifactId>couchbase-client</artifactId>
+				<artifactId>java-client</artifactId>
 				<version>${couchbase-client.version}</version>
 			</dependency>
 			<dependency>
@@ -334,6 +336,11 @@
 				<groupId>com.goldmansachs</groupId>
 				<artifactId>gs-collections</artifactId>
 				<version>${gs-collections.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.code.findbugs</groupId>
+				<artifactId>annotations</artifactId>
+				<version>${findbugs-annotations.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.code.findbugs</groupId>
@@ -408,30 +415,30 @@
 			<dependency>
 				<groupId>com.mysema.querydsl</groupId>
 				<artifactId>querydsl-apt</artifactId>
+				<version>${querydsl3.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.querydsl</groupId>
+				<artifactId>querydsl-apt</artifactId>
 				<version>${querydsl.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.mysema.querydsl</groupId>
+				<groupId>com.querydsl</groupId>
 				<artifactId>querydsl-collections</artifactId>
 				<version>${querydsl.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.mysema.querydsl</groupId>
+				<groupId>com.querydsl</groupId>
 				<artifactId>querydsl-core</artifactId>
 				<version>${querydsl.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.mysema.querydsl</groupId>
+				<groupId>com.querydsl</groupId>
 				<artifactId>querydsl-jpa</artifactId>
 				<version>${querydsl.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.mysema.querydsl</groupId>
-				<artifactId>querydsl-lucene3</artifactId>
-				<version>${querydsl.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.mysema.querydsl</groupId>
+				<groupId>com.querydsl</groupId>
 				<artifactId>querydsl-mongodb</artifactId>
 				<version>${querydsl.version}</version>
 			</dependency>
@@ -524,11 +531,6 @@
 				<groupId>commons-codec</groupId>
 				<artifactId>commons-codec</artifactId>
 				<version>${commons-codec.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>commons-configuration</groupId>
-				<artifactId>commons-configuration</artifactId>
-				<version>${commons-configuration.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>commons-fileupload</groupId>
@@ -774,11 +776,6 @@
 				<groupId>org.apache.directory.shared</groupId>
 				<artifactId>shared-ldap</artifactId>
 				<version>${apache-shared-ldap.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.httpcomponents</groupId>
-				<artifactId>httpclient-cache</artifactId>
-				<version>${httpclient.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.ibatis</groupId>
@@ -1062,23 +1059,13 @@
 			</dependency>
 			<dependency>
 				<groupId>org.neo4j</groupId>
-				<artifactId>neo4j</artifactId>
-				<version>${neo4j.version}</version>
+				<artifactId>neo4j-ogm-api</artifactId>
+				<version>${neo4j-ogm.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.neo4j</groupId>
-				<artifactId>neo4j-cypher-dsl</artifactId>
-				<version>${neo4j-cypher-dsl.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.neo4j</groupId>
-				<artifactId>neo4j-spatial</artifactId>
-				<version>${neo4j-spatial.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.neo4j</groupId>
-				<artifactId>server-api</artifactId>
-				<version>${neo4j.version}</version>
+				<artifactId>neo4j-ogm-core</artifactId>
+				<version>${neo4j-ogm.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.objenesis</groupId>

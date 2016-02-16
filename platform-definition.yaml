@@ -81,6 +81,7 @@ platform_definition:
         - spring-boot-starter-cache
         - spring-boot-starter-cloud-connectors
         - spring-boot-starter-data-cassandra
+        - spring-boot-starter-data-couchbase
         - spring-boot-starter-data-elasticsearch
         - spring-boot-starter-data-gemfire
         - spring-boot-starter-data-jpa
@@ -132,28 +133,33 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.3.2.RELEASE
+      version: 1.4.0.M1
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.11.2.RELEASE
+      version: 1.12.0.M1
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 1.4.2.RELEASE
+      version: 2.1.0.M1
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 1.3.2.RELEASE
+      version: 1.4.0.M1
       modules:
         - spring-data-elasticsearch
+    - name: Spring Data Envers
+      groupId: org.springframework.data
+      version: 1.0.0.M1
+      modules:
+        - spring-data-envers
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.7.2.RELEASE
+      version: 1.8.0.M1
       modules:
         - spring-data-gemfire
       build:
@@ -161,17 +167,17 @@ platform_definition:
         tagPrefix:
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.9.2.RELEASE
+      version: 1.10.0.M1
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 1.0.2.RELEASE
+      version: 1.1.0.M1
       modules:
         - spring-data-keyvalue
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.8.2.RELEASE
+      version: 1.9.0.M1
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -179,12 +185,12 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 3.4.2.RELEASE
+      version: 4.1.0.M1
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.6.2.RELEASE
+      version: 1.7.0.M1
       build:
         repository: https://github.com/spring-projects/spring-data-redis
         tagPrefix:
@@ -192,14 +198,14 @@ platform_definition:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.4.2.RELEASE
+      version: 2.5.0.M1
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 1.5.2.RELEASE
+      version: 2.0.0.M1
       modules:
         - spring-data-solr
     - name: Spring Framework
@@ -334,7 +340,7 @@ platform_definition:
         - spring-plugin-metadata
     - name: Spring REST Docs
       groupId: org.springframework.restdocs
-      version: 1.0.1.RELEASE
+      version: 1.1.0.M1
       modules:
         - spring-restdocs-core
         - spring-restdocs-mockmvc
@@ -450,12 +456,12 @@ platform_definition:
     'rome:rome': 'net.java.dev.rome:rome'
   missing_dependencies:
     ignored_dependencies:
-      - 'org.thymeleaf:thymeleaf-spring3' # The Platform is Spring 4+
+      - 'org.scala-lang:scala-library' # Breaking changes in minor versions prevent its inclusion
       - 'org.springframework:spring-instrument-tomcat' # Only needed with Tomcat 6 and the Platform uses Tomcat 7+
       - 'org.springframework.boot:spring-boot-dependencies' # The platform bom is a superset of spring-boot-dependencies
       - 'org.springframework.boot:spring-boot-starter-parent' # The platform bom is a superset of spring-boot-starter-parent
       - 'org.springframework.data.build:spring-data-java8-stub' # Not included in Spring Data Bom
-      - 'org.eclipse.jetty*:*:9.*' # The Platform uses Jetty 8
+      - 'org.thymeleaf:thymeleaf-spring3' # The Platform is Spring 4+
     ignored_modules:
       - 'org.springframework.boot:spring-boot-actuator-docs' # Its dependencies are provided
       - 'org.springframework.boot:spring-boot-cli' # The CLI doesn't expose its dependencies to applications
@@ -551,7 +557,6 @@ platform_definition:
       - 'org.firebirdsql.jdbc:jaybird-jdk17'
       - 'org.firebirdsql.jdbc:jaybird-jdk18'
       - 'org.hibernate:hibernate-ehcache'
-      - 'org.hibernate:hibernate-envers'
       - 'org.hibernate:hibernate-jpamodelgen'
       - 'org.hibernate:hibernate-validator-annotation-processor'
       - 'org.igniterealtime.smack:smack-resolver-javax'
@@ -574,7 +579,3 @@ platform_definition:
         url: http://repo.spring.io/libs-snapshot
       - id: jasper-reports
         url: http://jasperreports.sourceforge.net/maven2
-      - id: opengeo
-        url: http://repo.boundlessgeo.com
-      - id: geotools-webdav
-        url: http://download.osgeo.org/webdav/geotools
