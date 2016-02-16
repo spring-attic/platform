@@ -191,9 +191,6 @@ platform_definition:
     - name: Spring Data Redis
       groupId: org.springframework.data
       version: 1.7.0.M1
-      build:
-        repository: https://github.com/spring-projects/spring-data-redis
-        tagPrefix:
       modules:
         - spring-data-redis
     - name: Spring Data Rest
