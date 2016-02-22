@@ -341,6 +341,7 @@ platform_definition:
       modules:
         - spring-restdocs-core
         - spring-restdocs-mockmvc
+        - spring-restdocs-restassured
     - name: Spring Retry
       groupId: org.springframework.retry
       version: 1.1.2.RELEASE
@@ -374,15 +375,16 @@ platform_definition:
        - spring-security-jwt
     - name: Spring Security OAuth
       groupId: org.springframework.security.oauth
-      version: 2.0.8.RELEASE
+      version: 2.0.9.RELEASE
       modules:
         - spring-security-oauth
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 1.0.2.RELEASE
+      version: 1.1.0.RC1
       modules:
         - spring-session
+        - spring-session-data-gemfire
         - spring-session-data-redis
       build:
         repository: https://github.com/spring-projects/spring-session
@@ -478,15 +480,16 @@ platform_definition:
       - 'com.fasterxml.jackson.datatype:jackson-datatype-json-org'
       - 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider'
       - 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-base'
+      - 'com.google.appengine:appengine-api-1.0-sdk'
       - 'com.hazelcast:hazelcast-hibernate4'
       - 'com.jayway.jsonpath:json-path-assert'
-      - 'com.jayway.restassured:rest-assured'
       - 'com.zaxxer:HikariCP'
       - 'io.dropwizard.metrics:metrics-ganglia'
       - 'io.dropwizard.metrics:metrics-graphite'
       - 'io.dropwizard.metrics:metrics-servlets'
       - 'javax.servlet:jstl'
       - 'mysql:mysql-connector-java'
+      - 'net.sourceforge.jtds:jtds'
       - 'org.apache.activemq:activemq-amqp'
       - 'org.apache.activemq:activemq-blueprint'
       - 'org.apache.activemq:activemq-camel'
@@ -566,6 +569,7 @@ platform_definition:
       - 'org.spockframework:spock-core'
       - 'org.spockframework:spock-spring'
       - 'org.springframework:springloaded'
+      - 'org.xerial:sqlite-jdbc'
       - 'xml-apis:xml-apis'
   repositories:
       - id: central
