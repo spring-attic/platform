@@ -109,7 +109,7 @@
 		<javax-jdo.version>3.0.1</javax-jdo.version>
 		<javax-jsp.version>2.2.1</javax-jsp.version>
 		<javax-jstl.version>1.2.1</javax-jstl.version>
-		<javax-money.version>1.0</javax-money.version>
+		<javax-money.version>1.0.1</javax-money.version>
 		<javax-portlet.version>2.0</javax-portlet.version>
 		<javax-saaj.version>1.3.5</javax-saaj.version>
 		<javax-validation.version>1.1.0.Final</javax-validation.version>
@@ -121,7 +121,7 @@
 		<jline.version>2.11</jline.version>
 		<jopt-simple.version>4.8</jopt-simple.version>
 		<jredis.version>06052013</jredis.version>
-		<jruby.version>1.7.23</jruby.version>
+		<jruby.version>1.7.24</jruby.version>
 		<jsch.version>0.1.53</jsch.version>
 		<json-patch.version>1.7</json-patch.version>
 		<jsr250.version>1.0</jsr250.version>
@@ -142,7 +142,7 @@
 		<neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
 		<neo4j-ogm.version>2.0.0-M02</neo4j-ogm.version>
 		<neo4j-spatial.version>0.12-neo4j-2.0.1</neo4j-spatial.version>
-		<netty.version>4.0.33.Final</netty.version>
+		<netty.version>4.0.34.Final</netty.version>
 		<objenesis.version>2.1</objenesis.version>
 		<ognl.version>2.6.11</ognl.version>
 		<openid4java.version>0.9.6</openid4java.version>
@@ -162,11 +162,11 @@
 		<selenium-htmlunit-driver.version>2.46.0</selenium-htmlunit-driver.version>
 		<smack.version>3.2.1</smack.version>
 		<smack4.version>4.1.5</smack4.version>
-		<snappy.version>1.1.1.7</snappy.version>
+		<snappy.version>1.1.2.1</snappy.version>
 		<splunk.version>1.3.0</splunk.version>
 		<spullara-redis.version>0.7</spullara-redis.version>
 		<sun-facelets.version>1.1.14</sun-facelets.version>
-		<sun-jsf.version>2.2.12</sun-jsf.version>
+		<sun-jsf.version>2.2.13</sun-jsf.version>
 		<sun-saaj.version>1.3.25</sun-saaj.version>
 		<taglibs-standard.version>1.2.5</taglibs-standard.version>
 		<testng.version>6.8.21</testng.version>
@@ -188,7 +188,7 @@
 		<xstream.version>1.4.8</xstream.version>
 		<xws-security.version>3.0</xws-security.version>
 		<yammer-metrics.version>2.2.0</yammer-metrics.version>
-		<zookeeper.version>3.4.7</zookeeper.version>
+		<zookeeper.version>3.4.8</zookeeper.version>
 	</properties>
 
 	<dependencyManagement>
