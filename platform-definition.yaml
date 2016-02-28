@@ -207,7 +207,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.2.5.RELEASE
+      version: 4.3.0.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
@@ -381,7 +381,7 @@ platform_definition:
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 1.1.0.RC1
+      version: 1.1.0.RELEASE
       modules:
         - spring-session
         - spring-session-data-gemfire
@@ -558,6 +558,7 @@ platform_definition:
       - 'org.hibernate:hibernate-jpamodelgen'
       - 'org.hibernate:hibernate-validator-annotation-processor'
       - 'org.igniterealtime.smack:smack-resolver-javax'
+      - 'org.infinispan:infinispan-spring4-common'
       - 'org.javassist:javassist'
       - 'org.jboss.logging:jboss-logging'
       - 'org.jooq:jooq-codegen'
