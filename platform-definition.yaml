@@ -58,7 +58,7 @@ platform_definition:
           - jdk8
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 1.3.3.RELEASE
+      version: 1.3.4.BUILD-SNAPSHOT
       modules:
         - spring-boot
         - spring-boot-actuator
@@ -464,6 +464,7 @@ platform_definition:
       # For user convenience, Boot provides extra dependency management for modules that both it
       # and the rest of the Platform do not depend upon directly
       - 'ch.qos.logback:logback-access'
+      - 'ch.qos.logback:logback-core'
       - 'com.datastax.cassandra:cassandra-driver-core'
       - 'com.datastax.cassandra:cassandra-driver-mapping'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv'
