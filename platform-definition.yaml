@@ -469,6 +469,7 @@ platform_definition:
       # For user convenience, Boot and the Platform provide extra dependency management for modules
       # that both it and the rest of the Platform do not depend upon directly
       - 'ch.qos.logback:logback-access'
+      - 'ch.qos.logback:logback-core'
       - 'com.datastax.cassandra:cassandra-driver-core'
       - 'com.datastax.cassandra:cassandra-driver-mapping'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv'
