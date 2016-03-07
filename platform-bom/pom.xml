@@ -59,7 +59,7 @@
 		<avro.version>1.7.7</avro.version>
 		<axiom.version>1.2.17</axiom.version>
 		<boon.version>0.23</boon.version>
-		<bouncycastle.version>1.47</bouncycastle.version>
+		<bouncycastle.version>1.54</bouncycastle.version>
 		<bsh.version>2.0b4</bsh.version>
 		<c3p0.version>0.9.5.2</c3p0.version>
 		<cas-client.version>3.2.2</cas-client.version>
