@@ -74,7 +74,6 @@
 		<commons-lang3.version>3.4</commons-lang3.version>
 		<commons-logging.version>1.2</commons-logging.version>
 		<commons-net.version>3.3</commons-net.version>
-		<couchbase-client.version>2.2.3</couchbase-client.version>
 		<curator.version>2.8.0</curator.version>
 		<dom4j.version>1.6.1</dom4j.version>
 		<eclipselink.version>2.5.2</eclipselink.version>
@@ -123,7 +122,6 @@
 		<jredis.version>06052013</jredis.version>
 		<jruby.version>1.7.24</jruby.version>
 		<jsch.version>0.1.53</jsch.version>
-		<json-patch.version>1.7</json-patch.version>
 		<jsr250.version>1.0</jsr250.version>
 		<jxl.version>2.6.12</jxl.version>
 		<kafka.version>0.8.2.2</kafka.version>
@@ -140,7 +138,7 @@
 		<openjpa.version>2.3.0</openjpa.version>
 		<neo4j.version>2.3.2</neo4j.version>
 		<neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
-		<neo4j-ogm.version>2.0.0-M02</neo4j-ogm.version>
+		<neo4j-ogm.version>2.0.0-M04</neo4j-ogm.version>
 		<neo4j-spatial.version>0.12-neo4j-2.0.1</neo4j-spatial.version>
 		<netty.version>4.0.34.Final</netty.version>
 		<objenesis.version>2.1</objenesis.version>
@@ -306,11 +304,6 @@
 				<version>${hessian.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>com.couchbase.client</groupId>
-				<artifactId>java-client</artifactId>
-				<version>${couchbase-client.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>com.esotericsoftware</groupId>
 				<artifactId>kryo</artifactId>
 				<version>${kryo.version}</version>
@@ -319,11 +312,6 @@
 				<groupId>com.esotericsoftware</groupId>
 				<artifactId>kryo-shaded</artifactId>
 				<version>${kryo.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.github.fge</groupId>
-				<artifactId>json-patch</artifactId>
-				<version>${json-patch.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.github.spullara.redis</groupId>
@@ -1057,7 +1045,7 @@
 			</dependency>
 			<dependency>
 				<groupId>org.neo4j</groupId>
-				<artifactId>neo4j-ogm-api</artifactId>
+				<artifactId>neo4j-ogm-http-driver</artifactId>
 				<version>${neo4j-ogm.version}</version>
 			</dependency>
 			<dependency>

@@ -133,33 +133,33 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.4.0.M1
+      version: 1.4.0.RC1
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.12.0.M1
+      version: 1.12.0.RC1
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 2.1.0.M1
+      version: 2.1.0.RC1
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 1.4.0.M1
+      version: 2.0.0.RC1
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 1.0.0.M1
+      version: 1.0.0.RC1
       modules:
         - spring-data-envers
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.8.0.M1
+      version: 1.8.0.RC1
       modules:
         - spring-data-gemfire
       build:
@@ -167,17 +167,17 @@ platform_definition:
         tagPrefix:
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.10.0.M1
+      version: 1.10.0.RC1
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 1.1.0.M1
+      version: 1.1.0.RC1
       modules:
         - spring-data-keyvalue
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.9.0.M1
+      version: 1.9.0.RC1
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -185,24 +185,24 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 4.1.0.M1
+      version: 4.1.0.RC1
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.7.0.M1
+      version: 1.7.0.RC1
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.5.0.M1
+      version: 2.5.0.RC1
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 2.0.0.M1
+      version: 2.0.0.RC1
       modules:
         - spring-data-solr
     - name: Spring Framework
