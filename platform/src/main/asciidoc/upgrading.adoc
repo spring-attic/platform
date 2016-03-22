@@ -7,8 +7,12 @@ This section provides all you need to know about upgrading to this version of Sp
 Platform.
 --
 
+
+
 [[upgrading-dependency-management]]
 == Changes to dependency management
+
+
 
 [[upgrading-dependency-management-removed]]
 === Dependency management that has been removed
@@ -25,3 +29,20 @@ part of the upgrade process.
 
 | `com.github.fge:json-patch`
 | No longer a dependency of any of the Platform's projects
+|===
+
+
+
+[[upgrading-dependency-management-replaced]]
+=== Dependency management that has been replaced
+
+The following table lists dependency management that has been replaced. Where possible,
+as part of the upgrade process, you should update your project's dependencies to use the
+replacements.
+
+|===
+| Dependency | Replacement
+
+| `com.mysema.querydsl:querydsl-apt`
+| `com.querydsl:querydsl-apt`
+|===
