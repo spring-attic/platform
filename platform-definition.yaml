@@ -86,6 +86,7 @@ platform_definition:
         - spring-boot-starter-data-gemfire
         - spring-boot-starter-data-jpa
         - spring-boot-starter-data-mongodb
+        - spring-boot-starter-data-neo4j
         - spring-boot-starter-data-redis
         - spring-boot-starter-data-rest
         - spring-boot-starter-data-solr
@@ -565,6 +566,8 @@ platform_definition:
       - 'org.jooq:jooq-codegen'
       - 'org.jooq:jooq-meta'
       - 'org.mariadb.jdbc:mariadb-java-client'
+      - 'org.neo4j:neo4j-ogm-api'
+      - 'org.neo4j:neo4j-ogm-compiler'
       - 'org.postgresql:postgresql'
       - 'org.slf4j:slf4j-jdk14'
       - 'org.slf4j:slf4j-simple'
