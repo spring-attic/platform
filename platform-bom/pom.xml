@@ -74,7 +74,6 @@
 		<commons-logging.version>1.2</commons-logging.version>
 		<commons-net.version>3.4</commons-net.version>
 		<curator.version>2.8.0</curator.version>
-		<dom4j.version>1.6.1</dom4j.version>
 		<eclipselink.version>2.5.2</eclipselink.version>
 		<eclipselink-javax-persistence.version>2.1.1</eclipselink-javax-persistence.version>
 		<evo-inflector.version>1.1</evo-inflector.version>
@@ -155,7 +154,6 @@
 		<rest-assured.version>2.8.0</rest-assured.version>
 		<rometools.version>1.5.1</rometools.version>
 		<selenium-htmlunit-driver.version>${selenium.version}</selenium-htmlunit-driver.version>
-		<smack.version>3.2.1</smack.version>
 		<smack4.version>4.1.5</smack4.version>
 		<snappy.version>1.1.2.1</snappy.version>
 		<splunk.version>1.3.0</splunk.version>
@@ -539,11 +537,6 @@
 				<groupId>commons-net</groupId>
 				<artifactId>commons-net</artifactId>
 				<version>${commons-net.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>dom4j</groupId>
-				<artifactId>dom4j</artifactId>
-				<version>${dom4j.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>io.fastjson</groupId>
@@ -979,11 +972,6 @@
 				<groupId>org.hamcrest</groupId>
 				<artifactId>hamcrest-all</artifactId>
 				<version>${hamcrest.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.igniterealtime.smack</groupId>
-				<artifactId>smack</artifactId>
-				<version>${smack.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.igniterealtime.smack</groupId>

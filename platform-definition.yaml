@@ -2,7 +2,7 @@ platform_definition:
   projects:
     - name: Aspect J
       groupId: org.aspectj
-      version: 1.8.8
+      version: 1.8.9
       modules:
         - aspectjweaver
         - aspectjtools
@@ -101,6 +101,7 @@ platform_definition:
         - spring-boot-starter-jooq
         - spring-boot-starter-jta-atomikos
         - spring-boot-starter-jta-bitronix
+        - spring-boot-starter-jta-narayana
         - spring-boot-starter-log4j2
         - spring-boot-starter-logging
         - spring-boot-starter-mail
@@ -123,7 +124,7 @@ platform_definition:
         - spring-boot-starter-ws
     - name: Spring Cloud Connectors
       groupId: org.springframework.cloud
-      version: 1.2.1.RELEASE
+      version: 1.2.2.RELEASE
       modules:
         - spring-cloud-core
         - spring-cloud-cloudfoundry-connector
@@ -134,33 +135,33 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.4.0.RC1
+      version: 1.4.1.RELEASE
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.12.0.RC1
+      version: 1.12.1.RELEASE
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 2.1.0.RC1
+      version: 2.1.1.RELEASE
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 2.0.0.RC1
+      version: 2.0.1.RELEASE
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 1.0.0.RC1
+      version: 1.0.1.RELEASE
       modules:
         - spring-data-envers
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.8.0.RC1
+      version: 1.8.1.RELEASE
       modules:
         - spring-data-gemfire
       build:
@@ -168,17 +169,17 @@ platform_definition:
         tagPrefix:
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.10.0.RC1
+      version: 1.10.1.RELEASE
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 1.1.0.RC1
+      version: 1.1.1.RELEASE
       modules:
         - spring-data-keyvalue
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.9.0.RC1
+      version: 1.9.1.RELEASE
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -186,29 +187,29 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 4.1.0.RC1
+      version: 4.1.1.RELEASE
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.7.0.RC1
+      version: 1.7.1.RELEASE
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.5.0.RC1
+      version: 2.5.1.RELEASE
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 2.0.0.RC1
+      version: 2.0.1.RELEASE
       modules:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.3.0.BUILD-SNAPSHOT
+      version: 4.3.0.RC1
       modules:
         - spring-aop
         - spring-aspects
@@ -350,7 +351,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 4.0.3.RELEASE
+      version: 4.0.4.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-security
         tagPrefix:
@@ -371,7 +372,7 @@ platform_definition:
         - spring-security-web
     - name: Spring Security JWT
       groupId: org.springframework.security
-      version: 1.0.3.RELEASE
+      version: 1.0.4.RELEASE
       modules:
        - spring-security-jwt
     - name: Spring Security OAuth
@@ -382,11 +383,13 @@ platform_definition:
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 1.1.0.RELEASE
+      version: 1.2.0.RC2
       modules:
         - spring-session
         - spring-session-data-gemfire
+        - spring-session-data-mongo
         - spring-session-data-redis
+        - spring-session-jdbc
       build:
         repository: https://github.com/spring-projects/spring-session
         tagPrefix:
@@ -433,7 +436,7 @@ platform_definition:
         - spring-webflow
     - name: Spring Web Services
       groupId: org.springframework.ws
-      version: 2.2.3.RELEASE
+      version: 2.3.0.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-ws
         compileWith: jdk8
@@ -482,6 +485,8 @@ platform_definition:
       - 'com.fasterxml.jackson.datatype:jackson-datatype-json-org'
       - 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider'
       - 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-base'
+      - 'com.fasterxml.jackson.module:jackson-module-jaxb-annotations'
+      - 'com.fasterxml.jackson.module:jackson-module-kotlin'
       - 'com.google.appengine:appengine-api-1.0-sdk'
       - 'com.hazelcast:hazelcast-hibernate4'
       - 'com.jayway.jsonpath:json-path-assert'
@@ -491,6 +496,7 @@ platform_definition:
       - 'io.dropwizard.metrics:metrics-servlets'
       - 'javax.servlet:jstl'
       - 'mysql:mysql-connector-java'
+      - 'net.java.dev.jna:jna'
       - 'net.sourceforge.jtds:jtds'
       - 'org.apache.activemq:activemq-amqp'
       - 'org.apache.activemq:activemq-blueprint'
@@ -523,7 +529,6 @@ platform_definition:
       - 'org.apache.httpcomponents:httpcore'
       - 'org.apache.tomcat:tomcat-jsp-api'
       - 'org.apache.wss4j:wss4j-ws-security-common'
-      - 'org.apache.wss4j:wss4j-ws-security-dom'
       - 'org.codehaus.groovy:groovy-ant'
       - 'org.codehaus.groovy:groovy-bsf'
       - 'org.codehaus.groovy:groovy-console'
@@ -557,6 +562,7 @@ platform_definition:
       - 'org.firebirdsql.jdbc:jaybird-jdk17'
       - 'org.firebirdsql.jdbc:jaybird-jdk18'
       - 'org.hibernate:hibernate-ehcache'
+      - 'org.hibernate:hibernate-java8'
       - 'org.hibernate:hibernate-jpamodelgen'
       - 'org.hibernate:hibernate-validator-annotation-processor'
       - 'org.igniterealtime.smack:smack-resolver-javax'
@@ -569,6 +575,9 @@ platform_definition:
       - 'org.neo4j:neo4j-ogm-api'
       - 'org.neo4j:neo4j-ogm-compiler'
       - 'org.postgresql:postgresql'
+      - 'org.seleniumhq.selenium:selenium-api'
+      - 'org.seleniumhq.selenium:selenium-remote-driver'
+      - 'org.seleniumhq.selenium:selenium-support'
       - 'org.slf4j:slf4j-jdk14'
       - 'org.slf4j:slf4j-simple'
       - 'org.spockframework:spock-core'
