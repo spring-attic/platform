@@ -492,6 +492,7 @@ platform_definition:
       - 'com.google.appengine:appengine-api-1.0-sdk'
       - 'com.hazelcast:hazelcast-hibernate4'
       - 'com.jayway.jsonpath:json-path-assert'
+      - 'com.unboundid:unboundid-ldapsdk'
       - 'com.zaxxer:HikariCP'
       - 'io.dropwizard.metrics:metrics-ganglia'
       - 'io.dropwizard.metrics:metrics-graphite'
