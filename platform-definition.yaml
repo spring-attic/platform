@@ -209,7 +209,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.3.0.RC1
+      version: 4.3.0.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
@@ -476,6 +476,7 @@ platform_definition:
       - 'ch.qos.logback:logback-core'
       - 'com.datastax.cassandra:cassandra-driver-core'
       - 'com.datastax.cassandra:cassandra-driver-mapping'
+      - 'com.fasterxml:classmate'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-cbor'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-smile'
