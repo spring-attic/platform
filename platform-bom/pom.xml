@@ -45,6 +45,7 @@
 	</developers>
 
 	<properties>
+		<spring-integration.version>4.3.0.BUILD-SNAPSHOT</spring-integration.version>
 		<spring-integration-flow.version>1.0.0.RELEASE</spring-integration-flow.version>
 		<spring-integration-kafka.version>1.3.0.RELEASE</spring-integration-kafka.version>
 		<spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
@@ -106,7 +107,6 @@
 		<javax-jstl.version>1.2.1</javax-jstl.version>
 		<javax-money.version>1.0.1</javax-money.version>
 		<javax-portlet.version>2.0</javax-portlet.version>
-		<javax-saaj.version>1.3.5</javax-saaj.version>
 		<javax-validation.version>1.1.0.Final</javax-validation.version>
 		<javax-websocket.version>1.0</javax-websocket.version>
 		<jbatch-tck.version>1.0</jbatch-tck.version>
@@ -636,11 +636,6 @@
 				<groupId>javax.ws.rs</groupId>
 				<artifactId>javax.ws.rs-api</artifactId>
 				<version>${javax-jax-rs.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>javax.xml.soap</groupId>
-				<artifactId>saaj-api</artifactId>
-				<version>${javax-saaj.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>jline</groupId>
