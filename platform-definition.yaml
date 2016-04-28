@@ -2,7 +2,7 @@ platform_definition:
   projects:
     - name: Aspect J
       groupId: org.aspectj
-      version: 1.8.8
+      version: 1.8.9
       modules:
         - aspectjweaver
         - aspectjtools
@@ -45,7 +45,7 @@ platform_definition:
         repository: https://github.com/spring-projects/spring-amqp
     - name: Spring Batch
       groupId: org.springframework.batch
-      version: 3.0.6.RELEASE
+      version: 3.0.7.RELEASE
       modules:
         - spring-batch-core
         - spring-batch-infrastructure
@@ -122,7 +122,7 @@ platform_definition:
         - spring-boot-starter-ws
     - name: Spring Cloud Connectors
       groupId: org.springframework.cloud
-      version: 1.2.1.RELEASE
+      version: 1.2.2.RELEASE
       modules:
         - spring-cloud-core
         - spring-cloud-cloudfoundry-connector
@@ -343,7 +343,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 4.0.3.RELEASE
+      version: 4.0.4.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-security
         tagPrefix:
@@ -364,7 +364,7 @@ platform_definition:
         - spring-security-web
     - name: Spring Security JWT
       groupId: org.springframework.security
-      version: 1.0.3.RELEASE
+      version: 1.0.4.RELEASE
       modules:
        - spring-security-jwt
     - name: Spring Security OAuth
