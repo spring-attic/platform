@@ -73,7 +73,7 @@
 		<commons-lang3.version>3.4</commons-lang3.version>
 		<commons-logging.version>1.2</commons-logging.version>
 		<commons-net.version>3.4</commons-net.version>
-		<curator.version>3.1.0</curator.version>
+		<curator.version>2.10.0</curator.version>
 		<eclipselink.version>2.5.2</eclipselink.version>
 		<eclipselink-javax-persistence.version>2.1.1</eclipselink-javax-persistence.version>
 		<evo-inflector.version>1.1</evo-inflector.version>
@@ -181,7 +181,6 @@
 		<xstream.version>1.4.8</xstream.version>
 		<xws-security.version>3.0</xws-security.version>
 		<yammer-metrics.version>2.2.0</yammer-metrics.version>
-		<zookeeper.version>3.4.8</zookeeper.version>
 	</properties>
 
 	<dependencyManagement>
@@ -871,11 +870,6 @@
 				<groupId>org.apache.ws.xmlschema</groupId>
 				<artifactId>xmlschema-core</artifactId>
 				<version>${xmlschema.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.zookeeper</groupId>
-				<artifactId>zookeeper</artifactId>
-				<version>${zookeeper.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.atteo</groupId>
