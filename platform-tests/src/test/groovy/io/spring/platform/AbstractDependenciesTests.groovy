@@ -25,10 +25,6 @@ class AbstractDependenciesTests {
 
 	def projectVersion = System.getProperty("project.version")
 
-	def skipped = [
-		"jackson-datatype-jdk7"
-	]
-
 	def exclusions = [
 		"openid4java-nodeps":["groupId":"com.google.code.guice", "artifactId":"guice"],
 		"xws-security":["groupId":"javax.xml.crypto", "artifactId":"xmldsig"],
@@ -41,9 +37,7 @@ class AbstractDependenciesTests {
 			.findAll { it.type.text() != 'test-jar'}
 			.each { dependency ->
 				def exclusion = exclusions[dependency.artifactId.text()]
-				if (!skipped.contains(dependency.artifactId.text())) {
-					closure.call([dependency, exclusion])
-				}
+				closure.call([dependency, exclusion])
 			}
 	}
 
