@@ -181,7 +181,6 @@
 		<xstream.version>1.4.8</xstream.version>
 		<xws-security.version>3.0</xws-security.version>
 		<yammer-metrics.version>2.2.0</yammer-metrics.version>
-		<zookeeper.version>3.4.8</zookeeper.version>
 	</properties>
 
 	<dependencyManagement>
@@ -871,11 +870,6 @@
 				<groupId>org.apache.ws.xmlschema</groupId>
 				<artifactId>xmlschema-core</artifactId>
 				<version>${xmlschema.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.zookeeper</groupId>
-				<artifactId>zookeeper</artifactId>
-				<version>${zookeeper.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.atteo</groupId>

@@ -383,7 +383,7 @@ platform_definition:
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 1.2.0.RC2
+      version: 1.2.0.RC3
       modules:
         - spring-session
         - spring-session-data-gemfire
