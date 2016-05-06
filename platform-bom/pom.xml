@@ -150,7 +150,7 @@
 		<poi.version>3.11</poi.version>
 		<protobuf.version>2.5.0</protobuf.version>
 		<protobuf-java-format.version>1.2</protobuf-java-format.version>
-		<quartz.version>2.2.2</quartz.version>
+		<quartz.version>2.2.3</quartz.version>
 		<querydsl.version>3.6.9</querydsl.version>
 		<rabbit-amqp-client.version>3.4.4</rabbit-amqp-client.version>
 		<rabbit-http-client.version>1.0.0.RELEASE</rabbit-http-client.version>
