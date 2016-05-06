@@ -48,7 +48,7 @@ class AbstractProjectAnalysisTests {
 		def aetherHelper = new AetherHelper()
 
 		def repositorySystem = aetherHelper.createRepositorySystem()
-		def session = aetherHelper.createRepositorySystemSession(repositorySystem, 5000, 5000)
+		def session = aetherHelper.createRepositorySystemSession(repositorySystem, 5000, 30000)
 
 		def repositories = createRepositories()
 
