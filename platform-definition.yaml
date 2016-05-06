@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 2.0.7.RELEASE
+      version: 2.0.8.RELEASE
       modules:
         - reactor-bus
         - reactor-core
@@ -108,6 +108,7 @@ platform_definition:
         - spring-boot-starter-mobile
         - spring-boot-starter-mustache
         - spring-boot-starter-parent
+        - spring-boot-starter-redis
         - spring-boot-starter-remote-shell
         - spring-boot-starter-security
         - spring-boot-starter-social-facebook
@@ -323,7 +324,7 @@ platform_definition:
         - spring-ldap-test
     - name: Spring Loaded
       groupId: org.springframework
-      version: 1.2.5.RELEASE
+      version: 1.2.6.RELEASE
       modules:
        - springloaded
     - name: Spring Mobile
@@ -351,7 +352,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 4.0.4.RELEASE
+      version: 4.1.0.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-security
         tagPrefix:
