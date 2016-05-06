@@ -57,7 +57,7 @@
 		<apacheds.version>1.5.5</apacheds.version>
 		<apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
 		<avro.version>1.7.7</avro.version>
-		<axiom.version>1.2.17</axiom.version>
+		<axiom.version>1.2.19</axiom.version>
 		<boon.version>0.23</boon.version>
 		<bouncycastle.version>1.47</bouncycastle.version>
 		<bsh.version>2.0b4</bsh.version>
