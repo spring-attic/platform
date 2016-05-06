@@ -133,7 +133,7 @@
 		<ldapsdk.version>4.1</ldapsdk.version>
 		<lettuce.version>3.2.Final</lettuce.version>
 		<lombok.version>1.14.8</lombok.version>
-		<myfaces.version>2.1.17</myfaces.version>
+		<myfaces.version>2.1.18</myfaces.version>
 		<okhttp.version>2.3.0</okhttp.version>
 		<openhft-chronicle.version>3.4.4</openhft-chronicle.version>
 		<openhft-lang.version>6.6.16</openhft-lang.version>
