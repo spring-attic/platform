@@ -340,7 +340,7 @@ platform_definition:
         - spring-plugin-metadata
     - name: Spring REST Docs
       groupId: org.springframework.restdocs
-      version: 1.1.0.M1
+      version: 1.1.0.RC1
       modules:
         - spring-restdocs-core
         - spring-restdocs-mockmvc
@@ -531,6 +531,14 @@ platform_definition:
       - 'org.apache.activemq:activemq-stomp'
       - 'org.apache.activemq:activemq-web'
       - 'org.apache.activemq:activemq-web-console'
+      - 'org.apache.activemq:artemis-selector'
+      - 'org.apache.activemq:artemis-journal'
+      - 'org.apache.activemq:artemis-server'
+      - 'org.apache.activemq:artemis-native'
+      - 'org.apache.activemq:artemis-amqp-protocol'
+      - 'org.apache.activemq:artemis-core-client'
+      - 'org.apache.activemq:artemis-commons'
+      - 'org.apache.activemq:artemis-service-extensions'
       - 'org.apache.httpcomponents:httpcore'
       - 'org.apache.tomcat:tomcat-jsp-api'
       - 'org.apache.wss4j:wss4j-ws-security-common'
