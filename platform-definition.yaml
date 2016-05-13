@@ -122,6 +122,7 @@ platform_definition:
         - spring-boot-starter-velocity
         - spring-boot-starter-web
         - spring-boot-starter-websocket
+        - spring-boot-starter-web-services
         - spring-boot-starter-ws
     - name: Spring Cloud Connectors
       groupId: org.springframework.cloud
