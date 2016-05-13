@@ -1,0 +1,33 @@
+From 430176788027361e46a0eeb023614dcb7e793722 Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Fri, 13 May 2016 15:15:19 +0100
+Subject: [PATCH] Don't hardcode Spring AMQP's default channel cache size
+
+The default channel cache size was changed as a result of
+https://jira.spring.io/browse/AMQP-606. This means that Cloud
+Connectors tests are broken when run against Spring AMQP 1.6 (as
+the IO Platform compatibility builds do).
+
+Similar to, bed0d7f8, this commit updates the test helper to retrieve
+the actual default via reflection, rather than hardcoding it.
+---
+ .../cloud/config/RabbitConnectionFactoryCloudConfigTestHelper.java     | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/spring-cloud-spring-service-connector/src/test/java/org/springframework/cloud/config/RabbitConnectionFactoryCloudConfigTestHelper.java b/spring-cloud-spring-service-connector/src/test/java/org/springframework/cloud/config/RabbitConnectionFactoryCloudConfigTestHelper.java
+index ffb2b6e..65936ba 100644
+--- a/spring-cloud-spring-service-connector/src/test/java/org/springframework/cloud/config/RabbitConnectionFactoryCloudConfigTestHelper.java
++++ b/spring-cloud-spring-service-connector/src/test/java/org/springframework/cloud/config/RabbitConnectionFactoryCloudConfigTestHelper.java
+@@ -26,7 +26,8 @@ import org.springframework.test.util.ReflectionTestUtils;
+  *
+  */
+ public class RabbitConnectionFactoryCloudConfigTestHelper {
+-	public static final int DEFAULT_CHANNEL_CACHE_SIZE = 1;
++	public static final Integer DEFAULT_CHANNEL_CACHE_SIZE =
++			(Integer) ReflectionTestUtils.getField(new org.springframework.amqp.rabbit.connection.CachingConnectionFactory(), "channelCacheSize");
+ 
+ 	private final static Integer DEFAULT_FACTORY_TIMEOUT =
+ 			(Integer) ReflectionTestUtils.getField(new com.rabbitmq.client.ConnectionFactory(), "connectionTimeout");
+-- 
+2.6.4
+
