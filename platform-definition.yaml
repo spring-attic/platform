@@ -42,6 +42,7 @@ platform_definition:
         - spring-amqp
         - spring-rabbit
       build:
+        compileWith: jdk8
         repository: https://github.com/spring-projects/spring-amqp
     - name: Spring Batch
       groupId: org.springframework.batch
