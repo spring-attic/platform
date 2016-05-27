@@ -74,6 +74,7 @@ platform_definition:
         - spring-boot-loader-tools
         - spring-boot-maven-plugin
         - spring-boot-starter
+        - spring-boot-starter-activemq
         - spring-boot-starter-actuator
         - spring-boot-starter-amqp
         - spring-boot-starter-aop
