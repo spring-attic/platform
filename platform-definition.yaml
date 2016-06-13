@@ -37,7 +37,7 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.6.0.RC1
+      version: 1.6.0.RELEASE
       modules:
         - spring-amqp
         - spring-rabbit
@@ -139,33 +139,33 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.4.1.RELEASE
+      version: 1.4.2.BUILD-SNAPSHOT
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.12.1.RELEASE
+      version: 1.12.2.BUILD-SNAPSHOT
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 2.1.1.RELEASE
+      version: 2.1.2.BUILD-SNAPSHOT
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 2.0.1.RELEASE
+      version: 2.0.2.BUILD-SNAPSHOT
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 1.0.1.RELEASE
+      version: 1.0.2.BUILD-SNAPSHOT
       modules:
         - spring-data-envers
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.8.1.RELEASE
+      version: 1.8.2.BUILD-SNAPSHOT
       modules:
         - spring-data-gemfire
       build:
@@ -173,17 +173,17 @@ platform_definition:
         tagPrefix:
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.10.1.RELEASE
+      version: 1.10.2.BUILD-SNAPSHOT
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 1.1.1.RELEASE
+      version: 1.1.2.BUILD-SNAPSHOT
       modules:
         - spring-data-keyvalue
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.9.1.RELEASE
+      version: 1.9.2.BUILD-SNAPSHOT
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -191,29 +191,29 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 4.1.1.RELEASE
+      version: 4.1.2.BUILD-SNAPSHOT
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.7.1.RELEASE
+      version: 1.7.2.BUILD-SNAPSHOT
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.5.1.RELEASE
+      version: 2.5.2.BUILD-SNAPSHOT
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 2.0.1.RELEASE
+      version: 2.0.2.BUILD-SNAPSHOT
       modules:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.3.0.BUILD-SNAPSHOT
+      version: 4.3.0.RELEASE
       modules:
         - spring-aop
         - spring-aspects
@@ -237,7 +237,7 @@ platform_definition:
         - spring-websocket
     - name: Spring HATEOAS
       groupId: org.springframework.hateoas
-      version: 0.19.0.RELEASE
+      version: 0.20.0.RELEASE
       modules:
         - spring-hateoas
     - name: Spring Integration
@@ -343,7 +343,7 @@ platform_definition:
         - spring-plugin-metadata
     - name: Spring REST Docs
       groupId: org.springframework.restdocs
-      version: 1.1.0.RC1
+      version: 1.1.0.RELEASE
       modules:
         - spring-restdocs-core
         - spring-restdocs-mockmvc
