@@ -139,33 +139,33 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.4.2.BUILD-SNAPSHOT
+      version: 1.4.2.RELEASE
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.12.2.BUILD-SNAPSHOT
+      version: 1.12.2.RELEASE
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 2.1.2.BUILD-SNAPSHOT
+      version: 2.1.2.RELEASE
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 2.0.2.BUILD-SNAPSHOT
+      version: 2.0.2.RELEASE
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 1.0.2.BUILD-SNAPSHOT
+      version: 1.0.2.RELEASE
       modules:
         - spring-data-envers
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.8.2.BUILD-SNAPSHOT
+      version: 1.8.2.RELEASE
       modules:
         - spring-data-gemfire
       build:
@@ -173,17 +173,17 @@ platform_definition:
         tagPrefix:
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.10.2.BUILD-SNAPSHOT
+      version: 1.10.2.RELEASE
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 1.1.2.BUILD-SNAPSHOT
+      version: 1.1.2.RELEASE
       modules:
         - spring-data-keyvalue
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.9.2.BUILD-SNAPSHOT
+      version: 1.9.2.RELEASE
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -191,24 +191,24 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 4.1.2.BUILD-SNAPSHOT
+      version: 4.1.2.RELEASE
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.7.2.BUILD-SNAPSHOT
+      version: 1.7.2.RELEASE
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.5.2.BUILD-SNAPSHOT
+      version: 2.5.2.RELEASE
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 2.0.2.BUILD-SNAPSHOT
+      version: 2.0.2.RELEASE
       modules:
         - spring-data-solr
     - name: Spring Framework
@@ -463,6 +463,14 @@ platform_definition:
     'rome:rome': 'net.java.dev.rome:rome'
   missing_dependencies:
     ignored_dependencies:
+      'org.springframework.batch:spring-batch-infrastructure':
+        - 'org.hibernate:hibernate-entitymanager'
+      'org.springframework.data:spring-data-gemfire':
+        - 'com.google.code.findbugs:annotations'
+      'org.springframework.data:spring-data-jpa':
+        - 'org.hibernate:hibernate-entitymanager'
+      'org.springframework:spring-orm':
+        - 'org.hibernate:hibernate-entitymanager'
       'org.springframework.data:spring-data-commons':
         - 'org.scala-lang:scala-library'
     ignored_modules:
@@ -564,6 +572,8 @@ platform_definition:
       - 'org.codehaus.janino:janino'
       - 'org.eclipse.jdt.core.compiler:ecj'
       - 'org.eclipse.jetty.orbit:javax.servlet.jsp'
+      - 'org.eclipse.jetty:apache-jsp'
+      - 'org.eclipse.jetty:apache-jstl'
       - 'org.eclipse.jetty:jetty-annotations'
       - 'org.eclipse.jetty:jetty-continuation'
       - 'org.eclipse.jetty:jetty-deploy'
