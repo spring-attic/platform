@@ -11,11 +11,6 @@
 		</repository>
 		<!-- Required for various Neo4J-related dependencies -->
 		<repository>
-			<id>boundless</id>
-			<name>Boundless</name>
-			<url>http://repo.boundlessgeo.com</url>
-		</repository>
-		<repository>
 			<id>osgeo</id>
 			<name>OSGeo downloads</name>
 			<url>http://download.osgeo.org/webdav/geotools</url>

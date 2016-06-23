@@ -17,7 +17,6 @@ dependencyManagement {
 
 repositories {
 	mavenLocal()
-	maven { url 'http://repo.boundlessgeo.com' }
 	maven { url 'http://download.osgeo.org/webdav/geotools' }
 	maven { url 'http://repo.spring.io/libs-snapshot' }
 	maven { url 'http://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts' }
