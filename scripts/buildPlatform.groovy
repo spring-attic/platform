@@ -1,11 +1,12 @@
-@Grab('org.yaml:snakeyaml:1.13')
-import org.yaml.snakeyaml.Yaml
+import groovy.io.FileType
+import groovy.util.XmlParser
+import groovy.xml.XmlUtil
 
 @Grab('net.sf.jopt-simple:jopt-simple:4.6')
 import joptsimple.OptionParser
 
-import groovy.xml.XmlUtil
-import groovy.io.FileType
+@Grab('org.yaml:snakeyaml:1.13')
+import org.yaml.snakeyaml.Yaml
 
 def getRootDir() {
 	@groovy.transform.SourceURI
@@ -123,6 +124,40 @@ def getInitScriptPath() {
 	new File (new File(scriptLocation).parentFile, 'configureRepositories.gradle').absolutePath
 }
 
+def generateJunitReport(File buildDir) {
+	new File("$rootDir/build").eachFileRecurse(FileType.DIRECTORIES) { dir ->
+		if (dir.name == "spring-io-jdk7-test-results") {
+			postProcessResults(dir, " (Java 7)")
+		}
+		else if (dir.name == "spring-io-jdk8-test-results") {
+			postProcessResults(dir, " (Java 8)")
+		}
+	}
+	def ant = new AntBuilder()
+	ant.junitreport(todir:"$buildDir") {
+		fileset(dir:"$buildDir") {
+			include(name:'**/build/spring-io-*-test-results/TEST-*.xml')
+		}
+		report(todir:"$buildDir/spring-io-test-results")
+	}
+}
+
+def postProcessResults(File resultsDir, String nameSuffix) {
+	resultsDir.eachFileMatch(FileType.FILES, ~/TEST-.+\.xml/) { resultXmlFile ->
+		testsuite = new XmlParser().parse(resultXmlFile)
+		applySuffix(testsuite, 'name', nameSuffix)
+		testsuite.testcase.each { testcase ->
+			applySuffix(testcase, 'name', nameSuffix)
+			applySuffix(testcase, 'classname', nameSuffix)
+		}
+		resultXmlFile.text = XmlUtil.serialize(testsuite)
+	}
+}
+
+def applySuffix(def node, def attribute, String suffix) {
+	node.attributes()[attribute] = node.attributes()[attribute] + suffix
+}
+
 def options = parseArguments(args)
 def yaml = new Yaml().load(new File(rootDir, 'platform-definition.yaml').text)
 def projects = yaml['platform_definition']['projects']
@@ -178,13 +213,7 @@ if (problems) {
 			.findAll{ !build(it, 'LOCALTEST', jdk7Home, jdk8Home) }
 			.collect{ it.name }
 
-	def ant = new AntBuilder()
-	ant.junitreport(todir:"$buildDir") {
-		fileset(dir:"$buildDir") {
-			include(name:'**/build/spring-io-*-test-results/TEST-*.xml')
-		}
-		report(todir:"$buildDir/spring-io-test-results")
-	}
+	generateJunitReport(buildDir)
 
 	if (buildFailures) {
 		println "\n\033[31mBUILD FAILED\033[0m\n"
