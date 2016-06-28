@@ -465,8 +465,6 @@ platform_definition:
     ignored_dependencies:
       'org.springframework.batch:spring-batch-infrastructure':
         - 'org.hibernate:hibernate-entitymanager'
-      'org.springframework.data:spring-data-gemfire':
-        - 'com.google.code.findbugs:annotations'
       'org.springframework.data:spring-data-jpa':
         - 'org.hibernate:hibernate-entitymanager'
       'org.springframework:spring-orm':
