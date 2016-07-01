@@ -93,7 +93,7 @@
 		<javax-activation.version>1.1.1</javax-activation.version>
 		<javax-annotation.version>1.0</javax-annotation.version>
 		<javax-batch.version>1.0.1</javax-batch.version>
-		<javax-cdi.version>1.0-SP4</javax-cdi.version>
+		<javax-cdi.version>1.2</javax-cdi.version>
 		<javax-connector.version>1.5</javax-connector.version>
 		<javax-ejb.version>3.0</javax-ejb.version>
 		<javax-el.version>2.2.5</javax-el.version>
