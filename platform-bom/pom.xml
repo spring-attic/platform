@@ -112,7 +112,7 @@
 		<jeromq.version>0.3.4</jeromq.version>
 		<jettison.version>1.2</jettison.version>
 		<jibx.version>1.2.6</jibx.version>
-		<jline.version>2.11</jline.version>
+		<jline.version>2.14.2</jline.version>
 		<jopt-simple.version>4.8</jopt-simple.version>
 		<jredis.version>06052013</jredis.version>
 		<jruby.version>1.7.25</jruby.version>
