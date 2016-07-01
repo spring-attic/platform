@@ -129,7 +129,7 @@
 		<myfaces.version>2.1.18</myfaces.version>
 		<okhttp.version>2.7.5</okhttp.version>
 		<okhttp3.version>3.3.1</okhttp3.version>
-		<openhft-chronicle.version>3.4.4</openhft-chronicle.version>
+		<openhft-chronicle.version>3.6.2</openhft-chronicle.version>
 		<openhft-lang.version>6.6.16</openhft-lang.version>
 		<openjpa.version>2.3.0</openjpa.version>
 		<neo4j.version>2.3.2</neo4j.version>
