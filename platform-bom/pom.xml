@@ -77,7 +77,7 @@
 		<eclipselink-javax-persistence.version>2.1.1</eclipselink-javax-persistence.version>
 		<evo-inflector.version>1.1</evo-inflector.version>
 		<findbugs-jsr305.version>3.0.1</findbugs-jsr305.version>
-		<findbugs-annotations.version>2.0.2</findbugs-annotations.version>
+		<findbugs-annotations.version>2.0.3</findbugs-annotations.version>
 		<gs-collections.version>5.1.0</gs-collections.version>
 		<guava.version>17.0</guava.version>
 		<guice.version>3.0</guice.version>
