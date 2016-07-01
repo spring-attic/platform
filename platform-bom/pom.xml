@@ -72,7 +72,7 @@
 		<commons-lang3.version>3.4</commons-lang3.version>
 		<commons-logging.version>1.2</commons-logging.version>
 		<commons-net.version>3.5</commons-net.version>
-		<curator.version>2.10.0</curator.version>
+		<curator.version>2.11.0</curator.version>
 		<eclipselink.version>2.5.2</eclipselink.version>
 		<eclipselink-javax-persistence.version>2.1.1</eclipselink-javax-persistence.version>
 		<evo-inflector.version>1.1</evo-inflector.version>
