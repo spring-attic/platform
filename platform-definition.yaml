@@ -128,7 +128,7 @@ platform_definition:
         - spring-boot-starter-ws
     - name: Spring Cloud Connectors
       groupId: org.springframework.cloud
-      version: 1.2.2.RELEASE
+      version: 1.2.3.RELEASE
       modules:
         - spring-cloud-core
         - spring-cloud-cloudfoundry-connector
