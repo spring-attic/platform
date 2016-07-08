@@ -9,7 +9,7 @@ Andy Wilkinson;
 :platform-repo: snapshot
 :github-tag: master
 :dependency-management-plugin: https://plugins.gradle.org/plugin/io.spring.dependency-management
-:dependency-management-plugin-version: 0.5.3.RELEASE
+:dependency-management-plugin-version: 0.6.0.RELEASE
 :platform-docs-version: current
 :platform-docs: http://docs.spring.io/platform/docs/{platform-docs-version}/reference
 :platform-docs-current: http://docs.spring.io/platform/docs/current/reference
