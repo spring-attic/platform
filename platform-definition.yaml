@@ -493,6 +493,7 @@ platform_definition:
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate5'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-guava'
+      - 'com.fasterxml.jackson.datatype:jackson-datatype-jaxrs'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-jdk7'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-json-org'
