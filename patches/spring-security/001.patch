@@ -1,0 +1,26 @@
+From 530558545f2246a3bc52fec7e292c9f4d0dce61a Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Tue, 12 Jul 2016 09:46:57 +0100
+Subject: [PATCH] Increase max perm gen available to IO Platform JDK 7 tests
+
+---
+ build.gradle | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/build.gradle b/build.gradle
+index bbc4c89..1168085 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -128,6 +128,9 @@ configure(coreModuleProjects) {
+ 	integrationTest {
+ 		jvmArgs "-javaagent:${configurations.jacoco.asPath}=destfile=${buildDir}/jacoco.exec,includes=${project.group}.*"
+ 	}
++	springIoJdk7Test {
++		jvmArgs "-XX:MaxPermSize=512m"
++	}
+ }
+ 
+ configure (aspectjProjects) {
+-- 
+2.9.0
+
