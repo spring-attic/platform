@@ -355,7 +355,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 4.1.1.RELEASE
+      version: 4.1.2.BUILD-SNAPSHOT
       build:
         repository: https://github.com/spring-projects/spring-security
         tagPrefix:
