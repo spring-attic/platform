@@ -453,9 +453,10 @@ platform_definition:
         - spring-ws-test
         - spring-xml
   dependency_mappings:
-    'javax.transaction:transaction-api': 'javax.transaction:javax.transaction-api' # See https://github.com/spring-projects/spring-data-neo4j/issues/272
+    'javax.ejb:ejb-api': 'javax.ejb:javax.ejb-api'
     'javax.servlet:jsp-api': 'javax.servlet.jsp:javax.servlet.jsp-api'
     'javax.servlet:servlet-api': 'javax.servlet:javax.servlet-api'
+    'javax.transaction:transaction-api': 'javax.transaction:javax.transaction-api' # See https://github.com/spring-projects/spring-data-neo4j/issues/272
     'javax.ws.rs:jsr311-api': 'javax.ws.rs:javax.ws.rs-api'
     'org.apache.tomcat:catalina': 'org.apache.tomcat:tomcat-catalina'
     'org.jdom:jdom': 'org.jdom:jdom2'

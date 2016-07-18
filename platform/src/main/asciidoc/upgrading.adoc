@@ -57,4 +57,7 @@ replacements.
 
 | `com.mysema.querydsl:querydsl-apt`
 | `com.querydsl:querydsl-apt`
+
+| `javax.ejb:ejb-api`
+| `javax.ejb:javax.ejb-api`
 |===
