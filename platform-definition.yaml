@@ -585,7 +585,6 @@ platform_definition:
       - 'org.eclipse.jetty:jetty-plus'
       - 'org.eclipse.jetty:jetty-security'
       - 'org.eclipse.jetty:jetty-xml'
-      - 'org.ehcache:ehcache'
       - 'org.ehcache:ehcache-clustered'
       - 'org.ehcache:ehcache-transactions'
       - 'org.firebirdsql.jdbc:jaybird-jdk16'
