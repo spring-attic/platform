@@ -59,7 +59,7 @@ class BomDependenciesTests extends AbstractProjectAnalysisTests {
 							}
 						}
 						if (isIgnored(dependency, unusedDependenciesMatchers)) {
-							analysisResult.registerUsedArtifact(identifier)
+							analysisResult.registerUsedArtifact(identifier, module)
 						}
 					}
 				}
@@ -102,7 +102,7 @@ class BomDependenciesTests extends AbstractProjectAnalysisTests {
 
 		Map artifactVersions = [:]
 
-		List usedArtifacts = []
+		Map usedArtifacts = [:]
 
 		void registerMissingArtifact(String identifier, String version, Module user) {
 			List modules = this.missingArtifacts.get(identifier, [])
@@ -112,8 +112,9 @@ class BomDependenciesTests extends AbstractProjectAnalysisTests {
 			registerVersionOfMissingArtifact(identifier, version)
 		}
 
-		void registerUsedArtifact(String identifier) {
-			usedArtifacts << identifier
+		void registerUsedArtifact(String identifier, Module user) {
+			List users = usedArtifacts.get(identifier, [])
+			users << user
 		}
 
 		private void registerVersionOfMissingArtifact(String identifier, String version) {
@@ -129,8 +130,8 @@ class BomDependenciesTests extends AbstractProjectAnalysisTests {
 		}
 
 		void writeUsed(PrintWriter writer) {
-			this.usedArtifacts.each { id ->
-				writer.println "    $id"
+			this.usedArtifacts.each { id, users ->
+				writer.println "    $id: $users"
 			}
 		}
 	}
