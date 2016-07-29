@@ -59,7 +59,7 @@ platform_definition:
           - jdk8
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 1.4.0.BUILD-SNAPSHOT
+      version: 1.4.0.RELEASE
       modules:
         - spring-boot
         - spring-boot-actuator
