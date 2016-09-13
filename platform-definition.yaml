@@ -37,7 +37,7 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.6.1.RELEASE
+      version: 1.6.2.RELEASE
       modules:
         - spring-amqp
         - spring-rabbit
@@ -387,7 +387,7 @@ platform_definition:
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 1.2.1.RELEASE
+      version: 1.2.2.RELEASE
       modules:
         - spring-session
         - spring-session-data-gemfire
