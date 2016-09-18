@@ -1,0 +1,40 @@
+From b341148985489045bbd78c3e2a99d86639ac1173 Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Sun, 18 Sep 2016 20:21:53 +0100
+Subject: [PATCH] Update tests to reflect change in message produced by Spring
+ Framework
+
+---
+ .../integration/aggregator/integration/AggregatorIntegrationTests.java  | 2 +-
+ .../springframework/integration/transformer/ContentEnricherTests.java   | 2 +-
+ 2 files changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/spring-integration-core/src/test/java/org/springframework/integration/aggregator/integration/AggregatorIntegrationTests.java b/spring-integration-core/src/test/java/org/springframework/integration/aggregator/integration/AggregatorIntegrationTests.java
+index b27d3d0..236bbfa 100644
+--- a/spring-integration-core/src/test/java/org/springframework/integration/aggregator/integration/AggregatorIntegrationTests.java
++++ b/spring-integration-core/src/test/java/org/springframework/integration/aggregator/integration/AggregatorIntegrationTests.java
+@@ -243,7 +243,7 @@ public class AggregatorIntegrationTests {
+ 			ErrorMessage em = (ErrorMessage) this.errors.receive(10000);
+ 			assertNotNull(em);
+ 			assertThat(em.getPayload().getMessage(),
+-					containsString("failed to send message to channel 'output' within timeout: 10"));
++					containsString("Failed to send message to channel 'output' within timeout: 10"));
+ 		}
+ 		finally {
+ 			this.output.purge(null);
+diff --git a/spring-integration-core/src/test/java/org/springframework/integration/transformer/ContentEnricherTests.java b/spring-integration-core/src/test/java/org/springframework/integration/transformer/ContentEnricherTests.java
+index db38fe2..900fc34 100644
+--- a/spring-integration-core/src/test/java/org/springframework/integration/transformer/ContentEnricherTests.java
++++ b/spring-integration-core/src/test/java/org/springframework/integration/transformer/ContentEnricherTests.java
+@@ -180,7 +180,7 @@ public class ContentEnricherTests {
+ 			enricher.handleMessage(requestMessage);
+ 		}
+ 		catch (MessageDeliveryException e) {
+-			assertEquals("failed to send message to channel '" + requestChannelName
++			assertEquals("Failed to send message to channel '" + requestChannelName
+ 					+ "' within timeout: " + requestTimeout, e.getMessage());
+ 		}
+ 
+-- 
+2.9.0
+
