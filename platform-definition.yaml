@@ -158,9 +158,6 @@ platform_definition:
       version: 1.7.5.RELEASE
       modules:
         - spring-data-gemfire
-      build:
-        repository: https://github.com/spring-projects/spring-data-gemfire
-        tagPrefix:
     - name: Spring Data JPA
       groupId: org.springframework.data
       version: 1.9.5.RELEASE
