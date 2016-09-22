@@ -122,7 +122,7 @@
 		<jopt-simple.version>4.8</jopt-simple.version>
 		<jredis.version>06052013</jredis.version>
 		<jruby.version>1.7.25</jruby.version>
-		<jsch.version>0.1.53</jsch.version>
+		<jsch.version>0.1.54</jsch.version>
 		<json-patch.version>1.7</json-patch.version>
 		<jsr250.version>1.0</jsr250.version>
 		<jxl.version>2.6.12</jxl.version>
