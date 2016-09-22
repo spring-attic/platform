@@ -48,6 +48,7 @@
 		<spring-integration-flow.version>1.0.0.RELEASE</spring-integration-flow.version>
 		<spring-integration-kafka.version>1.3.1.RELEASE</spring-integration-kafka.version>
 		<spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
+		<spring-kafka.version>1.1.0.RELEASE</spring-kafka.version>
 		<spring-ldap.version>2.1.0.RELEASE</spring-ldap.version>
 		<spring-web-flow.version>2.4.4.RELEASE</spring-web-flow.version>
 		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
@@ -206,6 +207,13 @@
 				<artifactId>spring-integration-splunk</artifactId>
 				<version>${spring-integration-splunk.version}</version>
 			</dependency>
+
+			<!-- Spring Kafka -->
+			<dependency>
+ 				<groupId>org.springframework.kafka</groupId>
+ 				<artifactId>spring-kafka</artifactId>
+ 				<version>${spring-kafka.version}</version>
+ 			</dependency>
 
 			<!-- Spring LDAP -->
 			<dependency>
