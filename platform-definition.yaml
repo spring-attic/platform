@@ -59,7 +59,7 @@ platform_definition:
           - jdk8
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 1.4.1.RELEASE
+      version: 1.5.0.BUILD-SNAPSHOT
       modules:
         - spring-boot
         - spring-boot-actuator
@@ -110,7 +110,6 @@ platform_definition:
         - spring-boot-starter-mobile
         - spring-boot-starter-mustache
         - spring-boot-starter-parent
-        - spring-boot-starter-redis
         - spring-boot-starter-remote-shell
         - spring-boot-starter-security
         - spring-boot-starter-social-facebook
@@ -125,7 +124,6 @@ platform_definition:
         - spring-boot-starter-web
         - spring-boot-starter-websocket
         - spring-boot-starter-web-services
-        - spring-boot-starter-ws
     - name: Spring Cloud Connectors
       groupId: org.springframework.cloud
       version: 1.2.3.RELEASE
@@ -139,48 +137,48 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.4.3.RELEASE
+      version: 1.5.0.M1
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.12.3.RELEASE
+      version: 1.13.0.M1
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 2.1.3.RELEASE
+      version: 2.2.0.M1
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 2.0.3.RELEASE
+      version: 2.1.0.M1
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 1.0.3.RELEASE
+      version: 1.1.0.M1
       modules:
         - spring-data-envers
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.8.3.RELEASE
+      version: 1.9.0.M1
       modules:
         - spring-data-gemfire
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.10.3.RELEASE
+      version: 1.11.0.M1
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 1.1.3.RELEASE
+      version: 1.2.0.M1
       modules:
         - spring-data-keyvalue
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.9.3.RELEASE
+      version: 1.10.0.M1
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -188,24 +186,24 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 4.1.3.RELEASE
+      version: 4.2.0.M1
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.7.3.RELEASE
+      version: 1.8.0.M1
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.5.3.RELEASE
+      version: 2.6.0.M1
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 2.0.3.RELEASE
+      version: 2.1.0.M1
       modules:
         - spring-data-solr
     - name: Spring Framework
@@ -234,7 +232,7 @@ platform_definition:
         - spring-websocket
     - name: Spring HATEOAS
       groupId: org.springframework.hateoas
-      version: 0.20.0.RELEASE
+      version: 0.21.0.RELEASE
       modules:
         - spring-hateoas
     - name: Spring Integration
@@ -482,7 +480,6 @@ platform_definition:
       # that both it and the rest of the Platform do not depend upon directly
       - 'ch.qos.logback:logback-access'
       - 'ch.qos.logback:logback-core'
-      - 'com.datastax.cassandra:cassandra-driver-core'
       - 'com.datastax.cassandra:cassandra-driver-mapping'
       - 'com.fasterxml:classmate'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-cbor'
