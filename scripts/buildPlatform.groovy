@@ -38,7 +38,7 @@ def execute(def command, def workingDirectory) {
 	execute(command, workingDirectory, false, [:])
 }
 
-def build(def project, def platformVersion, String jdk7Home, String jdk8Home) {
+def build(def project, def platformVersion, String jdk8Home) {
 	println "Building $project.name"
 	println "Cloning $project.build.repository"
 	def projectName = project.name.toLowerCase().replace(' ', '-')
@@ -74,35 +74,16 @@ def build(def project, def platformVersion, String jdk7Home, String jdk8Home) {
 	}
 	command += " springIoCheck -PplatformVersion=$platformVersion -PrepositoryDir=$rootDir/build/repository --continue --refresh-dependencies --stacktrace"
 
-	def runTestsWith = project.build['runTestsWith'] ?: ['jdk7', 'jdk8']
-	if (!runTestsWith) {
-		runTestsWith = ['jdk7', 'jdk8']
-	}
-
-	if (runTestsWith.contains('jdk7') && jdk7Home) {
-		command += " -PJDK7_HOME=$jdk7Home"
-	}
-
-	if (runTestsWith.contains('jdk8') && jdk8Home) {
-		command += " -PJDK8_HOME=$jdk8Home"
-	}
-
-	def compileWith = project.build['compileWith'] ?: 'jdk7'
+	command += " -PJDK8_HOME=$jdk8Home"
 
 	def environment = [:]
-
-	if (compileWith == 'jdk7') {
-		environment['JAVA_HOME'] = jdk7Home
-	} else {
-		environment['JAVA_HOME'] = jdk8Home
-	}
+	environment['JAVA_HOME'] = jdk8Home
 
 	execute(command, dir, true, environment)
 }
 
 def parseArguments(def args) {
 	def optionParser = new OptionParser();
-	optionParser.accepts("jdk7-home", "The path to the home directory of JDK 7").withRequiredArg()
 	optionParser.accepts("jdk8-home", "The path to the home directory of JDK 8").withRequiredArg()
 	optionParser.accepts("project", "The name of a project to build").withRequiredArg()
 
@@ -125,32 +106,12 @@ def getInitScriptPath() {
 }
 
 def generateJunitReport(File buildDir) {
-	new File("$rootDir/build").eachFileRecurse(FileType.DIRECTORIES) { dir ->
-		if (dir.name == "spring-io-jdk7-test-results") {
-			postProcessResults(dir, " (Java 7)")
-		}
-		else if (dir.name == "spring-io-jdk8-test-results") {
-			postProcessResults(dir, " (Java 8)")
-		}
-	}
 	def ant = new AntBuilder()
 	ant.junitreport(todir:"$buildDir") {
 		fileset(dir:"$buildDir") {
 			include(name:'**/build/spring-io-*-test-results/TEST-*.xml')
 		}
 		report(todir:"$buildDir/spring-io-test-results")
-	}
-}
-
-def postProcessResults(File resultsDir, String nameSuffix) {
-	resultsDir.eachFileMatch(FileType.FILES, ~/TEST-.+\.xml/) { resultXmlFile ->
-		testsuite = new XmlParser().parse(resultXmlFile)
-		applySuffix(testsuite, 'name', nameSuffix)
-		testsuite.testcase.each { testcase ->
-			applySuffix(testcase, 'name', nameSuffix)
-			applySuffix(testcase, 'classname', nameSuffix)
-		}
-		resultXmlFile.text = XmlUtil.serialize(testsuite)
 	}
 }
 
@@ -170,19 +131,6 @@ if (selectedProjects) {
 	projects = projects.findAll { selectedProjects.contains(it.name) }
 	if (!projects) {
 		problems << "No matching projects were found"
-	}
-}
-
-projects.each {
-	jdks = []
-	jdks += it.build?.'compileWith' ?: 'jdk7'
-	jdks += it.build?.'runTestsWith' ?: 'jdk7'
-
-	if (jdks.contains('jdk7') && !options.has('jdk7-home')) {
-		problems << "Platform definition requires Java 7. Please use --jdk7-home to provide it"
-	}
-	if (jdks.contains('jdk8') && !options.has('jdk8-home')) {
-		problems << "Platform definition requires Java 8. Please use --jdk8-home to provide it"
 	}
 }
 
@@ -207,10 +155,9 @@ if (problems) {
 	dir.mkdirs()
 	new File(dir, 'platform-bom-LOCALTEST.pom') << XmlUtil.serialize(platformBom)
 
-	def jdk7Home = options.valueOf('jdk7-home')
 	def jdk8Home = options.valueOf('jdk8-home')
 	def buildFailures = projects.findAll{ it.build }
-			.findAll{ !build(it, 'LOCALTEST', jdk7Home, jdk8Home) }
+			.findAll{ !build(it, 'LOCALTEST', jdk8Home) }
 			.collect{ it.name }
 
 	generateJunitReport(buildDir)
