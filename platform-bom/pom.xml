@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.0.BUILD-SNAPSHOT</version>
+		<version>2.0.0.BUILD-SNAPSHOT</version>
 		<relativePath />
 	</parent>
 
@@ -54,6 +54,7 @@
 		<spring-web-flow.version>2.4.4.RELEASE</spring-web-flow.version>
 		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
 
+		<aalto-xml.version>1.0.0</aalto-xml.version>
 		<aopalliance.version>1.0</aopalliance.version>
 		<apacheds.version>1.5.5</apacheds.version>
 		<apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
@@ -90,25 +91,26 @@
 		<ibatis-sqlmap.version>2.3.4.726</ibatis-sqlmap.version>
 		<itext.version>2.1.7</itext.version>
 		<jackson1.version>1.9.13</jackson1.version>
-		<jasperreports.version>6.3.0</jasperreports.version>
 		<jamon.version>2.81</jamon.version>
 		<javax-activation.version>1.1.1</javax-activation.version>
-		<javax-annotation.version>1.0</javax-annotation.version>
+		<javax-annotation.version>1.2</javax-annotation.version>
 		<javax-batch.version>1.0.1</javax-batch.version>
 		<javax-cdi.version>1.2</javax-cdi.version>
-		<javax-connector.version>1.5</javax-connector.version>
 		<javax-ejb.version>3.2</javax-ejb.version>
 		<javax-el.version>2.2.5</javax-el.version>
 		<javax-enterprise-concurrent.version>1.0</javax-enterprise-concurrent.version>
 		<javax-faces.version>2.2</javax-faces.version>
 		<javax-inject.version>1</javax-inject.version>
 		<javax-interceptor.version>1.2</javax-interceptor.version>
+		<javax-jaxb.version>2.2.11</javax-jaxb.version>
 		<javax-jax-rs.version>2.0.1</javax-jax-rs.version>
-		<javax-jdo.version>3.0.1</javax-jdo.version>
+		<javax-jax-ws.version>2.2.11</javax-jax-ws.version>
+		<javax-jms.version>2.0.1</javax-jms.version>
 		<javax-jsp.version>2.3.1</javax-jsp.version>
 		<javax-jstl.version>1.2.1</javax-jstl.version>
 		<javax-money.version>1.0.1</javax-money.version>
 		<javax-portlet.version>2.0</javax-portlet.version>
+		<javax-resource.version>1.7</javax-resource.version>
 		<javax-validation.version>1.1.0.Final</javax-validation.version>
 		<javax-websocket.version>1.1</javax-websocket.version>
 		<jbatch-tck.version>1.0</jbatch-tck.version>
@@ -118,10 +120,9 @@
 		<jline.version>2.14.2</jline.version>
 		<jopt-simple.version>5.0.2</jopt-simple.version>
 		<jredis.version>06052013</jredis.version>
-		<jruby.version>1.7.26</jruby.version>
 		<jsch.version>0.1.54</jsch.version>
 		<jsr250.version>1.0</jsr250.version>
-		<jxl.version>2.6.12</jxl.version>
+		<junit-jupiter.version>5.0.0-M2</junit-jupiter.version>
 		<kafka.version>0.10.0.1</kafka.version>
 		<kite.version>0.13.0</kite.version>
 		<kryo.version>3.0.3</kryo.version>
@@ -138,21 +139,25 @@
 		<neo4j.version>2.3.2</neo4j.version>
 		<neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
 		<neo4j-spatial.version>0.12-neo4j-2.0.1</neo4j-spatial.version>
-		<netty.version>4.0.41.Final</netty.version>
+		<netty.version>4.1.5.Final</netty.version>
 		<objenesis.version>2.4</objenesis.version>
 		<ognl.version>2.6.11</ognl.version>
 		<openid4java.version>0.9.6</openid4java.version>
 		<paho-mqttv3-client.version>1.1.0</paho-mqttv3-client.version>
 		<pig.version>0.12.1</pig.version>
 		<poi.version>3.14</poi.version>
-		<protobuf.version>2.6.1</protobuf.version>
+		<protobuf.version>3.0.2</protobuf.version>
 		<protobuf-java-format.version>1.4</protobuf-java-format.version>
 		<quartz.version>2.2.3</quartz.version>
 		<rabbit-amqp-client.version>3.6.5</rabbit-amqp-client.version>
 		<rabbit-http-client.version>1.0.0.RELEASE</rabbit-http-client.version>
 		<reactive-streams.version>1.0.0</reactive-streams.version>
+		<reactor-netty.version>0.5.1.RELEASE</reactor-netty.version>
 		<rest-assured.version>2.9.0</rest-assured.version>
 		<rometools.version>1.6.1</rometools.version>
+		<rxjava.version>1.1.9</rxjava.version>
+		<rxjava2.version>2.0.0-RC2</rxjava2.version>
+		<rxnetty.version>0.5.2-rc.4</rxnetty.version>
 		<selenium-htmlunit-driver.version>${selenium.version}</selenium-htmlunit-driver.version>
 		<smack4.version>4.1.8</smack4.version>
 		<snappy.version>1.1.2.6</snappy.version>
@@ -169,16 +174,17 @@
 		<tyrus.version>1.3.5</tyrus.version>
 		<typica.version>1.3</typica.version>
 		<unboundid.version>3.1.1</unboundid.version>
-		<velocity-tools-view.version>1.4</velocity-tools-view.version>
 		<webjars-json-editor.version>0.7.21</webjars-json-editor.version>
 		<websphere-uow.version>6.0.2.17</websphere-uow.version>
 		<woodstox.version>4.4.1</woodstox.version>
+		<woodstox5.version>5.0.3</woodstox5.version>
 		<wss4j.version>1.6.19</wss4j.version>
 		<wss4j2.version>2.1.6</wss4j2.version>
-		<xmlbeans.version>2.6.0</xmlbeans.version>
 		<xmlprojector.version>1.4.8</xmlprojector.version>
 		<xmlschema.version>2.2.1</xmlschema.version>
 		<xmlunit.version>1.6</xmlunit.version>
+		<xmlunit2.version>2.2.1</xmlunit2.version>
+		<xnio.version>3.4.0.Final</xnio.version>
 		<xom.version>1.2.5</xom.version>
 		<xstream.version>1.4.9</xstream.version>
 		<xws-security.version>3.0</xws-security.version>
@@ -311,6 +317,16 @@
 				<version>${kryo.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.fasterxml</groupId>
+				<artifactId>aalto-xml</artifactId>
+				<version>${aalto-xml.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.fasterxml.woodstox</groupId>
+				<artifactId>woodstox-core</artifactId>
+				<version>${woodstox5.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>com.github.spullara.redis</groupId>
 				<artifactId>client</artifactId>
 				<version>${spullara-redis.version}</version>
@@ -348,6 +364,11 @@
 			<dependency>
 				<groupId>com.google.protobuf</groupId>
 				<artifactId>protobuf-java</artifactId>
+				<version>${protobuf.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.google.protobuf</groupId>
+				<artifactId>protobuf-java-util</artifactId>
 				<version>${protobuf.version}</version>
 			</dependency>
 			<dependency>
@@ -531,14 +552,44 @@
 				<version>${netty.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>io.netty</groupId>
+				<artifactId>netty-buffer</artifactId>
+				<version>${netty.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.projectreactor.ipc</groupId>
+				<artifactId>reactor-netty</artifactId>
+				<version>${reactor-netty.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.reactivex</groupId>
+				<artifactId>rxjava</artifactId>
+				<version>${rxjava.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.reactivex.rxjava2</groupId>
+				<artifactId>rxjava</artifactId>
+				<version>${rxjava2.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.reactivex</groupId>
+				<artifactId>rxnetty-http</artifactId>
+				<version>${rxnetty.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>javax.activation</groupId>
 				<artifactId>activation</artifactId>
 				<version>${javax-activation.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.annotation</groupId>
-				<artifactId>jsr250-api</artifactId>
+				<artifactId>javax.annotation-api</artifactId>
 				<version>${javax-annotation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.annotation</groupId>
+				<artifactId>jsr250-api</artifactId>
+				<version>${jsr250.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.batch</groupId>
@@ -581,9 +632,9 @@
 				<version>${javax-interceptor.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>javax.jdo</groupId>
-				<artifactId>jdo-api</artifactId>
-				<version>${javax-jdo.version}</version>
+				<groupId>javax.jms</groupId>
+				<artifactId>javax.jms-api</artifactId>
+				<version>${javax-jms.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.money</groupId>
@@ -597,8 +648,8 @@
 			</dependency>
 			<dependency>
 				<groupId>javax.resource</groupId>
-				<artifactId>connector-api</artifactId>
-				<version>${javax-connector.version}</version>
+				<artifactId>javax.resource-api</artifactId>
+				<version>${javax-resource.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.servlet.jsp</groupId>
@@ -626,6 +677,16 @@
 				<version>${javax-jax-rs.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>javax.xml.bind</groupId>
+				<artifactId>jaxb-api</artifactId>
+				<version>${javax-jax-ws.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.xml.ws</groupId>
+				<artifactId>jaxws-api</artifactId>
+				<version>${javax-jaxb.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>jline</groupId>
 				<artifactId>jline</artifactId>
 				<version>${jline.version}</version>
@@ -651,19 +712,9 @@
 				<version>${openhft-lang.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>net.sf.jasperreports</groupId>
-				<artifactId>jasperreports</artifactId>
-				<version>${jasperreports.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>net.sf.jopt-simple</groupId>
 				<artifactId>jopt-simple</artifactId>
 				<version>${jopt-simple.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.sourceforge.jexcelapi</groupId>
-				<artifactId>jxl</artifactId>
-				<version>${jxl.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>opensymphony</groupId>
@@ -812,11 +863,6 @@
 			</dependency>
 			<dependency>
 				<groupId>org.apache.tomcat</groupId>
-				<artifactId>tomcat-catalina</artifactId>
-				<version>${tomcat.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.tomcat</groupId>
 				<artifactId>tomcat-dbcp</artifactId>
 				<version>${tomcat.version}</version>
 			</dependency>
@@ -824,11 +870,6 @@
 				<groupId>org.apache.tomcat</groupId>
 				<artifactId>tomcat-websocket</artifactId>
 				<version>${tomcat.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.xmlbeans</groupId>
-				<artifactId>xmlbeans</artifactId>
-				<version>${xmlbeans.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.wss4j</groupId>
@@ -976,6 +1017,11 @@
 				<version>${cas-client.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.jboss.xnio</groupId>
+				<artifactId>xnio-api</artifactId>
+				<version>${xnio.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.jibx</groupId>
 				<artifactId>jibx-run</artifactId>
 				<version>${jibx.version}</version>
@@ -991,9 +1037,9 @@
 				<version>${jredis.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.jruby</groupId>
-				<artifactId>jruby</artifactId>
-				<version>${jruby.version}</version>
+				<groupId>org.junit.jupiter</groupId>
+				<artifactId>junit-jupiter-api</artifactId>
+				<version>${junit-jupiter.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.objenesis</groupId>
@@ -1041,14 +1087,14 @@
 				<version>${xmlprojector.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.xmlunit</groupId>
+				<artifactId>xmlunit-matchers</artifactId>
+				<version>${xmlunit2.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.zeromq</groupId>
 				<artifactId>jeromq</artifactId>
 				<version>${jeromq.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>velocity-tools</groupId>
-				<artifactId>velocity-tools-view</artifactId>
-				<version>${velocity-tools-view.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>xom</groupId>
