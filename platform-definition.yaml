@@ -95,7 +95,6 @@ platform_definition:
         - spring-boot-starter-freemarker
         - spring-boot-starter-groovy-templates
         - spring-boot-starter-hateoas
-        - spring-boot-starter-hornetq
         - spring-boot-starter-integration
         - spring-boot-starter-jdbc
         - spring-boot-starter-jersey
@@ -456,6 +455,7 @@ platform_definition:
         - spring-xml
   dependency_mappings:
     'javax.ejb:ejb-api': 'javax.ejb:javax.ejb-api'
+    'javax.jms:jms-api': 'javax.jms:javax.jms-api'
     'javax.servlet:jsp-api': 'javax.servlet.jsp:javax.servlet.jsp-api'
     'javax.servlet:servlet-api': 'javax.servlet:javax.servlet-api'
     'javax.transaction:transaction-api': 'javax.transaction:javax.transaction-api' # See https://github.com/spring-projects/spring-data-neo4j/issues/272
@@ -498,6 +498,7 @@ platform_definition:
       - 'com.fasterxml.jackson.module:jackson-module-kotlin'
       - 'com.google.appengine:appengine-api-1.0-sdk'
       - 'com.hazelcast:hazelcast-hibernate4'
+      - 'com.hazelcast:hazelcast-hibernate5'
       - 'com.jayway.jsonpath:json-path-assert'
       - 'com.unboundid:unboundid-ldapsdk'
       - 'com.zaxxer:HikariCP'
