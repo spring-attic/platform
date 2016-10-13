@@ -37,7 +37,7 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.6.2.RELEASE
+      version: 1.6.4.BUILD-SNAPSHOT
       modules:
         - spring-amqp
         - spring-rabbit
@@ -235,7 +235,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.3.2.RELEASE
+      version: 4.3.4.RELEASE
       build:
         compileWith: jdk8
         runTestsWith:
@@ -350,7 +350,7 @@ platform_definition:
         - spring-restdocs-restassured
     - name: Spring Retry
       groupId: org.springframework.retry
-      version: 1.1.4.RELEASE
+      version: 1.2.0.BUILD-SNAPSHOT
       modules:
         - spring-retry
     - name: Spring Security
@@ -391,6 +391,7 @@ platform_definition:
       modules:
         - spring-session
         - spring-session-data-gemfire
+        - spring-session-data-geode
         - spring-session-data-mongo
         - spring-session-data-redis
         - spring-session-hazelcast
@@ -483,6 +484,7 @@ platform_definition:
       # that both it and the rest of the Platform do not depend upon directly
       - 'ch.qos.logback:logback-access'
       - 'ch.qos.logback:logback-core'
+      - 'commons-digester:commons-digester'
       - 'com.datastax.cassandra:cassandra-driver-mapping'
       - 'com.fasterxml:classmate'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv'
@@ -578,6 +580,7 @@ platform_definition:
       - 'org.eclipse.jetty:jetty-io'
       - 'org.eclipse.jetty:jetty-jmx'
       - 'org.eclipse.jetty:jetty-jsp'
+      - 'org.eclipse.jetty:jetty-proxy'
       - 'org.eclipse.jetty:jetty-plus'
       - 'org.eclipse.jetty:jetty-proxy'
       - 'org.eclipse.jetty:jetty-security'
