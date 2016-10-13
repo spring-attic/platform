@@ -170,6 +170,7 @@
 		<tyrus.version>1.3.5</tyrus.version>
 		<typica.version>1.3</typica.version>
 		<unboundid.version>3.1.1</unboundid.version>
+		<velocity.version>1.7</velocity.version>
 		<velocity-tools-view.version>1.4</velocity-tools-view.version>
 		<webjars-json-editor.version>0.7.21</webjars-json-editor.version>
 		<websphere-uow.version>6.0.2.17</websphere-uow.version>
@@ -825,6 +826,11 @@
 				<groupId>org.apache.tomcat</groupId>
 				<artifactId>tomcat-websocket</artifactId>
 				<version>${tomcat.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.velocity</groupId>
+				<artifactId>velocity</artifactId>
+				<version>${velocity.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.xmlbeans</groupId>

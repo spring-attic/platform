@@ -37,7 +37,7 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.6.3.RELEASE
+      version: 1.6.4.BUILD-SNAPSHOT
       modules:
         - spring-amqp
         - spring-rabbit
@@ -95,7 +95,6 @@ platform_definition:
         - spring-boot-starter-freemarker
         - spring-boot-starter-groovy-templates
         - spring-boot-starter-hateoas
-        - spring-boot-starter-hornetq
         - spring-boot-starter-integration
         - spring-boot-starter-jdbc
         - spring-boot-starter-jersey
@@ -120,7 +119,6 @@ platform_definition:
         - spring-boot-starter-tomcat
         - spring-boot-starter-undertow
         - spring-boot-starter-validation
-        - spring-boot-starter-velocity
         - spring-boot-starter-web
         - spring-boot-starter-websocket
         - spring-boot-starter-web-services
@@ -285,7 +283,7 @@ platform_definition:
         - spring-integration-flow
     - name: Spring Integration Java DSL
       groupId: org.springframework.integration
-      version: 1.2.0.BUILD-SNAPSHOT
+      version: 1.2.0.RC1
       build:
         repository: https://github.com/spring-projects/spring-integration-java-dsl
         compileWith: jdk8
@@ -352,7 +350,7 @@ platform_definition:
         - spring-restdocs-restassured
     - name: Spring Retry
       groupId: org.springframework.retry
-      version: 1.1.4.RELEASE
+      version: 1.2.0.BUILD-SNAPSHOT
       modules:
         - spring-retry
     - name: Spring Security
@@ -389,12 +387,14 @@ platform_definition:
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 1.2.2.RELEASE
+      version: 1.3.0.M2
       modules:
         - spring-session
         - spring-session-data-gemfire
+        - spring-session-data-geode
         - spring-session-data-mongo
         - spring-session-data-redis
+        - spring-session-hazelcast
         - spring-session-jdbc
       build:
         repository: https://github.com/spring-projects/spring-session
@@ -487,6 +487,7 @@ platform_definition:
       # that both it and the rest of the Platform do not depend upon directly
       - 'ch.qos.logback:logback-access'
       - 'ch.qos.logback:logback-core'
+      - 'commons-digester:commons-digester'
       - 'com.datastax.cassandra:cassandra-driver-mapping'
       - 'com.fasterxml:classmate'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-cbor'
@@ -504,6 +505,7 @@ platform_definition:
       - 'com.fasterxml.jackson.module:jackson-module-kotlin'
       - 'com.google.appengine:appengine-api-1.0-sdk'
       - 'com.hazelcast:hazelcast-hibernate4'
+      - 'com.hazelcast:hazelcast-hibernate5'
       - 'com.jayway.jsonpath:json-path-assert'
       - 'com.unboundid:unboundid-ldapsdk'
       - 'com.zaxxer:HikariCP'
@@ -582,6 +584,7 @@ platform_definition:
       - 'org.eclipse.jetty:jetty-io'
       - 'org.eclipse.jetty:jetty-jmx'
       - 'org.eclipse.jetty:jetty-jsp'
+      - 'org.eclipse.jetty:jetty-proxy'
       - 'org.eclipse.jetty:jetty-plus'
       - 'org.eclipse.jetty:jetty-security'
       - 'org.eclipse.jetty:jetty-xml'
