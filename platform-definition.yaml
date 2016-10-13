@@ -109,7 +109,6 @@ platform_definition:
         - spring-boot-starter-mobile
         - spring-boot-starter-mustache
         - spring-boot-starter-parent
-        - spring-boot-starter-remote-shell
         - spring-boot-starter-security
         - spring-boot-starter-social-facebook
         - spring-boot-starter-social-linkedin
