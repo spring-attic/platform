@@ -350,7 +350,7 @@ platform_definition:
         - spring-restdocs-restassured
     - name: Spring Retry
       groupId: org.springframework.retry
-      version: 1.2.0.BUILD-SNAPSHOT
+      version: 1.2.0.RC1
       modules:
         - spring-retry
     - name: Spring Security
