@@ -1,0 +1,72 @@
+From 94a013a747449d7090989c415824ebe9c2e8288e Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Tue, 18 Oct 2016 21:04:31 +0100
+Subject: [PATCH] =?UTF-8?q?Use=20latest=20IO=20plugin=20snapshots=20so=20t?=
+ =?UTF-8?q?ests=20don=E2=80=99t=20have=20to=20be=20binary=20compatible?=
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+---
+ build.gradle | 11 ++++++-----
+ 1 file changed, 6 insertions(+), 5 deletions(-)
+
+diff --git a/build.gradle b/build.gradle
+index 8bbb1c2..2a15e60 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -1,13 +1,14 @@
+ buildscript {
+     repositories {
+         maven { url "http://repo.spring.io/plugins-release" }
++        maven { url "http://repo.spring.io/plugins-snapshot" }
+     }
+     dependencies {
+         classpath("org.springframework.build.gradle:docbook-reference-plugin:0.2.8")
+         classpath("me.champeau.gradle:gradle-javadoc-hotfix-plugin:0.1")
+         classpath('org.asciidoctor:asciidoctor-gradle-plugin:0.7.0')
+         classpath('org.asciidoctor:asciidoctor-java-integration:0.1.4.preview.1')
+-        classpath('io.spring.gradle:spring-io-plugin:0.0.4.RELEASE')
++        classpath('io.spring.gradle:spring-io-plugin:0.0.6.BUILD-SNAPSHOT')
+     }
+ }
+ 
+@@ -54,7 +55,7 @@ configure(allprojects) {
+     ]
+ 
+     sourceSets.test.resources.srcDirs = [
+-        "src/test/resources", 
++        "src/test/resources",
+         "src/test/java"
+     ]
+ 
+@@ -148,7 +149,7 @@ configure(subprojects) { subproject ->
+         archives javadocJar
+     }
+ 
+-    configurations { 
++    configurations {
+         springReleaseTestRuntime.extendsFrom testRuntime
+         springSnapshotTestRuntime.extendsFrom testRuntime
+     }
+@@ -256,7 +257,7 @@ configure(rootProject) {
+ 
+     dependencies { // for integration tests
+     }
+-    
++
+     task api(type: Javadoc) {
+         group = "Documentation"
+         description = "Generates aggregated Javadoc API documentation."
+@@ -310,7 +311,7 @@ artifacts {
+     archives dist
+     archives project(':docs').docsZip
+     archives project(':docs').schemaZip
+-}    
++}
+ 
+     task wrapper(type: Wrapper) {
+         gradleVersion = "1.12"
+-- 
+2.9.0
+
