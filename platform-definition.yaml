@@ -315,7 +315,7 @@ platform_definition:
         repository: https://github.com/spring-projects/spring-kafka
     - name: Spring LDAP
       groupId: org.springframework.ldap
-      version: 2.1.0.RELEASE
+      version: 2.2.0.RC1
       build:
         repository: https://github.com/spring-projects/spring-ldap
         tagPrefix:
@@ -503,7 +503,6 @@ platform_definition:
       - 'com.hazelcast:hazelcast-hibernate4'
       - 'com.hazelcast:hazelcast-hibernate5'
       - 'com.jayway.jsonpath:json-path-assert'
-      - 'com.unboundid:unboundid-ldapsdk'
       - 'com.zaxxer:HikariCP'
       - 'commons-digester:commons-digester'
       - 'io.dropwizard.metrics:metrics-ganglia'
