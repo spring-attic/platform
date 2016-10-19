@@ -312,6 +312,7 @@ platform_definition:
       version: 1.1.0.RELEASE
       modules:
         - spring-kafka
+        - spring-kafka-test
       build:
         repository: https://github.com/spring-projects/spring-kafka
         compileWith: jdk8
