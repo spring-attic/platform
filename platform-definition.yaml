@@ -314,6 +314,9 @@ platform_definition:
         - spring-kafka
       build:
         repository: https://github.com/spring-projects/spring-kafka
+        compileWith: jdk8
+        runTestsWith:
+          - jdk8
     - name: Spring LDAP
       groupId: org.springframework.ldap
       version: 2.2.0.RC1
