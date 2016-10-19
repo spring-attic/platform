@@ -359,6 +359,7 @@ platform_definition:
       groupId: org.springframework.security
       version: 4.2.0.BUILD-SNAPSHOT
       build:
+        compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
         tagPrefix:
       modules:
