@@ -43,6 +43,7 @@ platform_definition:
         - spring-rabbit
       build:
         repository: https://github.com/spring-projects/spring-amqp
+        checkout: 1.6.x
         compileWith: jdk8
         runTestsWith:
           - jdk8
