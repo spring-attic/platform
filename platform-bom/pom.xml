@@ -569,7 +569,7 @@
 			<dependency>
 				<groupId>io.reactivex</groupId>
 				<artifactId>rxjava-reactive-streams</artifactId>
-				<version>${rxjava.version}</version>
+				<version>${rxjava-reactive-streams.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>io.reactivex.rxjava2</groupId>
