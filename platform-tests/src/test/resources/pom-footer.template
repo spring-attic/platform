@@ -9,12 +9,6 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
-		<!-- Required for various Neo4J-related dependencies -->
-		<repository>
-			<id>osgeo</id>
-			<name>OSGeo downloads</name>
-			<url>http://download.osgeo.org/webdav/geotools</url>
-		</repository>
 		<!-- Required for various JasperReports-related dependencies -->
 		<repository>
 			<id>jasper-reports</id>
