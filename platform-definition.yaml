@@ -237,7 +237,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.3.4.RELEASE
+      version: 4.3.5.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         runTestsWith:
@@ -309,7 +309,7 @@ platform_definition:
         - spring-integration-splunk
     - name: Spring Kafka
       groupId: org.springframework.kafka
-      version: 1.1.1.RELEASE
+      version: 1.1.2.BUILD-SNAPSHOT
       modules:
         - spring-kafka
         - spring-kafka-test
