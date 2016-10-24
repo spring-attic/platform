@@ -243,6 +243,7 @@ platform_definition:
         runTestsWith:
           - jdk8
         repository: https://github.com/spring-projects/spring-integration
+        checkout: 4.3.x
       modules:
         - spring-integration-amqp
         - spring-integration-core
