@@ -82,7 +82,6 @@
 		<evo-inflector.version>1.2.1</evo-inflector.version>
 		<findbugs-jsr305.version>3.0.1</findbugs-jsr305.version>
 		<findbugs-annotations.version>2.0.3</findbugs-annotations.version>
-		<gs-collections.version>5.1.0</gs-collections.version>
 		<guava.version>17.0</guava.version>
 		<guice.version>3.0</guice.version>
 		<hadoop.version>2.2.0</hadoop.version>
@@ -114,7 +113,6 @@
 		<javax-validation.version>1.1.0.Final</javax-validation.version>
 		<javax-websocket.version>1.1</javax-websocket.version>
 		<jbatch-tck.version>1.0</jbatch-tck.version>
-		<jeromq.version>0.3.4</jeromq.version>
 		<jettison.version>1.2</jettison.version>
 		<jibx.version>1.2.6</jibx.version>
 		<jline.version>2.14.2</jline.version>
@@ -128,13 +126,12 @@
 		<kryo.version>3.0.3</kryo.version>
 		<ldapbp.version>1.0</ldapbp.version>
 		<ldapsdk.version>4.1</ldapsdk.version>
+		<legacy-reactor.version>2.0.8.RELEASE</legacy-reactor.version>
 		<lettuce.version>3.5.0.Final</lettuce.version>
 		<log4j.version>1.2.17</log4j.version>
 		<myfaces.version>2.2.11</myfaces.version>
 		<okhttp.version>2.7.5</okhttp.version>
 		<okhttp3.version>3.3.1</okhttp3.version>
-		<openhft-chronicle.version>3.4.4</openhft-chronicle.version>
-		<openhft-lang.version>6.6.16</openhft-lang.version>
 		<openjpa.version>2.4.1</openjpa.version>
 		<neo4j.version>2.3.2</neo4j.version>
 		<neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
@@ -161,7 +158,6 @@
 		<rxnetty.version>0.5.2-rc.4</rxnetty.version>
 		<selenium-htmlunit-driver.version>${selenium.version}</selenium-htmlunit-driver.version>
 		<smack4.version>4.1.8</smack4.version>
-		<snappy.version>1.1.2.6</snappy.version>
 		<splunk.version>1.3.0</splunk.version>
 		<spullara-redis.version>0.7</spullara-redis.version>
 		<sun-facelets.version>1.1.14</sun-facelets.version>
@@ -313,11 +309,6 @@
 			</dependency>
 			<dependency>
 				<groupId>com.esotericsoftware</groupId>
-				<artifactId>kryo</artifactId>
-				<version>${kryo.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.esotericsoftware</groupId>
 				<artifactId>kryo-shaded</artifactId>
 				<version>${kryo.version}</version>
 			</dependency>
@@ -335,11 +326,6 @@
 				<groupId>com.github.spullara.redis</groupId>
 				<artifactId>client</artifactId>
 				<version>${spullara-redis.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.goldmansachs</groupId>
-				<artifactId>gs-collections</artifactId>
-				<version>${gs-collections.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.code.findbugs</groupId>
@@ -557,6 +543,11 @@
 				<version>${netty.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>io.projectreactor</groupId>
+				<artifactId>reactor-net</artifactId>
+				<version>${legacy-reactor.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>io.projectreactor.ipc</groupId>
 				<artifactId>reactor-netty</artifactId>
 				<version>${reactor-netty.version}</version>
@@ -700,16 +691,6 @@
 				<groupId>log4j</groupId>
 				<artifactId>log4j</artifactId>
 				<version>${log4j.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.openhft</groupId>
-				<artifactId>chronicle</artifactId>
-				<version>${openhft-chronicle.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>net.openhft</groupId>
-				<artifactId>lang</artifactId>
-				<version>${openhft-lang.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>net.sf.jopt-simple</groupId>
@@ -1072,11 +1053,6 @@
 				<version>${webjars-json-editor.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.xerial.snappy</groupId>
-				<artifactId>snappy-java</artifactId>
-				<version>${snappy.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.xmlbeam</groupId>
 				<artifactId>xmlprojector</artifactId>
 				<version>${xmlprojector.version}</version>
@@ -1085,11 +1061,6 @@
 				<groupId>org.xmlunit</groupId>
 				<artifactId>xmlunit-matchers</artifactId>
 				<version>${xmlunit2.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.zeromq</groupId>
-				<artifactId>jeromq</artifactId>
-				<version>${jeromq.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>xom</groupId>

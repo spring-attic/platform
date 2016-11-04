@@ -9,32 +9,14 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 2.0.8.RELEASE
+      version: 3.0.3.RELEASE
       modules:
-        - reactor-bus
         - reactor-core
-        - reactor-groovy
-        - reactor-groovy-extensions
-        - reactor-logback
-        - reactor-net
-        - reactor-stream
       build:
-        repository: https://github.com/reactor/reactor
+        repository: https://github.com/reactor/reactor-core
         compileWith: jdk8
         runTestsWith:
            - jdk8
-    - name: Reactor Spring
-      groupId: io.projectreactor.spring
-      version: 2.0.7.RELEASE
-      modules:
-        - reactor-spring-context
-        - reactor-spring-core
-        - reactor-spring-messaging
-        - reactor-spring-webmvc
-      build:
-        repository: https://github.com/reactor/reactor-spring
-        runTestsWith:
-          - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
       version: 1.6.4.BUILD-SNAPSHOT
@@ -237,13 +219,12 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.3.5.BUILD-SNAPSHOT
+      version: 5.0.0.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         runTestsWith:
           - jdk8
         repository: https://github.com/spring-projects/spring-integration
-        checkout: 4.3.x
       modules:
         - spring-integration-amqp
         - spring-integration-core
@@ -284,16 +265,6 @@ platform_definition:
         repository: https://github.com/spring-projects/spring-integration-flow
       modules:
         - spring-integration-flow
-    - name: Spring Integration Java DSL
-      groupId: org.springframework.integration
-      version: 1.2.0.RELEASE
-      build:
-        repository: https://github.com/spring-projects/spring-integration-java-dsl
-        compileWith: jdk8
-        runTestsWith:
-           - jdk8
-      modules:
-        - spring-integration-java-dsl
     - name: Spring Integration Kafka
       groupId: org.springframework.integration
       version: 2.1.0.RELEASE
