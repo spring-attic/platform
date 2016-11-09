@@ -37,7 +37,7 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.6.3.RELEASE
+      version: 1.6.5.RELEASE
       modules:
         - spring-amqp
         - spring-rabbit
@@ -59,7 +59,7 @@ platform_definition:
           - jdk8
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 1.4.2.BUILD-SNAPSHOT
+      version: 1.4.2.RELEASE
       modules:
         - spring-boot
         - spring-boot-actuator
@@ -210,7 +210,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.3.4.BUILD-SNAPSHOT
+      version: 4.3.4.RELEASE
       modules:
         - spring-aop
         - spring-aspects
@@ -239,13 +239,12 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.3.5.BUILD-SNAPSHOT
+      version: 4.3.5.RELEASE
       build:
         compileWith: jdk8
         runTestsWith:
           - jdk8
         repository: https://github.com/spring-projects/spring-integration
-        checkout: 4.3.x
       modules:
         - spring-integration-amqp
         - spring-integration-core
@@ -288,7 +287,7 @@ platform_definition:
         - spring-integration-flow
     - name: Spring Integration Java DSL
       groupId: org.springframework.integration
-      version: 1.1.3.RELEASE
+      version: 1.1.4.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-integration-java-dsl
         compileWith: jdk8
@@ -379,7 +378,7 @@ platform_definition:
        - spring-security-jwt
     - name: Spring Security OAuth
       groupId: org.springframework.security.oauth
-      version: 2.0.11.RELEASE
+      version: 2.0.12.RELEASE
       modules:
         - spring-security-oauth
         - spring-security-oauth2
