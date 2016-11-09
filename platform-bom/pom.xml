@@ -58,7 +58,7 @@
 		<aopalliance.version>1.0</aopalliance.version>
 		<apacheds.version>1.5.5</apacheds.version>
 		<apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
-		<axiom.version>1.2.19</axiom.version>
+		<axiom.version>1.2.20</axiom.version>
 		<boon.version>0.33</boon.version>
 		<bouncycastle.version>1.54</bouncycastle.version>
 		<bsh.version>2.0b4</bsh.version>
@@ -90,7 +90,7 @@
 		<ibatis-sqlmap.version>2.3.4.726</ibatis-sqlmap.version>
 		<itext.version>2.1.7</itext.version>
 		<jackson1.version>1.9.13</jackson1.version>
-		<jasperreports.version>6.3.0</jasperreports.version>
+		<jasperreports.version>6.3.1</jasperreports.version>
 		<jamon.version>2.81</jamon.version>
 		<javax-activation.version>1.1.1</javax-activation.version>
 		<javax-annotation.version>1.0</javax-annotation.version>
@@ -116,7 +116,7 @@
 		<jettison.version>1.2</jettison.version>
 		<jibx.version>1.2.6</jibx.version>
 		<jline.version>2.14.2</jline.version>
-		<jopt-simple.version>5.0.2</jopt-simple.version>
+		<jopt-simple.version>5.0.3</jopt-simple.version>
 		<jredis.version>06052013</jredis.version>
 		<jruby.version>1.7.26</jruby.version>
 		<jsch.version>0.1.54</jsch.version>
@@ -138,7 +138,7 @@
 		<neo4j.version>2.3.2</neo4j.version>
 		<neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
 		<neo4j-spatial.version>0.12-neo4j-2.0.1</neo4j-spatial.version>
-		<netty.version>4.0.41.Final</netty.version>
+		<netty.version>4.0.42.Final</netty.version>
 		<objenesis.version>2.4</objenesis.version>
 		<ognl.version>2.6.11</ognl.version>
 		<openid4java.version>0.9.6</openid4java.version>
@@ -175,7 +175,7 @@
 		<websphere-uow.version>6.0.2.17</websphere-uow.version>
 		<woodstox.version>4.4.1</woodstox.version>
 		<wss4j.version>1.6.19</wss4j.version>
-		<wss4j2.version>2.1.6</wss4j2.version>
+		<wss4j2.version>2.1.7</wss4j2.version>
 		<xmlbeans.version>2.6.0</xmlbeans.version>
 		<xmlprojector.version>1.4.8</xmlprojector.version>
 		<xmlschema.version>2.2.1</xmlschema.version>
