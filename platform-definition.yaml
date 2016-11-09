@@ -44,6 +44,8 @@ platform_definition:
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-amqp
+        runTestsWith:
+          - jdk8
     - name: Spring Batch
       groupId: org.springframework.batch
       version: 3.0.7.RELEASE
