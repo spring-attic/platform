@@ -362,7 +362,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 4.2.0.RC1
+      version: 4.2.0.RELEASE
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
@@ -561,6 +561,18 @@ platform_definition:
       - 'org.apache.activemq:artemis-commons'
       - 'org.apache.activemq:artemis-service-extensions'
       - 'org.apache.httpcomponents:httpcore'
+      - 'org.apache.logging.log4j:log4j-api-scala_2.10'
+      - 'org.apache.logging.log4j:log4j-api-scala_2.11'
+      - 'org.apache.logging.log4j:log4j-flume-ng'
+      - 'org.apache.logging.log4j:log4j-iostreams'
+      - 'org.apache.logging.log4j:log4j-jcl'
+      - 'org.apache.logging.log4j:log4j-jmx-gui'
+      - 'org.apache.logging.log4j:log4j-jul'
+      - 'org.apache.logging.log4j:log4j-liquibase'
+      - 'org.apache.logging.log4j:log4j-nosql'
+      - 'org.apache.logging.log4j:log4j-taglib'
+      - 'org.apache.logging.log4j:log4j-web'
+      - 'org.apache.logging.log4j:log4j-1.2-api'
       - 'org.apache.tomcat:tomcat-jsp-api'
       - 'org.apache.wss4j:wss4j-ws-security-common'
       - 'org.codehaus.groovy:groovy-ant'

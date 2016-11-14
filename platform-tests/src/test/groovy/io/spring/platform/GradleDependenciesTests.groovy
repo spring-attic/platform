@@ -18,9 +18,23 @@ package io.spring.platform
 
 import org.gradle.tooling.GradleConnector
 import org.gradle.tooling.internal.consumer.DefaultGradleConnector
+import org.junit.After
+import org.junit.Before
 import org.junit.Test
 
 class GradleDependenciesTests extends AbstractDependenciesTests {
+
+	private String projectVersion;
+
+	@Before
+	public void clearProjectVersionSystemProperty() {
+		this.projectVersion = System.clearProperty("project.version")
+	}
+
+	@After
+	public void restoreProjectVersionSystemProperty() {
+		System.setProperty("project.version", this.projectVersion)
+	}
 
 	@Test
 	void allManagedDependenciesCanBeResolved() throws Exception {
