@@ -349,7 +349,7 @@ platform_definition:
         - spring-restdocs-restassured
     - name: Spring Retry
       groupId: org.springframework.retry
-      version: 1.1.4.RELEASE
+      version: 1.1.5.RELEASE
       modules:
         - spring-retry
     - name: Spring Security
