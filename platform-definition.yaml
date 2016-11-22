@@ -576,6 +576,7 @@ platform_definition:
       - 'org.apache.logging.log4j:log4j-taglib'
       - 'org.apache.logging.log4j:log4j-web'
       - 'org.apache.logging.log4j:log4j-1.2-api'
+      - 'org.apache.poi:poi-scratchpad'
       - 'org.apache.tomcat:tomcat-jsp-api'
       - 'org.apache.wss4j:wss4j-ws-security-common'
       - 'org.codehaus.groovy:groovy-ant'

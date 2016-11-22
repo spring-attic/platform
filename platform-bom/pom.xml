@@ -761,6 +761,11 @@
 				<version>${poi.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-scratchpad</artifactId>
+				<version>${poi.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.apache.solr</groupId>
 				<artifactId>solr-core</artifactId>
 				<version>${solr.version}</version>
