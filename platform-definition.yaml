@@ -488,6 +488,8 @@ platform_definition:
       - 'io.dropwizard.metrics:metrics-graphite'
       - 'io.dropwizard.metrics:metrics-servlets'
       - 'io.javaslang:javaslang-match'
+      - 'io.projectreactor.addons:reactor-logback'
+      - 'io.projectreactor.addons:reactor-adapter'
       - 'javax.servlet:jstl'
       - 'mysql:mysql-connector-java'
       - 'net.java.dev.jna:jna'
