@@ -38,7 +38,7 @@ public class BomTests {
 
 	@Test
 	void versionPropertiesAreNotOverridden() {
-		def expectedOverrides = [ 'spring-data-releasetrain.version' ]
+		def expectedOverrides = [ ]
 		def versions = extractVersionsFromPom(bootDependenciesPom)
 
 		def overriddenVersions = [:]

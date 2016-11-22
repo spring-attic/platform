@@ -516,6 +516,7 @@ platform_definition:
       - 'com.hazelcast:hazelcast-hibernate4'
       - 'com.hazelcast:hazelcast-hibernate5'
       - 'com.jayway.jsonpath:json-path-assert'
+      - 'com.microsoft.sqlserver:mssql-jdbc'
       - 'com.zaxxer:HikariCP'
       - 'io.dropwizard.metrics:metrics-ganglia'
       - 'io.dropwizard.metrics:metrics-graphite'
@@ -640,6 +641,7 @@ platform_definition:
       - 'org.spockframework:spock-core'
       - 'org.spockframework:spock-spring'
       - 'org.springframework:springloaded'
+      - 'org.springframework.boot:spring-boot-junit-runners'
       - 'org.xerial:sqlite-jdbc'
       - 'xml-apis:xml-apis'
   repositories:
@@ -649,3 +651,5 @@ platform_definition:
         url: http://repo.spring.io/libs-snapshot
       - id: jasper-reports
         url: http://jasperreports.sourceforge.net/maven2
+      - id: neo4j-snapshots
+        url: http://m2.neo4j.org/content/repositories/snapshots
