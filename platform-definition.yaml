@@ -520,6 +520,7 @@ platform_definition:
       - 'io.dropwizard.metrics:metrics-ganglia'
       - 'io.dropwizard.metrics:metrics-graphite'
       - 'io.dropwizard.metrics:metrics-servlets'
+      - 'io.javaslang:javaslang-match'
       - 'javax.interceptor:javax.interceptor-api'
       - 'javax.servlet:jstl'
       - 'mysql:mysql-connector-java'

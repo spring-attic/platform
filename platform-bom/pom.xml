@@ -92,6 +92,7 @@
 		<jackson1.version>1.9.13</jackson1.version>
 		<jasperreports.version>6.3.1</jasperreports.version>
 		<jamon.version>2.81</jamon.version>
+		<javaslang.version>2.0.5</javaslang.version>
 		<javax-activation.version>1.1.1</javax-activation.version>
 		<javax-annotation.version>1.0</javax-annotation.version>
 		<javax-batch.version>1.0.1</javax-batch.version>
@@ -519,6 +520,16 @@
 				<groupId>io.fastjson</groupId>
 				<artifactId>boon</artifactId>
 				<version>${boon.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.javaslang</groupId>
+				<artifactId>javaslang</artifactId>
+				<version>${javaslang.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.javaslang</groupId>
+				<artifactId>javaslang-match</artifactId>
+				<version>${javaslang.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>io.netty</groupId>
