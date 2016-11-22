@@ -50,7 +50,7 @@
 		<spring-integration-kafka.version>2.1.0.RELEASE</spring-integration-kafka.version>
 		<spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
 		<spring-kafka.version>1.1.2.BUILD-SNAPSHOT</spring-kafka.version>
-		<spring-ldap.version>2.2.0.RC1</spring-ldap.version>
+		<spring-ldap.version>2.2.0.RELEASE</spring-ldap.version>
 		<spring-web-flow.version>2.4.4.RELEASE</spring-web-flow.version>
 		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
 
@@ -793,13 +793,28 @@
 				<version>${poi.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.apache.poi</groupId>
+				<artifactId>poi-scratchpad</artifactId>
+				<version>${poi.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.apache.solr</groupId>
 				<artifactId>solr-core</artifactId>
 				<version>${solr.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.taglibs</groupId>
+				<artifactId>taglibs-standard-impl</artifactId>
+				<version>${taglibs-standard.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.taglibs</groupId>
 				<artifactId>taglibs-standard-jstlel</artifactId>
+				<version>${taglibs-standard.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.taglibs</groupId>
+				<artifactId>taglibs-standard-spec</artifactId>
 				<version>${taglibs-standard.version}</version>
 			</dependency>
 			<dependency>

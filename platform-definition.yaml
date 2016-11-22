@@ -291,7 +291,7 @@ platform_definition:
           - jdk8
     - name: Spring LDAP
       groupId: org.springframework.ldap
-      version: 2.2.0.RC1
+      version: 2.2.0.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-ldap
         compileWith: jdk8
@@ -544,6 +544,9 @@ platform_definition:
       - 'org.apache.logging.log4j:log4j-taglib'
       - 'org.apache.logging.log4j:log4j-web'
       - 'org.apache.logging.log4j:log4j-1.2-api'
+      - 'org.apache.poi:poi-scratchpad'
+      - 'org.apache.taglibs:taglibs-standard-impl'
+      - 'org.apache.taglibs:taglibs-standard-spec'
       - 'org.apache.tomcat:tomcat-jsp-api'
       - 'org.apache.wss4j:wss4j-ws-security-common'
       - 'org.codehaus.groovy:groovy-ant'
