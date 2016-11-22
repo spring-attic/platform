@@ -1,6 +1,5 @@
 	</dependencies>
 	<repositories>
-		<!-- Required for GemFire and Boot snapshots -->
 		<repository>
 			<id>spring-snapshots</id>
 			<name>Spring Snapshots repository</name>
@@ -9,11 +8,17 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
-		<!-- Required for various JasperReports-related dependencies -->
 		<repository>
 			<id>jasper-reports</id>
 			<name>Jasper Reports</name>
 			<url>http://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts</url>
+		</repository>
+		<repository>
+			<id>neo4j-snapshots</id>
+			<url>http://m2.neo4j.org/content/repositories/snapshots</url>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
 		</repository>
 	</repositories>
 
