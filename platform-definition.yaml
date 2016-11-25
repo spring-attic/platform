@@ -396,11 +396,10 @@ platform_definition:
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 1.3.0.M2
+      version: 1.3.0.RC1
       modules:
         - spring-session
         - spring-session-data-gemfire
-        - spring-session-data-geode
         - spring-session-data-mongo
         - spring-session-data-redis
         - spring-session-hazelcast
