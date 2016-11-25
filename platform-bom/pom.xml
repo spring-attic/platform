@@ -123,6 +123,7 @@
 		<junit-jupiter.version>5.0.0-M2</junit-jupiter.version>
 		<kafka.version>0.10.0.1</kafka.version>
 		<kite.version>0.13.0</kite.version>
+		<kotlin.version>1.0.5-2</kotlin.version>
 		<kryo.version>3.0.3</kryo.version>
 		<ldapbp.version>1.0</ldapbp.version>
 		<ldapsdk.version>4.1</ldapsdk.version>
@@ -999,6 +1000,21 @@
 				<groupId>org.jboss.xnio</groupId>
 				<artifactId>xnio-api</artifactId>
 				<version>${xnio.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-reflect</artifactId>
+				<version>${kotlin.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-runtime</artifactId>
+				<version>${kotlin.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.jetbrains.kotlin</groupId>
+				<artifactId>kotlin-stdlib</artifactId>
+				<version>${kotlin.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jibx</groupId>
