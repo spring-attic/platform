@@ -211,18 +211,6 @@
 				<version>${spring-integration-splunk.version}</version>
 			</dependency>
 
-			<!-- Spring Kafka -->
-			<dependency>
- 				<groupId>org.springframework.kafka</groupId>
- 				<artifactId>spring-kafka</artifactId>
- 				<version>${spring-kafka.version}</version>
- 			</dependency>
- 			<dependency>
- 				<groupId>org.springframework.kafka</groupId>
- 				<artifactId>spring-kafka-test</artifactId>
- 				<version>${spring-kafka.version}</version>
- 			</dependency>
-
 			<!-- Spring LDAP -->
 			<dependency>
 				<groupId>org.springframework.ldap</groupId>
@@ -1051,11 +1039,6 @@
 				<groupId>org.reactivestreams</groupId>
 				<artifactId>reactive-streams</artifactId>
 				<version>${reactive-streams.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.data</groupId>
-				<artifactId>spring-data-geode</artifactId>
-				<version>${spring-data-geode.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.testng</groupId>

@@ -366,11 +366,10 @@ platform_definition:
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 1.3.0.M2
+      version: 1.3.0.RC1
       modules:
         - spring-session
         - spring-session-data-gemfire
-        - spring-session-data-geode
         - spring-session-data-mongo
         - spring-session-data-redis
         - spring-session-hazelcast
@@ -478,6 +477,7 @@ platform_definition:
       - 'com.fasterxml.jackson.module:jackson-module-jaxb-annotations'
       - 'com.fasterxml.jackson.module:jackson-module-kotlin'
       - 'com.google.appengine:appengine-api-1.0-sdk'
+      - 'com.hazelcast:hazelcast-client'
       - 'com.hazelcast:hazelcast-hibernate4'
       - 'com.hazelcast:hazelcast-hibernate5'
       - 'com.jayway.jsonpath:json-path-assert'
