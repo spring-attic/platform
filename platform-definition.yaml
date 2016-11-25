@@ -502,6 +502,7 @@ platform_definition:
       - 'com.fasterxml.jackson.module:jackson-module-jaxb-annotations'
       - 'com.fasterxml.jackson.module:jackson-module-kotlin'
       - 'com.google.appengine:appengine-api-1.0-sdk'
+      - 'com.hazelcast:hazelcast-client'
       - 'com.hazelcast:hazelcast-hibernate4'
       - 'com.jayway.jsonpath:json-path-assert'
       - 'com.unboundid:unboundid-ldapsdk'
