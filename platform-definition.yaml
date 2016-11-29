@@ -375,6 +375,7 @@ platform_definition:
         - spring-session-hazelcast
         - spring-session-jdbc
       build:
+        compileWith: jdk8
         repository: https://github.com/spring-projects/spring-session
         tagPrefix:
     - name: Spring Social
