@@ -27,10 +27,19 @@ part of the upgrade process.
 | `com.fasterxml.jackson:jackson-datatype-jdk7`
 | As of Jackson 2.7, functionality is provided by `com.fasterxml.jackson:jackson-databind`
 
+| `com.github.spullara.redis:client`
+| No longer a direct dependency of any of the Platform's projects
+
 | `org.apache.zookeeper:zookeeper`
 | No longer a direct dependency of any of the Platform's projects
 
 | `org.igniterealtime.smack:smack`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.jredus:jredus-core-api`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.jredus:jredus-core-ri`
 | No longer a direct dependency of any of the Platform's projects
 
 | `org.neo4j:neo4j-ogm-api`

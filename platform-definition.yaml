@@ -69,7 +69,6 @@ platform_definition:
         - spring-boot-starter-data-cassandra
         - spring-boot-starter-data-couchbase
         - spring-boot-starter-data-elasticsearch
-        - spring-boot-starter-data-gemfire
         - spring-boot-starter-data-jpa
         - spring-boot-starter-data-mongodb
         - spring-boot-starter-data-neo4j
@@ -118,48 +117,48 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.5.0.BUILD-SNAPSHOT
+      version: 2.0.0.BUILD-SNAPSHOT
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.13.0.BUILD-SNAPSHOT
+      version: 2.0.0.BUILD-SNAPSHOT
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 2.2.0.BUILD-SNAPSHOT
+      version: 3.0.0.BUILD-SNAPSHOT
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 2.1.0.BUILD-SNAPSHOT
+      version: 3.0.0.BUILD-SNAPSHOT
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 1.1.0.BUILD-SNAPSHOT
+      version: 2.0.0.BUILD-SNAPSHOT
       modules:
         - spring-data-envers
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.9.0.BUILD-SNAPSHOT
+      version: 2.0.0.BUILD-SNAPSHOT
       modules:
         - spring-data-gemfire
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.11.0.BUILD-SNAPSHOT
+      version: 2.0.0.BUILD-SNAPSHOT
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 1.2.0.BUILD-SNAPSHOT
+      version: 2.0.0.BUILD-SNAPSHOT
       modules:
         - spring-data-keyvalue
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.10.0.BUILD-SNAPSHOT
+      version: 2.0.0.BUILD-SNAPSHOT
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -167,24 +166,24 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 4.2.0.BUILD-SNAPSHOT
+      version: 5.0.0.BUILD-SNAPSHOT
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.8.0.BUILD-SNAPSHOT
+      version: 2.0.0.BUILD-SNAPSHOT
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.6.0.BUILD-SNAPSHOT
+      version: 3.0.0.BUILD-SNAPSHOT
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 2.1.0.BUILD-SNAPSHOT
+      version: 3.0.0.BUILD-SNAPSHOT
       modules:
         - spring-data-solr
     - name: Spring Framework
@@ -450,6 +449,8 @@ platform_definition:
        - 'org.springframework:spring-webmvc-portlet'
       'org.springframework.data:spring-data-commons':
        - 'org.scala-lang:scala-library'
+      'org.springframework.data:spring-data-gemfire':
+       - 'org.springframework.shell:spring-shell'
     ignored_modules:
       - 'org.springframework.boot:spring-boot-actuator-docs' # Its dependencies are provided
       - 'org.springframework.boot:spring-boot-cli' # The CLI doesn't expose its dependencies to applications
@@ -546,6 +547,8 @@ platform_definition:
       - 'org.apache.logging.log4j:log4j-web'
       - 'org.apache.logging.log4j:log4j-1.2-api'
       - 'org.apache.poi:poi-scratchpad'
+      - 'org.apache.shiro:shiro-core'
+      - 'org.apache.shiro:shiro-web'
       - 'org.apache.taglibs:taglibs-standard-impl'
       - 'org.apache.taglibs:taglibs-standard-spec'
       - 'org.apache.tomcat:tomcat-jsp-api'
@@ -600,6 +603,8 @@ platform_definition:
       - 'org.jooq:jooq-codegen'
       - 'org.jooq:jooq-meta'
       - 'org.mariadb.jdbc:mariadb-java-client'
+      - 'org.mongodb:bson'
+      - 'org.mongodb:mongodb-driver-core'
       - 'org.neo4j:neo4j-ogm-api'
       - 'org.neo4j:neo4j-ogm-compiler'
       - 'org.postgresql:postgresql'

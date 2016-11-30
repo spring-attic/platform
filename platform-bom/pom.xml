@@ -46,6 +46,7 @@
 
 	<properties>
 		<spring-data-geode.version>1.0.0.APACHE-GEODE-INCUBATING-M2</spring-data-geode.version>
+		<spring-data-releasetrain.version>Kay-BUILD-SNAPSHOT</spring-data-releasetrain.version>
 		<spring-integration-flow.version>1.0.0.RELEASE</spring-integration-flow.version>
 		<spring-integration-kafka.version>2.1.0.RELEASE</spring-integration-kafka.version>
 		<spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
@@ -58,6 +59,7 @@
 		<aopalliance.version>1.0</aopalliance.version>
 		<apacheds.version>1.5.5</apacheds.version>
 		<apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
+		<apache-shiro.version>1.3.2</apache-shiro.version>
 		<axiom.version>1.2.20</axiom.version>
 		<boon.version>0.33</boon.version>
 		<bouncycastle.version>1.54</bouncycastle.version>
@@ -81,6 +83,7 @@
 		<evo-inflector.version>1.2.1</evo-inflector.version>
 		<findbugs-jsr305.version>3.0.1</findbugs-jsr305.version>
 		<findbugs-annotations.version>2.0.3</findbugs-annotations.version>
+		<gemfire.version>9.0.0-beta.1</gemfire.version>
 		<guava.version>17.0</guava.version>
 		<guice.version>3.0</guice.version>
 		<hadoop.version>2.2.0</hadoop.version>
@@ -117,7 +120,6 @@
 		<jibx.version>1.2.6</jibx.version>
 		<jline.version>2.14.2</jline.version>
 		<jopt-simple.version>5.0.3</jopt-simple.version>
-		<jredis.version>06052013</jredis.version>
 		<jsch.version>0.1.54</jsch.version>
 		<jsr250.version>1.0</jsr250.version>
 		<junit-jupiter.version>5.0.0-M2</junit-jupiter.version>
@@ -130,6 +132,7 @@
 		<legacy-reactor.version>2.0.8.RELEASE</legacy-reactor.version>
 		<lettuce.version>3.5.0.Final</lettuce.version>
 		<log4j.version>1.2.17</log4j.version>
+		<mongodb-driver-reactivestreams.version>1.3.0</mongodb-driver-reactivestreams.version>
 		<myfaces.version>2.2.11</myfaces.version>
 		<okhttp.version>2.7.5</okhttp.version>
 		<okhttp3.version>3.3.1</okhttp3.version>
@@ -160,7 +163,6 @@
 		<selenium-htmlunit-driver.version>${selenium.version}</selenium-htmlunit-driver.version>
 		<smack4.version>4.1.8</smack4.version>
 		<splunk.version>1.3.0</splunk.version>
-		<spullara-redis.version>0.7</spullara-redis.version>
 		<sun-facelets.version>1.1.14</sun-facelets.version>
 		<sun-jsf.version>2.2.13</sun-jsf.version>
 		<sun-saaj.version>1.3.25</sun-saaj.version>
@@ -310,11 +312,6 @@
 				<groupId>com.fasterxml.woodstox</groupId>
 				<artifactId>woodstox-core</artifactId>
 				<version>${woodstox5.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.github.spullara.redis</groupId>
-				<artifactId>client</artifactId>
-				<version>${spullara-redis.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.code.findbugs</groupId>
@@ -535,6 +532,21 @@
 				<groupId>io.netty</groupId>
 				<artifactId>netty-buffer</artifactId>
 				<version>${netty.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.pivotal.gemfire</groupId>
+				<artifactId>geode-core</artifactId>
+				<version>${gemfire.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.pivotal.gemfire</groupId>
+				<artifactId>geode-cq</artifactId>
+				<version>${gemfire.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.pivotal.gemfire</groupId>
+				<artifactId>geode-wan</artifactId>
+				<version>${gemfire.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>io.projectreactor</groupId>
@@ -787,6 +799,21 @@
 				<version>${poi.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-core</artifactId>
+				<version>${apache-shiro.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-spring</artifactId>
+				<version>${apache-shiro.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.shiro</groupId>
+				<artifactId>shiro-web</artifactId>
+				<version>${apache-shiro.version}</version>
+			</dependency>
+			<dependency>
 				<groupId>org.apache.solr</groupId>
 				<artifactId>solr-core</artifactId>
 				<version>${solr.version}</version>
@@ -1022,19 +1049,14 @@
 				<version>${jibx.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.jredis</groupId>
-				<artifactId>jredis-core-api</artifactId>
-				<version>${jredis.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jredis</groupId>
-				<artifactId>jredis-core-ri</artifactId>
-				<version>${jredis.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.junit.jupiter</groupId>
 				<artifactId>junit-jupiter-api</artifactId>
 				<version>${junit-jupiter.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.mongodb</groupId>
+				<artifactId>mongodb-driver-reactivestreams</artifactId>
+				<version>${mongodb-driver-reactivestreams.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.objenesis</groupId>
