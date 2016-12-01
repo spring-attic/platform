@@ -129,7 +129,6 @@
 		<kryo.version>3.0.3</kryo.version>
 		<ldapbp.version>1.0</ldapbp.version>
 		<ldapsdk.version>4.1</ldapsdk.version>
-		<legacy-reactor.version>2.0.8.RELEASE</legacy-reactor.version>
 		<lettuce.version>3.5.0.Final</lettuce.version>
 		<log4j.version>1.2.17</log4j.version>
 		<mongodb-driver-reactivestreams.version>1.3.0</mongodb-driver-reactivestreams.version>
@@ -547,11 +546,6 @@
 				<groupId>io.pivotal.gemfire</groupId>
 				<artifactId>geode-wan</artifactId>
 				<version>${gemfire.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>io.projectreactor</groupId>
-				<artifactId>reactor-net</artifactId>
-				<version>${legacy-reactor.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>io.projectreactor.ipc</groupId>
