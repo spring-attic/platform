@@ -620,7 +620,7 @@ platform_definition:
       - 'org.spockframework:spock-core'
       - 'org.spockframework:spock-spring'
       - 'org.springframework:springloaded'
-      - 'org.springframework.boot:spring-boot-junit-runners'
+      - 'org.springframework.boot:spring-boot-test-support'
       - 'org.xerial:sqlite-jdbc'
       - 'xml-apis:xml-apis'
   repositories:
