@@ -1,0 +1,57 @@
+From 8a4919b0c949217ca19b7dc3c3e7bd1410d3ba2c Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Fri, 2 Dec 2016 09:27:34 +0000
+Subject: [PATCH] Fix intermittent failure in TimerTests.verifyPause
+
+Previously, the logic that checks a timer has paused successfully
+relies on it taking less than 100ms from awaitAdvance(0) returning
+to pause() taking effect. If it takes longer than 100ms then more than
+10 tasks may have run and difference between time and sysTime may be
+greater than 100ms.
+
+This commit removes the faulty assertions and in their place checks
+that at least 10 tasks have been performed and that the number of
+tasks that has been performed doesn't change once the timer has been
+paused.
+---
+ .../src/test/java/reactor/fn/timer/TimerTests.java         | 14 +++++++++-----
+ 1 file changed, 9 insertions(+), 5 deletions(-)
+
+diff --git a/reactor-core/src/test/java/reactor/fn/timer/TimerTests.java b/reactor-core/src/test/java/reactor/fn/timer/TimerTests.java
+index 574402e7..971d8247 100644
+--- a/reactor-core/src/test/java/reactor/fn/timer/TimerTests.java
++++ b/reactor-core/src/test/java/reactor/fn/timer/TimerTests.java
+@@ -24,6 +24,10 @@ import java.util.concurrent.TimeUnit;
+ import java.util.concurrent.atomic.AtomicInteger;
+ import java.util.concurrent.atomic.AtomicLong;
+ 
++import static org.hamcrest.CoreMatchers.equalTo;
++import static org.hamcrest.CoreMatchers.is;
++import static org.hamcrest.Matchers.greaterThanOrEqualTo;
++
+ /**
+  * @author @masterav10
+  */
+@@ -51,14 +55,14 @@ public class TimerTests {
+ 		}, 100, TimeUnit.MILLISECONDS, 500);
+ 
+ 		phaser.awaitAdvance(0);
+-
+ 		pausable.pause();
+-		long time = System.nanoTime() - sysTime.get();
+-		Thread.sleep(1000);
++		
+ 		HashWheelTimer.TimerPausable<?> registration = (HashWheelTimer.TimerPausable<?>) pausable;
+ 		Assert.assertTrue(registration.isPaused());
+-		Assert.assertTrue(time < TimeUnit.MILLISECONDS.toNanos(100));
+-		Assert.assertEquals(tasks, count.get());
++		int completedTasks = count.get();
++		Assert.assertThat(completedTasks, is(greaterThanOrEqualTo(tasks)));
++		Thread.sleep(200);
++		Assert.assertThat(count.get(), is(equalTo(completedTasks)));
+ 		timer.cancel();
+ 	}
+ }
+-- 
+2.11.0
+
