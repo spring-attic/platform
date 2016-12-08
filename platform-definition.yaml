@@ -177,6 +177,11 @@ platform_definition:
       version: 1.2.0.BUILD-SNAPSHOT
       modules:
         - spring-data-keyvalue
+    - name: Spring Data LDAP
+      groupId: org.springframework.data
+      version: 1.0.0.BUILD-SNAPSHOT
+      modules:
+        - spring-data-ldap
     - name: Spring Data MongoDB
       groupId: org.springframework.data
       version: 1.10.0.BUILD-SNAPSHOT
