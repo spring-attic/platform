@@ -24,23 +24,38 @@ part of the upgrade process.
 |===
 |Dependency | Explanation
 
-| `com.fasterxml.jackson:jackson-datatype-jdk7`
-| As of Jackson 2.7, functionality is provided by `com.fasterxml.jackson:jackson-databind`
-
-| `org.apache.zookeeper:zookeeper`
+| `com.datastax.cassandra:cassandra-driver-dse`
 | No longer a direct dependency of any of the Platform's projects
 
-| `org.igniterealtime.smack:smack`
+| `com.yammer.metrics:metrics-annotation`
 | No longer a direct dependency of any of the Platform's projects
 
-| `org.neo4j:neo4j-ogm-api`
+| `com.yammer.metrics:metrics-core`
 | No longer a direct dependency of any of the Platform's projects
 
-| `com.github.fge:json-patch`
+| `org.apache.avro:avro`
 | No longer a direct dependency of any of the Platform's projects
 
-| `javax.xml.soap:saaj-api`
+| `org.apache.avro:avro-compiler`
 | No longer a direct dependency of any of the Platform's projects
+
+| `org.apache.kafka:kafka_2.10`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.apache.velocity:velocity-tools`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.hornetq:hornetq-jms-client`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.hornetq:hornetq-jms-server`
+| No longer a direct dependency of any of the Platform's
+
+| `org.springframework.boot:spring-boot-starter-velocity`
+| Does not exist in the version of Spring Boot that is now used by the Platform
+
+| `org.springframework.boot:spring-boot-starter-hornetq`
+| Does not exist in the version of Spring Boot that is now used by the Platform
 |===
 
 
@@ -55,9 +70,12 @@ replacements.
 |===
 | Dependency | Replacement
 
-| `com.mysema.querydsl:querydsl-apt`
-| `com.querydsl:querydsl-apt`
+| `org.springframework.boot:spring-boot-starter-redis`
+| `org.springframework.boot:spring-boot-starter-data-redis`
 
 | `javax.ejb:ejb-api`
 | `javax.ejb:javax.ejb-api`
+
+| `org.springframework.boot:spring-boot-starter-ws`
+| `org.springframework.boot:spring-boot-starter-web-services`
 |===
