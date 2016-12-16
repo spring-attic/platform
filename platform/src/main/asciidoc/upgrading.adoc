@@ -24,25 +24,54 @@ part of the upgrade process.
 |===
 |Dependency | Explanation
 
+| `commons-configuration:commons-configuration`
+| No longer a direct dependency of any of the Platform's projects
+
+| `com.couchbase.client:couchbase-client`
+| Does not exist in the version of Couchbase that is now used by the Platform
+
 | `com.fasterxml.jackson:jackson-datatype-jdk7`
 | As of Jackson 2.7, functionality is provided by `com.fasterxml.jackson:jackson-databind`
-
-| `org.apache.zookeeper:zookeeper`
-| No longer a direct dependency of any of the Platform's projects
-
-| `org.igniterealtime.smack:smack`
-| No longer a direct dependency of any of the Platform's projects
-
-| `org.neo4j:neo4j-ogm-api`
-| No longer a direct dependency of any of the Platform's projects
 
 | `com.github.fge:json-patch`
 | No longer a direct dependency of any of the Platform's projects
 
 | `javax.xml.soap:saaj-api`
 | No longer a direct dependency of any of the Platform's projects
-|===
 
+| `org.apache.httpcomponents:httpclient-cache`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.apache.tomcat.embed:tomcat-embed-logging-juli`
+| Does not exist in the version of Tomcat that is now used by the Platform
+
+| `org.apache.zookeeper:zookeeper`
+| No longer a direct dependency of any of the Platform's
+
+| `org.eclipse.jetty:jetty-jsp`
+| Does not exist in the version of Jetty that is now used by the Platform
+
+| `org.igniterealtime.smack:smack`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.neo4j:neo4j`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.neo4j:neo4j-cypher-dsl`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.neo4j:neo4j-ogm-api`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.neo4j:neo4j-server-api`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.neo4j:neo4j-spatial`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.springframework.boot:spring-boot-starter-log4j`
+| Does not exist in the version of Spring Boot that is now used by the Platform
+|===
 
 
 [[upgrading-dependency-management-replaced]]
@@ -58,6 +87,28 @@ replacements.
 | `com.mysema.querydsl:querydsl-apt`
 | `com.querydsl:querydsl-apt`
 
+| `com.mysema.querydsl:querydsl-collections`
+| `com.querydsl:querydsl-collections`
+
+| `com.mysema.querydsl:querydsl-core`
+| `com.querydsl:querydsl-core`
+
+| `com.mysema.querydsl:querydsl-jpa`
+| `com.querydsl:querydsl-jpa`
+
+| `com.mysema.querydsl:querydsl-lucene3`
+| `com.querydsl:querydsl-lucene3`
+
+| `com.mysema.querydsl:querydsl-mongodb`
+| `com.querydsl:querydsl-mongodb`
+
 | `javax.ejb:ejb-api`
 | `javax.ejb:javax.ejb-api`
+
+| `org.infinispan:infinispan-spring4`
+| `org.infinispan:infinispan-spring4-embedded`
+
+| `org.seleniumhq.selenium:selenium-htmlunit-driver`
+| `org.seleniumhq.selenium:htmlunit-driver`
+
 |===
