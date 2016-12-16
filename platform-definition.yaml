@@ -30,7 +30,7 @@ platform_definition:
           - jdk8
     - name: Spring Batch
       groupId: org.springframework.batch
-      version: 3.0.7.RELEASE
+      version: 4.0.0.BUILD-SNAPSHOT
       modules:
         - spring-batch-core
         - spring-batch-infrastructure
@@ -448,14 +448,16 @@ platform_definition:
     'rome:rome': 'net.java.dev.rome:rome'
   missing_dependencies:
     ignored_dependencies:
-      'org.springframework.webflow:spring-faces':
-       - 'org.springframework:spring-webmvc-portlet'
-      'org.springframework.webflow:spring-webflow':
-       - 'org.springframework:spring-webmvc-portlet'
       'org.springframework.data:spring-data-commons':
        - 'org.scala-lang:scala-library'
       'org.springframework.data:spring-data-gemfire':
        - 'org.springframework.shell:spring-shell'
+      'org.springframework.data:spring-data-rest-webmvc':
+       - 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate4'
+      'org.springframework.webflow:spring-faces':
+       - 'org.springframework:spring-webmvc-portlet'
+      'org.springframework.webflow:spring-webflow':
+       - 'org.springframework:spring-webmvc-portlet'
     ignored_modules:
       - 'org.springframework.boot:spring-boot-actuator-docs' # Its dependencies are provided
       - 'org.springframework.boot:spring-boot-cli' # The CLI doesn't expose its dependencies to applications

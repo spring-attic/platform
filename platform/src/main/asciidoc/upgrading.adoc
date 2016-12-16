@@ -24,31 +24,130 @@ part of the upgrade process.
 |===
 |Dependency | Explanation
 
-| `com.fasterxml.jackson:jackson-datatype-jdk7`
-| As of Jackson 2.7, functionality is provided by `com.fasterxml.jackson:jackson-databind`
+| `com.esotericsoftware:kryo`
+| No longer a direct dependency of any of the Platform's projects
+
+| `com.gemstone.gemfire:gemfire`
+| No longer a direct dependency of any of the Platform's projects
 
 | `com.github.spullara.redis:client`
 | No longer a direct dependency of any of the Platform's projects
 
-| `org.apache.zookeeper:zookeeper`
+| `com.goldmansachs:gs-collections`
 | No longer a direct dependency of any of the Platform's projects
 
-| `org.igniterealtime.smack:smack`
+| `com.rometools:rome-fetcher`
 | No longer a direct dependency of any of the Platform's projects
 
-| `org.jredus:jredus-core-api`
+| `io.projectreactor.spring:reactor-spring-context`
+| Does not exist in the version of Reactor that is now used by the Platform
+
+| `io.projectreactor.spring:reactor-spring-core`
+| Does not exist in the version of Reactor that is now used by the Platform
+
+| `io.projectreactor.spring:reactor-spring-messaging`
+| Does not exist in the version of Reactor that is now used by the Platform
+
+| `io.projectreactor.spring:reactor-spring-webmvc`
+| Does not exist in the version of Reactor that is now used by the Platform
+
+| `io.projectreactor:reactor-bus`
+| Does not exist in the version of Reactor that is now used by the Platform
+
+| `io.projectreactor:reactor-groovy`
+| Does not exist in the version of Reactor that is now used by the Platform
+
+| `io.projectreactor:reactor-groovy-extensions`
+| Does not exist in the version of Reactor that is now used by the Platform
+
+| `io.projectreactor:reactor-logback`
+| Does not exist in the version of Reactor that is now used by the Platform
+
+| `io.projectreactor:reactor-net`
+| Does not exist in the version of Reactor that is now used by the Platform
+
+| `io.projectreactor:reactor-stream`
+| Does not exist in the version of Reactor that is now used by the Platform
+
+| `javax.jdo:jdo-api`
 | No longer a direct dependency of any of the Platform's projects
 
-| `org.jredus:jredus-core-ri`
+| `javax.resource:connector-api`
 | No longer a direct dependency of any of the Platform's projects
 
-| `org.neo4j:neo4j-ogm-api`
+| `net.openhft:chronicle`
 | No longer a direct dependency of any of the Platform's projects
 
-| `com.github.fge:json-patch`
+| `net.openhft:lang`
 | No longer a direct dependency of any of the Platform's projects
 
-| `javax.xml.soap:saaj-api`
+| `net.sf.jasperreports:jasperreports`
+| No longer a direct dependency of any of the Platform's projects
+
+| `net.sourceforge.jexcelapi:jxl`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.apache.tomcat:tomcat-catalina`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.apache.velocity:velocity`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.apache.xmlbeans:xmlbeans`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.crashub:crash.cli`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.crashub:crash.connectors.ssh`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.crashub:crash.connectors.telnet`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.crashub:crash.embed.spring`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.crashub:crash.plugins.cron`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.crashub:crash.plugins.mail`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.crashub:crash.shell`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.jredis:jredis-core-api`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.jredis:jredis-core-ri`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.jruby:jruby`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.springframework.boot:spring-boot-starter-data-gemfire`
+| Does not exist in the version of Spring Boot that is now used by the Platform
+
+| `org.springframework.boot:spring-boot-starter-remote-shell`
+| Does not exist in the version of Spring Boot that is now used by the Platform
+
+| `org.springframework.integration:spring-integration-java-dsl`
+| As of Spring Integration 5, the Java DSL is included in `spring-integration-core`
+
+| `org.springframework:spring-instrument-tomcat`
+| Does not exist in the version of Spring Framework that is now used by the Platform
+
+| `org.springframework:spring-webmvc-portlet`
+| Does not exist in the version of Spring Framework that is now used by the Platform
+
+| `org.xerial.snappy:snappy-java`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.zeromq:jeromq`
+| No longer a direct dependency of any of the Platform's projects
+
+| `velocity-tools:velocity-tools-view`
 | No longer a direct dependency of any of the Platform's projects
 |===
 
@@ -64,9 +163,6 @@ replacements.
 |===
 | Dependency | Replacement
 
-| `com.mysema.querydsl:querydsl-apt`
-| `com.querydsl:querydsl-apt`
-
-| `javax.ejb:ejb-api`
-| `javax.ejb:javax.ejb-api`
+| `javax.jms:jms-api`
+| `javax.jms:javax.jms-api`
 |===
