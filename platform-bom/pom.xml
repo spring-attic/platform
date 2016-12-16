@@ -113,7 +113,6 @@
 		<javax-money.version>1.0.1</javax-money.version>
 		<javax-portlet.version>2.0</javax-portlet.version>
 		<javax-resource.version>1.7</javax-resource.version>
-		<javax-validation.version>1.1.0.Final</javax-validation.version>
 		<javax-websocket.version>1.1</javax-websocket.version>
 		<jbatch-tck.version>1.0</jbatch-tck.version>
 		<jettison.version>1.2</jettison.version>
@@ -651,11 +650,6 @@
 				<groupId>javax.servlet.jsp.jstl</groupId>
 				<artifactId>javax.servlet.jsp.jstl-api</artifactId>
 				<version>${javax-jstl.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>javax.validation</groupId>
-				<artifactId>validation-api</artifactId>
-				<version>${javax-validation.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.websocket</groupId>
