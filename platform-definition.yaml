@@ -238,7 +238,7 @@ platform_definition:
         - spring-websocket
     - name: Spring HATEOAS
       groupId: org.springframework.hateoas
-      version: 0.21.0.RELEASE
+      version: 0.23.0.RELEASE
       modules:
         - spring-hateoas
     - name: Spring Integration
@@ -291,7 +291,7 @@ platform_definition:
         - spring-integration-flow
     - name: Spring Integration Java DSL
       groupId: org.springframework.integration
-      version: 1.2.0.RELEASE
+      version: 1.2.1.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-integration-java-dsl
         compileWith: jdk8
@@ -390,7 +390,7 @@ platform_definition:
         - spring-security-web
     - name: Spring Security JWT
       groupId: org.springframework.security
-      version: 1.0.5.RELEASE
+      version: 1.0.7.RELEASE
       modules:
        - spring-security-jwt
     - name: Spring Security OAuth
