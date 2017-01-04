@@ -326,7 +326,7 @@ platform_definition:
           - jdk8
     - name: Spring LDAP
       groupId: org.springframework.ldap
-      version: 2.2.0.RELEASE
+      version: 2.3.0.RC1
       build:
         repository: https://github.com/spring-projects/spring-ldap
         compileWith: jdk8
