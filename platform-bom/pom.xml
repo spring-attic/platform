@@ -122,7 +122,7 @@
 		<jsch.version>0.1.54</jsch.version>
 		<jsr250.version>1.0</jsr250.version>
 		<junit-jupiter.version>5.0.0-M2</junit-jupiter.version>
-		<kafka.version>0.10.0.1</kafka.version>
+		<kafka.version>0.10.1.0</kafka.version>
 		<kite.version>0.13.0</kite.version>
 		<kotlin.version>1.0.5-2</kotlin.version>
 		<kryo.version>3.0.3</kryo.version>
