@@ -70,6 +70,7 @@ platform_definition:
         - spring-boot-starter-data-couchbase
         - spring-boot-starter-data-elasticsearch
         - spring-boot-starter-data-jpa
+        - spring-boot-starter-data-ldap
         - spring-boot-starter-data-mongodb
         - spring-boot-starter-data-neo4j
         - spring-boot-starter-data-redis
@@ -465,6 +466,7 @@ platform_definition:
       - 'org.springframework.boot:spring-boot-starter-parent' # Used by the Platform as its parent
       - 'org.springframework.boot:spring-boot-maven-plugin' # The plugin doesn't expose it dependencies to applications
       - 'org.springframework.boot:spring-boot-configuration-processor' # Used by the Boot build to generate metadata about @ConfigurationProperties
+      - 'org.springframework.boot:spring-boot-configuration-metadata' # Used by the Boot build to generate metadata about @ConfigurationProperties
   unused_dependencies:
     ignored:
       # For user convenience, Boot and the Platform provide extra dependency management for modules
@@ -501,6 +503,7 @@ platform_definition:
       - 'io.projectreactor.addons:reactor-adapter'
       - 'javax.servlet:jstl'
       - 'mysql:mysql-connector-java'
+      - 'net.bytebuddy:byte-buddy'
       - 'net.java.dev.jna:jna'
       - 'net.sourceforge.jtds:jtds'
       - 'org.apache.activemq:activemq-amqp'
