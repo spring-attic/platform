@@ -50,7 +50,6 @@
 		<spring-integration-kafka.version>2.1.0.RELEASE</spring-integration-kafka.version>
 		<spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
 		<spring-kafka.version>1.1.2.BUILD-SNAPSHOT</spring-kafka.version>
-		<spring-ldap.version>2.3.0.RC1</spring-ldap.version>
 		<spring-web-flow.version>2.4.4.RELEASE</spring-web-flow.version>
 		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
 
@@ -205,38 +204,6 @@
 				<groupId>org.springframework.integration</groupId>
 				<artifactId>spring-integration-splunk</artifactId>
 				<version>${spring-integration-splunk.version}</version>
-			</dependency>
-
-			<!-- Spring LDAP -->
-			<dependency>
-				<groupId>org.springframework.ldap</groupId>
-				<artifactId>spring-ldap-core</artifactId>
-				<version>${spring-ldap.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.ldap</groupId>
-				<artifactId>spring-ldap-core-tiger</artifactId>
-				<version>${spring-ldap.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.ldap</groupId>
-				<artifactId>spring-ldap-ldif-batch</artifactId>
-				<version>${spring-ldap.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.ldap</groupId>
-				<artifactId>spring-ldap-ldif-core</artifactId>
-				<version>${spring-ldap.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.ldap</groupId>
-				<artifactId>spring-ldap-odm</artifactId>
-				<version>${spring-ldap.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.ldap</groupId>
-				<artifactId>spring-ldap-test</artifactId>
-				<version>${spring-ldap.version}</version>
 			</dependency>
 
 			<!-- Spring Plugin -->
