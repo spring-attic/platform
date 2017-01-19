@@ -210,13 +210,6 @@
 				<version>${spring-integration-splunk.version}</version>
 			</dependency>
 
-			<!-- Spring Plugin -->
-			<dependency>
-				<groupId>org.springframework.plugin</groupId>
-				<artifactId>spring-plugin-metadata</artifactId>
-				<version>${spring-plugin.version}</version>
-			</dependency>
-
 			<!-- Spring Web Flow -->
 			<dependency>
 				<groupId>org.springframework.webflow</groupId>

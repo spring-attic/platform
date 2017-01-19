@@ -223,7 +223,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 5.0.0.BUILD-SNAPSHOT
+      version: 5.0.0.M2
       build:
         compileWith: jdk8
         runTestsWith:
@@ -333,7 +333,7 @@ platform_definition:
         - spring-restdocs-restassured
     - name: Spring Retry
       groupId: org.springframework.retry
-      version: 1.2.0.RC1
+      version: 1.2.0.RELEASE
       modules:
         - spring-retry
     - name: Spring Security
@@ -476,17 +476,43 @@ platform_definition:
       - 'commons-digester:commons-digester'
       - 'com.datastax.cassandra:cassandra-driver-mapping'
       - 'com.fasterxml:classmate'
+      - 'com.fasterxml.jackson.dataformat:jackson-dataformat-avro'
+      - 'com.fasterxml.jackson.dataformat:jackson-dataformat-cbor'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv'
+      - 'com.fasterxml.jackson.dataformat:jackson-dataformat-properties'
+      - 'com.fasterxml.jackson.dataformat:jackson-dataformat-protobuf'
+      - 'com.fasterxml.jackson.dataformat:jackson-dataformat-smile'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-guava'
+      - 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate3'
+      - 'com.fasterxml.jackson.datatype:jackson-datatype-hppc'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-jaxrs'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-jdk7'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-json-org'
-      - 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider'
+      - 'com.fasterxml.jackson.datatype:jackson-datatype-jsr353'
+      - 'com.fasterxml.jackson.datatype:jackson-datatype-pcollections'
       - 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-base'
+      - 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-cbor-provider'
+      - 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-json-provider'
+      - 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-smile-provider'
+      - 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-xml-provider'
+      - 'com.fasterxml.jackson.jaxrs:jackson-jaxrs-yaml-provider'
+      - 'com.fasterxml.jackson.jr:jackson-jr-all'
+      - 'com.fasterxml.jackson.jr:jackson-jr-objects'
+      - 'com.fasterxml.jackson.jr:jackson-jr-retrofit2'
+      - 'com.fasterxml.jackson.jr:jackson-jr-stree'
+      - 'com.fasterxml.jackson.module:jackson-module-afterburner'
+      - 'com.fasterxml.jackson.module:jackson-module-guice'
       - 'com.fasterxml.jackson.module:jackson-module-jaxb-annotations'
+      - 'com.fasterxml.jackson.module:jackson-module-jsonSchema'
       - 'com.fasterxml.jackson.module:jackson-module-kotlin'
+      - 'com.fasterxml.jackson.module:jackson-module-mrbean'
+      - 'com.fasterxml.jackson.module:jackson-module-osgi'
+      - 'com.fasterxml.jackson.module:jackson-module-paranamer'
+      - 'com.fasterxml.jackson.module:jackson-module-scala_2.10'
+      - 'com.fasterxml.jackson.module:jackson-module-scala_2.11'
+      - 'com.fasterxml.jackson.module:jackson-module-scala_2.12'
       - 'com.google.appengine:appengine-api-1.0-sdk'
       - 'com.hazelcast:hazelcast-client'
       - 'com.hazelcast:hazelcast-hibernate4'
