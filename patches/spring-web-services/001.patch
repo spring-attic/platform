@@ -1,0 +1,34 @@
+From 09ae29aebb9e8a7e853ac7fe43e945f1208a5a31 Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Thu, 19 Jan 2017 16:35:31 +0000
+Subject: [PATCH] Compile and test against JMS 2.0 rather than 1.1
+
+---
+ build.gradle | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/build.gradle b/build.gradle
+index ffca8391..7f048e80 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -224,7 +224,7 @@ project('spring-ws-support') {
+ 		testCompile("org.springframework:spring-test:$springVersion")
+ 
+ 		// Transport
+-		provided("javax.jms:jms-api:1.1-rev-1")
++		provided("javax.jms:javax.jms-api:2.0")
+ 		provided("javax.mail:javax.mail-api:1.4.7")
+ 		provided("com.sun.mail:javax.mail:1.4.7")
+ 		optional("org.igniterealtime.smack:smack-tcp:$smackVersion")
+@@ -259,7 +259,7 @@ project('spring-ws-security') {
+ 		optional("com.sun.xml.wss:xws-security:3.0") {
+ 			exclude group: 'javax.xml.crypto', module: 'xmldsig'
+ 		}
+-		
++
+ 		compile("org.apache.ws.security:wss4j:1.6.19")
+ 		compile("org.apache.wss4j:wss4j-ws-security-dom:2.1.4")
+ 
+-- 
+2.11.0
+
