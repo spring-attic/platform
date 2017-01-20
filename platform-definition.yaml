@@ -37,7 +37,7 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.7.0.RC1
+      version: 1.7.0.RELEASE
       modules:
         - spring-amqp
         - spring-rabbit
@@ -327,7 +327,7 @@ platform_definition:
           - jdk8
     - name: Spring LDAP
       groupId: org.springframework.ldap
-      version: 2.3.0.BUILD-SNAPSHOT
+      version: 2.3.0.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-ldap
         compileWith: jdk8
