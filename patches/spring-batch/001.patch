@@ -1,0 +1,26 @@
+From 9ae8b36e80d54f1c85958a1cb23cea6da2d9e68f Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Mon, 23 Jan 2017 20:34:19 +0000
+Subject: [PATCH] Override the version of Mockito used for Spring IO tests
+
+---
+ build.gradle | 3 +++
+ 1 file changed, 3 insertions(+)
+
+diff --git a/build.gradle b/build.gradle
+index 0196121c8..ebd10351a 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -242,6 +242,9 @@ configure(mainProjects) {
+ 				imports {
+ 					mavenBom "io.spring.platform:platform-bom:${platformVersion}"
+ 				}
++				dependencies {
++					dependency "org.mockito:mockito-core:$mockitoVersion"
++				}
+ 			}
+ 		}
+ 	}
+-- 
+2.11.0
+
