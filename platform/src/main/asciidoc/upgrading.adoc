@@ -72,6 +72,9 @@ part of the upgrade process.
 | `javax.jdo:jdo-api`
 | No longer a direct dependency of any of the Platform's projects
 
+| `javax.portlet:portlet-api`
+| No longer a direct dependency of any of the Platform's projects
+
 | `javax.resource:connector-api`
 | No longer a direct dependency of any of the Platform's projects
 
@@ -85,6 +88,12 @@ part of the upgrade process.
 | No longer a direct dependency of any of the Platform's projects
 
 | `net.sourceforge.jexcelapi:jxl`
+| No longer a direct dependency of any of the Platform's projects
+
+| `opensymphony:ognl`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.apache.tiles:tiles-request-api`
 | No longer a direct dependency of any of the Platform's projects
 
 | `org.apache.tomcat:tomcat-catalina`
@@ -140,6 +149,12 @@ part of the upgrade process.
 
 | `org.springframework:spring-webmvc-portlet`
 | Does not exist in the version of Spring Framework that is now used by the Platform
+
+| `org.springframework.webflow:spring-js`
+| Does not exist in the version of Spring Web Flow that is now used by the Platform
+
+| `org.springframework.webflow:spring-js-resources`
+| Does not exist in the version of Spring Web Flow that is now used by the Platform
 
 | `org.xerial.snappy:snappy-java`
 | No longer a direct dependency of any of the Platform's projects

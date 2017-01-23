@@ -49,7 +49,7 @@
 		<spring-integration-flow.version>1.0.0.RELEASE</spring-integration-flow.version>
 		<spring-integration-kafka.version>2.1.0.RELEASE</spring-integration-kafka.version>
 		<spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
-		<spring-web-flow.version>2.4.4.RELEASE</spring-web-flow.version>
+		<spring-web-flow.version>2.5.0.BUILD-SNAPSHOT</spring-web-flow.version>
 		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
 
 		<aalto-xml.version>1.0.0</aalto-xml.version>
@@ -108,7 +108,6 @@
 		<javax-jsp.version>2.3.1</javax-jsp.version>
 		<javax-jstl.version>1.2.1</javax-jstl.version>
 		<javax-money.version>1.0.1</javax-money.version>
-		<javax-portlet.version>2.0</javax-portlet.version>
 		<javax-resource.version>1.7</javax-resource.version>
 		<javax-websocket.version>1.1</javax-websocket.version>
 		<jbatch-tck.version>1.0</jbatch-tck.version>
@@ -136,7 +135,6 @@
 		<neo4j-spatial.version>0.12-neo4j-2.0.1</neo4j-spatial.version>
 		<netty.version>4.1.5.Final</netty.version>
 		<objenesis.version>2.4</objenesis.version>
-		<ognl.version>2.6.11</ognl.version>
 		<openid4java.version>0.9.6</openid4java.version>
 		<paho-mqttv3-client.version>1.1.0</paho-mqttv3-client.version>
 		<pig.version>0.12.1</pig.version>
@@ -164,7 +162,6 @@
 		<testng.version>6.9.10</testng.version>
 		<threetenbp.version>1.3.3</threetenbp.version>
 		<tiles.version>3.0.7</tiles.version>
-		<tiles-request.version>1.0.6</tiles-request.version>
 		<tyrus.version>1.3.5</tyrus.version>
 		<typica.version>1.3</typica.version>
 		<webjars-json-editor.version>0.7.21</webjars-json-editor.version>
@@ -216,16 +213,6 @@
 			<dependency>
 				<groupId>org.springframework.webflow</groupId>
 				<artifactId>spring-faces</artifactId>
-				<version>${spring-web-flow.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.webflow</groupId>
-				<artifactId>spring-js</artifactId>
-				<version>${spring-web-flow.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.springframework.webflow</groupId>
-				<artifactId>spring-js-resources</artifactId>
 				<version>${spring-web-flow.version}</version>
 			</dependency>
 			<dependency>
@@ -583,11 +570,6 @@
 				<version>${javax-money.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>javax.portlet</groupId>
-				<artifactId>portlet-api</artifactId>
-				<version>${javax-portlet.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>javax.resource</groupId>
 				<artifactId>javax.resource-api</artifactId>
 				<version>${javax-resource.version}</version>
@@ -641,11 +623,6 @@
 				<groupId>net.sf.jopt-simple</groupId>
 				<artifactId>jopt-simple</artifactId>
 				<version>${jopt-simple.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>opensymphony</groupId>
-				<artifactId>ognl</artifactId>
-				<version>${ognl.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.commons</groupId>
@@ -796,11 +773,6 @@
 				<groupId>org.apache.tiles</groupId>
 				<artifactId>tiles-jsp</artifactId>
 				<version>${tiles.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.tiles</groupId>
-				<artifactId>tiles-request-api</artifactId>
-				<version>${tiles-request.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.tiles</groupId>
