@@ -61,7 +61,7 @@ platform_definition:
           - jdk8
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 1.4.4.BUILD-SNAPSHOT
+      version: 1.4.4.RELEASE
       modules:
         - spring-boot
         - spring-boot-actuator
@@ -141,48 +141,48 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.4.6.RELEASE
+      version: 1.4.7.RELEASE
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.12.6.RELEASE
+      version: 1.12.7.RELEASE
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 2.1.6.RELEASE
+      version: 2.1.7.RELEASE
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 2.0.6.RELEASE
+      version: 2.0.7.RELEASE
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 1.0.6.RELEASE
+      version: 1.0.7.RELEASE
       modules:
         - spring-data-envers
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.8.6.RELEASE
+      version: 1.8.7.RELEASE
       modules:
         - spring-data-gemfire
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.10.6.RELEASE
+      version: 1.10.7.RELEASE
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 1.1.6.RELEASE
+      version: 1.1.7.RELEASE
       modules:
         - spring-data-keyvalue
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.9.6.RELEASE
+      version: 1.9.7.RELEASE
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -190,24 +190,24 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 4.1.6.RELEASE
+      version: 4.1.7.RELEASE
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.7.6.RELEASE
+      version: 1.7.7.RELEASE
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.5.6.RELEASE
+      version: 2.5.7.RELEASE
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 2.0.6.RELEASE
+      version: 2.0.7.RELEASE
       modules:
         - spring-data-solr
     - name: Spring Framework
@@ -241,7 +241,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.3.6.RELEASE
+      version: 4.3.7.RELEASE
       build:
         compileWith: jdk8
         runTestsWith:
