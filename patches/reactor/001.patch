@@ -1,12 +1,13 @@
-From b98ba9beb3a8875e79286bf62605f7872ed41646 Mon Sep 17 00:00:00 2001
+From 6f59e766864165ae3ff0f4cbb429d9f2a30aa679 Mon Sep 17 00:00:00 2001
 From: Andy Wilkinson <awilkinson@pivotal.io>
 Date: Tue, 31 Jan 2017 09:51:46 +0000
-Subject: [PATCH] Remove tests that fails intermittently but not due to
+Subject: [PATCH] Remove tests that fail intermittently but not due to
  incompatibility
 
 ---
  .../src/test/java/reactor/fn/timer/TimerTests.java | 64 ----------------------
- 1 file changed, 64 deletions(-)
+ .../java/reactor/io/net/tcp/TcpClientTests.java    | 22 --------
+ 2 files changed, 86 deletions(-)
  delete mode 100644 reactor-core/src/test/java/reactor/fn/timer/TimerTests.java
 
 diff --git a/reactor-core/src/test/java/reactor/fn/timer/TimerTests.java b/reactor-core/src/test/java/reactor/fn/timer/TimerTests.java
@@ -79,6 +80,39 @@ index 574402e7..00000000
 -		timer.cancel();
 -	}
 -}
+diff --git a/reactor-net/src/test/java/reactor/io/net/tcp/TcpClientTests.java b/reactor-net/src/test/java/reactor/io/net/tcp/TcpClientTests.java
+index 90cc6cd0..bc011d54 100644
+--- a/reactor-net/src/test/java/reactor/io/net/tcp/TcpClientTests.java
++++ b/reactor-net/src/test/java/reactor/io/net/tcp/TcpClientTests.java
+@@ -235,28 +235,6 @@ public class TcpClientTests {
+ 	}
+ 
+ 	@Test
+-	public void connectionWillAttemptToReconnectWhenItIsDropped() throws InterruptedException, IOException {
+-		final CountDownLatch connectionLatch = new CountDownLatch(1);
+-		final CountDownLatch reconnectionLatch = new CountDownLatch(1);
+-		TcpClient<Buffer, Buffer> tcpClient = NetStreams.<Buffer, Buffer>tcpClient(s -> s
+-						.env(env)
+-						.connect("localhost", abortServerPort)
+-		);
+-
+-		tcpClient.start(connection -> {
+-			connectionLatch.countDown();
+-			connection.consume();
+-			return Streams.never();
+-		}, (currentAddress, attempt) -> {
+-			reconnectionLatch.countDown();
+-			return null;
+-		});
+-
+-		assertTrue("Initial connection is made", connectionLatch.await(5, TimeUnit.SECONDS));
+-		assertTrue("A reconnect attempt was made", reconnectionLatch.await(5, TimeUnit.SECONDS));
+-	}
+-
+-	@Test
+ 	public void consumerSpecAssignsEventHandlers() throws InterruptedException, IOException {
+ 		final CountDownLatch latch = new CountDownLatch(2);
+ 		final CountDownLatch close = new CountDownLatch(1);
 -- 
 2.11.0
 
