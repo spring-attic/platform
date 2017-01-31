@@ -1,57 +1,84 @@
-From 8a4919b0c949217ca19b7dc3c3e7bd1410d3ba2c Mon Sep 17 00:00:00 2001
+From b98ba9beb3a8875e79286bf62605f7872ed41646 Mon Sep 17 00:00:00 2001
 From: Andy Wilkinson <awilkinson@pivotal.io>
-Date: Fri, 2 Dec 2016 09:27:34 +0000
-Subject: [PATCH] Fix intermittent failure in TimerTests.verifyPause
+Date: Tue, 31 Jan 2017 09:51:46 +0000
+Subject: [PATCH] Remove tests that fails intermittently but not due to
+ incompatibility
 
-Previously, the logic that checks a timer has paused successfully
-relies on it taking less than 100ms from awaitAdvance(0) returning
-to pause() taking effect. If it takes longer than 100ms then more than
-10 tasks may have run and difference between time and sysTime may be
-greater than 100ms.
-
-This commit removes the faulty assertions and in their place checks
-that at least 10 tasks have been performed and that the number of
-tasks that has been performed doesn't change once the timer has been
-paused.
 ---
- .../src/test/java/reactor/fn/timer/TimerTests.java         | 14 +++++++++-----
- 1 file changed, 9 insertions(+), 5 deletions(-)
+ .../src/test/java/reactor/fn/timer/TimerTests.java | 64 ----------------------
+ 1 file changed, 64 deletions(-)
+ delete mode 100644 reactor-core/src/test/java/reactor/fn/timer/TimerTests.java
 
 diff --git a/reactor-core/src/test/java/reactor/fn/timer/TimerTests.java b/reactor-core/src/test/java/reactor/fn/timer/TimerTests.java
-index 574402e7..971d8247 100644
+deleted file mode 100644
+index 574402e7..00000000
 --- a/reactor-core/src/test/java/reactor/fn/timer/TimerTests.java
-+++ b/reactor-core/src/test/java/reactor/fn/timer/TimerTests.java
-@@ -24,6 +24,10 @@ import java.util.concurrent.TimeUnit;
- import java.util.concurrent.atomic.AtomicInteger;
- import java.util.concurrent.atomic.AtomicLong;
- 
-+import static org.hamcrest.CoreMatchers.equalTo;
-+import static org.hamcrest.CoreMatchers.is;
-+import static org.hamcrest.Matchers.greaterThanOrEqualTo;
-+
- /**
-  * @author @masterav10
-  */
-@@ -51,14 +55,14 @@ public class TimerTests {
- 		}, 100, TimeUnit.MILLISECONDS, 500);
- 
- 		phaser.awaitAdvance(0);
++++ /dev/null
+@@ -1,64 +0,0 @@
+-/*
+- * Copyright (c) 2011-2015 Pivotal Software Inc, All Rights Reserved.
+- *
+- * Licensed under the Apache License, Version 2.0 (the "License");
+- * you may not use this file except in compliance with the License.
+- * You may obtain a copy of the License at
+- *
+- *       http://www.apache.org/licenses/LICENSE-2.0
+- *
+- * Unless required by applicable law or agreed to in writing, software
+- * distributed under the License is distributed on an "AS IS" BASIS,
+- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+- * See the License for the specific language governing permissions and
+- * limitations under the License.
+- */
+-package reactor.fn.timer;
 -
- 		pausable.pause();
+-import org.junit.Assert;
+-import org.junit.Test;
+-import reactor.fn.Pausable;
+-
+-import java.util.concurrent.Phaser;
+-import java.util.concurrent.TimeUnit;
+-import java.util.concurrent.atomic.AtomicInteger;
+-import java.util.concurrent.atomic.AtomicLong;
+-
+-/**
+- * @author @masterav10
+- */
+-public class TimerTests {
+-
+-	@Test
+-	public void verifyPause() throws InterruptedException
+-	{
+-		HashWheelTimer timer = new HashWheelTimer();
+-
+-		AtomicInteger count = new AtomicInteger();
+-
+-		int tasks = 10;
+-		Phaser phaser = new Phaser(tasks);
+-
+-		AtomicLong sysTime = new AtomicLong();
+-
+-		Pausable pausable = timer.schedule((time) -> {
+-			if (phaser.getPhase() == 0)
+-			{
+-				phaser.arrive();
+-				sysTime.set(System.nanoTime());
+-			}
+-			count.getAndIncrement();
+-		}, 100, TimeUnit.MILLISECONDS, 500);
+-
+-		phaser.awaitAdvance(0);
+-
+-		pausable.pause();
 -		long time = System.nanoTime() - sysTime.get();
 -		Thread.sleep(1000);
-+		
- 		HashWheelTimer.TimerPausable<?> registration = (HashWheelTimer.TimerPausable<?>) pausable;
- 		Assert.assertTrue(registration.isPaused());
+-		HashWheelTimer.TimerPausable<?> registration = (HashWheelTimer.TimerPausable<?>) pausable;
+-		Assert.assertTrue(registration.isPaused());
 -		Assert.assertTrue(time < TimeUnit.MILLISECONDS.toNanos(100));
 -		Assert.assertEquals(tasks, count.get());
-+		int completedTasks = count.get();
-+		Assert.assertThat(completedTasks, is(greaterThanOrEqualTo(tasks)));
-+		Thread.sleep(200);
-+		Assert.assertThat(count.get(), is(equalTo(completedTasks)));
- 		timer.cancel();
- 	}
- }
+-		timer.cancel();
+-	}
+-}
 -- 
 2.11.0
 
