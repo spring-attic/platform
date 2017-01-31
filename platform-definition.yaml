@@ -315,7 +315,7 @@ platform_definition:
        - springloaded
     - name: Spring Mobile
       groupId: org.springframework.mobile
-      version: 1.1.5.RELEASE
+      version: 2.0.0.M1
       modules:
         - spring-mobile-device
     - name: Spring Plugin
@@ -385,7 +385,7 @@ platform_definition:
         tagPrefix:
     - name: Spring Social
       groupId: org.springframework.social
-      version: 2.0.0.M1
+      version: 2.0.0.M2
       build:
         repository: https://github.com/spring-projects/spring-social
       modules:
@@ -393,6 +393,7 @@ platform_definition:
         - spring-social-core
         - spring-social-security
         - spring-social-web
+        - spring-social-web-thymeleaf3
     - name: Spring Social Facebook
       groupId: org.springframework.social
       version: 3.0.0.M1
@@ -448,15 +449,17 @@ platform_definition:
   missing_dependencies:
     ignored_dependencies:
       'org.springframework.data:spring-data-commons':
-       - 'org.scala-lang:scala-library'
+         - 'org.scala-lang:scala-library'
       'org.springframework.data:spring-data-gemfire':
-       - 'org.springframework.shell:spring-shell'
+         - 'org.springframework.shell:spring-shell'
       'org.springframework.data:spring-data-rest-webmvc':
-       - 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate4'
+         - 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate4'
+      'org.springframework.social:spring-social-web-thymeleaf3':
+         - 'org.thymeleaf:thymeleaf-spring4'
       'org.springframework.webflow:spring-faces':
-       - 'org.springframework:spring-webmvc-portlet'
+         - 'org.springframework:spring-webmvc-portlet'
       'org.springframework.webflow:spring-webflow':
-       - 'org.springframework:spring-webmvc-portlet'
+         - 'org.springframework:spring-webmvc-portlet'
     ignored_modules:
       - 'org.springframework.boot:spring-boot-actuator-docs' # Its dependencies are provided
       - 'org.springframework.boot:spring-boot-cli' # The CLI doesn't expose its dependencies to applications
@@ -511,8 +514,7 @@ platform_definition:
       - 'com.fasterxml.jackson.module:jackson-module-scala_2.12'
       - 'com.google.appengine:appengine-api-1.0-sdk'
       - 'com.hazelcast:hazelcast-client'
-      - 'com.hazelcast:hazelcast-hibernate4'
-      - 'com.hazelcast:hazelcast-hibernate5'
+      - 'com.hazelcast:hazelcast-hibernate52'
       - 'com.jayway.jsonpath:json-path-assert'
       - 'com.microsoft.sqlserver:mssql-jdbc'
       - 'com.zaxxer:HikariCP'
@@ -521,6 +523,15 @@ platform_definition:
       - 'io.dropwizard.metrics:metrics-graphite'
       - 'io.dropwizard.metrics:metrics-servlets'
       - 'io.javaslang:javaslang-match'
+      - 'io.netty:netty-codec-socks'
+      - 'io.netty:netty-codec-stomp'
+      - 'io.netty:netty-common'
+      - 'io.netty:netty-handler-proxy'
+      - 'io.netty:netty-resolver-dns'
+      - 'io.netty:netty-transport'
+      - 'io.netty:netty-transport-rxtx'
+      - 'io.netty:netty-transport-sctp'
+      - 'io.netty:netty-transport-udt'
       - 'io.projectreactor.addons:reactor-logback'
       - 'io.projectreactor.addons:reactor-adapter'
       - 'io.projectreactor.ipc:reactor-ipc'
