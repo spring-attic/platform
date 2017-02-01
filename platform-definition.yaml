@@ -518,6 +518,8 @@ platform_definition:
       - 'com.hazelcast:hazelcast-hibernate52'
       - 'com.jayway.jsonpath:json-path-assert'
       - 'com.microsoft.sqlserver:mssql-jdbc'
+      - 'com.nimbusds:oauth2-oidc-sdk'
+      - 'com.nimbusds:nimbus-jose-jwt'
       - 'com.zaxxer:HikariCP'
       - 'commons-digester:commons-digester'
       - 'io.dropwizard.metrics:metrics-ganglia'
