@@ -56,7 +56,7 @@
 		<apacheds.version>1.5.5</apacheds.version>
 		<apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
 		<axiom.version>1.2.20</axiom.version>
-		<boon.version>0.33</boon.version>
+		<boon.version>0.34</boon.version>
 		<bouncycastle.version>1.56</bouncycastle.version>
 		<bsh.version>2.0b4</bsh.version>
 		<c3p0.version>0.9.5.2</c3p0.version>
