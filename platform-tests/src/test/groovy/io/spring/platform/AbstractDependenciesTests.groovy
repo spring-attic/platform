@@ -1,5 +1,5 @@
 /*
- * Copyright 2014 the original author or authors.
+ * Copyright 2014-2017 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -34,7 +34,7 @@ class AbstractDependenciesTests {
 	def eachDependency(Closure closure) {
 		def xml = new XmlSlurper().parse(generateEffectivePom())
 		xml.dependencyManagement.dependencies.dependency
-			.findAll { it.type.text() != 'test-jar'}
+			.findAll { it.type.text() != 'test-jar' && it.artifactId.text() != 'spring-boot-test-support'}
 			.each { dependency ->
 				def exclusion = exclusions[dependency.artifactId.text()]
 				closure.call([dependency, exclusion])
