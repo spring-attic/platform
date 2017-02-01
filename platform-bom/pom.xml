@@ -45,7 +45,6 @@
 	</developers>
 
 	<properties>
-		<spring-data-geode.version>1.0.0.APACHE-GEODE-INCUBATING-M2</spring-data-geode.version>
 		<spring-integration.version>5.0.0.BUILD-SNAPSHOT</spring-integration.version>
 		<spring-integration-flow.version>1.0.0.RELEASE</spring-integration-flow.version>
 		<spring-integration-kafka.version>2.1.0.RELEASE</spring-integration-kafka.version>
@@ -114,7 +113,7 @@
 		<jbatch-tck.version>1.0</jbatch-tck.version>
 		<jettison.version>1.2</jettison.version>
 		<jibx.version>1.2.6</jibx.version>
-		<jline.version>2.14.2</jline.version>
+		<jline.version>2.14.3</jline.version>
 		<jopt-simple.version>5.0.3</jopt-simple.version>
 		<jsch.version>0.1.54</jsch.version>
 		<jsr250.version>1.0</jsr250.version>
@@ -130,7 +129,7 @@
 		<myfaces.version>2.2.11</myfaces.version>
 		<okhttp.version>2.7.5</okhttp.version>
 		<okhttp3.version>3.3.1</okhttp3.version>
-		<openjpa.version>2.4.1</openjpa.version>
+		<openjpa.version>2.4.2</openjpa.version>
 		<neo4j.version>2.3.2</neo4j.version>
 		<neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
 		<neo4j-spatial.version>0.12-neo4j-2.0.1</neo4j-spatial.version>
@@ -154,7 +153,7 @@
 		<splunk.version>1.3.0</splunk.version>
 		<sun-facelets.version>1.1.14</sun-facelets.version>
 		<sun-jsf.version>2.2.14</sun-jsf.version>
-		<sun-saaj.version>1.3.25</sun-saaj.version>
+		<sun-saaj.version>1.3.28</sun-saaj.version>
 		<taglibs-standard.version>1.2.5</taglibs-standard.version>
 		<testng.version>6.9.10</testng.version>
 		<threetenbp.version>1.3.3</threetenbp.version>
