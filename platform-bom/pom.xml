@@ -119,7 +119,7 @@
 		<jsch.version>0.1.54</jsch.version>
 		<jsr250.version>1.0</jsr250.version>
 		<jxl.version>2.6.12</jxl.version>
-		<kafka.version>0.10.1.0</kafka.version>
+		<kafka.version>0.10.1.1</kafka.version>
 		<kite.version>0.13.0</kite.version>
 		<kryo.version>3.0.3</kryo.version>
 		<ldapbp.version>1.0</ldapbp.version>
