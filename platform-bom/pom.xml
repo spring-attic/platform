@@ -132,7 +132,7 @@
 		<okhttp3.version>3.3.1</okhttp3.version>
 		<openhft-chronicle.version>3.4.4</openhft-chronicle.version>
 		<openhft-lang.version>6.6.16</openhft-lang.version>
-		<openjpa.version>2.4.1</openjpa.version>
+		<openjpa.version>2.4.2</openjpa.version>
 		<neo4j.version>2.3.2</neo4j.version>
 		<neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
 		<neo4j-spatial.version>0.12-neo4j-2.0.1</neo4j-spatial.version>
