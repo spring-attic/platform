@@ -148,7 +148,7 @@
 		<reactive-streams.version>1.0.0</reactive-streams.version>
 		<reactor-netty.version>0.6.0.BUILD-SNAPSHOT</reactor-netty.version>
 		<rest-assured.version>2.9.0</rest-assured.version>
-		<rometools.version>1.6.1</rometools.version>
+		<rometools.version>1.7.1</rometools.version>
 		<rxnetty.version>0.5.2-rc.4</rxnetty.version>
 		<selenium-htmlunit-driver.version>${selenium.version}</selenium-htmlunit-driver.version>
 		<smack4.version>4.1.9</smack4.version>
