@@ -112,7 +112,7 @@
 		<jeromq.version>0.3.4</jeromq.version>
 		<jettison.version>1.2</jettison.version>
 		<jibx.version>1.2.6</jibx.version>
-		<jline.version>2.14.2</jline.version>
+		<jline.version>2.14.3</jline.version>
 		<jopt-simple.version>5.0.3</jopt-simple.version>
 		<jredis.version>06052013</jredis.version>
 		<jruby.version>1.7.26</jruby.version>
@@ -131,11 +131,11 @@
 		<okhttp3.version>3.3.1</okhttp3.version>
 		<openhft-chronicle.version>3.4.4</openhft-chronicle.version>
 		<openhft-lang.version>6.6.16</openhft-lang.version>
-		<openjpa.version>2.4.1</openjpa.version>
+		<openjpa.version>2.4.2</openjpa.version>
 		<neo4j.version>2.3.2</neo4j.version>
 		<neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
 		<neo4j-spatial.version>0.12-neo4j-2.0.1</neo4j-spatial.version>
-		<netty.version>4.0.42.Final</netty.version>
+		<netty.version>4.0.44.Final</netty.version>
 		<objenesis.version>2.4</objenesis.version>
 		<ognl.version>2.6.11</ognl.version>
 		<openid4java.version>0.9.6</openid4java.version>
@@ -157,7 +157,7 @@
 		<spullara-redis.version>0.7</spullara-redis.version>
 		<sun-facelets.version>1.1.14</sun-facelets.version>
 		<sun-jsf.version>2.2.14</sun-jsf.version>
-		<sun-saaj.version>1.3.25</sun-saaj.version>
+		<sun-saaj.version>1.3.28</sun-saaj.version>
 		<taglibs-standard.version>1.2.5</taglibs-standard.version>
 		<testng.version>6.9.10</testng.version>
 		<threetenbp.version>1.3.3</threetenbp.version>
