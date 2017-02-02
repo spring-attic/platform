@@ -54,6 +54,6 @@ class GradleDependenciesTests extends AbstractDependenciesTests {
 		GradleConnector gradleConnector = GradleConnector.newConnector()
 		((DefaultGradleConnector) gradleConnector).embedded(true)
 		def gradle = gradleConnector.forProjectDirectory(testDir).connect()
-		gradle.newBuild().forTasks("resolveDependencies").run()
+		gradle.newBuild().setStandardOutput(System.out).setStandardError(System.out).forTasks("resolveDependencies").run()
 	}
 }
