@@ -213,7 +213,7 @@ platform_definition:
         - spring-test
         - spring-tx
         - spring-web
-        - spring-web-reactive
+        - spring-webflux
         - spring-webmvc
         - spring-websocket
     - name: Spring HATEOAS
