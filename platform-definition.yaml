@@ -264,7 +264,7 @@ platform_definition:
         - spring-integration-zookeeper
     - name: Spring Integration Flow
       groupId: org.springframework.integration
-      version: 1.0.0.RELEASE
+      version: 2.0.0.BUILD-SNAPSHOT
       build:
         repository: https://github.com/spring-projects/spring-integration-flow
       modules:
