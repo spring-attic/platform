@@ -48,6 +48,7 @@
 		<spring-integration-flow.version>2.0.0.BUILD-SNAPSHOT</spring-integration-flow.version>
 		<spring-integration-kafka.version>3.0.0.BUILD-SNAPSHOT</spring-integration-kafka.version>
 		<spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
+		<spring-security.version>4.2.2.BUILD-SNAPSHOT</spring-security.version>
 		<spring-web-flow.version>2.5.0.BUILD-SNAPSHOT</spring-web-flow.version>
 		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
 
