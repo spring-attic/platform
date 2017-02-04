@@ -86,6 +86,7 @@
 		<hadoop.version>2.2.0</hadoop.version>
 		<hbase.version>0.96.2-hadoop2</hbase.version>
 		<hessian.version>4.0.38</hessian.version>
+		<hikaricp-java6.version>2.3.13</hikaricp-java6.version>
 		<hive.version>0.12.0</hive.version>
 		<ibatis-sqlmap.version>2.3.4.726</ibatis-sqlmap.version>
 		<itext.version>2.1.7</itext.version>
@@ -411,6 +412,11 @@
 				<groupId>com.thoughtworks.xstream</groupId>
 				<artifactId>xstream</artifactId>
 				<version>${xstream.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.zaxxer</groupId>
+				<artifactId>HikariCP-java6</artifactId>
+				<version>${hikaricp-java6.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>commons-cli</groupId>
