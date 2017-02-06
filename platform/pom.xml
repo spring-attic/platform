@@ -316,7 +316,8 @@
 												<taskdef resource="net/sf/antcontrib/antcontrib.properties" />
 												<taskdef name="stringutil" classname="ise.antelope.tasks.StringUtilTask" />
 												<var name="version-type" value="@{version}" />
-												<propertyregex property="version-type" override="true" input="${version-type}" regexp=".*\.(.*)" replace="\1" />
+												<propertyregex property="version-type" override="true" input="${version-type}" regexp=".*-(.*)" replace="\1" />
+												<propertyregex property="version-type" override="true" input="${version-type}" regexp="(SR)\d+" replace="RELEASE" />
 												<propertyregex property="version-type" override="true" input="${version-type}" regexp="(M)\d+" replace="MILESTONE" />
 												<propertyregex property="version-type" override="true" input="${version-type}" regexp="(RC)\d+" replace="MILESTONE" />
 												<propertyregex property="version-type" override="true" input="${version-type}" regexp="BUILD-(.*)" replace="SNAPSHOT" />
@@ -326,7 +327,6 @@
 											</sequential>
 										</macrodef>
 										<version-type version="${project.version}" property="platform-repo" />
-										<version-type version="${spring-boot.version}" property="spring-boot-repo" />
 										<var name="github-tag" value="v${project.version}" />
 										<propertyregex property="github-tag" override="true" input="${github-tag}" regexp=".*SNAPSHOT" replace="master" />
 									</target>
