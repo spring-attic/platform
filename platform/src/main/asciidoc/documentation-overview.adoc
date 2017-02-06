@@ -3,7 +3,7 @@
 
 [partintro]
 --
-This section provides a brief overview of Spring IO Platform reference documentation.
+This section provides a brief overview of the Spring IO Platform reference documentation.
 --
 
 
@@ -31,4 +31,4 @@ If you're having trouble with Spring IO Platform, we'd like to help:
 * Report bugs with the Spring IO Platform at {github-issues}.
 
 NOTE: All of Spring IO Platform is open source, including this documentation. If you find problems
-with the documentation, or if you just want to improve them, please {github-code}[get involved].
+with the documentation, or if you just want to improve it, please {github-code}[get involved].

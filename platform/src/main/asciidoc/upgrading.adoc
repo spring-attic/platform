@@ -17,7 +17,7 @@ Platform.
 [[upgrading-dependency-management-removed]]
 === Dependency management that has been removed
 
-The following table lists dependency management that has been removed. If you project
+The following table lists dependency management that has been removed. If your project
 uses one of these dependencies, you should configure your own dependency management as
 part of the upgrade process.
 
