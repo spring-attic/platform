@@ -49,12 +49,13 @@ can import the Platform's pom into your application's pom:
 			</dependencies>
 		</dependencyManagement>
 
-		…
+		<!-- Dependency declarations -->
 
 ifeval::["{platform-repo}" != "release"]
 		<!-- Add Spring repositories -->
-		<!-- (you don't need this if you are using a .RELEASE version) -->
+		<!-- (you don't need this if you are using a -RELEASE or -SR version) -->
 		<repositories>
+endif::[]
 ifeval::["{platform-repo}" == "snapshot"]
 			<repository>
 				<id>spring-snapshots</id>
@@ -68,9 +69,12 @@ ifeval::["{platform-repo}" == "milestone"]
 				<url>http://repo.spring.io/libs-milestone</url>
 			</repository>
 endif::[]
+ifeval::["{platform-repo}" != "release"]
 		</repositories>
-
+endif::[]
+ifeval::["{platform-repo}" != "release"]
 		<pluginRepositories>
+endif::[]
 ifeval::["{platform-repo}" == "snapshot"]
 			<pluginRepository>
 				<id>spring-snapshots</id>
@@ -84,6 +88,7 @@ ifeval::["{platform-repo}" == "milestone"]
 				<url>http://repo.spring.io/libs-milestone</url>
 			</pluginRepository>
 endif::[]
+ifeval::["{platform-repo}" != "release"]
 		</pluginRepositories>
 endif::[]
 	</project>
@@ -112,12 +117,13 @@ parent:
 			<relativePath/>
 		</parent>
 
-		…
+		<!-- Dependency declarations -->
 
 ifeval::["{platform-repo}" != "release"]
 		<!-- Add Spring repositories -->
-		<!-- (you don't need this if you are using a .RELEASE version) -->
+		<!-- (you don't need this if you are using a -RELEASE or -SR version) -->
 		<repositories>
+endif::[]
 ifeval::["{platform-repo}" == "snapshot"]
 			<repository>
 				<id>spring-snapshots</id>
@@ -131,9 +137,12 @@ ifeval::["{platform-repo}" == "milestone"]
 				<url>http://repo.spring.io/libs-milestone</url>
 			</repository>
 endif::[]
+ifeval::["{platform-repo}" != "release"]
 		</repositories>
-
+endif::[]
+ifeval::["{platform-repo}" != "release"]
 		<pluginRepositories>
+endif::[]
 ifeval::["{platform-repo}" == "snapshot"]
 			<pluginRepository>
 				<id>spring-snapshots</id>
@@ -147,6 +156,7 @@ ifeval::["{platform-repo}" == "milestone"]
 				<url>http://repo.spring.io/libs-milestone</url>
 			</pluginRepository>
 endif::[]
+ifeval::["{platform-repo}" != "release"]
 		</pluginRepositories>
 endif::[]
 	</project>
