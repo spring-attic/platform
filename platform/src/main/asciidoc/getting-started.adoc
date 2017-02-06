@@ -22,7 +22,7 @@ well with both Maven and Gradle.
 === Using Spring IO Platform with Maven
 The Platform uses Maven's support for {maven-dependency-management}[dependency management] to
 provide dependency versions to your application's build. To consume this dependency management you
-can import the Platform's pom into your application's pom:
+can import the Platform's bom into your application's pom:
 
 [source,xml,indent=0,subs="verbatim,quotes,attributes"]
 ----
@@ -94,7 +94,7 @@ endif::[]
 	</project>
 ----
 
-Alternatively, rather than importing the Platform's pom, you may prefer to use it as your pom's
+Alternatively, rather than importing the Platform's bom, you may prefer to use it as your pom's
 parent:
 
 [source,xml,indent=0,subs="verbatim,quotes,attributes"]
@@ -181,8 +181,9 @@ section of your pom:
 ----
 
 By using the Platform as your pom's parent, you will also be able to make use of the properties
-that it declares and to override those properties to change the version of a dependency, for
-example. See <<getting-started-overriding-versions-maven>> for more information.
+that it declares and to override those properties. One reason for overriding a property is to
+change the version of a dependency. See <<getting-started-overriding-versions-maven>> for more
+information.
 
 If you want to use the Platform and Spring Boot together, you don't have to use the Platform's pom
 as the parent. Instead, you can import the Platform's pom as described above and then perform the
@@ -306,8 +307,8 @@ Or in `gradle.properties`:
 Spring IO Platform builds on top of Spring Boot which takes a somewhat opinionated view about
 logging in that it aims to prevent Commons Logging from being used by default. Instead, it
 encourages the use of Logback via its `spring-boot-starter-logging` module. Support for other
-logging frameworks, including Log4J and Log4J2, is also provided. Wherever possible, applications
-built using Spring IO Platform adopt this approach.
+logging frameworks, including Log4J2, is also provided. Wherever possible, applications built
+using Spring IO Platform should adopt this approach.
 
 If you choose not to use Spring Boot's `spring-boot-starter-logging` module but still wish to avoid
 the use of Commons Logging, using SLF4J and its `jcl-over-slf4j` module is recommended along with
