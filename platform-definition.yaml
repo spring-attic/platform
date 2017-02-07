@@ -93,6 +93,7 @@ platform_definition:
         - spring-boot-starter-mobile
         - spring-boot-starter-mustache
         - spring-boot-starter-parent
+        - spring-boot-starter-reactor-netty
         - spring-boot-starter-security
         - spring-boot-starter-social-facebook
         - spring-boot-starter-social-linkedin
@@ -103,6 +104,7 @@ platform_definition:
         - spring-boot-starter-undertow
         - spring-boot-starter-validation
         - spring-boot-starter-web
+        - spring-boot-starter-webflux
         - spring-boot-starter-websocket
         - spring-boot-starter-web-services
     - name: Spring Cloud Connectors
@@ -385,7 +387,7 @@ platform_definition:
         tagPrefix:
     - name: Spring Social
       groupId: org.springframework.social
-      version: 2.0.0.M2
+      version: 2.0.0.BUILD-SNAPSHOT
       build:
         repository: https://github.com/spring-projects/spring-social
       modules:
@@ -396,7 +398,7 @@ platform_definition:
         - spring-social-web-thymeleaf3
     - name: Spring Social Facebook
       groupId: org.springframework.social
-      version: 3.0.0.M1
+      version: 3.0.0.BUILD-SNAPSHOT
       build:
         repository: https://github.com/spring-projects/spring-social-facebook
       modules:
@@ -409,7 +411,7 @@ platform_definition:
         - spring-social-linkedin
     - name: Spring Social Twitter
       groupId: org.springframework.social
-      version: 2.0.0.M1
+      version: 2.0.0.BUILD-SNAPSHOT
       build:
         repository: https://github.com/spring-projects/spring-social-twitter
       modules:
