@@ -125,7 +125,6 @@
 		<kryo.version>3.0.3</kryo.version>
 		<ldapbp.version>1.0</ldapbp.version>
 		<ldapsdk.version>4.1</ldapsdk.version>
-		<lettuce.version>3.5.0.Final</lettuce.version>
 		<log4j.version>1.2.17</log4j.version>
 		<myfaces.version>2.2.11</myfaces.version>
 		<nimbus-jose-jwt.version>4.34.1</nimbus-jose-jwt.version>
@@ -317,11 +316,6 @@
 				<groupId>com.jcraft</groupId>
 				<artifactId>jsch</artifactId>
 				<version>${jsch.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>biz.paluch.redis</groupId>
-				<artifactId>lettuce</artifactId>
-				<version>${lettuce.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.lowagie</groupId>
