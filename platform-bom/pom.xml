@@ -16,10 +16,10 @@
 	<packaging>pom</packaging>
 	<name>Spring IO Platform bill of materials</name>
 	<description>Spring IO Platform bill of materials</description>
-	<url>http://platform.spring.io/platform/</url>
+	<url>https://platform.spring.io/platform/</url>
 	<organization>
 		<name>Pivotal Software, Inc.</name>
-		<url>http://www.spring.io</url>
+		<url>https://spring.io</url>
 	</organization>
 	<licenses>
 		<license>
@@ -37,7 +37,7 @@
 			<name>Andy Wilkinson</name>
 			<email>awilkinson at pivotal.io</email>
 			<organization>Pivotal Software, Inc.</organization>
-			<organizationUrl>http://www.spring.io</organizationUrl>
+			<organizationUrl>https://spring.io</organizationUrl>
 			<roles>
 				<role>Project lead</role>
 			</roles>
