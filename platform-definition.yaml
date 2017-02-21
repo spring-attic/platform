@@ -62,7 +62,7 @@ platform_definition:
           - jdk8
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 1.5.1.RELEASE
+      version: 1.5.2.BUILD-SNAPSHOT
       modules:
         - spring-boot
         - spring-boot-actuator
@@ -396,7 +396,7 @@ platform_definition:
        - spring-security-jwt
     - name: Spring Security OAuth
       groupId: org.springframework.security.oauth
-      version: 2.0.12.RELEASE
+      version: 2.0.13.BUILD-SNAPSHOT
       modules:
         - spring-security-oauth
         - spring-security-oauth2
@@ -550,6 +550,7 @@ platform_definition:
       - 'com.jayway.jsonpath:json-path-assert'
       - 'com.microsoft.sqlserver:mssql-jdbc'
       - 'com.zaxxer:HikariCP'
+      - 'com.zaxxer:HikariCP-java7'
       - 'io.dropwizard.metrics:metrics-ganglia'
       - 'io.dropwizard.metrics:metrics-graphite'
       - 'io.dropwizard.metrics:metrics-servlets'

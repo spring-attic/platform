@@ -40,7 +40,7 @@
 	</developers>
 
 	<properties>
-		<spring-boot.version>1.5.1.RELEASE</spring-boot.version>
+		<spring-boot.version>1.5.2.BUILD-SNAPSHOT</spring-boot.version>
 	</properties>
 
 	<dependencies>
