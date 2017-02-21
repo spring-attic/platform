@@ -61,7 +61,6 @@
 		<boon.version>0.34</boon.version>
 		<bouncycastle.version>1.56</bouncycastle.version>
 		<bsh.version>2.0b4</bsh.version>
-		<c3p0.version>0.9.5.2</c3p0.version>
 		<cas-client.version>3.4.1</cas-client.version>
 		<castor.version>1.4.1</castor.version>
 		<commonj.version>1.1.1</commonj.version>
@@ -121,7 +120,7 @@
 		<junit-jupiter.version>5.0.0-M2</junit-jupiter.version>
 		<kafka.version>0.10.1.1</kafka.version>
 		<kite.version>0.13.0</kite.version>
-		<kotlin.version>1.0.5-2</kotlin.version>
+		<kotlin.version>1.1.0-rc-91</kotlin.version>
 		<kryo.version>3.0.3</kryo.version>
 		<ldapbp.version>1.0</ldapbp.version>
 		<ldapsdk.version>4.1</ldapsdk.version>
@@ -321,11 +320,6 @@
 				<groupId>com.lowagie</groupId>
 				<artifactId>itext</artifactId>
 				<version>${itext.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.mchange</groupId>
-				<artifactId>c3p0</artifactId>
-				<version>${c3p0.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.nimbusds</groupId>
@@ -934,7 +928,7 @@
 			</dependency>
 			<dependency>
 				<groupId>org.jetbrains.kotlin</groupId>
-				<artifactId>kotlin-stdlib</artifactId>
+				<artifactId>kotlin-stdlib-jre8</artifactId>
 				<version>${kotlin.version}</version>
 			</dependency>
 			<dependency>
