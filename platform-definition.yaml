@@ -215,7 +215,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.3.6.RELEASE
+      version: 4.3.7.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
@@ -680,6 +680,20 @@ platform_definition:
       - 'org.springframework.boot:spring-boot-test-support'
       - 'org.xerial:sqlite-jdbc'
       - 'xml-apis:xml-apis'
+  downgraded_dependencies:
+    'com.fasterxml.jackson.core:jackson-annotations': '2.8.6'
+    'org.aspectj:aspectjweaver': '1.8.10'
+    'org.aspectj:aspectjrt': '1.8.10'
+    'org.webjars:hal-browser': '3325375'
+    'org.codehaus.groovy:groovy-all': '2.4.8'
+    'org.beanshell:bsh': '2.0b5'
+    'org.hsqldb:hsqldb': '2.3.4'
+    'io.netty:netty-all': '4.1.7.Final'
+    'javax.jdo:jdo-api': '3.1'
+    'org.hibernate:hibernate-core': '5.2.8.Final'
+    'net.sourceforge.htmlunit:htmlunit': '2.23'
+    'org.seleniumhq.selenium:htmlunit-driver': '2.23.2'
+    'com.rometools:rome': '1.7.1'
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2

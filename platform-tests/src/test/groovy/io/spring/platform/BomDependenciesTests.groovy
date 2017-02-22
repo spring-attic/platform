@@ -16,12 +16,13 @@
 
 package io.spring.platform
 
-import static org.junit.Assert.fail
 import io.spring.platform.model.ArtifactCoordinates
 import io.spring.platform.model.Module
-
+import org.eclipse.aether.util.version.GenericVersionScheme
+import org.eclipse.aether.version.Version
 import org.junit.Test
 
+import static org.junit.Assert.fail
 /**
  * Tests to verify that the bom contains the correct dependencies.
  *
@@ -34,6 +35,8 @@ class BomDependenciesTests extends AbstractProjectAnalysisTests {
 
 		def ignoredDependencies = yaml['platform_definition']['missing_dependencies']['ignored_dependencies']
 
+		def downgradedDependencies = yaml['platform_definition']['downgraded_dependencies']
+
 		def ignoredModulesMatchers = yaml['platform_definition']['missing_dependencies']['ignored_modules'].collect {
 			new ArtifactCoordinatesMatcher(it)
 		}
@@ -42,20 +45,33 @@ class BomDependenciesTests extends AbstractProjectAnalysisTests {
 			new ArtifactCoordinatesMatcher(it)
 		}
 
+		def versionScheme = new GenericVersionScheme()
+
 		def analysisResult = new AnalysisResult()
 
 		analyzeProjects { project ->
 			project.modules.each { module ->
 				if (!isIgnored(module, ignoredModulesMatchers)) {
 					def identifier = dependencyMappings.getMappedIdentifier(module)
-					if (!platformArtifacts.contains(identifier)) {
+					if (!platformArtifacts.containsKey(identifier)) {
 						analysisResult.registerMissingArtifact(identifier, module.version, null)
 					}
 					module.dependencies.each { dependency ->
 						identifier = dependencyMappings.getMappedIdentifier(dependency)
-						if (!platformArtifacts.contains(identifier)) {
+						if (!platformArtifacts.containsKey(identifier)) {
 							if (!isIgnored(module, dependency, ignoredDependencies)) {
 								analysisResult.registerMissingArtifact(identifier, dependency.version, module)
+							}
+						}
+						else {
+							def dependencyVersion = versionScheme.parseVersion(dependency.version)
+							def platformVersion = versionScheme.parseVersion(platformArtifacts[identifier])
+
+							if (dependencyVersion.compareTo(platformVersion) > 0) {
+								String latestAllowedVersion = downgradedDependencies[identifier]
+								if (!latestAllowedVersion || versionScheme.parseVersion(latestAllowedVersion).compareTo(dependencyVersion) < 0) {
+									analysisResult.registerDowngradedDependency(identifier, dependencyVersion, platformVersion, module)
+								}
 							}
 						}
 						if (isIgnored(dependency, unusedDependenciesMatchers)) {
@@ -66,7 +82,7 @@ class BomDependenciesTests extends AbstractProjectAnalysisTests {
 			}
 		}
 
-		if (analysisResult.missingArtifacts || analysisResult.usedArtifacts) {
+		if (analysisResult.missingArtifacts || analysisResult.usedArtifacts || analysisResult.downgradedDependencies) {
 			def writer = new StringWriter()
 			if (analysisResult.missingArtifacts) {
 				writer.append("Missing dependencies:\n")
@@ -75,6 +91,10 @@ class BomDependenciesTests extends AbstractProjectAnalysisTests {
 			if (analysisResult.usedArtifacts) {
 				writer.append("Used dependencies:\n")
 				analysisResult.writeUsed(new PrintWriter(writer));
+			}
+			if (analysisResult.downgradedDependencies) {
+				writer.append("Downgraded dependencies:\n")
+				analysisResult.writeDowngraded(new PrintWriter(writer))
 			}
 			fail(writer.toString())
 		}
@@ -104,6 +124,8 @@ class BomDependenciesTests extends AbstractProjectAnalysisTests {
 
 		Map usedArtifacts = [:]
 
+		Map downgradedDependencies = [:]
+
 		void registerMissingArtifact(String identifier, String version, Module user) {
 			List modules = this.missingArtifacts.get(identifier, [])
 			if (user != null) {
@@ -117,10 +139,16 @@ class BomDependenciesTests extends AbstractProjectAnalysisTests {
 			users << user
 		}
 
+		void registerDowngradedDependency(String identifier, Version dependencyVersion, Version platformVersion, Module user) {
+			List users = this.downgradedDependencies.get(identifier, [])
+			users << "$user wants $dependencyVersion but Platform provides $platformVersion"
+		}
+
 		private void registerVersionOfMissingArtifact(String identifier, String version) {
 			Set versions = this.artifactVersions.get(identifier, [] as Set)
 			versions.add(version)
 		}
+
 
 		void writeMissing(PrintWriter writer) {
 			this.missingArtifacts.each { key, value ->
@@ -132,6 +160,13 @@ class BomDependenciesTests extends AbstractProjectAnalysisTests {
 		void writeUsed(PrintWriter writer) {
 			this.usedArtifacts.each { id, users ->
 				writer.println "    $id: $users"
+			}
+		}
+
+		void writeDowngraded(PrintWriter writer) {
+			this.downgradedDependencies.each { id, users ->
+				writer.println "$id:"
+				users.each { writer.println "    $it" }
 			}
 		}
 	}
