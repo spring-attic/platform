@@ -31,7 +31,7 @@ class AbstractProjectAnalysisTests {
 
 	def dependencyMappings = new DependencyMappings(mappings: this.yaml['platform_definition']['dependency_mappings'])
 
-	def platformArtifacts = createPlatformArtifacts()
+	Map<String, String> platformArtifacts = createPlatformArtifacts()
 
 	void analyzeProjects(Closure analyzer) {
 
@@ -71,11 +71,13 @@ class AbstractProjectAnalysisTests {
 		}
 	}
 
-	private List<String> createPlatformArtifacts() {
+	private Map<String, String> createPlatformArtifacts() {
+		def platformArtifacts = [:]
 		new File('target/dependency/platform-bom.properties').withReader {
 			def properties = new Properties()
 			properties.load(it)
-			properties.collect { it.key }
+			properties.each { key, value -> platformArtifacts[key] = value }
 		}
+		return platformArtifacts
 	}
 }

@@ -618,6 +618,26 @@ platform_definition:
       - 'org.springframework:springloaded'
       - 'org.xerial:sqlite-jdbc'
       - 'xml-apis:xml-apis'
+  downgraded_dependencies:
+    'com.google.guava:guava': '20.0'
+    'org.codehaus.groovy:groovy-all': '2.4.8'
+    'org.beanshell:bsh': '2.0b5'
+    'org.apache.derby:derby': '10.13.1.1'
+    'org.apache.derby:derbyclient': '10.13.1.1'
+    'org.hsqldb:hsqldb': '2.3.4'
+    'io.netty:netty-all': '4.1.7.Final'
+    'javax.jdo:jdo-api': '3.1'
+    'org.hibernate:hibernate-core': '5.2.8.Final'
+    'net.sourceforge.htmlunit:htmlunit': '2.23'
+    'org.seleniumhq.selenium:htmlunit-driver': '2.23.2'
+    'org.skyscreamer:jsonassert': '1.4.0'
+    'com.google.code.gson:gson': '2.8.0'
+    'com.rometools:rome': '1.7.1'
+    'com.squareup.okhttp3:okhttp': '3.6.0'
+    'org.eclipse.jetty:jetty-client': '9.4.1.v20170120'
+    'org.eclipse.jetty.websocket:websocket-client': '9.4.1.v20170120'
+    'org.eclipse.jetty.websocket:websocket-server': '9.4.1.v20170120'
+    'org.springframework.ldap:spring-ldap-core': '2.2.0.RELEASE'
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2
