@@ -673,6 +673,12 @@ platform_definition:
       - 'org.springframework.boot:spring-boot-test-support'
       - 'org.xerial:sqlite-jdbc'
       - 'xml-apis:xml-apis'
+  downgraded_dependencies:
+    'com.fasterxml.jackson.core:jackson-annotations': '2.8.6'
+    'org.aspectj:aspectjweaver': '1.9.0.BETA-5'
+    'org.codehaus.groovy:groovy-all': '2.4.8'
+    'org.hsqldb:hsqldb': '2.3.4'
+    'org.springframework.data:spring-data-commons': '2.0.0.DATACMNS-867-SNAPSHOT'
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2

@@ -14,12 +14,11 @@
  * limitations under the License.
  */
 
-package io.spring.platform;
-
-import static org.junit.Assert.assertTrue
-import static org.junit.Assert.fail
+package io.spring.platform
 
 import org.junit.Test
+
+import static org.junit.Assert.fail
 
 class UnusedDependenciesTests extends AbstractProjectAnalysisTests {
 
@@ -27,7 +26,7 @@ class UnusedDependenciesTests extends AbstractProjectAnalysisTests {
 
 	@Test
 	void thereAreNoUnusedDependencies() {
-		def unusedArtifacts = new HashSet(platformArtifacts);
+		def unusedArtifacts = new HashSet(platformArtifacts.keySet());
 
 		this.analyzeProjects { project ->
 			project.modules.each { module ->
