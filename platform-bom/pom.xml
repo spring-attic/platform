@@ -103,7 +103,7 @@
 		<javax-interceptor.version>1.2</javax-interceptor.version>
 		<javax-jax-rs.version>2.0.1</javax-jax-rs.version>
 		<javax-jdo.version>3.0.1</javax-jdo.version>
-		<javax-jsp.version>2.3.1</javax-jsp.version>
+		<javax-jsp.version>2.3.2-b02</javax-jsp.version>
 		<javax-jstl.version>1.2.1</javax-jstl.version>
 		<javax-money.version>1.0.1</javax-money.version>
 		<javax-portlet.version>2.0</javax-portlet.version>
