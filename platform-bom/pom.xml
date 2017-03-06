@@ -125,7 +125,7 @@
 		<ldapsdk.version>4.1</ldapsdk.version>
 		<lettuce.version>4.2.2.Final</lettuce.version>
 		<log4j.version>1.2.17</log4j.version>
-		<myfaces.version>2.2.11</myfaces.version>
+		<myfaces.version>2.2.12</myfaces.version>
 		<okhttp.version>2.7.5</okhttp.version>
 		<okhttp3.version>3.6.0</okhttp3.version>
 		<openhft-chronicle.version>3.4.4</openhft-chronicle.version>
