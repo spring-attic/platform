@@ -16,10 +16,10 @@ index 15a83ec4..81439d09 100644
      ext.file = "javacc-5.0.tar.gz"
      ext.dest = file("$buildDir/javacc/$file")
 -    ext.url = "https://java.net/downloads/javacc/$file"
-+    ext.url = "http://javacc.org/downloads/$file"
- 
++    ext.url = "https://javacc.org/downloads/$file"
+
      outputs.file dest
- 
--- 
+
+--
 2.11.0
 
