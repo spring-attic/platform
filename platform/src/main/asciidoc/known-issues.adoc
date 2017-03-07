@@ -1,0 +1,20 @@
+[[known-issues]]
+= Known issues
+
+[partintro]
+--
+This section describes any known issues with the Platform
+--
+
+
+
+[[known-issues-guava]]
+== Guava
+
+The version of Guava provided by the Platform aligns with the latest version that's
+supported by the Spring projects in the Platform. Due to the wide range of Guava
+versions, each with backwards incompatible API changes, that are in use throughout the
+Java ecosystem this version may not be compatible with all third-party libraries. If
+you encounter an incompatibility, you can <<getting-started-overriding-versions,
+override the version>> to meet your application's needs using the `guava.version`
+property.
