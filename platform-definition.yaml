@@ -341,7 +341,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 4.2.2.BUILD-SNAPSHOT
+      version: 4.2.2.RELEASE
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
@@ -368,7 +368,7 @@ platform_definition:
        - spring-security-jwt
     - name: Spring Security OAuth
       groupId: org.springframework.security.oauth
-      version: 2.0.13.BUILD-SNAPSHOT
+      version: 2.1.0.RELEASE
       modules:
         - spring-security-oauth
         - spring-security-oauth2
