@@ -2,7 +2,7 @@
 	<repositories>
 		<!-- Required for GemFire and Boot snapshots -->
 		<repository>
-			<id>spring-snapshots</id>
+			<id>platform-maven-test-spring-libs-snapshot</id>
 			<name>Spring Snapshots repository</name>
 			<url>http://repo.spring.io/libs-snapshot</url>
 			<snapshots>
@@ -11,7 +11,7 @@
 		</repository>
 		<!-- Required for various JasperReports-related dependencies -->
 		<repository>
-			<id>jasper-reports</id>
+			<id>platform-maven-test-jasper-reports</id>
 			<name>Jasper Reports</name>
 			<url>http://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts</url>
 		</repository>
