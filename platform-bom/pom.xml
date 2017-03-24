@@ -87,7 +87,6 @@
 		<hive.version>0.12.0</hive.version>
 		<ibatis-sqlmap.version>2.3.4.726</ibatis-sqlmap.version>
 		<itext.version>2.1.7</itext.version>
-		<jackson.version>2.9.0.pr1</jackson.version>
 		<jackson1.version>1.9.13</jackson1.version>
 		<jamon.version>2.81</jamon.version>
 		<javaslang.version>2.0.5</javaslang.version>
