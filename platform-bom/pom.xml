@@ -141,7 +141,7 @@
 		<protobuf-java-format.version>1.4</protobuf-java-format.version>
 		<quartz.version>2.2.3</quartz.version>
 		<rabbit-amqp-client.version>4.1.0</rabbit-amqp-client.version>
-		<rabbit-http-client.version>1.1.1.RELEASE</rabbit-http-client.version>
+		<rabbit-http-client.version>1.2.0.RELEASE</rabbit-http-client.version>
 		<reactive-streams.version>1.0.0</reactive-streams.version>
 		<rest-assured.version>2.9.0</rest-assured.version>
 		<rometools.version>1.7.1</rometools.version>
