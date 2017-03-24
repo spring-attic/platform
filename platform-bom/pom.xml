@@ -118,7 +118,7 @@
 		<junit-jupiter.version>5.0.0-M3</junit-jupiter.version>
 		<kafka.version>0.10.1.1</kafka.version>
 		<kite.version>0.13.0</kite.version>
-		<kotlin.version>1.1.0</kotlin.version>
+		<kotlin.version>1.1.1</kotlin.version>
 		<kryo.version>3.0.3</kryo.version>
 		<ldapbp.version>1.0</ldapbp.version>
 		<ldapsdk.version>4.1</ldapsdk.version>
