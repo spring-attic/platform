@@ -246,6 +246,7 @@ platform_definition:
       groupId: org.springframework.integration
       version: 4.3.9.BUILD-SNAPSHOT
       build:
+        checkout: 4.3.x
         compileWith: jdk8
         runTestsWith:
           - jdk8
