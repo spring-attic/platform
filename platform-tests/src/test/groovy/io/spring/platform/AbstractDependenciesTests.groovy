@@ -34,7 +34,7 @@ class AbstractDependenciesTests {
 	def eachDependency(Closure closure) {
 		def xml = new XmlSlurper().parse(generateEffectivePom())
 		xml.dependencyManagement.dependencies.dependency
-			.findAll { it.type.text() != 'test-jar' && it.artifactId.text() != 'spring-boot-test-support'}
+			.findAll { it.type.text() != 'test-jar' }
 			.each { dependency ->
 				def exclusion = exclusions[dependency.artifactId.text()]
 				closure.call([dependency, exclusion])

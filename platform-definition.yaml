@@ -329,11 +329,14 @@ platform_definition:
         - spring-plugin-metadata
     - name: Spring REST Docs
       groupId: org.springframework.restdocs
-      version: 1.2.0.BUILD-SNAPSHOT
+      version: 1.2.0.RC1
       modules:
+        - spring-restdocs-asciidoctor
         - spring-restdocs-core
         - spring-restdocs-mockmvc
         - spring-restdocs-restassured
+      build:
+        repository: https://github.com/spring-projects/spring-restdocs
     - name: Spring Retry
       groupId: org.springframework.retry
       version: 1.2.0.RELEASE
@@ -341,7 +344,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 4.2.2.RELEASE
+      version: 5.0.0.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
@@ -491,7 +494,6 @@ platform_definition:
       - 'com.fasterxml.jackson.datatype:jackson-datatype-hppc'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-jaxrs'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-jdk7'
-      - 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-json-org'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-jsr353'
       - 'com.fasterxml.jackson.datatype:jackson-datatype-pcollections'
@@ -520,6 +522,7 @@ platform_definition:
       - 'com.hazelcast:hazelcast-client'
       - 'com.hazelcast:hazelcast-hibernate52'
       - 'com.jayway.jsonpath:json-path-assert'
+      - 'com.jayway.restassured:rest-assured'
       - 'com.microsoft.sqlserver:mssql-jdbc'
       - 'com.nimbusds:oauth2-oidc-sdk'
       - 'com.nimbusds:nimbus-jose-jwt'
@@ -660,6 +663,7 @@ platform_definition:
       - 'org.mongodb:mongodb-driver-core'
       - 'org.neo4j:neo4j-ogm-api'
       - 'org.neo4j:neo4j-ogm-compiler'
+      - 'org.neo4j:neo4j-ogm-http-driver'
       - 'org.postgresql:postgresql'
       - 'org.seleniumhq.selenium:selenium-api'
       - 'org.seleniumhq.selenium:selenium-chrome-driver'
@@ -668,6 +672,7 @@ platform_definition:
       - 'org.seleniumhq.selenium:selenium-remote-driver'
       - 'org.seleniumhq.selenium:selenium-safari-driver'
       - 'org.seleniumhq.selenium:selenium-support'
+      - 'org.springframework.restdocs:spring-restdocs-asciidoctor'
       - 'org.slf4j:slf4j-jdk14'
       - 'org.slf4j:slf4j-simple'
       - 'org.spockframework:spock-core'
