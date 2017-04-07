@@ -546,6 +546,7 @@ platform_definition:
       - 'io.projectreactor.addons:reactor-logback'
       - 'io.projectreactor.addons:reactor-adapter'
       - 'io.projectreactor.ipc:reactor-ipc'
+      - 'io.rest-assured:rest-assured'
       - 'javax.servlet:jstl'
       - 'mysql:mysql-connector-java'
       - 'net.bytebuddy:byte-buddy'
