@@ -167,7 +167,7 @@
 		<xmlschema.version>2.2.1</xmlschema.version>
 		<xmlunit.version>1.6</xmlunit.version>
 		<xmlunit2.version>2.3.0</xmlunit2.version>
-		<xnio.version>3.4.3.Final</xnio.version>
+		<xnio.version>3.4.5.Final</xnio.version>
 		<xom.version>1.2.5</xom.version>
 		<xstream.version>1.4.9</xstream.version>
 		<xws-security.version>3.0</xws-security.version>
