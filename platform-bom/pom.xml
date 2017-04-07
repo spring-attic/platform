@@ -143,6 +143,7 @@
 		<rabbit-http-client.version>1.2.0.RELEASE</rabbit-http-client.version>
 		<reactive-streams.version>1.0.0</reactive-streams.version>
 		<rest-assured.version>2.9.0</rest-assured.version>
+		<rest-assured3.version>3.0.2</rest-assured3.version>
 		<rometools.version>1.7.1</rometools.version>
 		<rxnetty.version>0.5.2</rxnetty.version>
 		<selenium-htmlunit-driver.version>${selenium.version}</selenium-htmlunit-driver.version>
@@ -476,6 +477,11 @@
 				<groupId>io.reactivex</groupId>
 				<artifactId>rxnetty-http</artifactId>
 				<version>${rxnetty.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.rest-assured</groupId>
+				<artifactId>rest-assured</artifactId>
+				<version>${rest-assured3.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.activation</groupId>
