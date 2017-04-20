@@ -2,7 +2,7 @@ platform_definition:
   projects:
     - name: Aspect J
       groupId: org.aspectj
-      version: 1.8.9
+      version: 1.8.10
       modules:
         - aspectjweaver
         - aspectjtools
@@ -215,7 +215,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.3.8.BUILD-SNAPSHOT
+      version: 4.3.8.RELEASE
       modules:
         - spring-aop
         - spring-aspects
@@ -244,7 +244,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.3.9.BUILD-SNAPSHOT
+      version: 4.3.9.RELEASE
       build:
         checkout: 4.3.x
         compileWith: jdk8
@@ -692,7 +692,7 @@ platform_definition:
     'org.hsqldb:hsqldb': '2.3.4'
     'io.netty:netty-all': '4.1.8.Final'
     'javax.jdo:jdo-api': '3.1'
-    'org.hibernate:hibernate-core': '5.2.9.Final'
+    'org.hibernate:hibernate-core': '5.2.10.Final'
     'net.sourceforge.htmlunit:htmlunit': '2.23'
     'org.seleniumhq.selenium:htmlunit-driver': '2.23.2'
     'com.rometools:rome': '1.7.1'
