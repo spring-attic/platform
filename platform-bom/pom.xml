@@ -140,7 +140,7 @@
 		<objenesis.version>2.4</objenesis.version>
 		<ognl.version>2.6.11</ognl.version>
 		<openid4java.version>0.9.6</openid4java.version>
-		<paho-mqttv3-client.version>1.1.0</paho-mqttv3-client.version>
+		<paho-mqttv3-client.version>1.1.1</paho-mqttv3-client.version>
 		<pig.version>0.12.1</pig.version>
 		<poi.version>3.14</poi.version>
 		<protobuf.version>2.6.1</protobuf.version>
