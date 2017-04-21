@@ -101,6 +101,7 @@
 		<javax-jaxb.version>2.2.11</javax-jaxb.version>
 		<javax-jax-rs.version>2.0.1</javax-jax-rs.version>
 		<javax-jax-ws.version>2.2.11</javax-jax-ws.version>
+		<javax-json-bind.version>1.0.0-M1</javax-json-bind.version>
 		<javax-jsp.version>2.3.2-b02</javax-jsp.version>
 		<javax-jstl.version>1.2.1</javax-jstl.version>
 		<javax-money.version>1.0.1</javax-money.version>
@@ -519,6 +520,11 @@
 				<groupId>javax.interceptor</groupId>
 				<artifactId>javax.interceptor-api</artifactId>
 				<version>${javax-interceptor.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>javax.json.bind</groupId>
+				<artifactId>javax.json.bind-api</artifactId>
+				<version>${javax-json-bind.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.money</groupId>
