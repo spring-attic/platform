@@ -143,7 +143,7 @@
 		<reactive-streams.version>1.0.0</reactive-streams.version>
 		<rest-assured.version>2.9.0</rest-assured.version>
 		<rest-assured3.version>3.0.2</rest-assured3.version>
-		<rometools.version>1.7.1</rometools.version>
+		<rometools.version>1.7.2</rometools.version>
 		<selenium-htmlunit-driver.version>${selenium.version}</selenium-htmlunit-driver.version>
 		<smack4.version>4.1.9</smack4.version>
 		<splunk.version>1.3.0</splunk.version>
