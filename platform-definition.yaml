@@ -455,6 +455,8 @@ platform_definition:
     'rome:rome': 'net.java.dev.rome:rome'
   missing_dependencies:
     ignored_dependencies:
+      'org.springframework.cloud:spring-cloud-spring-service-connector':
+        - 'biz.paluch.redis:lettuce'
       'org.springframework.data:spring-data-commons':
          - 'org.scala-lang:scala-library'
       'org.springframework.data:spring-data-gemfire':
