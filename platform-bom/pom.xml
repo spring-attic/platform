@@ -88,7 +88,7 @@
 		<jackson1.version>1.9.13</jackson1.version>
 		<jasperreports.version>6.4.0</jasperreports.version>
 		<jamon.version>2.81</jamon.version>
-		<javaslang.version>2.0.5</javaslang.version>
+		<javaslang.version>2.0.6</javaslang.version>
 		<javax-activation.version>1.1.1</javax-activation.version>
 		<javax-annotation.version>1.0</javax-annotation.version>
 		<javax-batch.version>1.0.1</javax-batch.version>
