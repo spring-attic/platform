@@ -21,11 +21,15 @@
 			</snapshots>
 		</repository>
 		<repository>
-			<id>platform-maven-test-oss-sonatype-snapsho</id>
+			<id>platform-maven-test-oss-sonatype-snapshot</id>
 			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 			<snapshots>
 				<enabled>true</enabled>
 			</snapshots>
+		</repository>
+		<repository>
+			<id>platform-maven-test-kotlin-eap</id>
+			<url>https://dl.bintray.com/kotlin/kotlin-eap-1.1</url>
 		</repository>
 	</repositories>
 

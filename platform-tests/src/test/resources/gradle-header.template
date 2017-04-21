@@ -21,6 +21,7 @@ repositories {
 	maven { url 'http://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts' }
 	maven { url 'http://m2.neo4j.org/content/repositories/snapshots' }
 	maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+	maven { url 'https://dl.bintray.com/kotlin/kotlin-eap-1.1' }
 	mavenCentral()
 }
 
