@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 3.0.6.RELEASE
+      version: 3.1.0.BUILD-SNAPSHOT
       modules:
         - reactor-core
       build:
@@ -110,7 +110,7 @@ platform_definition:
         - spring-boot-starter-web-services
     - name: Spring Cloud Connectors
       groupId: org.springframework.cloud
-      version: 1.2.3.RELEASE
+      version: 2.0.0.BUILD-SNAPSHOT
       modules:
         - spring-cloud-core
         - spring-cloud-cloudfoundry-connector
