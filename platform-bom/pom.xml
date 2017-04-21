@@ -76,7 +76,7 @@
 		<evo-inflector.version>1.2.2</evo-inflector.version>
 		<findbugs-jsr305.version>3.0.2</findbugs-jsr305.version>
 		<findbugs-annotations.version>2.0.3</findbugs-annotations.version>
-		<gemfire.version>9.0.2</gemfire.version>
+		<gemfire.version>9.0.3</gemfire.version>
 		<guava.version>20.0</guava.version>
 		<guice.version>3.0</guice.version>
 		<hadoop.version>2.2.0</hadoop.version>
