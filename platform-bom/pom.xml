@@ -74,7 +74,7 @@
 		<eclipselink.version>2.6.4</eclipselink.version>
 		<eclipselink-javax-persistence.version>2.1.1</eclipselink-javax-persistence.version>
 		<evo-inflector.version>1.2.2</evo-inflector.version>
-		<findbugs-jsr305.version>3.0.1</findbugs-jsr305.version>
+		<findbugs-jsr305.version>3.0.2</findbugs-jsr305.version>
 		<findbugs-annotations.version>2.0.3</findbugs-annotations.version>
 		<gs-collections.version>5.1.0</gs-collections.version>
 		<guava.version>20.0</guava.version>
@@ -134,11 +134,11 @@
 		<neo4j.version>2.3.2</neo4j.version>
 		<neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
 		<neo4j-spatial.version>0.12-neo4j-2.0.1</neo4j-spatial.version>
-		<netty.version>4.0.44.Final</netty.version>
+		<netty.version>4.0.45.Final</netty.version>
 		<objenesis.version>2.5.1</objenesis.version>
 		<ognl.version>2.6.11</ognl.version>
 		<openid4java.version>0.9.6</openid4java.version>
-		<paho-mqttv3-client.version>1.1.0</paho-mqttv3-client.version>
+		<paho-mqttv3-client.version>1.1.1</paho-mqttv3-client.version>
 		<pig.version>0.12.1</pig.version>
 		<poi.version>3.15</poi.version>
 		<protobuf.version>2.6.1</protobuf.version>
@@ -170,7 +170,7 @@
 		<websphere-uow.version>6.0.2.17</websphere-uow.version>
 		<woodstox.version>4.4.1</woodstox.version>
 		<wss4j.version>1.6.19</wss4j.version>
-		<wss4j2.version>2.1.8</wss4j2.version>
+		<wss4j2.version>2.1.9</wss4j2.version>
 		<xmlbeans.version>2.6.0</xmlbeans.version>
 		<xmlprojector.version>1.4.10</xmlprojector.version>
 		<xmlschema.version>2.2.1</xmlschema.version>
