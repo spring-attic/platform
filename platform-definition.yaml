@@ -329,7 +329,7 @@ platform_definition:
         - spring-plugin-metadata
     - name: Spring REST Docs
       groupId: org.springframework.restdocs
-      version: 1.2.0.RC1
+      version: 1.2.0.RELEASE
       modules:
         - spring-restdocs-asciidoctor
         - spring-restdocs-core
@@ -477,6 +477,7 @@ platform_definition:
       - 'org.springframework.boot:spring-boot-maven-plugin' # The plugin doesn't expose it dependencies to applications
       - 'org.springframework.boot:spring-boot-configuration-processor' # Used by the Boot build to generate metadata about @ConfigurationProperties
       - 'org.springframework.boot:spring-boot-configuration-metadata' # Used by the Boot build to generate metadata about @ConfigurationProperties
+      - 'org.springframework.restdocs:spring-restdocs-asciidoctor' # Used as an Asciidoctor extension, not by application code or tests
   unused_dependencies:
     ignored:
       # For user convenience, Boot and the Platform provide extra dependency management for modules
