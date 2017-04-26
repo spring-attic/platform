@@ -27,10 +27,6 @@
 				<enabled>true</enabled>
 			</snapshots>
 		</repository>
-		<repository>
-			<id>platform-maven-test-kotlin-eap</id>
-			<url>https://dl.bintray.com/kotlin/kotlin-eap-1.1</url>
-		</repository>
 	</repositories>
 
 </project>
