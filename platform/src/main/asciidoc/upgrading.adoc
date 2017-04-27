@@ -39,6 +39,9 @@ part of the upgrade process.
 | `com.goldmansachs:gs-collections`
 | No longer a direct dependency of any of the Platform's projects
 
+| `com.google.code.findbugs:annotations`
+| No longer a direct dependency of any of the Platform's projects
+
 | `com.rometools:rome-fetcher`
 | No longer a direct dependency of any of the Platform's projects
 

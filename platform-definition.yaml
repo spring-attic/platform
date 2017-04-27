@@ -67,6 +67,7 @@ platform_definition:
         - spring-boot-starter-cache
         - spring-boot-starter-cloud-connectors
         - spring-boot-starter-data-cassandra
+        - spring-boot-starter-data-cassandra-reactive
         - spring-boot-starter-data-couchbase
         - spring-boot-starter-data-elasticsearch
         - spring-boot-starter-data-jpa
@@ -455,8 +456,6 @@ platform_definition:
     'rome:rome': 'net.java.dev.rome:rome'
   missing_dependencies:
     ignored_dependencies:
-      'org.springframework.cloud:spring-cloud-spring-service-connector':
-        - 'biz.paluch.redis:lettuce'
       'org.springframework.data:spring-data-commons':
          - 'org.scala-lang:scala-library'
       'org.springframework.data:spring-data-gemfire':
@@ -526,7 +525,6 @@ platform_definition:
       - 'com.hazelcast:hazelcast-client'
       - 'com.hazelcast:hazelcast-hibernate52'
       - 'com.jayway.jsonpath:json-path-assert'
-      - 'com.jayway.restassured:rest-assured'
       - 'com.microsoft.sqlserver:mssql-jdbc'
       - 'com.nimbusds:oauth2-oidc-sdk'
       - 'com.nimbusds:nimbus-jose-jwt'
@@ -542,15 +540,16 @@ platform_definition:
       - 'io.netty:netty-common'
       - 'io.netty:netty-handler'
       - 'io.netty:netty-handler-proxy'
+      - 'io.netty:netty-resolver'
       - 'io.netty:netty-resolver-dns'
       - 'io.netty:netty-transport'
+      - 'io.netty:netty-transport-native-epoll'
       - 'io.netty:netty-transport-rxtx'
       - 'io.netty:netty-transport-sctp'
       - 'io.netty:netty-transport-udt'
       - 'io.projectreactor.addons:reactor-logback'
       - 'io.projectreactor.addons:reactor-adapter'
       - 'io.projectreactor.ipc:reactor-ipc'
-      - 'io.rest-assured:rest-assured'
       - 'javax.servlet:jstl'
       - 'mysql:mysql-connector-java'
       - 'net.bytebuddy:byte-buddy'

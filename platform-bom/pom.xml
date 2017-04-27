@@ -75,7 +75,6 @@
 		<eclipselink-javax-persistence.version>2.1.1</eclipselink-javax-persistence.version>
 		<evo-inflector.version>1.2.2</evo-inflector.version>
 		<findbugs-jsr305.version>3.0.2</findbugs-jsr305.version>
-		<findbugs-annotations.version>2.0.3</findbugs-annotations.version>
 		<gemfire.version>9.0.3</gemfire.version>
 		<guava.version>20.0</guava.version>
 		<guice.version>3.0</guice.version>
@@ -166,7 +165,6 @@
 		<xmlschema.version>2.2.1</xmlschema.version>
 		<xmlunit.version>1.6</xmlunit.version>
 		<xmlunit2.version>2.3.0</xmlunit2.version>
-		<xnio.version>3.4.5.Final</xnio.version>
 		<xom.version>1.2.5</xom.version>
 		<xstream.version>1.4.9</xstream.version>
 		<xws-security.version>3.0</xws-security.version>
@@ -245,11 +243,6 @@
 				<groupId>com.fasterxml.woodstox</groupId>
 				<artifactId>woodstox-core</artifactId>
 				<version>${woodstox5.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>com.google.code.findbugs</groupId>
-				<artifactId>annotations</artifactId>
-				<version>${findbugs-annotations.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.code.findbugs</groupId>
@@ -895,11 +888,6 @@
 				<groupId>org.jasig.cas.client</groupId>
 				<artifactId>cas-client-core</artifactId>
 				<version>${cas-client.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jboss.xnio</groupId>
-				<artifactId>xnio-api</artifactId>
-				<version>${xnio.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jetbrains.kotlin</groupId>
