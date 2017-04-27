@@ -120,6 +120,7 @@ platform_definition:
         - spring-cloud-spring-service-connector
       build:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
+        checkout: 2.x
     - name: Spring Data Cassandra
       groupId: org.springframework.data
       version: 2.0.0.BUILD-SNAPSHOT
