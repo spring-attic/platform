@@ -290,7 +290,7 @@ platform_definition:
         - spring-integration-splunk
     - name: Spring Kafka
       groupId: org.springframework.kafka
-      version: 2.0.0.BUILD-SNAPSHOT
+      version: 2.0.0.M1
       modules:
         - spring-kafka
         - spring-kafka-test
@@ -382,8 +382,6 @@ platform_definition:
       version: 2.0.0.BUILD-SNAPSHOT
       modules:
         - spring-session
-        - spring-session-data-gemfire
-        - spring-session-data-mongo
         - spring-session-data-redis
         - spring-session-hazelcast
         - spring-session-jdbc
@@ -401,7 +399,6 @@ platform_definition:
         - spring-social-core
         - spring-social-security
         - spring-social-web
-        - spring-social-web-thymeleaf3
     - name: Spring Social Facebook
       groupId: org.springframework.social
       version: 3.0.0.BUILD-SNAPSHOT
@@ -412,7 +409,7 @@ platform_definition:
         - spring-social-facebook-web
     - name: Spring Social LinkedIn
       groupId: org.springframework.social
-      version: 2.0.0.M1
+      version: 2.0.0.BUILD-SNAPSHOT
       modules:
         - spring-social-linkedin
     - name: Spring Social Twitter
