@@ -35,6 +35,7 @@ class AbstractDependenciesTests {
 		def xml = new XmlSlurper().parse(generateEffectivePom())
 		xml.dependencyManagement.dependencies.dependency
 			.findAll { it.type.text() != 'test-jar' }
+			.findAll { it.artifactId.text() != 'netty-example' }
 			.each { dependency ->
 				def exclusion = exclusions[dependency.artifactId.text()]
 				closure.call([dependency, exclusion])

@@ -361,6 +361,8 @@ platform_definition:
         - spring-security-data
         - spring-security-ldap
         - spring-security-messaging
+        - spring-security-oauth2-client
+        - spring-security-oauth2-core
         - spring-security-openid
         - spring-security-remoting
         - spring-security-taglibs
@@ -524,7 +526,6 @@ platform_definition:
       - 'com.hazelcast:hazelcast-hibernate52'
       - 'com.jayway.jsonpath:json-path-assert'
       - 'com.microsoft.sqlserver:mssql-jdbc'
-      - 'com.nimbusds:oauth2-oidc-sdk'
       - 'com.nimbusds:nimbus-jose-jwt'
       - 'commons-digester:commons-digester'
       - 'io.dropwizard.metrics:metrics-ganglia'
@@ -544,6 +545,7 @@ platform_definition:
       - 'io.netty:netty-codec-stomp'
       - 'io.netty:netty-codec-xml'
       - 'io.netty:netty-common'
+      - 'io.netty:netty-example'
       - 'io.netty:netty-handler'
       - 'io.netty:netty-handler-proxy'
       - 'io.netty:netty-resolver'
