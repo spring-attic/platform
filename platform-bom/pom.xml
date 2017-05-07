@@ -365,6 +365,11 @@
 				<version>${rometools.version}</version>
 			</dependency>
 			<dependency>
+				<groupId>com.rometools</groupId>
+				<artifactId>rome-modules</artifactId>
+				<version>${rometools.version}</version>
+			</dependency>			
+			<dependency>
 				<groupId>com.splunk</groupId>
 				<artifactId>splunk</artifactId>
 				<version>${splunk.version}</version>
