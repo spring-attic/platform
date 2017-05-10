@@ -361,12 +361,12 @@
 			</dependency>
 			<dependency>
 				<groupId>com.rometools</groupId>
-				<artifactId>rome-propono</artifactId>
+				<artifactId>rome-certiorem</artifactId>
 				<version>${rometools.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.rometools</groupId>
-				<artifactId>rome-opml</artifactId>
+				<artifactId>rome-fetcher</artifactId>
 				<version>${rometools.version}</version>
 			</dependency>
 			<dependency>
@@ -376,14 +376,14 @@
 			</dependency>
 			<dependency>
 				<groupId>com.rometools</groupId>
-				<artifactId>rome-certiorem</artifactId>
+				<artifactId>rome-opml</artifactId>
 				<version>${rometools.version}</version>
-			</dependency>	
+			</dependency>
 			<dependency>
 				<groupId>com.rometools</groupId>
-				<artifactId>rome-fetcher</artifactId>
+				<artifactId>rome-propono</artifactId>
 				<version>${rometools.version}</version>
-			</dependency>		
+			</dependency>
 			<dependency>
 				<groupId>com.splunk</groupId>
 				<artifactId>splunk</artifactId>
