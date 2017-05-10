@@ -361,7 +361,27 @@
 			</dependency>
 			<dependency>
 				<groupId>com.rometools</groupId>
+				<artifactId>rome-certiorem</artifactId>
+				<version>${rometools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.rometools</groupId>
 				<artifactId>rome-fetcher</artifactId>
+				<version>${rometools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.rometools</groupId>
+				<artifactId>rome-modules</artifactId>
+				<version>${rometools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.rometools</groupId>
+				<artifactId>rome-opml</artifactId>
+				<version>${rometools.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.rometools</groupId>
+				<artifactId>rome-propono</artifactId>
 				<version>${rometools.version}</version>
 			</dependency>
 			<dependency>
