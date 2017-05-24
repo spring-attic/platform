@@ -159,6 +159,9 @@ part of the upgrade process.
 | `org.springframework.integration:spring-integration-java-dsl`
 | As of Spring Integration 5, the Java DSL is included in `spring-integration-core`
 
+| `org.springframework:springloaded`
+| Spring Loaded has been moved to the attic and is no longer being actively maintained
+
 | `org.springframework:spring-instrument-tomcat`
 | Does not exist in the version of Spring Framework that is now used by the Platform
 

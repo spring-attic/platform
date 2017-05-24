@@ -314,11 +314,6 @@ platform_definition:
         - spring-ldap-ldif-core
         - spring-ldap-odm
         - spring-ldap-test
-    - name: Spring Loaded
-      groupId: org.springframework
-      version: 1.2.7.RELEASE
-      modules:
-       - springloaded
     - name: Spring Mobile
       groupId: org.springframework.mobile
       version: 2.0.0.M1
@@ -722,7 +717,6 @@ platform_definition:
       - 'org.springframework.boot:spring-boot-test-support'
       - 'org.springframework.data:spring-data-geode'
       - 'org.springframework.restdocs:spring-restdocs-asciidoctor'
-      - 'org.springframework:springloaded'
       - 'org.xerial:sqlite-jdbc'
       - 'xml-apis:xml-apis'
   downgraded_dependencies:
