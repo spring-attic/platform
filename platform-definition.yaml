@@ -126,7 +126,6 @@ platform_definition:
       groupId: org.springframework.data
       version: 2.0.0.BUILD-SNAPSHOT
       modules:
-        - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
