@@ -128,7 +128,7 @@ platform_definition:
         - spring-boot-starter-web-services
     - name: Spring Cloud Connectors
       groupId: org.springframework.cloud
-      version: 1.2.3.RELEASE
+      version: 1.2.4.RELEASE
       modules:
         - spring-cloud-core
         - spring-cloud-cloudfoundry-connector
@@ -215,7 +215,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.3.8.RELEASE
+      version: 4.3.9.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
@@ -711,18 +711,19 @@ platform_definition:
   downgraded_dependencies:
     'com.fasterxml.jackson.core:jackson-annotations': '2.8.7'
     'com.gemstone.gemfire:gemfire': '8.2.3'
-    'org.aspectj:aspectjweaver': '1.8.10'
-    'org.aspectj:aspectjrt': '1.8.10'
-    'org.webjars:hal-browser': '3325375'
-    'org.codehaus.groovy:groovy-all': '2.4.8'
-    'org.beanshell:bsh': '2.0b5'
-    'org.hsqldb:hsqldb': '2.3.4'
-    'io.netty:netty-all': '4.1.8.Final'
+    'com.rometools:rome': '1.7.2'
+    'com.squareup.okhttp3:okhttp': '3.7.0'
+    'io.netty:netty-all': '4.1.10.Final'
     'javax.jdo:jdo-api': '3.1'
-    'org.hibernate:hibernate-core': '5.2.10.Final'
     'net.sourceforge.htmlunit:htmlunit': '2.23'
+    'org.aspectj:aspectjrt': '1.8.10'
+    'org.aspectj:aspectjweaver': '1.8.10'
+    'org.beanshell:bsh': '2.0b5'
+    'org.codehaus.groovy:groovy-all': '2.4.8'
+    'org.hibernate:hibernate-core': '5.2.10.Final'
+    'org.hsqldb:hsqldb': '2.3.4'
     'org.seleniumhq.selenium:htmlunit-driver': '2.23.2'
-    'com.rometools:rome': '1.7.1'
+    'org.webjars:hal-browser': '3325375'
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2
