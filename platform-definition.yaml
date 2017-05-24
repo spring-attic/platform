@@ -130,7 +130,7 @@ platform_definition:
         - spring-boot-starter-ws
     - name: Spring Cloud Connectors
       groupId: org.springframework.cloud
-      version: 1.2.3.RELEASE
+      version: 1.2.4.RELEASE
       modules:
         - spring-cloud-core
         - spring-cloud-cloudfoundry-connector
@@ -212,7 +212,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.3.8.RELEASE
+      version: 4.3.9.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
