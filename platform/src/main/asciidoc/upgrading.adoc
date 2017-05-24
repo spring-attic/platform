@@ -156,6 +156,9 @@ part of the upgrade process.
 | `org.springframework.boot:spring-boot-starter-remote-shell`
 | Does not exist in the version of Spring Boot that is now used by the Platform
 
+| `org.springframework.data:spring-cql`
+| Now included in the `org.springframework.data:spring-data-cassandra` module
+
 | `org.springframework.integration:spring-integration-java-dsl`
 | As of Spring Integration 5, the Java DSL is included in `spring-integration-core`
 
