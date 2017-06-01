@@ -136,7 +136,6 @@
 		<poi.version>3.16</poi.version>
 		<protobuf.version>3.3.1</protobuf.version>
 		<protobuf-java-format.version>1.4</protobuf-java-format.version>
-		<quartz.version>2.3.0</quartz.version>
 		<rabbit-amqp-client.version>4.1.0</rabbit-amqp-client.version>
 		<rabbit-http-client.version>1.2.0.RELEASE</rabbit-http-client.version>
 		<reactive-streams.version>1.0.0</reactive-streams.version>
@@ -949,11 +948,6 @@
 				<groupId>org.openid4java</groupId>
 				<artifactId>openid4java-nodeps</artifactId>
 				<version>${openid4java.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.quartz-scheduler</groupId>
-				<artifactId>quartz</artifactId>
-				<version>${quartz.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.reactivestreams</groupId>
