@@ -19,7 +19,7 @@ platform_definition:
            - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 2.0.0.BUILD-SNAPSHOT
+      version: 2.0.0.M4
       modules:
         - spring-amqp
         - spring-rabbit
@@ -96,6 +96,7 @@ platform_definition:
         - spring-boot-starter-mobile
         - spring-boot-starter-mustache
         - spring-boot-starter-parent
+        - spring-boot-starter-quartz
         - spring-boot-starter-reactor-netty
         - spring-boot-starter-security
         - spring-boot-starter-social-facebook
@@ -370,7 +371,7 @@ platform_definition:
        - spring-security-jwt
     - name: Spring Security OAuth
       groupId: org.springframework.security.oauth
-      version: 2.1.0.RELEASE
+      version: 2.1.1.RELEASE
       modules:
         - spring-security-oauth
         - spring-security-oauth2
@@ -563,6 +564,7 @@ platform_definition:
       - 'javax.servlet:jstl'
       - 'mysql:mysql-connector-java'
       - 'net.bytebuddy:byte-buddy'
+      - 'net.bytebuddy:byte-buddy-agent'
       - 'net.java.dev.jna:jna'
       - 'net.sourceforge.jtds:jtds'
       - 'org.apache.activemq:activemq-amqp'
@@ -602,6 +604,7 @@ platform_definition:
       - 'org.apache.activemq:artemis-server'
       - 'org.apache.activemq:artemis-service-extensions'
       - 'org.apache.httpcomponents:httpcore'
+      - 'org.apache.httpcomponents:httpcore-nio'
       - 'org.apache.logging.log4j:log4j-1.2-api'
       - 'org.apache.logging.log4j:log4j-api-scala_2.10'
       - 'org.apache.logging.log4j:log4j-api-scala_2.11'
