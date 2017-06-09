@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 3.1.0.M1
+      version: 3.1.0.M2
       modules:
         - reactor-core
       build:
@@ -696,6 +696,7 @@ platform_definition:
       - 'org.javassist:javassist'
       - 'org.jboss.logging:jboss-logging'
       - 'org.jetbrains.kotlin:kotlin-runtime'
+      - 'org.jetbrains.kotlin:kotlin-stdlib-jre8'
       - 'org.jooq:jooq-codegen'
       - 'org.jooq:jooq-meta'
       - 'org.mariadb.jdbc:mariadb-java-client'
@@ -722,11 +723,7 @@ platform_definition:
       - 'org.xerial:sqlite-jdbc'
       - 'xml-apis:xml-apis'
   downgraded_dependencies:
-    'com.fasterxml.jackson.core:jackson-annotations': '2.8.6'
     'org.aspectj:aspectjweaver': '1.9.0.BETA-5'
-    'org.codehaus.groovy:groovy-all': '2.4.8'
-    'org.hsqldb:hsqldb': '2.3.4'
-    'org.springframework.data:spring-data-commons': '2.0.0.DATACMNS-867-SNAPSHOT'
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2
