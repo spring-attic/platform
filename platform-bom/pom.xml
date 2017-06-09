@@ -136,7 +136,7 @@
 		<neo4j.version>2.3.2</neo4j.version>
 		<neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
 		<neo4j-spatial.version>0.12-neo4j-2.0.1</neo4j-spatial.version>
-		<netty.version>4.0.45.Final</netty.version>
+		<netty.version>4.0.48.Final</netty.version>
 		<objenesis.version>2.4</objenesis.version>
 		<ognl.version>2.6.11</ognl.version>
 		<openid4java.version>0.9.6</openid4java.version>
