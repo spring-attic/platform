@@ -1,0 +1,29 @@
+From 6cf5e6aaf6c83446ef90be3f55fbfb00947a9c0f Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Tue, 13 Jun 2017 15:32:24 +0100
+Subject: [PATCH] Amend faulty test to remove use of a retry template
+
+A retry template and an error channel should be mutually exclusive
+and this is now enforced by Spring Integration Kafka
+---
+ .../org/springframework/integration/dsl/test/kafka/KafkaTests.java    | 4 +---
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+
+diff --git a/src/test/java/org/springframework/integration/dsl/test/kafka/KafkaTests.java b/src/test/java/org/springframework/integration/dsl/test/kafka/KafkaTests.java
+index 16ad509..32a1641 100644
+--- a/src/test/java/org/springframework/integration/dsl/test/kafka/KafkaTests.java
++++ b/src/test/java/org/springframework/integration/dsl/test/kafka/KafkaTests.java
+@@ -168,9 +168,7 @@ public class KafkaTests {
+ 							KafkaMessageDrivenChannelAdapter.ListenerMode.record, TEST_TOPIC)
+ 							.configureListenerContainer(c ->
+ 									c.ackMode(AbstractMessageListenerContainer.AckMode.MANUAL))
+-							.errorChannel("errorChannel")
+-							.retryTemplate(new RetryTemplate())
+-							.filterInRetry(true))
++							.errorChannel("errorChannel"))
+ 					.filter(Message.class, m ->
+ 									m.getHeaders().get(KafkaHeaders.RECEIVED_MESSAGE_KEY, Integer.class) < 101,
+ 							f -> f.throwExceptionOnRejection(true))
+-- 
+2.11.0
+
