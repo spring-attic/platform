@@ -1,0 +1,92 @@
+From e4f9d508bf68d491dbd1c15829c53e1508d3673d Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Mon, 19 Jun 2017 14:15:09 +0100
+Subject: [PATCH] Patch tests to make them compatible with Spring Data Kay M4
+
+---
+ .../RedisConnectionFactoryCloudConfigTestHelper.java   |  6 +++---
+ .../redis/RedisServiceConnectorCreatorTest.java        | 18 ++++++++++--------
+ 2 files changed, 13 insertions(+), 11 deletions(-)
+
+diff --git a/spring-cloud-spring-service-connector/src/test/java/org/springframework/cloud/config/RedisConnectionFactoryCloudConfigTestHelper.java b/spring-cloud-spring-service-connector/src/test/java/org/springframework/cloud/config/RedisConnectionFactoryCloudConfigTestHelper.java
+index 916198d..50264c6 100644
+--- a/spring-cloud-spring-service-connector/src/test/java/org/springframework/cloud/config/RedisConnectionFactoryCloudConfigTestHelper.java
++++ b/spring-cloud-spring-service-connector/src/test/java/org/springframework/cloud/config/RedisConnectionFactoryCloudConfigTestHelper.java
+@@ -8,15 +8,15 @@ import redis.clients.jedis.JedisPoolConfig;
+ import static org.junit.Assert.assertEquals;
+ 
+ /**
+- * 
++ *
+  * @author Ramnivas Laddad
+  * @author Scott Frederick
+  *
+  */
+ public class RedisConnectionFactoryCloudConfigTestHelper extends CommonPoolCloudConfigTestHelper {
+-	
++
+ 	public static void assertPoolProperties(RedisConnectionFactory connector, int maxActive, int minIdle, long maxWait) {
+-		JedisPoolConfig poolConfig = (JedisPoolConfig) ReflectionTestUtils.getField(connector, "poolConfig");
++		Object poolConfig = ((JedisConnectionFactory)connector).getClientConfiguration().getPoolConfig().get();
+ 		assertCommonsPoolProperties(poolConfig, maxActive, minIdle, maxWait);
+ 	}
+ 
+diff --git a/spring-cloud-spring-service-connector/src/test/java/org/springframework/cloud/service/redis/RedisServiceConnectorCreatorTest.java b/spring-cloud-spring-service-connector/src/test/java/org/springframework/cloud/service/redis/RedisServiceConnectorCreatorTest.java
+index da17b43..d7061dd 100644
+--- a/spring-cloud-spring-service-connector/src/test/java/org/springframework/cloud/service/redis/RedisServiceConnectorCreatorTest.java
++++ b/spring-cloud-spring-service-connector/src/test/java/org/springframework/cloud/service/redis/RedisServiceConnectorCreatorTest.java
+@@ -11,10 +11,12 @@ import org.mockito.MockitoAnnotations;
+ import org.springframework.cloud.service.common.RedisServiceInfo;
+ import org.springframework.cloud.service.keyval.RedisConnectionFactoryCreator;
+ import org.springframework.data.redis.connection.RedisConnectionFactory;
++import org.springframework.data.redis.connection.RedisStandaloneConfiguration;
++import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
+ import org.springframework.test.util.ReflectionTestUtils;
+ 
+ /**
+- * 
++ *
+  * @author Ramnivas Laddad
+  *
+  */
+@@ -25,14 +27,14 @@ public class RedisServiceConnectorCreatorTest {
+ 
+ 
+ 	@Mock private RedisServiceInfo mockRedisServiceInfo;
+-	
++
+ 	private RedisConnectionFactoryCreator testCreator = new RedisConnectionFactoryCreator();
+ 
+ 	@Before
+ 	public void setup() {
+ 		MockitoAnnotations.initMocks(this);
+ 	}
+-	
++
+ 	@Test
+ 	public void cloudRedisCreationNoConfig() throws Exception {
+ 		RedisServiceInfo serviceInfo = createServiceInfo();
+@@ -46,15 +48,15 @@ public class RedisServiceConnectorCreatorTest {
+ 		when(mockRedisServiceInfo.getHost()).thenReturn(TEST_HOST);
+ 		when(mockRedisServiceInfo.getPort()).thenReturn(TEST_PORT);
+ 		when(mockRedisServiceInfo.getPassword()).thenReturn(TEST_PASSWORD);
+-		
++
+ 		return mockRedisServiceInfo;
+ 	}
+ 
+ 	private void assertConnectorProperties(RedisServiceInfo serviceInfo, RedisConnectionFactory connector) {
+ 		assertNotNull(connector);
+-		
+-		assertEquals(serviceInfo.getHost(), ReflectionTestUtils.getField(connector, "hostName"));
+-		assertEquals(serviceInfo.getPort(), ReflectionTestUtils.getField(connector, "port"));
+-		assertEquals(serviceInfo.getPassword(), ReflectionTestUtils.getField(connector, "password"));
++		RedisStandaloneConfiguration configuration = ((JedisConnectionFactory)connector).getStandaloneConfiguration();
++		assertEquals(serviceInfo.getHost(), configuration.getHostName());
++		assertEquals(serviceInfo.getPort(), configuration.getPort());
++		assertEquals(serviceInfo.getPassword(), new String(configuration.getPassword().get()));
+ 	}
+ }
+-- 
+2.11.0
+
