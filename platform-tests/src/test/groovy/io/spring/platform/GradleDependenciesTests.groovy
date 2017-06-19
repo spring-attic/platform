@@ -51,7 +51,10 @@ class GradleDependenciesTests extends AbstractDependenciesTests {
 					} else {
 						writer.print("    compile ('${dependency.groupId}:${dependency.artifactId}@${dependency.type}')")
 					}
-				} else {
+				} else if (dependency.classifier.size()) {
+					writer.print("    compile (group: '${dependency.groupId}', name: '${dependency.artifactId}', classifier: '${dependency.classifier}')")
+				}
+				else {
 					writer.print("    compile ('${dependency.groupId}:${dependency.artifactId}')")
 				}
 				if (exclusion) {

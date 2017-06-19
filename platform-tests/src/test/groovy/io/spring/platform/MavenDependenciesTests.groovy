@@ -38,6 +38,9 @@ class MavenDependenciesTests extends AbstractDependenciesTests {
 				if (dependency.type.size()) {
 					writer.println "			<type>${dependency.type}</type>"
 				}
+				if (dependency.classifier.size()) {
+					writer.println "			<classifier>${dependency.classifier}</classifier>"
+				}
 				if (exclusion) {
 					writer.println """			<exclusions>
 						<exclusion>

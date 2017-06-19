@@ -36,6 +36,7 @@ class AbstractDependenciesTests {
 		xml.dependencyManagement.dependencies.dependency
 			.findAll { it.type.text() != 'test-jar' }
 			.findAll { it.artifactId.text() != 'netty-example' }
+			.findAll { it.artifactId.text() != 'netty-transport-unix-common' }
 			.each { dependency ->
 				def exclusion = exclusions[dependency.artifactId.text()]
 				closure.call([dependency, exclusion])

@@ -63,7 +63,7 @@ class BomDependenciesTests extends AbstractProjectAnalysisTests {
 								analysisResult.registerMissingArtifact(identifier, dependency.version, module)
 							}
 						}
-						else {
+						else if (!identifier.startsWith('org.springframework')) {
 							def dependencyVersion = versionScheme.parseVersion(dependency.version)
 							def platformVersion = versionScheme.parseVersion(platformArtifacts[identifier])
 
