@@ -55,7 +55,7 @@
 		<aopalliance.version>1.0</aopalliance.version>
 		<apacheds.version>1.5.5</apacheds.version>
 		<apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
-		<apache-shiro.version>1.3.2</apache-shiro.version>
+		<apache-shiro.version>1.4.0</apache-shiro.version>
 		<axiom.version>1.2.20</axiom.version>
 		<boon.version>0.34</boon.version>
 		<bouncycastle.version>1.56</bouncycastle.version>
