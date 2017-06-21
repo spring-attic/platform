@@ -140,7 +140,7 @@
 		<rabbit-http-client.version>1.2.0.RELEASE</rabbit-http-client.version>
 		<reactive-streams.version>1.0.0</reactive-streams.version>
 		<rest-assured.version>2.9.0</rest-assured.version>
-		<rest-assured3.version>3.0.2</rest-assured3.version>
+		<rest-assured3.version>3.0.3</rest-assured3.version>
 		<rometools.version>1.7.3</rometools.version>
 		<selenium-htmlunit-driver.version>${selenium.version}</selenium-htmlunit-driver.version>
 		<smack4.version>4.1.9</smack4.version>
