@@ -58,7 +58,7 @@
 		<apache-shiro.version>1.4.0</apache-shiro.version>
 		<axiom.version>1.2.20</axiom.version>
 		<boon.version>0.34</boon.version>
-		<bouncycastle.version>1.56</bouncycastle.version>
+		<bouncycastle.version>1.57</bouncycastle.version>
 		<bsh.version>2.0b5</bsh.version>
 		<cas-client.version>3.4.1</cas-client.version>
 		<castor.version>1.4.1</castor.version>
