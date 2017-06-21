@@ -129,7 +129,7 @@
 		<neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
 		<neo4j-spatial.version>0.12-neo4j-2.0.1</neo4j-spatial.version>
 		<nio-multipart-parser.version>1.1.0</nio-multipart-parser.version>
-		<objenesis.version>2.5.1</objenesis.version>
+		<objenesis.version>2.6</objenesis.version>
 		<openid4java.version>0.9.6</openid4java.version>
 		<paho-mqttv3-client.version>1.1.1</paho-mqttv3-client.version>
 		<pig.version>0.12.1</pig.version>
