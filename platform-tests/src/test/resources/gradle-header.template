@@ -28,8 +28,10 @@ configurations {
 	compile
 }
 
-task('resolveDependencies') << {
-	configurations.compile.resolve()
+task('resolveDependencies') {
+	doLast {
+		configurations.compile.resolve()
+	}
 }
 
 dependencies {
