@@ -16,12 +16,9 @@ dependencyManagement {
 }
 
 repositories {
-	mavenLocal()
-	maven { url 'http://repo.spring.io/libs-snapshot' }
-	maven { url 'http://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts' }
-	maven { url 'http://m2.neo4j.org/content/repositories/snapshots' }
-	maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
 	mavenCentral()
+	maven { url 'http://repo.spring.io/libs-snapshot' }
+	mavenLocal()
 }
 
 configurations {
