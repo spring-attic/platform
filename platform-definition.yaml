@@ -229,7 +229,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 5.0.0.M5
+      version: 5.0.0.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         runTestsWith:
