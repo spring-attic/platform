@@ -342,7 +342,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 5.0.0.M2
+      version: 5.0.0.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
