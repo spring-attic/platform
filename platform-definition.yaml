@@ -173,7 +173,6 @@ platform_definition:
       version: 2.0.0.BUILD-SNAPSHOT
       modules:
         - spring-data-mongodb
-        - spring-data-mongodb-log4j
         - spring-data-mongodb-cross-store
     - name: Spring Data Neo4j
       id: spring.data.neo4j
