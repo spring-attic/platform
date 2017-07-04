@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 3.1.0.M2
+      version: 3.1.0.BUILD-SNAPSHOT
       modules:
         - reactor-core
       build:
@@ -370,7 +370,7 @@ platform_definition:
        - spring-security-jwt
     - name: Spring Security OAuth
       groupId: org.springframework.security.oauth
-      version: 2.1.1.RELEASE
+      version: 2.2.0.BUILD-SNAPSHOT
       modules:
         - spring-security-oauth
         - spring-security-oauth2
@@ -724,7 +724,7 @@ platform_definition:
       - 'org.xerial:sqlite-jdbc'
       - 'xml-apis:xml-apis'
   downgraded_dependencies:
-    'org.aspectj:aspectjweaver': '1.9.0.BETA-5'
+    'org.aspectj:aspectjweaver': '1.9.0.BETA-6'
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2
