@@ -544,6 +544,7 @@ platform_definition:
       - 'io.netty:netty-codec-stomp'
       - 'io.netty:netty-codec-xml'
       - 'io.netty:netty-common'
+      - 'io.netty:netty-dev-tools'
       - 'io.netty:netty-example'
       - 'io.netty:netty-handler'
       - 'io.netty:netty-handler-proxy'
