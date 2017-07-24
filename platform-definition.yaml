@@ -19,7 +19,7 @@ platform_definition:
            - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 2.0.0.M4
+      version: 2.0.0.BUILD-SNAPSHOT
       modules:
         - spring-amqp
         - spring-rabbit
@@ -30,7 +30,7 @@ platform_definition:
           - jdk8
     - name: Spring Batch
       groupId: org.springframework.batch
-      version: 4.0.0.M2
+      version: 4.0.0.BUILD-SNAPSHOT
       modules:
         - spring-batch-core
         - spring-batch-infrastructure
@@ -290,7 +290,7 @@ platform_definition:
         - spring-integration-splunk
     - name: Spring Kafka
       groupId: org.springframework.kafka
-      version: 2.0.0.M2
+      version: 2.0.0.BUILD-SNAPSHOT
       modules:
         - spring-kafka
         - spring-kafka-test
