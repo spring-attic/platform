@@ -108,8 +108,8 @@
 		<jbatch-tck.version>1.0</jbatch-tck.version>
 		<jettison.version>1.2</jettison.version>
 		<jibx.version>1.3.1</jibx.version>
-		<jline.version>2.14.4</jline.version>
-		<jopt-simple.version>5.0.3</jopt-simple.version>
+		<jline.version>2.14.5</jline.version>
+		<jopt-simple.version>5.0.4</jopt-simple.version>
 		<jsch.version>0.1.54</jsch.version>
 		<jsr250.version>1.0</jsr250.version>
 		<junit-jupiter.version>5.0.0-M6</junit-jupiter.version>
@@ -150,7 +150,7 @@
 		<sun-saaj.version>1.3.28</sun-saaj.version>
 		<taglibs-standard.version>1.2.5</taglibs-standard.version>
 		<testng.version>6.11</testng.version>
-		<threetenbp.version>1.3.5</threetenbp.version>
+		<threetenbp.version>1.3.6</threetenbp.version>
 		<tiles.version>3.0.7</tiles.version>
 		<tyrus.version>1.13.1</tyrus.version>
 		<typica.version>1.3</typica.version>
@@ -161,7 +161,7 @@
 		<woodstox5.version>5.0.3</woodstox5.version>
 		<wss4j.version>1.6.19</wss4j.version>
 		<wss4j2.version>2.1.10</wss4j2.version>
-		<xmlprojector.version>1.4.12</xmlprojector.version>
+		<xmlprojector.version>1.4.13</xmlprojector.version>
 		<xmlschema.version>2.2.2</xmlschema.version>
 		<xmlunit.version>1.6</xmlunit.version>
 		<xmlunit2.version>2.3.0</xmlunit2.version>
