@@ -646,6 +646,8 @@ platform_definition:
       - 'org.eclipse.jetty.http2:http2-hpack'
       - 'org.eclipse.jetty.http2:http2-server'
       - 'org.eclipse.jetty.orbit:javax.servlet.jsp'
+      - 'org.eclipse.jetty.websocket:javax-websocket-client-impl'
+      - 'org.eclipse.jetty.websocket:websocket-servlet'
       - 'org.eclipse.jetty:apache-jsp'
       - 'org.eclipse.jetty:apache-jstl'
       - 'org.eclipse.jetty:jetty-annotations'
@@ -720,6 +722,16 @@ platform_definition:
       - 'org.xerial:sqlite-jdbc'
       - 'xml-apis:xml-apis'
   downgraded_dependencies:
+    'com.fasterxml.jackson.core:jackson-annotations': '2.9.0.pr4'
+    'com.fasterxml.jackson.core:jackson-core': '2.9.0.pr4'
+    'com.fasterxml.jackson.core:jackson-databind': '2.9.0.pr4'
+    'com.fasterxml.jackson.dataformat:jackson-dataformat-cbor': '2.9.0.pr4'
+    'com.fasterxml.jackson.dataformat:jackson-dataformat-smile': '2.9.0.pr4'
+    'com.fasterxml.jackson.dataformat:jackson-dataformat-xml': '2.9.0.pr4'
+    'com.fasterxml.jackson.datatype:jackson-datatype-hibernate4': '2.9.0.pr4'
+    'com.fasterxml.jackson.datatype:jackson-datatype-hibernate5': '2.9.0.pr4'
+    'com.fasterxml.jackson.datatype:jackson-datatype-jdk8': '2.9.0.pr4'
+    'com.fasterxml.jackson.datatype:jackson-datatype-joda': '2.9.0.pr4'
     'org.aspectj:aspectjweaver': '1.9.0.BETA-6'
   repositories:
       - id: central
