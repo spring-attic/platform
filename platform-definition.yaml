@@ -643,6 +643,8 @@ platform_definition:
       - 'org.eclipse.jetty.http2:http2-hpack'
       - 'org.eclipse.jetty.http2:http2-server'
       - 'org.eclipse.jetty.orbit:javax.servlet.jsp'
+      - 'org.eclipse.jetty.websocket:javax-websocket-client-impl'
+      - 'org.eclipse.jetty.websocket:websocket-servlet'
       - 'org.eclipse.jetty:apache-jsp'
       - 'org.eclipse.jetty:apache-jstl'
       - 'org.eclipse.jetty:jetty-annotations'
