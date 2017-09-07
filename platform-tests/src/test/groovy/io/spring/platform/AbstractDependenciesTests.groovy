@@ -33,8 +33,11 @@ class AbstractDependenciesTests {
 
 	def eachDependency(Closure closure) {
 		def xml = new XmlSlurper().parse(generateEffectivePom())
+		def ignoredArtifacts = ['spring-boot-test-support', 'jackson-module-scala_2.10',
+				'jackson-module-scala_2.11',
+				'jackson-module-scala_2.12']
 		xml.dependencyManagement.dependencies.dependency
-			.findAll { it.type.text() != 'test-jar' && it.artifactId.text() != 'spring-boot-test-support'}
+			.findAll { it.type.text() != 'test-jar' && !ignoredArtifacts.contains(it.artifactId.text()) }
 			.each { dependency ->
 				def exclusion = exclusions[dependency.artifactId.text()]
 				closure.call([dependency, exclusion])
