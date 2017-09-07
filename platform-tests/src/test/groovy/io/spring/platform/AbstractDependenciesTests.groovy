@@ -33,13 +33,10 @@ class AbstractDependenciesTests {
 
 	def eachDependency(Closure closure) {
 		def xml = new XmlSlurper().parse(generateEffectivePom())
+		def ignoredArtifacts = ['netty-example', 'netty-transport-unix-commin']
 		xml.dependencyManagement.dependencies.dependency
 			.findAll { it.type.text() != 'test-jar' }
-			.findAll { it.artifactId.text() != 'netty-example' }
-			.findAll { it.artifactId.text() != 'netty-transport-unix-common' }
-			.findAll { it.artifactId.text() != 'jackson-module-scala_2.10' }
-			.findAll { it.artifactId.text() != 'jackson-module-scala_2.11' }
-			.findAll { it.artifactId.text() != 'jackson-module-scala_2.12' }
+			.findAll { !ignoredArtifacts.contains(it.artifactId.text()) }
 			.each { dependency ->
 				def exclusion = exclusions[dependency.artifactId.text()]
 				closure.call([dependency, exclusion])
