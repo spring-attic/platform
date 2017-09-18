@@ -303,7 +303,7 @@ platform_definition:
         - spring-integration-java-dsl
     - name: Spring Integration Kafka
       groupId: org.springframework.integration
-      version: 2.1.1.RELEASE
+      version: 2.1.2.RELEASE
       modules:
         - spring-integration-kafka
     - name: Spring Integration Splunk
