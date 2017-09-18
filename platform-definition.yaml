@@ -447,7 +447,7 @@ platform_definition:
         - spring-social-twitter
     - name: Spring Web Flow
       groupId: org.springframework.webflow
-      version: 2.4.5.RELEASE
+      version: 2.4.6.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-webflow
       modules:
