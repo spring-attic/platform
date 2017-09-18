@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 3.1.0.M3
+      version: 3.1.0.BUILD-SNAPSHOT
       modules:
         - reactor-core
     - name: Spring AMQP
@@ -194,7 +194,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 5.0.0.RC3
+      version: 5.0.0.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
@@ -365,7 +365,7 @@ platform_definition:
        - spring-security-jwt
     - name: Spring Security OAuth
       groupId: org.springframework.security.oauth
-      version: 2.2.0.RC1
+      version: 2.2.0.RELEASE
       modules:
         - spring-security-oauth
         - spring-security-oauth2
@@ -512,6 +512,7 @@ platform_definition:
       - 'com.fasterxml.jackson.module:jackson-module-scala_2.12'
       - 'com.fasterxml:classmate'
       - 'com.google.appengine:appengine-api-1.0-sdk'
+      - 'com.google.protobuf:protobuf-java'
       - 'com.hazelcast:hazelcast-hibernate52'
       - 'com.jayway.jsonpath:json-path-assert'
       - 'com.microsoft.sqlserver:mssql-jdbc'
@@ -615,6 +616,7 @@ platform_definition:
       - 'org.apache.logging.log4j:log4j-taglib'
       - 'org.apache.logging.log4j:log4j-web'
       - 'org.apache.openjpa:openjpa'
+      - 'org.apache.poi:poi'
       - 'org.apache.poi:poi-scratchpad'
       - 'org.apache.shiro:shiro-core'
       - 'org.apache.shiro:shiro-web'
@@ -675,6 +677,7 @@ platform_definition:
       - 'org.eclipse.jetty:jetty-start'
       - 'org.eclipse.jetty:jetty-util-ajax'
       - 'org.eclipse.jetty:jetty-xml'
+      - 'org.eclipse.persistence:org.eclipse.persistence.core'
       - 'org.ehcache:ehcache-clustered'
       - 'org.ehcache:ehcache-transactions'
       - 'org.firebirdsql.jdbc:jaybird-jdk16'
@@ -719,6 +722,7 @@ platform_definition:
       - 'org.springframework.boot:spring-boot-test-support'
       - 'org.springframework.data:spring-data-geode'
       - 'org.springframework.restdocs:spring-restdocs-asciidoctor'
+      - 'org.springframework:spring-build-src'
       - 'org.xerial:sqlite-jdbc'
       - 'xml-apis:xml-apis'
   downgraded_dependencies:

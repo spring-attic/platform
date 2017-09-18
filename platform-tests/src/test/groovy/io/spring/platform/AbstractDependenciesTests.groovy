@@ -33,7 +33,9 @@ class AbstractDependenciesTests {
 
 	def eachDependency(Closure closure) {
 		def xml = new XmlSlurper().parse(generateEffectivePom())
-		def ignoredArtifacts = ['netty-example', 'netty-transport-unix-commin']
+		def ignoredArtifacts = ['netty-example',
+			'netty-transport-unix-common',
+			'spring-build-src']
 		xml.dependencyManagement.dependencies.dependency
 			.findAll { it.type.text() != 'test-jar' }
 			.findAll { !ignoredArtifacts.contains(it.artifactId.text()) }
