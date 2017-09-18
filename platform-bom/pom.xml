@@ -111,7 +111,7 @@
 		<jopt-simple.version>5.0.4</jopt-simple.version>
 		<jsch.version>0.1.54</jsch.version>
 		<jsr250.version>1.0</jsr250.version>
-		<junit-jupiter.version>5.0.0-M6</junit-jupiter.version>
+		<junit-jupiter.version>5.0.0</junit-jupiter.version>
 		<kafka.version>0.11.0.1</kafka.version>
 		<kite.version>0.13.0</kite.version>
 		<kotlin.version>1.1.4-3</kotlin.version>
