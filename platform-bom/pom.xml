@@ -111,7 +111,6 @@
 		<jopt-simple.version>5.0.4</jopt-simple.version>
 		<jsch.version>0.1.54</jsch.version>
 		<jsr250.version>1.0</jsr250.version>
-		<junit-jupiter.version>5.0.0</junit-jupiter.version>
 		<kafka.version>0.11.0.1</kafka.version>
 		<kite.version>0.13.0</kite.version>
 		<kotlin.version>1.1.4-3</kotlin.version>
@@ -161,7 +160,6 @@
 		<xmlprojector.version>1.4.13</xmlprojector.version>
 		<xmlschema.version>2.2.2</xmlschema.version>
 		<xmlunit.version>1.6</xmlunit.version>
-		<xmlunit2.version>2.5.0</xmlunit2.version>
 		<xom.version>1.2.5</xom.version>
 		<xstream.version>1.4.10</xstream.version>
 		<xws-security.version>3.0</xws-security.version>
@@ -917,11 +915,6 @@
 				<version>${jibx.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.junit.jupiter</groupId>
-				<artifactId>junit-jupiter-api</artifactId>
-				<version>${junit-jupiter.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.objenesis</groupId>
 				<artifactId>objenesis</artifactId>
 				<version>${objenesis.version}</version>
@@ -950,11 +943,6 @@
 				<groupId>org.xmlbeam</groupId>
 				<artifactId>xmlprojector</artifactId>
 				<version>${xmlprojector.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.xmlunit</groupId>
-				<artifactId>xmlunit-matchers</artifactId>
-				<version>${xmlunit2.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>xom</groupId>
