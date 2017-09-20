@@ -385,7 +385,7 @@ platform_definition:
         tagPrefix:
     - name: Spring Social
       groupId: org.springframework.social
-      version: 2.0.0.M3
+      version: 2.0.0.M4
       build:
         repository: https://github.com/spring-projects/spring-social
       modules:
@@ -395,7 +395,7 @@ platform_definition:
         - spring-social-web
     - name: Spring Social Facebook
       groupId: org.springframework.social
-      version: 3.0.0.M2
+      version: 3.0.0.M3
       build:
         repository: https://github.com/spring-projects/spring-social-facebook
       modules:
@@ -403,12 +403,12 @@ platform_definition:
         - spring-social-facebook-web
     - name: Spring Social LinkedIn
       groupId: org.springframework.social
-      version: 2.0.0.M2
+      version: 2.0.0.M3
       modules:
         - spring-social-linkedin
     - name: Spring Social Twitter
       groupId: org.springframework.social
-      version: 2.0.0.M2
+      version: 2.0.0.M4
       build:
         repository: https://github.com/spring-projects/spring-social-twitter
       modules:
@@ -624,6 +624,7 @@ platform_definition:
       - 'org.apache.shiro:shiro-web'
       - 'org.apache.taglibs:taglibs-standard-impl'
       - 'org.apache.taglibs:taglibs-standard-spec'
+      - 'org.apache.tomcat:tomcat-catalina-jmx-remote'
       - 'org.apache.tomcat:tomcat-jsp-api'
       - 'org.apache.wss4j:wss4j-ws-security-common'
       - 'org.codehaus.groovy:groovy-ant'
