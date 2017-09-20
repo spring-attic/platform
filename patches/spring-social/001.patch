@@ -1,0 +1,27 @@
+From e2a83578bdda366251dcca5619b095dd1381f63b Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Wed, 20 Sep 2017 10:04:53 +0100
+Subject: [PATCH] Upgrade to latest Spring IO and Dependency Management plugins
+
+---
+ build.gradle | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/build.gradle b/build.gradle
+index 21c4e642..d3afbe66 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -7,8 +7,8 @@ buildscript {
+         classpath("me.champeau.gradle:gradle-javadoc-hotfix-plugin:0.1")
+         classpath('org.asciidoctor:asciidoctor-gradle-plugin:0.7.0')
+         classpath('org.asciidoctor:asciidoctor-java-integration:0.1.4.preview.1')
+-        classpath('io.spring.gradle:spring-io-plugin:0.0.5.RELEASE')
+-        classpath('io.spring.gradle:dependency-management-plugin:0.6.0.RELEASE')
++        classpath('io.spring.gradle:spring-io-plugin:0.0.8.RELEASE')
++        classpath('io.spring.gradle:dependency-management-plugin:1.0.3.RELEASE')
+     }
+ }
+ 
+-- 
+2.14.1
+
