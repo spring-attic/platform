@@ -83,7 +83,7 @@
 		<hadoop.version>2.2.0</hadoop.version>
 		<hbase.version>0.96.2-hadoop2</hbase.version>
 		<hibernate-validator5.version>5.4.1.Final</hibernate-validator5.version>
-		<hessian.version>4.0.38</hessian.version>
+		<hessian.version>4.0.51</hessian.version>
 		<hive.version>0.12.0</hive.version>
 		<itext.version>2.1.7</itext.version>
 		<jackson1.version>1.9.13</jackson1.version>
