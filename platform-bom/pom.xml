@@ -48,6 +48,8 @@
 		<spring-integration-flow.version>2.0.0.BUILD-SNAPSHOT</spring-integration-flow.version>
 		<spring-integration-kafka.version>3.0.0.BUILD-SNAPSHOT</spring-integration-kafka.version>
 		<spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
+		<spring-security-jwt.version>1.0.8.RELEASE</spring-security-jwt.version>
+		<spring-security-oauth.version>2.2.0.RELEASE</spring-security-oauth.version>
 		<spring-web-flow.version>2.5.0.BUILD-SNAPSHOT</spring-web-flow.version>
 		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
 
@@ -99,7 +101,6 @@
 		<javax-jaxb.version>2.2.12</javax-jaxb.version>
 		<javax-jax-rs.version>2.0.1</javax-jax-rs.version>
 		<javax-jax-ws.version>2.2.12</javax-jax-ws.version>
-		<javax-json-bind.version>1.0</javax-json-bind.version>
 		<javax-jsp.version>2.3.2-b02</javax-jsp.version>
 		<javax-jstl.version>1.2.1</javax-jstl.version>
 		<javax-money.version>1.0.1</javax-money.version>
@@ -188,6 +189,25 @@
 				<groupId>org.springframework.integration</groupId>
 				<artifactId>spring-integration-splunk</artifactId>
 				<version>${spring-integration-splunk.version}</version>
+			</dependency>
+
+			<!-- Spring Security JWT -->
+			<dependency>
+				<groupId>org.springframework.security</groupId>
+				<artifactId>spring-security-jwt</artifactId>
+				<version>${spring-security-jwt.version}</version>
+			</dependency>
+
+			<!-- Spring Security OAuth -->
+			<dependency>
+				<groupId>org.springframework.security.oauth</groupId>
+				<artifactId>spring-security-oauth</artifactId>
+				<version>${spring-security-oauth.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.security.oauth</groupId>
+				<artifactId>spring-security-oauth2</artifactId>
+				<version>${spring-security-oauth.version}</version>
 			</dependency>
 
 			<!-- Spring Web Flow -->
@@ -534,11 +554,6 @@
 				<groupId>javax.interceptor</groupId>
 				<artifactId>javax.interceptor-api</artifactId>
 				<version>${javax-interceptor.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>javax.json.bind</groupId>
-				<artifactId>javax.json.bind-api</artifactId>
-				<version>${javax-json-bind.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.money</groupId>

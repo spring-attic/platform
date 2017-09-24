@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 3.1.0.RC1
+      version: 3.1.0.RC2
       modules:
         - reactor-core
     - name: Spring AMQP
@@ -195,7 +195,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 5.0.0.RC4
+      version: 5.0.0.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
@@ -206,6 +206,7 @@ platform_definition:
         - spring-context-support
         - spring-expression
         - spring-instrument
+        - spring-jcl
         - spring-jdbc
         - spring-jms
         - spring-messaging
@@ -561,6 +562,7 @@ platform_definition:
       - 'io.projectreactor.addons:reactor-logback'
       - 'io.projectreactor.ipc:reactor-ipc'
       - 'io.projectreactor.kafka:reactor-kafka'
+      - 'javax.json:javax.json-api'
       - 'javax.servlet:jstl'
       - 'mysql:mysql-connector-java'
       - 'net.bytebuddy:byte-buddy'
@@ -605,6 +607,7 @@ platform_definition:
       - 'org.apache.activemq:artemis-service-extensions'
       - 'org.apache.httpcomponents:httpcore'
       - 'org.apache.httpcomponents:httpcore-nio'
+      - 'org.apache.johnzon:johnzon-jsonb'
       - 'org.apache.logging.log4j:log4j-1.2-api'
       - 'org.apache.logging.log4j:log4j-api-scala_2.10'
       - 'org.apache.logging.log4j:log4j-api-scala_2.11'
@@ -618,12 +621,14 @@ platform_definition:
       - 'org.apache.logging.log4j:log4j-taglib'
       - 'org.apache.logging.log4j:log4j-web'
       - 'org.apache.openjpa:openjpa'
+      - 'org.apache.openjpa:openjpa-persistence-jdbc'
       - 'org.apache.poi:poi'
       - 'org.apache.poi:poi-scratchpad'
       - 'org.apache.shiro:shiro-core'
       - 'org.apache.shiro:shiro-web'
       - 'org.apache.taglibs:taglibs-standard-impl'
       - 'org.apache.taglibs:taglibs-standard-spec'
+      - 'org.apache.tomcat:tomcat-annotations'
       - 'org.apache.tomcat:tomcat-catalina-jmx-remote'
       - 'org.apache.tomcat:tomcat-jsp-api'
       - 'org.apache.wss4j:wss4j-ws-security-common'
@@ -692,9 +697,16 @@ platform_definition:
       - 'org.glassfish.jersey.ext:jersey-entity-filtering'
       - 'org.glassfish.jersey.media:jersey-media-jaxb'
       - 'org.glassfish.jersey.media:jersey-media-multipart'
+      - 'org.hibernate:hibernate-c3p0'
       - 'org.hibernate:hibernate-ehcache'
+      - 'org.hibernate:hibernate-hikaricp'
+      - 'org.hibernate:hibernate-infinispan'
       - 'org.hibernate:hibernate-java8'
+      - 'org.hibernate:hibernate-jcache'
       - 'org.hibernate:hibernate-jpamodelgen'
+      - 'org.hibernate:hibernate-proxool'
+      - 'org.hibernate:hibernate-spatial'
+      - 'org.hibernate:hibernate-testing'
       - 'org.hibernate:hibernate-validator-annotation-processor'
       - 'org.igniterealtime.smack:smack-resolver-javax'
       - 'org.infinispan:infinispan-spring4-common'
@@ -711,7 +723,6 @@ platform_definition:
       - 'org.neo4j:neo4j-ogm-api'
       - 'org.neo4j:neo4j-ogm-compiler'
       - 'org.neo4j:neo4j-ogm-http-driver'
-      - 'org.apache.openjpa:openjpa-persistence-jdbc'
       - 'org.postgresql:postgresql'
       - 'org.seleniumhq.selenium:selenium-api'
       - 'org.seleniumhq.selenium:selenium-chrome-driver'
