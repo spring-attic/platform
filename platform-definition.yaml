@@ -628,7 +628,7 @@ platform_definition:
       - 'org.apache.shiro:shiro-web'
       - 'org.apache.taglibs:taglibs-standard-impl'
       - 'org.apache.taglibs:taglibs-standard-spec'
-      - 'org.apache.tomcat:tomcat-annotations'
+      - 'org.apache.tomcat:tomcat-annotations-api'
       - 'org.apache.tomcat:tomcat-catalina-jmx-remote'
       - 'org.apache.tomcat:tomcat-jsp-api'
       - 'org.apache.wss4j:wss4j-ws-security-common'
