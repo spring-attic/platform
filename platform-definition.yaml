@@ -317,7 +317,7 @@ platform_definition:
         - spring-integration-splunk
     - name: Spring Kafka
       groupId: org.springframework.kafka
-      version: 1.1.6.RELEASE
+      version: 1.1.7.RELEASE
       modules:
         - spring-kafka
         - spring-kafka-test
@@ -618,6 +618,7 @@ platform_definition:
       - 'org.apache.poi:poi-scratchpad'
       - 'org.apache.taglibs:taglibs-standard-impl'
       - 'org.apache.taglibs:taglibs-standard-spec'
+      - 'org.apache.tomcat:tomcat-annotations-api'
       - 'org.apache.tomcat:tomcat-jsp-api'
       - 'org.apache.wss4j:wss4j-ws-security-common'
       - 'org.codehaus.groovy:groovy-ant'
