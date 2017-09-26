@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 3.1.0.RC2
+      version: 3.1.0.RELEASE
       modules:
         - reactor-core
     - name: Spring AMQP
@@ -718,6 +718,7 @@ platform_definition:
       - 'org.jooq:jooq-meta'
       - 'org.junit.jupiter:junit-jupiter-engine'
       - 'org.mariadb.jdbc:mariadb-java-client'
+      - 'org.mockito:mockito-inline'
       - 'org.mongodb:bson'
       - 'org.mongodb:mongodb-driver-core'
       - 'org.neo4j:neo4j-ogm-api'
@@ -744,7 +745,7 @@ platform_definition:
       - 'xml-apis:xml-apis'
   downgraded_dependencies:
     'com.fasterxml.jackson.core:jackson-annotations': '2.9.1'
-    'org.aspectj:aspectjweaver': '1.9.0.BETA-6'
+    'org.aspectj:aspectjweaver': '1.9.0.BETA-7'
     'org.eclipse.jetty:jetty-client': '9.4.7.RC0'
     'org.eclipse.jetty:jetty-server': '9.4.7.RC0'
     'org.eclipse.jetty:jetty-servlet': '9.4.7.RC0'
