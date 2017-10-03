@@ -325,7 +325,7 @@ platform_definition:
         - spring-plugin-metadata
     - name: Spring REST Docs
       groupId: org.springframework.restdocs
-      version: 1.2.1.RELEASE
+      version: 1.2.2.RELEASE
       modules:
         - spring-restdocs-asciidoctor
         - spring-restdocs-core
