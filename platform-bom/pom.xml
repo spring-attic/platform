@@ -731,11 +731,6 @@
 				<version>${poi.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.apache.solr</groupId>
-				<artifactId>solr-core</artifactId>
-				<version>${solr.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.apache.taglibs</groupId>
 				<artifactId>taglibs-standard-impl</artifactId>
 				<version>${taglibs-standard.version}</version>
