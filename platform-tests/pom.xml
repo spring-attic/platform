@@ -98,7 +98,7 @@
 			<exclusions>
 				<exclusion>
 					<groupId>org.codehaus.plexus</groupId>
-    				<artifactId>plexus-utils</artifactId>
+					<artifactId>plexus-utils</artifactId>
 				</exclusion>
 			</exclusions>
 		</dependency>
