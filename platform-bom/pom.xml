@@ -54,7 +54,6 @@
 		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
 
 		<aalto-xml.version>1.0.0</aalto-xml.version>
-		<aopalliance.version>1.0</aopalliance.version>
 		<apacheds.version>1.5.5</apacheds.version>
 		<apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
 		<apache-shiro.version>1.4.0</apache-shiro.version>
@@ -77,7 +76,7 @@
 		<eclipselink-javax-persistence.version>2.2.0</eclipselink-javax-persistence.version>
 		<evo-inflector.version>1.2.2</evo-inflector.version>
 		<findbugs-jsr305.version>3.0.2</findbugs-jsr305.version>
-		<gemfire.version>9.1.0</gemfire.version>
+		<gemfire.version>9.1.1</gemfire.version>
 		<guava.version>20.0</guava.version>
 		<guice.version>3.0</guice.version>
 		<hadoop.version>2.2.0</hadoop.version>
@@ -234,11 +233,6 @@
 			</dependency>
 
 			<!-- Third Party -->
-			<dependency>
-				<groupId>aopalliance</groupId>
-				<artifactId>aopalliance</artifactId>
-				<version>${aopalliance.version}</version>
-			</dependency>
 			<dependency>
 				<groupId>com.caucho</groupId>
 				<artifactId>hessian</artifactId>
