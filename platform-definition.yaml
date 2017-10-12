@@ -14,7 +14,7 @@ platform_definition:
         - reactor-core
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 2.0.0.BUILD-SNAPSHOT
+      version: 2.0.0.RELEASE
       modules:
         - spring-amqp
         - spring-rabbit
@@ -300,7 +300,7 @@ platform_definition:
           - jdk8
     - name: Spring LDAP
       groupId: org.springframework.ldap
-      version: 2.3.1.RELEASE
+      version: 2.3.2.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-ldap
         compileWith: jdk8
@@ -340,7 +340,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 5.0.0.BUILD-SNAPSHOT
+      version: 5.0.0.M5
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
@@ -375,7 +375,7 @@ platform_definition:
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 2.0.0.BUILD-SNAPSHOT
+      version: 2.0.0.M5
       modules:
         - spring-session-core
         - spring-session-data-redis
