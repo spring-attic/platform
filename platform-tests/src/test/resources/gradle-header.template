@@ -11,13 +11,13 @@ apply plugin: 'io.spring.dependency-management'
 
 dependencyManagement {
 	imports {
-		mavenBom "io.spring.platform:platform-bom:${projectVersion}"
+		mavenBom "io.spring.platform:platform-bom:TEST"
 	}
 }
 
 repositories {
 	mavenCentral()
-	flatDir { dirs '../../dependency' }
+	flatDir { dirs '../dependency' }
 	maven { url 'http://repo.spring.io/libs-snapshot' }
 }
 
