@@ -139,53 +139,53 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.5.7.RELEASE
+      version: 1.5.8.RELEASE
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.13.7.RELEASE
+      version: 1.13.8.RELEASE
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 2.2.7.RELEASE
+      version: 2.2.8.RELEASE
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 2.1.7.RELEASE
+      version: 2.1.8.RELEASE
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 1.1.7.RELEASE
+      version: 1.1.8.RELEASE
       modules:
         - spring-data-envers
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.9.7.RELEASE
+      version: 1.9.8.RELEASE
       modules:
         - spring-data-gemfire
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.11.7.RELEASE
+      version: 1.11.8.RELEASE
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 1.2.7.RELEASE
+      version: 1.2.8.RELEASE
       modules:
         - spring-data-keyvalue
     - name: Spring Data LDAP
       groupId: org.springframework.data
-      version: 1.0.7.RELEASE
+      version: 1.0.8.RELEASE
       modules:
         - spring-data-ldap
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.10.7.RELEASE
+      version: 1.10.8.RELEASE
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -193,29 +193,29 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 4.2.7.RELEASE
+      version: 4.2.8.RELEASE
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.8.7.RELEASE
+      version: 1.8.8.RELEASE
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.6.7.RELEASE
+      version: 2.6.8.RELEASE
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 2.1.7.RELEASE
+      version: 2.1.8.RELEASE
       modules:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.3.11.RELEASE
+      version: 4.3.12.RELEASE
       modules:
         - spring-aop
         - spring-aspects
@@ -328,7 +328,7 @@ platform_definition:
           - jdk8
     - name: Spring LDAP
       groupId: org.springframework.ldap
-      version: 2.3.1.RELEASE
+      version: 2.3.2.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-ldap
         compileWith: jdk8
@@ -768,9 +768,9 @@ platform_definition:
     'com.fasterxml.jackson.core:jackson-annotations': '2.8.10'
     'com.gemstone.gemfire:gemfire': '8.2.5'
     'com.jayway.jsonpath:json-path': '2.3.0'
-    'com.rometools:rome': '1.7.2'
+    'com.rometools:rome': '1.7.4'
     'com.squareup.okhttp3:okhttp': '3.8.1'
-    'io.netty:netty-all': '4.1.15.Final'
+    'io.netty:netty-all': '4.1.16.Final'
     'javax.jdo:jdo-api': '3.1'
     'net.sourceforge.htmlunit:htmlunit': '2.23'
     'org.aspectj:aspectjrt': '1.8.10'
