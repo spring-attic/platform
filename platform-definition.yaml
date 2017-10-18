@@ -427,12 +427,7 @@ platform_definition:
         - spring-webflow
     - name: Spring Web Services
       groupId: org.springframework.ws
-      version: 2.4.0.RELEASE
-      build:
-        repository: https://github.com/spring-projects/spring-ws
-        compileWith: jdk8
-        runTestsWith:
-          - jdk8
+      version: 3.0.0.RC1
       modules:
         - spring-ws-core
         - spring-ws-security
