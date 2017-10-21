@@ -156,7 +156,6 @@
 		<websphere-uow.version>6.0.2.17</websphere-uow.version>
 		<woodstox.version>4.4.1</woodstox.version>
 		<woodstox5.version>5.0.3</woodstox5.version>
-		<wss4j.version>1.6.19</wss4j.version>
 		<wss4j2.version>2.1.11</wss4j2.version>
 		<xmlprojector.version>1.4.13</xmlprojector.version>
 		<xmlschema.version>2.2.2</xmlschema.version>
@@ -778,11 +777,6 @@
 				<groupId>org.apache.ws.commons.axiom</groupId>
 				<artifactId>axiom-impl</artifactId>
 				<version>${axiom.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.ws.security</groupId>
-				<artifactId>wss4j</artifactId>
-				<version>${wss4j.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.ws.xmlschema</groupId>

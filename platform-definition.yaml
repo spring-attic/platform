@@ -2,14 +2,14 @@ platform_definition:
   projects:
     - name: Aspect J
       groupId: org.aspectj
-      version: 1.8.11
+      version: 1.8.12
       modules:
         - aspectjweaver
         - aspectjtools
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 3.1.0.RELEASE
+      version: 3.1.1.RELEASE
       modules:
         - reactor-core
     - name: Spring AMQP
@@ -95,7 +95,6 @@ platform_definition:
         - spring-boot-starter-quartz
         - spring-boot-starter-reactor-netty
         - spring-boot-starter-security
-        - spring-boot-starter-security-reactive
         - spring-boot-starter-social-facebook
         - spring-boot-starter-social-linkedin
         - spring-boot-starter-social-twitter
@@ -340,7 +339,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 5.0.0.M5
+      version: 5.0.0.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
@@ -793,7 +792,8 @@ platform_definition:
       - 'org.xmlunit:xmlunit-legacy'
       - 'xml-apis:xml-apis'
   downgraded_dependencies:
-    'com.fasterxml.jackson.core:jackson-annotations': '2.9.1'
+    'com.fasterxml.jackson.core:jackson-annotations': '2.9.2'
+    'io.projectreactor:reactor-core': '3.1.2.BUILD-SNAPSHOT'
     'org.aspectj:aspectjweaver': '1.9.0.BETA-7'
     'org.eclipse.persistence:org.eclipse.persistence.jpa': '2.7.0-RC3'
     'org.testng:testng': '6.12'
