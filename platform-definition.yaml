@@ -2,7 +2,7 @@ platform_definition:
   projects:
     - name: Aspect J
       groupId: org.aspectj
-      version: 1.8.11
+      version: 1.8.12
       modules:
         - aspectjweaver
         - aspectjtools
@@ -458,7 +458,7 @@ platform_definition:
         - spring-webflow
     - name: Spring Web Services
       groupId: org.springframework.ws
-      version: 2.4.0.RELEASE
+      version: 2.4.1.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-ws
         compileWith: jdk8
