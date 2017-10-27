@@ -115,7 +115,6 @@
 		<jsr250.version>1.0</jsr250.version>
 		<kafka.version>0.11.0.1</kafka.version>
 		<kite.version>0.13.0</kite.version>
-		<kotlin.version>1.1.51</kotlin.version>
 		<kryo.version>3.0.3</kryo.version>
 		<ldapbp.version>1.0</ldapbp.version>
 		<ldapsdk.version>4.1</ldapsdk.version>
@@ -154,7 +153,6 @@
 		<vavr.version>0.9.1</vavr.version>
 		<webjars-json-editor.version>0.7.21</webjars-json-editor.version>
 		<websphere-uow.version>6.0.2.17</websphere-uow.version>
-		<woodstox.version>4.4.1</woodstox.version>
 		<woodstox5.version>5.0.3</woodstox5.version>
 		<wss4j2.version>2.2.0</wss4j2.version>
 		<xmlprojector.version>1.4.13</xmlprojector.version>
@@ -829,11 +827,6 @@
 				<version>${jettison.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>org.codehaus.woodstox</groupId>
-				<artifactId>woodstox-core-asl</artifactId>
-				<version>${woodstox.version}</version>
-			</dependency>
-			<dependency>
 				<groupId>org.eclipse.paho</groupId>
 				<artifactId>org.eclipse.paho.client.mqttv3</artifactId>
 				<version>${paho-mqttv3-client.version}</version>
@@ -892,26 +885,6 @@
 				<groupId>org.jasig.cas.client</groupId>
 				<artifactId>cas-client-core</artifactId>
 				<version>${cas-client.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jetbrains.kotlin</groupId>
-				<artifactId>kotlin-reflect</artifactId>
-				<version>${kotlin.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jetbrains.kotlin</groupId>
-				<artifactId>kotlin-runtime</artifactId>
-				<version>${kotlin.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jetbrains.kotlin</groupId>
-				<artifactId>kotlin-stdlib</artifactId>
-				<version>${kotlin.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.jetbrains.kotlin</groupId>
-				<artifactId>kotlin-stdlib-jre8</artifactId>
-				<version>${kotlin.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.jibx</groupId>
