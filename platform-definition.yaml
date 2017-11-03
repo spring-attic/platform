@@ -89,7 +89,6 @@ platform_definition:
         - spring-boot-starter-log4j2
         - spring-boot-starter-logging
         - spring-boot-starter-mail
-        - spring-boot-starter-mobile
         - spring-boot-starter-mustache
         - spring-boot-starter-parent
         - spring-boot-starter-quartz
@@ -109,7 +108,7 @@ platform_definition:
         - spring-boot-starter-web-services
     - name: Spring Cloud Connectors
       groupId: org.springframework.cloud
-      version: 2.0.0.BUILD-SNAPSHOT
+      version: 2.0.0.RELEASE
       modules:
         - spring-cloud-connectors-core
         - spring-cloud-cloudfoundry-connector
@@ -220,12 +219,12 @@ platform_definition:
         - spring-websocket
     - name: Spring HATEOAS
       groupId: org.springframework.hateoas
-      version: 0.23.0.RELEASE
+      version: 0.24.0.RELEASE
       modules:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 5.0.0.M7
+      version: 5.0.0.RC1
       build:
         compileWith: jdk8
         runTestsWith:
@@ -311,11 +310,6 @@ platform_definition:
         - spring-ldap-ldif-core
         - spring-ldap-odm
         - spring-ldap-test
-    - name: Spring Mobile
-      groupId: org.springframework.mobile
-      version: 2.0.0.M1
-      modules:
-        - spring-mobile-device
     - name: Spring Plugin
       groupId: org.springframework.plugin
       version: 1.2.0.RELEASE
@@ -324,12 +318,13 @@ platform_definition:
         - spring-plugin-metadata
     - name: Spring REST Docs
       groupId: org.springframework.restdocs
-      version: 1.2.2.RELEASE
+      version: 2.0.0.RC1
       modules:
         - spring-restdocs-asciidoctor
         - spring-restdocs-core
         - spring-restdocs-mockmvc
         - spring-restdocs-restassured
+        - spring-restdocs-webtestclient
       build:
         repository: https://github.com/spring-projects/spring-restdocs
     - name: Spring Retry
@@ -339,7 +334,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 5.0.0.BUILD-SNAPSHOT
+      version: 5.0.0.RC1
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
@@ -374,7 +369,7 @@ platform_definition:
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 2.0.0.M5
+      version: 2.0.0.RC1
       modules:
         - spring-session-core
         - spring-session-data-redis
@@ -384,6 +379,11 @@ platform_definition:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-session
         tagPrefix:
+    - name: Spring Session Data MongoDB
+      groupId: org.springframework.session
+      version: 2.0.0.RC1
+      modules:
+        - spring-session-data-mongodb
     - name: Spring Social
       groupId: org.springframework.social
       version: 2.0.0.M4

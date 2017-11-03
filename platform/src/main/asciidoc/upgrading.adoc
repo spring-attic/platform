@@ -42,6 +42,9 @@ part of the upgrade process.
 | `com.google.code.findbugs:annotations`
 | No longer a direct dependency of any of the Platform's projects
 
+| `com.jayway.restassured:rest-assured`
+| No longer a direct dependency of any of the Platform's projects
+
 | `com.rometools:rome-fetcher`
 | No longer a direct dependency of any of the Platform's projects
 
