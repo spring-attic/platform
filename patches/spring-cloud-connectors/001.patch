@@ -1,0 +1,25 @@
+From 8a69e9aad93a60d85b14a44aacf5437875255548 Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Sat, 4 Nov 2017 12:07:40 +0000
+Subject: [PATCH] Work around breaking API changes in Guava 20.0
+
+---
+ build.gradle | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/build.gradle b/build.gradle
+index 70b5888..1f77049 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -85,6 +85,8 @@ subprojects {
+ 	if (project.hasProperty('platformVersion')) {
+ 		apply plugin: 'spring-io'
+ 
++		ext['guava.version'] = '19.0'
++
+ 		// necessary to resolve the Spring IO versions (which may include snapshots)
+ 		repositories {
+ 			maven { url "https://repo.spring.io/libs-snapshot" }
+-- 
+2.14.1
+
