@@ -128,7 +128,7 @@ platform_definition:
         - spring-boot-starter-web-services
     - name: Spring Cloud Connectors
       groupId: org.springframework.cloud
-      version: 1.2.4.RELEASE
+      version: 1.2.5.RELEASE
       modules:
         - spring-cloud-core
         - spring-cloud-cloudfoundry-connector
@@ -458,7 +458,7 @@ platform_definition:
         - spring-webflow
     - name: Spring Web Services
       groupId: org.springframework.ws
-      version: 2.4.1.RELEASE
+      version: 2.4.2.RELEASE
       modules:
         - spring-ws-core
         - spring-ws-security
