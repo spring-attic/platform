@@ -426,7 +426,7 @@ platform_definition:
         - spring-webflow
     - name: Spring Web Services
       groupId: org.springframework.ws
-      version: 3.0.0.RC1
+      version: 3.0.0.RELEASE
       modules:
         - spring-ws-core
         - spring-ws-security
@@ -742,6 +742,7 @@ platform_definition:
       - 'org.glassfish.jersey.ext:jersey-entity-filtering'
       - 'org.glassfish.jersey.media:jersey-media-jaxb'
       - 'org.glassfish.jersey.media:jersey-media-multipart'
+      - 'org.hdrhistogram:HdrHistogram'
       - 'org.hibernate:hibernate-c3p0'
       - 'org.hibernate:hibernate-ehcache'
       - 'org.hibernate:hibernate-hikaricp'
