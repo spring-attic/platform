@@ -520,7 +520,6 @@ platform_definition:
       - 'com.rometools:rome-modules'
       - 'com.rometools:rome-opml'
       - 'com.rometools:rome-propono'
-      - 'commons-digester:commons-digester'
       - 'io.dropwizard.metrics:metrics-annotation'
       - 'io.dropwizard.metrics:metrics-ehcache'
       - 'io.dropwizard.metrics:metrics-ganglia'
