@@ -287,7 +287,7 @@ platform_definition:
         - spring-integration-splunk
     - name: Spring Kafka
       groupId: org.springframework.kafka
-      version: 2.0.0.RELEASE
+      version: 2.1.0.RC1
       modules:
         - spring-kafka
         - spring-kafka-test
