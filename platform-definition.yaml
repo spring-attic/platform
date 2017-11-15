@@ -65,6 +65,7 @@ platform_definition:
         - spring-boot-starter-data-cassandra
         - spring-boot-starter-data-cassandra-reactive
         - spring-boot-starter-data-couchbase
+        - spring-boot-starter-data-couchbase-reactive
         - spring-boot-starter-data-elasticsearch
         - spring-boot-starter-data-jpa
         - spring-boot-starter-data-ldap
@@ -108,7 +109,7 @@ platform_definition:
         - spring-boot-starter-web-services
     - name: Spring Cloud Connectors
       groupId: org.springframework.cloud
-      version: 2.0.0.RELEASE
+      version: 2.0.1.RELEASE
       modules:
         - spring-cloud-connectors-core
         - spring-cloud-cloudfoundry-connector
