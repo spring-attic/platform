@@ -765,7 +765,7 @@ platform_definition:
     'com.jayway.jsonpath:json-path': '2.3.0'
     'com.rometools:rome': '1.7.4'
     'com.squareup.okhttp3:okhttp': '3.8.1'
-    'io.netty:netty-all': '4.1.16.Final'
+    'io.netty:netty-all': '4.1.17.Final'
     'javax.jdo:jdo-api': '3.1'
     'net.sourceforge.htmlunit:htmlunit': '2.23'
     'org.apache.wss4j:wss4j-ws-security-dom': '2.2'
