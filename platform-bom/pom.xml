@@ -173,7 +173,7 @@
 		<wss4j.version>1.6.19</wss4j.version>
 		<wss4j2.version>2.1.11</wss4j2.version>
 		<xmlbeans.version>2.6.0</xmlbeans.version>
-		<xmlprojector.version>1.4.13</xmlprojector.version>
+		<xmlprojector.version>1.4.14</xmlprojector.version>
 		<xmlschema.version>2.2.2</xmlschema.version>
 		<xmlunit.version>1.6</xmlunit.version>
 		<xom.version>1.2.5</xom.version>
