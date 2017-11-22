@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 3.1.1.RELEASE
+      version: 3.1.2.RELEASE
       modules:
         - reactor-core
     - name: Spring AMQP
@@ -225,7 +225,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 5.0.0.RC1
+      version: 5.0.0.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         runTestsWith:
@@ -319,7 +319,7 @@ platform_definition:
         - spring-plugin-metadata
     - name: Spring REST Docs
       groupId: org.springframework.restdocs
-      version: 2.0.0.RC1
+      version: 2.0.0.BUILD-SNAPSHOT
       modules:
         - spring-restdocs-asciidoctor
         - spring-restdocs-core
@@ -335,7 +335,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 5.0.0.RC1
+      version: 5.0.0.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
@@ -370,7 +370,7 @@ platform_definition:
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 2.0.0.RC1
+      version: 2.0.0.BUILD-SNAPSHOT
       modules:
         - spring-session-core
         - spring-session-data-redis
@@ -382,7 +382,7 @@ platform_definition:
         tagPrefix:
     - name: Spring Session Data MongoDB
       groupId: org.springframework.session
-      version: 2.0.0.RC1
+      version: 2.0.0.BUILD-SNAPSHOT
       modules:
         - spring-session-data-mongodb
     - name: Spring Social
