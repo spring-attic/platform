@@ -50,6 +50,8 @@
 		<spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
 		<spring-security-jwt.version>1.0.8.RELEASE</spring-security-jwt.version>
 		<spring-security-oauth.version>2.2.1.RELEASE</spring-security-oauth.version>
+		<spring-social.version>1.1.4.RELEASE</spring-social.version>
+		<spring-social-twitter.version>1.1.2.RELEASE</spring-social-twitter.version>
 		<spring-web-flow.version>2.5.0.BUILD-SNAPSHOT</spring-web-flow.version>
 		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
 
@@ -204,6 +206,35 @@
 				<groupId>org.springframework.security.oauth</groupId>
 				<artifactId>spring-security-oauth2</artifactId>
 				<version>${spring-security-oauth.version}</version>
+			</dependency>
+
+			<!-- Spring Social -->
+			<dependency>
+				<groupId>org.springframework.social</groupId>
+				<artifactId>spring-social-config</artifactId>
+				<version>${spring-social.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.social</groupId>
+				<artifactId>spring-social-core</artifactId>
+				<version>${spring-social.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.social</groupId>
+				<artifactId>spring-social-security</artifactId>
+				<version>${spring-social.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.springframework.social</groupId>
+				<artifactId>spring-social-web</artifactId>
+				<version>${spring-social.version}</version>
+			</dependency>
+
+			<!-- Spring Social Twitter -->
+			<dependency>
+				<groupId>org.springframework.social</groupId>
+				<artifactId>spring-social-twitter</artifactId>
+				<version>${spring-social-twitter.version}</version>
 			</dependency>
 
 			<!-- Spring Web Flow -->

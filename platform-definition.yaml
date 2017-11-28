@@ -95,9 +95,6 @@ platform_definition:
         - spring-boot-starter-quartz
         - spring-boot-starter-reactor-netty
         - spring-boot-starter-security
-        - spring-boot-starter-social-facebook
-        - spring-boot-starter-social-linkedin
-        - spring-boot-starter-social-twitter
         - spring-boot-starter-test
         - spring-boot-starter-thymeleaf
         - spring-boot-starter-tomcat
@@ -387,7 +384,7 @@ platform_definition:
         - spring-session-data-mongodb
     - name: Spring Social
       groupId: org.springframework.social
-      version: 2.0.0.M4
+      version: 1.1.4.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-social
       modules:
@@ -395,22 +392,9 @@ platform_definition:
         - spring-social-core
         - spring-social-security
         - spring-social-web
-    - name: Spring Social Facebook
-      groupId: org.springframework.social
-      version: 3.0.0.M3
-      build:
-        repository: https://github.com/spring-projects/spring-social-facebook
-      modules:
-        - spring-social-facebook
-        - spring-social-facebook-web
-    - name: Spring Social LinkedIn
-      groupId: org.springframework.social
-      version: 2.0.0.M3
-      modules:
-        - spring-social-linkedin
     - name: Spring Social Twitter
       groupId: org.springframework.social
-      version: 2.0.0.M4
+      version: 1.1.2.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-social-twitter
       modules:
@@ -452,7 +436,7 @@ platform_definition:
          - 'org.iq80.snappy:snappy'
       'org.springframework.data:spring-data-rest-webmvc':
          - 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate4'
-      'org.springframework.social:spring-social-web-thymeleaf3':
+      'org.springframework.social:spring-social-web':
          - 'org.thymeleaf:thymeleaf-spring4'
       'org.springframework.webflow:spring-faces':
          - 'org.springframework:spring-webmvc-portlet'
