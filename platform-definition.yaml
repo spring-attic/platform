@@ -767,6 +767,7 @@ platform_definition:
       - 'org.seleniumhq.selenium:selenium-remote-driver'
       - 'org.seleniumhq.selenium:selenium-safari-driver'
       - 'org.seleniumhq.selenium:selenium-support'
+      - 'org.slf4j:log4j-over-slf4j'
       - 'org.slf4j:slf4j-ext'
       - 'org.slf4j:slf4j-jcl'
       - 'org.slf4j:slf4j-jdk14'
