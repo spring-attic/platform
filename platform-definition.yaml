@@ -449,6 +449,7 @@ platform_definition:
          - 'org.scala-lang:scala-library'
       'org.springframework.data:spring-data-gemfire':
          - 'org.springframework.shell:spring-shell'
+         - 'org.iq80.snappy:snappy'
       'org.springframework.data:spring-data-rest-webmvc':
          - 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate4'
       'org.springframework.social:spring-social-web-thymeleaf3':
