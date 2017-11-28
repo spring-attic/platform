@@ -37,7 +37,8 @@ class AbstractDependenciesTests {
 			'jackson-module-scala_2.10',
 			'jackson-module-scala_2.11',
 			'jackson-module-scala_2.12',
-			'netty-example']
+			'netty-example',
+			'spring-security-bom']
 		xml.dependencyManagement.dependencies.dependency
 			.findAll { it.type.text() != 'test-jar' }
 			.findAll { !ignoredArtifacts.contains(it.artifactId.text()) }
