@@ -319,7 +319,7 @@ platform_definition:
         - spring-plugin-metadata
     - name: Spring REST Docs
       groupId: org.springframework.restdocs
-      version: 2.0.0.BUILD-SNAPSHOT
+      version: 2.0.0.RELEASE
       modules:
         - spring-restdocs-asciidoctor
         - spring-restdocs-core
@@ -623,12 +623,15 @@ platform_definition:
       - 'org.apache.logging.log4j:log4j-1.2-api'
       - 'org.apache.logging.log4j:log4j-api-scala_2.10'
       - 'org.apache.logging.log4j:log4j-api-scala_2.11'
+      - 'org.apache.logging.log4j:log4j-cassandra'
+      - 'org.apache.logging.log4j:log4j-couchdb'
       - 'org.apache.logging.log4j:log4j-flume-ng'
       - 'org.apache.logging.log4j:log4j-iostreams'
       - 'org.apache.logging.log4j:log4j-jcl'
       - 'org.apache.logging.log4j:log4j-jmx-gui'
       - 'org.apache.logging.log4j:log4j-jul'
       - 'org.apache.logging.log4j:log4j-liquibase'
+      - 'org.apache.logging.log4j:log4j-mongodb'
       - 'org.apache.logging.log4j:log4j-nosql'
       - 'org.apache.logging.log4j:log4j-taglib'
       - 'org.apache.logging.log4j:log4j-web'
@@ -789,7 +792,7 @@ platform_definition:
       - 'org.springframework.boot:spring-boot-test-support'
       - 'org.springframework.data:spring-data-geode'
       - 'org.springframework.restdocs:spring-restdocs-asciidoctor'
-      - 'org.springframework:spring-build-src'
+      - 'org.springframework.security:spring-security-bom'
       - 'org.xerial:sqlite-jdbc'
       - 'org.xmlunit:xmlunit-legacy'
       - 'xml-apis:xml-apis'
