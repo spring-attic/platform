@@ -1,6 +1,6 @@
 buildscript {
 	repositories {
-		jcenter()
+		mavenCentral()
 	}
 	dependencies {
 		classpath 'io.spring.gradle:dependency-management-plugin:1.0.3.RELEASE'
