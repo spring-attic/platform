@@ -16,7 +16,7 @@ dependencyManagement {
 }
 
 repositories {
-	flatDir { dirs '../../dependency' }
+	flatDir { dirs '../dependency' }
 	maven { url 'http://repo.spring.io/libs-snapshot' }
 	maven { url 'http://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts' }
 	mavenCentral()
