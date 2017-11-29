@@ -14,7 +14,7 @@ platform_definition:
         - reactor-core
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 2.0.0.RELEASE
+      version: 2.0.1.RELEASE
       modules:
         - spring-amqp
         - spring-rabbit
@@ -222,7 +222,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 5.0.0.BUILD-SNAPSHOT
+      version: 5.0.0.RELEASE
       build:
         compileWith: jdk8
         runTestsWith:
