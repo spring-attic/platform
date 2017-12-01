@@ -384,7 +384,7 @@ platform_definition:
         - spring-session-data-mongodb
     - name: Spring Social
       groupId: org.springframework.social
-      version: 1.1.4.RELEASE
+      version: 1.1.5.BUILD-SNAPSHOT
       build:
         repository: https://github.com/spring-projects/spring-social
       modules:
