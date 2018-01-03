@@ -107,7 +107,6 @@
 		<javax-jax-ws.version>2.3.0</javax-jax-ws.version>
 		<javax-jsp.version>2.3.2-b02</javax-jsp.version>
 		<javax-jstl.version>1.2.1</javax-jstl.version>
-		<javax-money.version>1.0.1</javax-money.version>
 		<javax-resource.version>1.7</javax-resource.version>
 		<javax-websocket.version>1.1</javax-websocket.version>
 		<jbatch-tck.version>1.0</jbatch-tck.version>
@@ -571,11 +570,6 @@
 				<groupId>javax.interceptor</groupId>
 				<artifactId>javax.interceptor-api</artifactId>
 				<version>${javax-interceptor.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>javax.money</groupId>
-				<artifactId>money-api</artifactId>
-				<version>${javax-money.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.resource</groupId>
