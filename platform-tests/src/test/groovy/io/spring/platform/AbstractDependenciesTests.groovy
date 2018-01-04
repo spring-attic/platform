@@ -34,14 +34,17 @@ class AbstractDependenciesTests {
 	def eachDependency(Closure closure) {
 		def xml = new XmlSlurper().parse(generateEffectivePom())
 		def ignoredArtifacts = [
+			'cdi-full-servlet',
 			'jackson-dataformat-ion',
 			'jackson-module-scala_2.10',
 			'jackson-module-scala_2.11',
 			'jackson-module-scala_2.12',
+			'jetty-home',
 			'netty-example',
 			'spring-security-bom']
 		xml.dependencyManagement.dependencies.dependency
 			.findAll { it.type.text() != 'test-jar' }
+			.findAll { it.type.text() != 'zip' }
 			.findAll { !ignoredArtifacts.contains(it.artifactId.text()) }
 			.each { dependency ->
 				def exclusion = exclusions[dependency.artifactId.text()]
