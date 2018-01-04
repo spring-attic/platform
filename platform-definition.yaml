@@ -37,13 +37,12 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.7.4.RELEASE
+      version: 1.7.5.RELEASE
       modules:
         - spring-amqp
         - spring-rabbit
       build:
         repository: https://github.com/spring-projects/spring-amqp
-        checkout: 1.7.x
         compileWith: jdk8
         runTestsWith:
           - jdk8
@@ -244,9 +243,8 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.3.12.RELEASE
+      version: 4.3.13.RELEASE
       build:
-        checkout: 4.3.x
         compileWith: jdk8
         runTestsWith:
           - jdk8
@@ -365,7 +363,7 @@ platform_definition:
         - spring-restdocs-restassured
     - name: Spring Retry
       groupId: org.springframework.retry
-      version: 1.2.1.RELEASE
+      version: 1.2.2.RELEASE
       modules:
         - spring-retry
     - name: Spring Security
@@ -392,7 +390,7 @@ platform_definition:
         - spring-security-web
     - name: Spring Security JWT
       groupId: org.springframework.security
-      version: 1.0.8.RELEASE
+      version: 1.0.9.RELEASE
       modules:
        - spring-security-jwt
     - name: Spring Security OAuth
