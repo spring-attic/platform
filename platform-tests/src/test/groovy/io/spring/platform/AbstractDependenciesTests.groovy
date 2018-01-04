@@ -34,6 +34,7 @@ class AbstractDependenciesTests {
 	def eachDependency(Closure closure) {
 		def xml = new XmlSlurper().parse(generateEffectivePom())
 		def ignoredArtifacts = [
+			'jackson-dataformat-ion',
 			'jackson-module-scala_2.10',
 			'jackson-module-scala_2.11',
 			'jackson-module-scala_2.12',

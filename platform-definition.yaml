@@ -327,7 +327,7 @@ platform_definition:
         repository: https://github.com/spring-projects/spring-restdocs
     - name: Spring Retry
       groupId: org.springframework.retry
-      version: 1.2.1.RELEASE
+      version: 1.2.2.RELEASE
       modules:
         - spring-retry
     - name: Spring Security
@@ -356,7 +356,7 @@ platform_definition:
         - spring-security-web
     - name: Spring Security JWT
       groupId: org.springframework.security
-      version: 1.0.8.RELEASE
+      version: 1.0.9.RELEASE
       modules:
        - spring-security-jwt
     - name: Spring Security OAuth
