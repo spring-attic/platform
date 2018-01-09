@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 3.1.2.RELEASE
+      version: 3.1.3.BUILD-SNAPSHOT
       modules:
         - reactor-core
     - name: Spring AMQP
@@ -192,7 +192,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 5.0.2.RELEASE
+      version: 5.0.3.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
@@ -222,7 +222,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 5.0.0.RELEASE
+      version: 5.0.1.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         runTestsWith:
@@ -285,7 +285,7 @@ platform_definition:
         - spring-integration-splunk
     - name: Spring Kafka
       groupId: org.springframework.kafka
-      version: 2.1.0.RELEASE
+      version: 2.1.1.BUILD-SNAPSHOT
       modules:
         - spring-kafka
         - spring-kafka-test
@@ -767,8 +767,10 @@ platform_definition:
       - 'org.postgresql:postgresql'
       - 'org.seleniumhq.selenium:selenium-api'
       - 'org.seleniumhq.selenium:selenium-chrome-driver'
+      - 'org.seleniumhq.selenium:selenium-edge-driver'
       - 'org.seleniumhq.selenium:selenium-firefox-driver'
       - 'org.seleniumhq.selenium:selenium-ie-driver'
+      - 'org.seleniumhq.selenium:selenium-opera-driver'
       - 'org.seleniumhq.selenium:selenium-remote-driver'
       - 'org.seleniumhq.selenium:selenium-safari-driver'
       - 'org.seleniumhq.selenium:selenium-support'
@@ -789,7 +791,11 @@ platform_definition:
       - 'org.xmlunit:xmlunit-legacy'
       - 'xml-apis:xml-apis'
   downgraded_dependencies:
-    'com.fasterxml.jackson.core:jackson-annotations': '2.9.2'
+    'com.fasterxml.jackson.core:jackson-annotations': '2.9.3'
+    'com.fasterxml.jackson.core:jackson-databind': '2.9.3'
+    'com.fasterxml.jackson.dataformat:jackson-dataformat-cbor': '2.9.3'
+    'com.fasterxml.jackson.dataformat:jackson-dataformat-smile': '2.9.3'
+    'com.fasterxml.jackson.dataformat:jackson-dataformat-xml': '2.9.3'
     'io.projectreactor:reactor-core': '3.1.2.BUILD-SNAPSHOT'
     'org.aspectj:aspectjweaver': '1.9.0.BETA-7'
     'org.eclipse.persistence:org.eclipse.persistence.jpa': '2.7.0-RC3'
