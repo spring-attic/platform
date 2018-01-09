@@ -741,6 +741,7 @@ platform_definition:
       - 'org.postgresql:postgresql'
       - 'org.seleniumhq.selenium:selenium-api'
       - 'org.seleniumhq.selenium:selenium-chrome-driver'
+      - 'org.seleniumhq.selenium:selenium-edge-driver'
       - 'org.seleniumhq.selenium:selenium-firefox-driver'
       - 'org.seleniumhq.selenium:selenium-ie-driver'
       - 'org.seleniumhq.selenium:selenium-remote-driver'
