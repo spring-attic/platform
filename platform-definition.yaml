@@ -255,6 +255,7 @@ platform_definition:
         - spring-integration-stream
         - spring-integration-syslog
         - spring-integration-test
+        - spring-integration-test-support
         - spring-integration-twitter
         - spring-integration-webflux
         - spring-integration-websocket
