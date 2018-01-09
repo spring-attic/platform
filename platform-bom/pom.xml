@@ -126,6 +126,7 @@
 		<oauth2-oidc-sdk.version>5.38</oauth2-oidc-sdk.version>
 		<okhttp3.version>3.9.1</okhttp3.version>
 		<openjpa.version>2.4.2</openjpa.version>
+		<openpdf.version>1.0.5</openpdf.version>
 		<neo4j.version>2.3.2</neo4j.version>
 		<neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
 		<neo4j-spatial.version>0.12-neo4j-2.0.1</neo4j-spatial.version>
@@ -279,6 +280,11 @@
 				<groupId>com.fasterxml.woodstox</groupId>
 				<artifactId>woodstox-core</artifactId>
 				<version>${woodstox5.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.github.librepdf</groupId>
+				<artifactId>openpdf</artifactId>
+				<version>${openpdf.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>com.google.code.findbugs</groupId>
