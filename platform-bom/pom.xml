@@ -58,6 +58,7 @@
 		<aalto-xml.version>1.0.0</aalto-xml.version>
 		<api-guardian.version>1.0.0</api-guardian.version>
 		<apacheds.version>1.5.5</apacheds.version>
+		<apache-geode.version>1.2.1</apache-geode.version>
 		<apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
 		<apache-shiro.version>1.4.0</apache-shiro.version>
 		<axiom.version>1.2.20</axiom.version>
@@ -665,6 +666,69 @@
 				<groupId>org.apache.directory.shared</groupId>
 				<artifactId>shared-ldap</artifactId>
 				<version>${apache-shared-ldap.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.geode</groupId>
+				<artifactId>geode-common</artifactId>
+				<version>${apache-geode.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.geode</groupId>
+				<artifactId>geode-core</artifactId>
+				<version>${apache-geode.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.geode</groupId>
+				<artifactId>geode-cq</artifactId>
+				<version>${apache-geode.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.geode</groupId>
+				<artifactId>geode-json</artifactId>
+				<version>${apache-geode.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.geode</groupId>
+				<artifactId>geode-junit</artifactId>
+				<version>${apache-geode.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.geode</groupId>
+				<artifactId>geode-lucene</artifactId>
+				<version>${apache-geode.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.geode</groupId>
+				<artifactId>geode-old-client-support</artifactId>
+				<version>${apache-geode.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.geode</groupId>
+				<artifactId>geode-pulse</artifactId>
+				<version>${apache-geode.version}</version>
+				<type>war</type>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.geode</groupId>
+				<artifactId>geode-rebalancer</artifactId>
+				<version>${apache-geode.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.geode</groupId>
+				<artifactId>geode-wan</artifactId>
+				<version>${apache-geode.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.geode</groupId>
+				<artifactId>geode-web</artifactId>
+				<version>${apache-geode.version}</version>
+				<type>war</type>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.geode</groupId>
+				<artifactId>geode-web-api</artifactId>
+				<version>${apache-geode.version}</version>
+				<type>war</type>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.kafka</groupId>
