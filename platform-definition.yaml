@@ -147,6 +147,11 @@ platform_definition:
       version: 2.0.3.BUILD-SNAPSHOT
       modules:
         - spring-data-gemfire
+    - name: Spring Data Geode
+      groupId: org.springframework.data
+      version: 2.0.3.BUILD-SNAPSHOT
+      modules:
+        - spring-data-geode
     - name: Spring Data JPA
       groupId: org.springframework.data
       version: 2.0.3.BUILD-SNAPSHOT
@@ -612,6 +617,14 @@ platform_definition:
       - 'org.apache.activemq:artemis-selector'
       - 'org.apache.activemq:artemis-server'
       - 'org.apache.activemq:artemis-service-extensions'
+      - 'org.apache.geode:geode-common'
+      - 'org.apache.geode:geode-json'
+      - 'org.apache.geode:geode-junit'
+      - 'org.apache.geode:geode-old-client-support'
+      - 'org.apache.geode:geode-pulse'
+      - 'org.apache.geode:geode-rebalancer'
+      - 'org.apache.geode:geode-web'
+      - 'org.apache.geode:geode-web-api'
       - 'org.apache.httpcomponents:httpcore'
       - 'org.apache.httpcomponents:httpcore-nio'
       - 'org.apache.johnzon:johnzon-jsonb'
