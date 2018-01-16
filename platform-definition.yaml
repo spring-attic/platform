@@ -368,7 +368,7 @@ platform_definition:
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 2.0.0.RC2
+      version: 2.0.0.RELEASE
       modules:
         - spring-session-core
         - spring-session-data-redis
@@ -380,7 +380,7 @@ platform_definition:
         tagPrefix:
     - name: Spring Session Data MongoDB
       groupId: org.springframework.session
-      version: 2.0.0.RC2
+      version: 2.0.0.RELEASE
       modules:
         - spring-session-data-mongodb
     - name: Spring Social
@@ -527,6 +527,7 @@ platform_definition:
       - 'io.dropwizard.metrics:metrics-servlet'
       - 'io.dropwizard.metrics:metrics-servlets'
       - 'io.javaslang:javaslang-match'
+      - 'io.micrometer:micrometer-registry-new-relic'
       - 'io.netty:netty-codec'
       - 'io.netty:netty-codec-dns'
       - 'io.netty:netty-codec-haproxy'
