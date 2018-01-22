@@ -142,7 +142,7 @@ platform_definition:
       version: 2.0.3.BUILD-SNAPSHOT
       modules:
         - spring-data-envers
-    - name: Spring Data Gemfire
+    - name: Spring Data GemFire
       groupId: org.springframework.data
       version: 2.0.3.BUILD-SNAPSHOT
       modules:
@@ -435,8 +435,6 @@ platform_definition:
          - 'org.scala-lang:scala-library'
       'org.springframework.data:spring-data-gemfire':
          - 'edu.umd.cs.mtc:multithreadedtc'
-         - 'org.springframework.shell:spring-shell'
-         - 'org.iq80.snappy:snappy'
       'org.springframework.data:spring-data-rest-webmvc':
          - 'com.fasterxml.jackson.datatype:jackson-datatype-hibernate4'
       'org.springframework.social:spring-social-web':
@@ -461,6 +459,14 @@ platform_definition:
       # that both it and the rest of the Platform do not depend upon directly
       - 'ch.qos.logback:logback-access'
       - 'ch.qos.logback:logback-core'
+      - 'io.pivotal.gemfire:geode-common'
+      - 'io.pivotal.gemfire:geode-json'
+      - 'io.pivotal.gemfire:geode-junit'
+      - 'io.pivotal.gemfire:geode-old-client-support'
+      - 'io.pivotal.gemfire:geode-pulse'
+      - 'io.pivotal.gemfire:geode-rebalancer'
+      - 'io.pivotal.gemfire:geode-web'
+      - 'io.pivotal.gemfire:geode-web-api'
       - 'com.datastax.cassandra:cassandra-driver-mapping'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-avro'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv'
