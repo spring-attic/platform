@@ -498,6 +498,11 @@
 			</dependency>
 			<dependency>
 				<groupId>io.pivotal.gemfire</groupId>
+				<artifactId>geode-common</artifactId>
+				<version>${gemfire.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.pivotal.gemfire</groupId>
 				<artifactId>geode-core</artifactId>
 				<version>${gemfire.version}</version>
 			</dependency>
@@ -508,13 +513,51 @@
 			</dependency>
 			<dependency>
 				<groupId>io.pivotal.gemfire</groupId>
+				<artifactId>geode-json</artifactId>
+				<version>${gemfire.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.pivotal.gemfire</groupId>
+				<artifactId>geode-junit</artifactId>
+				<version>${gemfire.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.pivotal.gemfire</groupId>
 				<artifactId>geode-lucene</artifactId>
+				<version>${gemfire.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.pivotal.gemfire</groupId>
+				<artifactId>geode-old-client-support</artifactId>
+				<version>${gemfire.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.pivotal.gemfire</groupId>
+				<artifactId>geode-pulse</artifactId>
+				<version>${gemfire.version}</version>
+				<type>war</type>
+			</dependency>
+			<dependency>
+				<groupId>io.pivotal.gemfire</groupId>
+				<artifactId>geode-rebalancer</artifactId>
 				<version>${gemfire.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>io.pivotal.gemfire</groupId>
 				<artifactId>geode-wan</artifactId>
 				<version>${gemfire.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>io.pivotal.gemfire</groupId>
+				<artifactId>geode-web</artifactId>
+				<version>${gemfire.version}</version>
+				<type>war</type>
+			</dependency>
+			<dependency>
+				<groupId>io.pivotal.gemfire</groupId>
+				<artifactId>geode-web-api</artifactId>
+				<version>${gemfire.version}</version>
+				<type>war</type>
 			</dependency>
 			<dependency>
 				<groupId>io.vavr</groupId>
