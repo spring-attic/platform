@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 3.1.4.BUILD-SNAPSHOT
+      version: 3.1.3.RELEASE
       modules:
         - reactor-core
     - name: Spring AMQP
@@ -198,7 +198,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 5.0.3.BUILD-SNAPSHOT
+      version: 5.0.3.RELEASE
       modules:
         - spring-aop
         - spring-aspects
