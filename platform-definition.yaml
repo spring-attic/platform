@@ -46,7 +46,6 @@ platform_definition:
         - spring-boot-actuator-docs
         - spring-boot-autoconfigure
         - spring-boot-cli
-        - spring-boot-configuration-analyzer
         - spring-boot-configuration-metadata
         - spring-boot-configuration-processor
         - spring-boot-dependencies
@@ -54,6 +53,7 @@ platform_definition:
         - spring-boot-loader
         - spring-boot-loader-tools
         - spring-boot-maven-plugin
+        - spring-boot-properties-migrator
         - spring-boot-starter
         - spring-boot-starter-activemq
         - spring-boot-starter-actuator
@@ -119,81 +119,81 @@ platform_definition:
         checkout: 2.x
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 2.0.3.BUILD-SNAPSHOT
+      version: 2.0.3.RELEASE
       modules:
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 2.0.3.BUILD-SNAPSHOT
+      version: 2.0.3.RELEASE
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 3.0.3.BUILD-SNAPSHOT
+      version: 3.0.3.RELEASE
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 3.0.3.BUILD-SNAPSHOT
+      version: 3.0.3.RELEASE
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 2.0.3.BUILD-SNAPSHOT
+      version: 2.0.3.RELEASE
       modules:
         - spring-data-envers
     - name: Spring Data GemFire
       groupId: org.springframework.data
-      version: 2.0.3.BUILD-SNAPSHOT
+      version: 2.0.3.RELEASE
       modules:
         - spring-data-gemfire
     - name: Spring Data Geode
       groupId: org.springframework.data
-      version: 2.0.3.BUILD-SNAPSHOT
+      version: 2.0.3.RELEASE
       modules:
         - spring-data-geode
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 2.0.3.BUILD-SNAPSHOT
+      version: 2.0.3.RELEASE
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 2.0.3.BUILD-SNAPSHOT
+      version: 2.0.3.RELEASE
       modules:
         - spring-data-keyvalue
     - name: Spring Data LDAP
       groupId: org.springframework.data
-      version: 2.0.3.BUILD-SNAPSHOT
+      version: 2.0.3.RELEASE
       modules:
         - spring-data-ldap
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 2.0.3.BUILD-SNAPSHOT
+      version: 2.0.3.RELEASE
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-cross-store
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 5.0.3.BUILD-SNAPSHOT
+      version: 5.0.3.RELEASE
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 2.0.3.BUILD-SNAPSHOT
+      version: 2.0.3.RELEASE
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 3.0.3.BUILD-SNAPSHOT
+      version: 3.0.3.RELEASE
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 3.0.3.BUILD-SNAPSHOT
+      version: 3.0.3.RELEASE
       modules:
         - spring-data-solr
     - name: Spring Framework
