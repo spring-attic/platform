@@ -61,7 +61,7 @@ platform_definition:
           - jdk8
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 1.5.10.BUILD-SNAPSHOT
+      version: 1.5.10.RELEASE
       modules:
         - spring-boot
         - spring-boot-actuator
@@ -762,7 +762,6 @@ platform_definition:
     'com.fasterxml.jackson.core:jackson-annotations': '2.8.11'
     'com.fasterxml.jackson.core:jackson-databind': '2.8.11'
     'com.fasterxml.jackson.dataformat:jackson-dataformat-xml': '2.8.11'
-    'com.gemstone.gemfire:gemfire': '8.2.5'
     'com.jayway.jsonpath:json-path': '2.3.0'
     'com.rometools:rome': '1.7.4'
     'com.squareup.okhttp3:okhttp': '3.8.1'
@@ -770,12 +769,8 @@ platform_definition:
     'javax.jdo:jdo-api': '3.1'
     'net.sourceforge.htmlunit:htmlunit': '2.23'
     'org.apache.wss4j:wss4j-ws-security-dom': '2.2'
-    'org.aspectj:aspectjrt': '1.8.10'
-    'org.aspectj:aspectjweaver': '1.8.10'
     'org.beanshell:bsh': '2.0b5'
-    'org.codehaus.groovy:groovy-all': '2.4.8'
     'org.hibernate:hibernate-core': '5.2.10.Final'
-    'org.hsqldb:hsqldb': '2.3.4'
     'org.seleniumhq.selenium:htmlunit-driver': '2.23.2'
     'org.webjars:hal-browser': '3325375'
   repositories:
