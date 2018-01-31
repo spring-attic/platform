@@ -171,7 +171,7 @@
 		<websphere-uow.version>6.0.2.17</websphere-uow.version>
 		<woodstox.version>4.4.1</woodstox.version>
 		<wss4j.version>1.6.19</wss4j.version>
-		<wss4j2.version>2.1.11</wss4j2.version>
+		<wss4j2.version>2.1.12</wss4j2.version>
 		<xmlbeans.version>2.6.0</xmlbeans.version>
 		<xmlprojector.version>1.4.14</xmlprojector.version>
 		<xmlschema.version>2.2.2</xmlschema.version>
