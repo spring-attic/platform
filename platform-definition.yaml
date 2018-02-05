@@ -119,81 +119,81 @@ platform_definition:
         checkout: 2.x
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 2.0.3.RELEASE
+      version: 2.0.4.BUILD-SNAPSHOT
       modules:
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 2.0.3.RELEASE
+      version: 2.0.4.BUILD-SNAPSHOT
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 3.0.3.RELEASE
+      version: 3.0.4.BUILD-SNAPSHOT
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 3.0.3.RELEASE
+      version: 3.0.4.BUILD-SNAPSHOT
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 2.0.3.RELEASE
+      version: 2.0.4.BUILD-SNAPSHOT
       modules:
         - spring-data-envers
     - name: Spring Data GemFire
       groupId: org.springframework.data
-      version: 2.0.3.RELEASE
+      version: 2.0.4.BUILD-SNAPSHOT
       modules:
         - spring-data-gemfire
     - name: Spring Data Geode
       groupId: org.springframework.data
-      version: 2.0.3.RELEASE
+      version: 2.0.4.BUILD-SNAPSHOT
       modules:
         - spring-data-geode
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 2.0.3.RELEASE
+      version: 2.0.4.BUILD-SNAPSHOT
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 2.0.3.RELEASE
+      version: 2.0.4.BUILD-SNAPSHOT
       modules:
         - spring-data-keyvalue
     - name: Spring Data LDAP
       groupId: org.springframework.data
-      version: 2.0.3.RELEASE
+      version: 2.0.4.BUILD-SNAPSHOT
       modules:
         - spring-data-ldap
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 2.0.3.RELEASE
+      version: 2.0.4.BUILD-SNAPSHOT
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-cross-store
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 5.0.3.RELEASE
+      version: 5.0.4.BUILD-SNAPSHOT
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 2.0.3.RELEASE
+      version: 2.0.4.BUILD-SNAPSHOT
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 3.0.3.RELEASE
+      version: 3.0.4.BUILD-SNAPSHOT
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 3.0.3.RELEASE
+      version: 3.0.4.BUILD-SNAPSHOT
       modules:
         - spring-data-solr
     - name: Spring Framework
@@ -339,7 +339,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 5.0.1.RELEASE
+      version: 5.0.2.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
@@ -573,6 +573,11 @@ platform_definition:
       - 'io.projectreactor.addons:reactor-logback'
       - 'io.projectreactor.ipc:reactor-ipc'
       - 'io.projectreactor.kafka:reactor-kafka'
+      - 'io.rest-assured:json-path'
+      - 'io.rest-assured:json-schema-validator'
+      - 'io.rest-assured:scala-support'
+      - 'io.rest-assured:spring-mock-mvc'
+      - 'io.rest-assured:xml-path'
       - 'javax.json:javax.json-api'
       - 'javax.servlet:jstl'
       - 'mysql:mysql-connector-java'
