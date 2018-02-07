@@ -102,7 +102,6 @@
 		<javax-faces.version>2.2</javax-faces.version>
 		<javax-inject.version>1</javax-inject.version>
 		<javax-interceptor.version>1.2.1</javax-interceptor.version>
-		<javax-jaxb.version>2.3.0</javax-jaxb.version>
 		<javax-jax-rs.version>2.0.1</javax-jax-rs.version>
 		<javax-jax-ws.version>2.3.0</javax-jax-ws.version>
 		<javax-jsp.version>2.3.2-b02</javax-jsp.version>
@@ -639,11 +638,6 @@
 				<groupId>javax.ws.rs</groupId>
 				<artifactId>javax.ws.rs-api</artifactId>
 				<version>${javax-jax-rs.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>javax.xml.bind</groupId>
-				<artifactId>jaxb-api</artifactId>
-				<version>${javax-jaxb.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.xml.ws</groupId>
