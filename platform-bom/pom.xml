@@ -643,12 +643,12 @@
 			<dependency>
 				<groupId>javax.xml.bind</groupId>
 				<artifactId>jaxb-api</artifactId>
-				<version>${javax-jax-ws.version}</version>
+				<version>${javax-jaxb.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>javax.xml.ws</groupId>
 				<artifactId>jaxws-api</artifactId>
-				<version>${javax-jaxb.version}</version>
+				<version>${javax-jax-ws.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>jline</groupId>
