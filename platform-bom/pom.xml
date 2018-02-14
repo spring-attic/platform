@@ -56,7 +56,6 @@
 		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
 
 		<aalto-xml.version>1.0.0</aalto-xml.version>
-		<api-guardian.version>1.0.0</api-guardian.version>
 		<apacheds.version>1.5.5</apacheds.version>
 		<apache-geode.version>1.2.1</apache-geode.version>
 		<apache-shared-ldap.version>0.9.15</apache-shared-ldap.version>
@@ -906,11 +905,6 @@
 				<groupId>org.apache.ws.xmlschema</groupId>
 				<artifactId>xmlschema-core</artifactId>
 				<version>${xmlschema.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apiguardian</groupId>
-				<artifactId>apiguardian-api</artifactId>
-				<version>${api-guardian.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.atteo</groupId>
