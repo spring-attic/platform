@@ -374,7 +374,7 @@ platform_definition:
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 2.0.1.RELEASE
+      version: 2.0.2.RELEASE
       modules:
         - spring-session-core
         - spring-session-data-redis
@@ -386,7 +386,7 @@ platform_definition:
         tagPrefix:
     - name: Spring Session Data MongoDB
       groupId: org.springframework.session
-      version: 2.0.0.RELEASE
+      version: 2.0.2.RELEASE
       modules:
         - spring-session-data-mongodb
     - name: Spring Social
