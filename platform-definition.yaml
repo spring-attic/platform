@@ -415,7 +415,7 @@ platform_definition:
         tagPrefix:
     - name: Spring Social
       groupId: org.springframework.social
-      version: 1.1.4.RELEASE
+      version: 1.1.5.RELEASE
       build:
         repository: https://github.com/spring-projects/spring-social
       modules:
@@ -612,6 +612,10 @@ platform_definition:
       - 'org.apache.activemq:artemis-selector'
       - 'org.apache.activemq:artemis-server'
       - 'org.apache.activemq:artemis-service-extensions'
+      - 'org.apache.httpcomponents:fluent-hc'
+      - 'org.apache.httpcomponents:httpclient-cache'
+      - 'org.apache.httpcomponents:httpclient-osgi'
+      - 'org.apache.httpcomponents:httpclient-win'
       - 'org.apache.httpcomponents:httpcore'
       - 'org.apache.logging.log4j:log4j-1.2-api'
       - 'org.apache.logging.log4j:log4j-api-scala_2.10'
