@@ -483,6 +483,8 @@ platform_definition:
         - 'org.hibernate:hibernate-entitymanager'
       'org.springframework.data:spring-data-commons':
         - 'org.scala-lang:scala-library'
+      'org.springframework.social:spring-social-web':
+        - 'org.thymeleaf:thymeleaf-spring5'
     ignored_modules:
       - 'org.springframework.boot:spring-boot-actuator-docs' # Its dependencies are provided
       - 'org.springframework.boot:spring-boot-cli' # The CLI doesn't expose its dependencies to applications
