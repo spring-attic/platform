@@ -123,7 +123,7 @@
 		<myfaces.version>2.2.12</myfaces.version>
 		<nimbus-jose-jwt.version>5.1</nimbus-jose-jwt.version>
 		<oauth2-oidc-sdk.version>5.54</oauth2-oidc-sdk.version>
-		<okhttp3.version>3.9.1</okhttp3.version>
+		<okhttp3.version>3.10.0</okhttp3.version>
 		<openjpa.version>2.4.2</openjpa.version>
 		<openpdf.version>1.0.5</openpdf.version>
 		<neo4j.version>2.3.2</neo4j.version>
