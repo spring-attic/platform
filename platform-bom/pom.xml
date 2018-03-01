@@ -156,7 +156,7 @@
 		<woodstox5.version>5.0.3</woodstox5.version>
 		<wss4j2.version>2.2.1</wss4j2.version>
 		<xmlprojector.version>1.4.14</xmlprojector.version>
-		<xmlschema.version>2.2.2</xmlschema.version>
+		<xmlschema.version>2.2.3</xmlschema.version>
 		<xmlunit.version>1.6</xmlunit.version>
 		<xom.version>1.2.5</xom.version>
 		<xstream.version>1.4.10</xstream.version>
