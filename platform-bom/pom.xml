@@ -154,7 +154,7 @@
 		<webjars-json-editor.version>0.7.21</webjars-json-editor.version>
 		<websphere-uow.version>6.0.2.17</websphere-uow.version>
 		<woodstox5.version>5.0.3</woodstox5.version>
-		<wss4j2.version>2.2.0</wss4j2.version>
+		<wss4j2.version>2.2.1</wss4j2.version>
 		<xmlprojector.version>1.4.14</xmlprojector.version>
 		<xmlschema.version>2.2.2</xmlschema.version>
 		<xmlunit.version>1.6</xmlunit.version>
