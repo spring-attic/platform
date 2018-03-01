@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 3.1.4.RELEASE
+      version: 3.1.5.RELEASE
       modules:
         - reactor-core
     - name: Spring AMQP
@@ -38,12 +38,11 @@ platform_definition:
           - jdk8
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 2.0.0.BUILD-SNAPSHOT
+      version: 2.0.0.RELEASE
       modules:
         - spring-boot
         - spring-boot-actuator
         - spring-boot-actuator-autoconfigure
-        - spring-boot-actuator-docs
         - spring-boot-autoconfigure
         - spring-boot-cli
         - spring-boot-configuration-metadata
@@ -119,81 +118,81 @@ platform_definition:
         checkout: 2.x
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 2.0.4.RELEASE
+      version: 2.0.5.RELEASE
       modules:
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 2.0.4.RELEASE
+      version: 2.0.5.RELEASE
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 3.0.4.RELEASE
+      version: 3.0.5.RELEASE
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 3.0.4.RELEASE
+      version: 3.0.5.RELEASE
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 2.0.4.RELEASE
+      version: 2.0.5.RELEASE
       modules:
         - spring-data-envers
     - name: Spring Data GemFire
       groupId: org.springframework.data
-      version: 2.0.4.RELEASE
+      version: 2.0.5.RELEASE
       modules:
         - spring-data-gemfire
     - name: Spring Data Geode
       groupId: org.springframework.data
-      version: 2.0.4.RELEASE
+      version: 2.0.5.RELEASE
       modules:
         - spring-data-geode
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 2.0.4.RELEASE
+      version: 2.0.5.RELEASE
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 2.0.4.RELEASE
+      version: 2.0.5.RELEASE
       modules:
         - spring-data-keyvalue
     - name: Spring Data LDAP
       groupId: org.springframework.data
-      version: 2.0.4.RELEASE
+      version: 2.0.5.RELEASE
       modules:
         - spring-data-ldap
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 2.0.4.RELEASE
+      version: 2.0.5.RELEASE
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-cross-store
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 5.0.4.RELEASE
+      version: 5.0.5.RELEASE
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 2.0.4.RELEASE
+      version: 2.0.5.RELEASE
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 3.0.4.RELEASE
+      version: 3.0.5.RELEASE
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 3.0.4.RELEASE
+      version: 3.0.5.RELEASE
       modules:
         - spring-data-solr
     - name: Spring Framework
@@ -228,7 +227,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 5.0.2.RELEASE
+      version: 5.0.3.RELEASE
       build:
         compileWith: jdk8
         runTestsWith:
@@ -292,7 +291,7 @@ platform_definition:
         - spring-integration-splunk
     - name: Spring Kafka
       groupId: org.springframework.kafka
-      version: 2.1.2.RELEASE
+      version: 2.1.4.RELEASE
       modules:
         - spring-kafka
         - spring-kafka-test
@@ -339,7 +338,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 5.0.2.RELEASE
+      version: 5.0.3.RELEASE
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
@@ -448,7 +447,6 @@ platform_definition:
       'org.springframework.webflow:spring-webflow':
          - 'org.springframework:spring-webmvc-portlet'
     ignored_modules:
-      - 'org.springframework.boot:spring-boot-actuator-docs' # Its dependencies are provided
       - 'org.springframework.boot:spring-boot-cli' # The CLI doesn't expose its dependencies to applications
       - 'org.springframework.boot:spring-boot-configuration-metadata' # Used by the Boot build to generate metadata about @ConfigurationProperties
       - 'org.springframework.boot:spring-boot-configuration-processor' # Used by the Boot build to generate metadata about @ConfigurationProperties
