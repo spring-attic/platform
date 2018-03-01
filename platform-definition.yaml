@@ -277,7 +277,7 @@ platform_definition:
         - spring-integration-flow
     - name: Spring Integration Kafka
       groupId: org.springframework.integration
-      version: 3.0.1.RELEASE
+      version: 3.0.3.RELEASE
       modules:
         - spring-integration-kafka
     - name: Spring Integration Splunk
