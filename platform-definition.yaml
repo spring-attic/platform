@@ -214,7 +214,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.3.14.RELEASE
+      version: 4.3.15.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
@@ -415,7 +415,7 @@ platform_definition:
         tagPrefix:
     - name: Spring Social
       groupId: org.springframework.social
-      version: 1.1.5.RELEASE
+      version: 1.1.6.RELEASE
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-social
@@ -767,12 +767,10 @@ platform_definition:
       - 'xml-apis:xml-apis'
   downgraded_dependencies:
     'com.fasterxml.jackson.core:jackson-annotations': '2.8.11'
-    'com.fasterxml.jackson.core:jackson-databind': '2.8.11'
-    'com.fasterxml.jackson.dataformat:jackson-dataformat-xml': '2.8.11'
     'com.jayway.jsonpath:json-path': '2.3.0'
     'com.rometools:rome': '1.7.4'
     'com.squareup.okhttp3:okhttp': '3.8.1'
-    'io.netty:netty-all': '4.1.20.Final'
+    'io.netty:netty-all': '4.1.22.Final'
     'javax.jdo:jdo-api': '3.1'
     'net.sourceforge.htmlunit:htmlunit': '2.23'
     'org.apache.wss4j:wss4j-ws-security-dom': '2.2'
