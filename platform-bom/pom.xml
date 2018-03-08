@@ -45,7 +45,6 @@
 	</developers>
 
 	<properties>
-		<spring-integration-flow.version>2.0.0.BUILD-SNAPSHOT</spring-integration-flow.version>
 		<spring-integration-kafka.version>3.0.3.RELEASE</spring-integration-kafka.version>
 		<spring-integration-splunk.version>1.1.0.RELEASE</spring-integration-splunk.version>
 		<spring-security-jwt.version>1.0.9.RELEASE</spring-security-jwt.version>
@@ -165,13 +164,6 @@
 
 	<dependencyManagement>
 		<dependencies>
-
-			<!-- Spring Integration Flow -->
-			<dependency>
-				<groupId>org.springframework.integration</groupId>
-				<artifactId>spring-integration-flow</artifactId>
-				<version>${spring-integration-flow.version}</version>
-			</dependency>
 
 			<!-- Spring Integration Kafka -->
 			<dependency>
