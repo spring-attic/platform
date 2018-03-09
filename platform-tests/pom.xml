@@ -180,14 +180,6 @@
 									<overWrite>true</overWrite>
 									<outputDirectory>${project.outputDirectory}</outputDirectory>
 								</artifactItem>
-								<artifactItem>
-									<groupId>io.spring.platform</groupId>
-									<artifactId>platform-bom</artifactId>
-									<version>${project.version}</version>
-									<type>properties</type>
-									<overWrite>true</overWrite>
-									<outputDirectory>${project.outputDirectory}</outputDirectory>
-								</artifactItem>
 							</artifactItems>
 							<stripVersion>true</stripVersion>
 						</configuration>

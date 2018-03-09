@@ -1,4 +1,24 @@
-package io.spring.platform;
+/*
+ * Copyright 2014-2018 the original author or authors.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package io.spring.platform
+
+import org.apache.maven.shared.invoker.DefaultInvocationRequest
+import org.apache.maven.shared.invoker.DefaultInvoker
+import org.apache.maven.shared.invoker.InvocationRequest;
 
 import static org.junit.Assert.fail
 
@@ -9,11 +29,9 @@ public class PlatformDefinitionTests {
 
 	@Test
 	void definitionVersionsMatchBomVersions() {
-		def versions = new Properties()
-		new File('../platform-bom/target/platform-bom.properties').withInputStream{ versions.load(it) }
+		def versions = PlatformVersions.load()
 		def yaml = new Yaml().load(new File('../platform-definition.yaml').text)
 		def incorrectVersions = [:]
-
 		yaml['platform_definition']['projects'].each { project ->
 			def version = project['version']
 			def group = project['groupId']
@@ -25,14 +43,13 @@ public class PlatformDefinitionTests {
 				}
 			}
 		}
-
 		if (!incorrectVersions.isEmpty()) {
 			String message = "The following projects require version updates:"
 			incorrectVersions.each { key, value ->
 				message += "\n\t$key to $value"
 			}
-
 			fail(message)
 		}
 	}
+
 }

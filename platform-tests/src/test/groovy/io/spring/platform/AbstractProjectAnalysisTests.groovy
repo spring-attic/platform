@@ -1,5 +1,5 @@
 /*
- * Copyright 2014 the original author or authors.
+ * Copyright 2014-2018 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -31,7 +31,7 @@ class AbstractProjectAnalysisTests {
 
 	def dependencyMappings = new DependencyMappings(mappings: this.yaml['platform_definition']['dependency_mappings'])
 
-	Map<String, String> platformArtifacts = createPlatformArtifacts()
+	Map<String, String> platformArtifacts = PlatformVersions.load()
 
 	void analyzeProjects(Closure analyzer) {
 
@@ -71,13 +71,4 @@ class AbstractProjectAnalysisTests {
 		}
 	}
 
-	private Map<String, String> createPlatformArtifacts() {
-		def platformArtifacts = [:]
-		new File('target/dependency/platform-bom.properties').withReader {
-			def properties = new Properties()
-			properties.load(it)
-			properties.each { key, value -> platformArtifacts[key] = value }
-		}
-		return platformArtifacts
-	}
 }
