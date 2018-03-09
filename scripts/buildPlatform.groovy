@@ -72,7 +72,7 @@ def build(def project, def platformVersion, String jdk8Home) {
 	if (project.build.containsKey('additional_tasks')) {
 		command += " ${project.build['additional_tasks']}"
 	}
-	command += " springIoCheck -PplatformVersion=$platformVersion -PrepositoryDir=$rootDir/build/repository --continue --refresh-dependencies --stacktrace"
+	command += " springIoCheck -PplatformVersion=$platformVersion -PrepositoryDir=$rootDir/build/repository --no-daemon --continue --refresh-dependencies --stacktrace"
 
 	command += " -PJDK8_HOME=$jdk8Home"
 
