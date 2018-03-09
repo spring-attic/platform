@@ -48,7 +48,7 @@ platform_definition:
           - jdk8
     - name: Spring Batch
       groupId: org.springframework.batch
-      version: 3.0.8.RELEASE
+      version: 3.0.9.RELEASE
       modules:
         - spring-batch-core
         - spring-batch-infrastructure
