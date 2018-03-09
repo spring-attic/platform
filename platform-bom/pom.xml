@@ -179,6 +179,8 @@
 		<xom.version>1.2.5</xom.version>
 		<xstream.version>1.4.10</xstream.version>
 		<xws-security.version>3.0</xws-security.version>
+
+		<gmavenplus-plugin.version>1.1</gmavenplus-plugin.version>
 	</properties>
 
 	<dependencyManagement>
@@ -1059,7 +1061,7 @@
 			<plugin>
 				<groupId>org.codehaus.gmavenplus</groupId>
 				<artifactId>gmavenplus-plugin</artifactId>
-				<version>1.1</version>
+				<version>${gmavenplus-plugin.version}</version>
 				<executions>
 					<execution>
 						<goals>
@@ -1077,7 +1079,7 @@
 					<dependency>
 						<groupId>org.codehaus.groovy</groupId>
 						<artifactId>groovy-all</artifactId>
-						<version>2.3.0</version>
+						<version>${groovy.version}</version>
 					</dependency>
 				</dependencies>
 				<inherited>false</inherited>
