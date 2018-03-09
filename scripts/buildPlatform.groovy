@@ -144,11 +144,6 @@ if (problems) {
 	def buildDir = new File(rootDir, 'build')
 	buildDir.deleteDir()
 
-	def platformVersions = new File(rootDir, 'platform-bom/target/platform-bom.properties')
-	def dir = new File(buildDir, 'repository/io/spring/platform/platform-versions/LOCALTEST')
-	dir.mkdirs()
-	new File(dir, 'platform-versions-LOCALTEST.properties') << platformVersions.text
-
 	def platformBom = new XmlParser().parseText(new File(rootDir, 'platform-bom/pom.xml').text)
 	platformBom.version[0].replaceNode { version("LOCALTEST") }
 	dir = new File(buildDir, 'repository/io/spring/platform/platform-bom/LOCALTEST')

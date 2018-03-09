@@ -48,7 +48,19 @@
 			<groupId>io.spring.platform</groupId>
 			<artifactId>platform-bom</artifactId>
 			<version>Cairo-BUILD-SNAPSHOT</version>
-			<type>properties</type>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.maven.shared</groupId>
+			<artifactId>maven-invoker</artifactId>
+			<version>2.1.1</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.codehaus.plexus</groupId>
+					<artifactId>plexus-utils</artifactId>
+				</exclusion>
+			</exclusions>
 		</dependency>
 	</dependencies>
 
@@ -74,10 +86,10 @@
 											<groupId>io.spring.platform</groupId>
 											<artifactId>platform-bom</artifactId>
 											<version>${project.version}</version>
-											<type>properties</type>
-											<destFileName>platform-bom.properties</destFileName>
+											<type>pom</type>
 										</artifactItem>
 									</artifactItems>
+									<stripVersion>true</stripVersion>
 								</configuration>
 							</execution>
 						</executions>
