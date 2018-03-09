@@ -16,10 +16,6 @@
 
 package io.spring.platform
 
-import org.apache.maven.shared.invoker.DefaultInvocationRequest
-import org.apache.maven.shared.invoker.DefaultInvoker
-import org.apache.maven.shared.invoker.InvocationRequest;
-
 import static org.junit.Assert.fail
 
 import org.junit.Test
@@ -29,7 +25,7 @@ public class PlatformDefinitionTests {
 
 	@Test
 	void definitionVersionsMatchBomVersions() {
-		def versions = PlatformVersions.load()
+		def versions = new EffectivePlatformBom().managedVersions()
 		def yaml = new Yaml().load(new File('../platform-definition.yaml').text)
 		def incorrectVersions = [:]
 		yaml['platform_definition']['projects'].each { project ->

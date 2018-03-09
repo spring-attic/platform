@@ -19,17 +19,26 @@ package io.spring.platform
 import org.apache.maven.shared.invoker.DefaultInvocationRequest
 import org.apache.maven.shared.invoker.DefaultInvoker
 
-class PlatformVersions {
+class EffectivePlatformBom {
 
-    static Map<String, String> load() {
+    def dependencyManagement
+
+    EffectivePlatformBom() {
         def request = new DefaultInvocationRequest()
-        request.pomFile = new File("target/dependency/platform-bom.pom")
-        request.goals = ["help:effective-pom"]
         def effectiveBom = new File("target/effective-platform-bom.pom")
-        request.properties = ["output": effectiveBom.absolutePath]
-        new DefaultInvoker().execute(request)
+        if (!effectiveBom.exists()) {
+            def pomFile = new File("target/dependency/platform-bom.pom")
+            request.pomFile = pomFile
+            request.goals = ["help:effective-pom"]
+            request.properties = ["output": effectiveBom.absolutePath]
+            new DefaultInvoker().execute(request)
+        }
+        dependencyManagement = new XmlSlurper().parseText(effectiveBom.text).dependencyManagement
+    }
+
+    Map<String, String> managedVersions() {
         def versions = [:]
-        new XmlSlurper().parseText(effectiveBom.text).dependencyManagement.dependencies.dependency
+        dependencyManagement.dependencies.dependency
                 .list()
                 .sort { a, b ->
             def comparison = a.groupId.text().compareTo(b.groupId.text())

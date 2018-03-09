@@ -2,11 +2,15 @@ import org.apache.maven.shared.invoker.DefaultInvocationRequest
 import org.apache.maven.shared.invoker.DefaultInvoker
 
 def request = new DefaultInvocationRequest()
-request.pomFile = new File("target/dependency/platform-bom.pom")
+request.pomFile = new File("${project.build.directory}/dependency/platform-bom.pom")
 request.goals = ["help:effective-pom"]
-def effectiveBom = new File("target/effective-platform-bom.pom")
+new File("target").mkdirs()
+def effectiveBom = new File("${project.build.directory}/effective-platform-bom.pom")
 request.properties = ["output": effectiveBom.absolutePath]
-new DefaultInvoker().execute(request)
+def result = new DefaultInvoker().execute(request)
+if (result.exitCode != 0) {
+	throw new IllegalStateException(result.executionException);
+}
 def versions = [:]
 new XmlSlurper().parseText(effectiveBom.text).dependencyManagement.dependencies.dependency
 		.list()

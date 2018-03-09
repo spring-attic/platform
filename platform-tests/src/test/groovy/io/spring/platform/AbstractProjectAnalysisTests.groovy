@@ -31,7 +31,7 @@ class AbstractProjectAnalysisTests {
 
 	def dependencyMappings = new DependencyMappings(mappings: this.yaml['platform_definition']['dependency_mappings'])
 
-	Map<String, String> platformArtifacts = PlatformVersions.load()
+	Map<String, String> platformArtifacts = new EffectivePlatformBom().managedVersions()
 
 	void analyzeProjects(Closure analyzer) {
 

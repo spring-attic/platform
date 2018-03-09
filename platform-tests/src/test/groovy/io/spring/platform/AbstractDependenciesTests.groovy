@@ -1,5 +1,5 @@
 /*
- * Copyright 2014-2017 the original author or authors.
+ * Copyright 2014-2018 the original author or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -32,7 +32,6 @@ class AbstractDependenciesTests {
 	]
 
 	def eachDependency(Closure closure) {
-		def xml = new XmlSlurper().parse(generateEffectivePom())
 		def ignoredArtifacts = [
 			'cdi-full-servlet',
 			'jackson-dataformat-ion',
@@ -42,7 +41,7 @@ class AbstractDependenciesTests {
 			'jetty-home',
 			'netty-example',
 			'spring-security-bom']
-		xml.dependencyManagement.dependencies.dependency
+		new EffectivePlatformBom().dependencyManagement.dependencies.dependency
 			.findAll { it.type.text() != 'test-jar' }
 			.findAll { it.type.text() != 'zip' }
 			.findAll { !ignoredArtifacts.contains(it.artifactId.text()) }
@@ -52,21 +51,11 @@ class AbstractDependenciesTests {
 			}
 	}
 
-	File generateEffectivePom() {
-		def request = new DefaultInvocationRequest()
-		request.setPomFile(new File("target/dependency/platform-bom.pom"))
-		request.setGoals(["help:effective-pom"])
-		request.setProperties(["output" : "effective-pom.xml"] as Properties)
-
-		new DefaultInvoker().execute(request);
-
-		return new File("target/dependency/effective-pom.xml")
-	}
-
 	String templateText(String templateName) {
 		def model = ["projectVersion":projectVersion]
 		return new SimpleTemplateEngine()
 		.createTemplate(new File("src/test/resources/${templateName}.template"))
 		.make(model).toString()
 	}
+
 }
