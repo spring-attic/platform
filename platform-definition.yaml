@@ -268,20 +268,6 @@ platform_definition:
         - spring-integration-xml
         - spring-integration-xmpp
         - spring-integration-zookeeper
-    - name: Spring Integration Kafka
-      groupId: org.springframework.integration
-      version: 3.0.3.RELEASE
-      modules:
-        - spring-integration-kafka
-    - name: Spring Integration Splunk
-      groupId: org.springframework.integration
-      version: 1.1.0.RELEASE
-      build:
-        repository: https://github.com/spring-projects/spring-integration-extensions
-        tagPrefix: splunk.v
-        directory: spring-integration-splunk
-      modules:
-        - spring-integration-splunk
     - name: Spring Kafka
       groupId: org.springframework.kafka
       version: 2.1.4.RELEASE
