@@ -25,7 +25,7 @@ platform_definition:
           - jdk8
     - name: Spring Batch
       groupId: org.springframework.batch
-      version: 4.0.0.RELEASE
+      version: 4.0.1.RELEASE
       modules:
         - spring-batch-core
         - spring-batch-infrastructure
@@ -38,7 +38,7 @@ platform_definition:
           - jdk8
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 2.0.0.RELEASE
+      version: 2.0.1.BUILD-SNAPSHOT
       modules:
         - spring-boot
         - spring-boot-actuator
@@ -197,7 +197,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 5.0.4.RELEASE
+      version: 5.0.5.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
@@ -801,10 +801,9 @@ platform_definition:
       - 'xml-apis:xml-apis'
   downgraded_dependencies:
     'com.fasterxml.jackson.core:jackson-annotations': '2.9.4'
-    'org.aspectj:aspectjweaver': '1.9.0.BETA-7'
-    'org.eclipse.persistence:org.eclipse.persistence.jpa': '2.7.0-RC3'
-    'org.testng:testng': '6.12'
+    'org.yaml:snakeyaml': '1.20'
     'javax.servlet:javax.servlet-api': '4.0.0'
+    'org.seleniumhq.selenium:selenium-java': '3.10.0'
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2
