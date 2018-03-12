@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 3.1.6.RELEASE
+      version: 3.1.7.RELEASE
       modules:
         - reactor-core
     - name: Spring AMQP
@@ -40,7 +40,7 @@ platform_definition:
           - jdk8
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 2.0.1.RELEASE
+      version: 2.0.2.BUILD-SNAPSHOT
       modules:
         - spring-boot
         - spring-boot-actuator
@@ -119,86 +119,86 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 2.0.6.RELEASE
+      version: 2.0.7.BUILD-SNAPSHOT
       modules:
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 2.0.6.RELEASE
+      version: 2.0.7.BUILD-SNAPSHOT
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 3.0.6.RELEASE
+      version: 3.0.7.BUILD-SNAPSHOT
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 3.0.6.RELEASE
+      version: 3.0.7.BUILD-SNAPSHOT
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 2.0.6.RELEASE
+      version: 2.0.7.BUILD-SNAPSHOT
       modules:
         - spring-data-envers
     - name: Spring Data GemFire
       groupId: org.springframework.data
-      version: 2.0.6.RELEASE
+      version: 2.0.7.BUILD-SNAPSHOT
       modules:
         - spring-data-gemfire
     - name: Spring Data Geode
       groupId: org.springframework.data
-      version: 2.0.6.RELEASE
+      version: 2.0.7.BUILD-SNAPSHOT
       modules:
         - spring-data-geode
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 2.0.6.RELEASE
+      version: 2.0.7.BUILD-SNAPSHOT
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 2.0.6.RELEASE
+      version: 2.0.7.BUILD-SNAPSHOT
       modules:
         - spring-data-keyvalue
     - name: Spring Data LDAP
       groupId: org.springframework.data
-      version: 2.0.6.RELEASE
+      version: 2.0.7.BUILD-SNAPSHOT
       modules:
         - spring-data-ldap
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 2.0.6.RELEASE
+      version: 2.0.7.BUILD-SNAPSHOT
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-cross-store
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 5.0.6.RELEASE
+      version: 5.0.7.BUILD-SNAPSHOT
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 2.0.6.RELEASE
+      version: 2.0.7.BUILD-SNAPSHOT
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 3.0.6.RELEASE
+      version: 3.0.7.BUILD-SNAPSHOT
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 3.0.6.RELEASE
+      version: 3.0.7.BUILD-SNAPSHOT
       modules:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 5.0.5.RELEASE
+      version: 5.0.6.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
@@ -228,7 +228,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 5.0.4.RELEASE
+      version: 5.0.5.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         runTestsWith:
@@ -271,7 +271,7 @@ platform_definition:
         - spring-integration-zookeeper
     - name: Spring Kafka
       groupId: org.springframework.kafka
-      version: 2.1.5.RELEASE
+      version: 2.1.6.BUILD-SNAPSHOT
       modules:
         - spring-kafka
         - spring-kafka-test
@@ -615,6 +615,14 @@ platform_definition:
       - 'org.apache.httpcomponents:httpcore'
       - 'org.apache.httpcomponents:httpcore-nio'
       - 'org.apache.johnzon:johnzon-jsonb'
+      - 'org.apache.kafka:connect-api'
+      - 'org.apache.kafka:connect-file'
+      - 'org.apache.kafka:connect-json'
+      - 'org.apache.kafka:connect-runtime'
+      - 'org.apache.kafka:connect-transforms'
+      - 'org.apache.kafka:kafka-log4j-appender'
+      - 'org.apache.kafka:kafka-tools'
+      - 'org.apache.kafka:kafka_2.12'
       - 'org.apache.logging.log4j:log4j-1.2-api'
       - 'org.apache.logging.log4j:log4j-api-scala_2.10'
       - 'org.apache.logging.log4j:log4j-api-scala_2.11'
@@ -753,7 +761,6 @@ platform_definition:
       - 'org.hibernate:hibernate-infinispan'
       - 'org.hibernate:hibernate-java8'
       - 'org.hibernate:hibernate-jcache'
-      - 'org.hibernate:hibernate-jpamodelgen'
       - 'org.hibernate:hibernate-proxool'
       - 'org.hibernate:hibernate-spatial'
       - 'org.hibernate:hibernate-testing'
@@ -849,15 +856,14 @@ platform_definition:
       - 'org.xmlunit:xmlunit-legacy'
       - 'xml-apis:xml-apis'
   downgraded_dependencies:
-    'com.fasterxml.jackson.core:jackson-annotations': '2.9.4'
     'com.nimbusds:oauth2-oidc-sdk': '5.57'
+    'javax.servlet:javax.servlet-api': '4.0'
     'net.sourceforge.htmlunit:htmlunit': '2.30'
-    'org.apache.logging.log4j:log4j-api': '2.11.0'
+    'org.apache.logging.log4j:log4j-api': '2.11'
     'org.aspectj:aspectjrt': '1.9.0'
-    'org.seleniumhq.selenium:htmlunit-driver': '2.30.0'
-    'org.yaml:snakeyaml': '1.20'
-    'javax.servlet:javax.servlet-api': '4.0.0'
+    'org.seleniumhq.selenium:htmlunit-driver': '3.11.0'
     'org.seleniumhq.selenium:selenium-java': '3.11.0'
+    'org.yaml:snakeyaml': '1.20'
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2

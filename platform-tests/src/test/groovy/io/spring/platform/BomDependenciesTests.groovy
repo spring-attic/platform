@@ -68,7 +68,7 @@ class BomDependenciesTests extends AbstractProjectAnalysisTests {
 							def platformVersion = versionScheme.parseVersion(platformArtifacts[identifier])
 
 							if (dependencyVersion.compareTo(platformVersion) > 0) {
-								String latestAllowedVersion = downgradedDependencies[identifier]
+								String latestAllowedVersion = downgradedDependencies ? downgradedDependencies[identifier]: null
 								if (!latestAllowedVersion || versionScheme.parseVersion(latestAllowedVersion).compareTo(dependencyVersion) < 0) {
 									analysisResult.registerDowngradedDependency(identifier, dependencyVersion, platformVersion, module)
 								}

@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.0.1.RELEASE</version>
+		<version>2.0.2.BUILD-SNAPSHOT</version>
 		<relativePath />
 	</parent>
 
@@ -111,7 +111,6 @@
 		<jopt-simple.version>5.0.4</jopt-simple.version>
 		<jsch.version>0.1.54</jsch.version>
 		<jsr250.version>1.0</jsr250.version>
-		<kafka.version>1.0.1</kafka.version>
 		<kite.version>0.13.0</kite.version>
 		<kryo.version>3.0.3</kryo.version>
 		<ldapbp.version>1.0</ldapbp.version>
@@ -735,21 +734,6 @@
 				<artifactId>geode-web-api</artifactId>
 				<version>${apache-geode.version}</version>
 				<type>war</type>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.kafka</groupId>
-				<artifactId>kafka_2.11</artifactId>
-				<version>${kafka.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.kafka</groupId>
-				<artifactId>kafka-clients</artifactId>
-				<version>${kafka.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>org.apache.kafka</groupId>
-				<artifactId>kafka-streams</artifactId>
-				<version>${kafka.version}</version>
 			</dependency>
 			<dependency>
 				<groupId>org.apache.myfaces.core</groupId>
