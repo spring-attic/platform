@@ -18,6 +18,8 @@ platform_definition:
       modules:
         - spring-amqp
         - spring-rabbit
+        - spring-rabbit-junit
+        - spring-rabbit-test
       build:
         repository: https://github.com/spring-projects/spring-amqp
         compileWith: jdk8
@@ -803,7 +805,7 @@ platform_definition:
     'com.fasterxml.jackson.core:jackson-annotations': '2.9.4'
     'org.yaml:snakeyaml': '1.20'
     'javax.servlet:javax.servlet-api': '4.0.0'
-    'org.seleniumhq.selenium:selenium-java': '3.10.0'
+    'org.seleniumhq.selenium:selenium-java': '3.11.0'
   repositories:
       - id: central
         url: http://repo1.maven.org/maven2
