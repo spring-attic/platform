@@ -41,6 +41,8 @@ platform_definition:
       modules:
         - spring-amqp
         - spring-rabbit
+        - spring-rabbit-junit
+        - spring-rabbit-test
       build:
         repository: https://github.com/spring-projects/spring-amqp
         compileWith: jdk8
