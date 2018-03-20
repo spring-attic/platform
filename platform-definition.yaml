@@ -803,6 +803,7 @@ platform_definition:
       - 'xml-apis:xml-apis'
   downgraded_dependencies:
     'com.fasterxml.jackson.core:jackson-annotations': '2.9.4'
+    'org.apache.logging.log4j:log4j-api': '2.11.0'
     'org.yaml:snakeyaml': '1.20'
     'javax.servlet:javax.servlet-api': '4.0.0'
     'org.seleniumhq.selenium:selenium-java': '3.11.0'
