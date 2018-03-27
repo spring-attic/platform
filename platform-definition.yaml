@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 3.1.5.RELEASE
+      version: 3.1.6.BUILD-SNAPSHOT
       modules:
         - reactor-core
     - name: Spring AMQP
@@ -397,7 +397,7 @@ platform_definition:
         - spring-webflow
     - name: Spring Web Services
       groupId: org.springframework.ws
-      version: 3.0.0.RELEASE
+      version: 3.0.1.RELEASE
       modules:
         - spring-ws-core
         - spring-ws-security
