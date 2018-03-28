@@ -29,7 +29,7 @@ Contributors to this project agree to uphold its [code of conduct][].
 ## License
 Spring IO Platform is released under version 2.0 of the [Apache License][].
 
-[Spring IO Platform website]: http://spring.io/platform
+[Spring IO Platform website]: https://platform.spring.io/platform/
 [Platform Maven docs]: http://docs.spring.io/platform/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started-using-spring-io-platform-maven
 [dependency management plugin]: https://plugins.gradle.org/plugin/io.spring.dependency-management
 [Platform Gradle docs]: http://docs.spring.io/platform/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started-using-spring-io-platform-gradle
