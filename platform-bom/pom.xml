@@ -99,7 +99,7 @@
 		<javax-enterprise-concurrent.version>1.0</javax-enterprise-concurrent.version>
 		<javax-faces.version>2.2</javax-faces.version>
 		<javax-inject.version>1</javax-inject.version>
-		<javax-interceptor.version>1.2.1</javax-interceptor.version>
+		<javax-interceptor.version>1.2.2</javax-interceptor.version>
 		<javax-jax-rs.version>2.0.1</javax-jax-rs.version>
 		<javax-jdo.version>3.0.1</javax-jdo.version>
 		<javax-jsp.version>2.3.2-b02</javax-jsp.version>
