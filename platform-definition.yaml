@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 3.1.6.BUILD-SNAPSHOT
+      version: 3.1.6.RELEASE
       modules:
         - reactor-core
     - name: Spring AMQP
@@ -120,81 +120,81 @@ platform_definition:
         checkout: 2.x
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 2.0.5.RELEASE
+      version: 2.0.6.BUILD-SNAPSHOT
       modules:
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 2.0.5.RELEASE
+      version: 2.0.6.BUILD-SNAPSHOT
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 3.0.5.RELEASE
+      version: 3.0.6.BUILD-SNAPSHOT
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 3.0.5.RELEASE
+      version: 3.0.6.BUILD-SNAPSHOT
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 2.0.5.RELEASE
+      version: 2.0.6.BUILD-SNAPSHOT
       modules:
         - spring-data-envers
     - name: Spring Data GemFire
       groupId: org.springframework.data
-      version: 2.0.5.RELEASE
+      version: 2.0.6.BUILD-SNAPSHOT
       modules:
         - spring-data-gemfire
     - name: Spring Data Geode
       groupId: org.springframework.data
-      version: 2.0.5.RELEASE
+      version: 2.0.6.BUILD-SNAPSHOT
       modules:
         - spring-data-geode
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 2.0.5.RELEASE
+      version: 2.0.6.BUILD-SNAPSHOT
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 2.0.5.RELEASE
+      version: 2.0.6.BUILD-SNAPSHOT
       modules:
         - spring-data-keyvalue
     - name: Spring Data LDAP
       groupId: org.springframework.data
-      version: 2.0.5.RELEASE
+      version: 2.0.6.BUILD-SNAPSHOT
       modules:
         - spring-data-ldap
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 2.0.5.RELEASE
+      version: 2.0.6.BUILD-SNAPSHOT
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-cross-store
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 5.0.5.RELEASE
+      version: 5.0.6.BUILD-SNAPSHOT
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 2.0.5.RELEASE
+      version: 2.0.6.BUILD-SNAPSHOT
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 3.0.5.RELEASE
+      version: 3.0.6.BUILD-SNAPSHOT
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 3.0.5.RELEASE
+      version: 3.0.6.BUILD-SNAPSHOT
       modules:
         - spring-data-solr
     - name: Spring Framework
@@ -229,7 +229,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 5.0.3.RELEASE
+      version: 5.0.4.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         runTestsWith:
@@ -319,7 +319,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 5.0.3.RELEASE
+      version: 5.0.4.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
@@ -415,6 +415,8 @@ platform_definition:
     'rome:rome': 'net.java.dev.rome:rome'
   missing_dependencies:
     ignored_dependencies:
+      'org.springframework:spring-web':
+         - 'org.glassfish.main:javax.jws'
       'org.springframework.data:spring-data-commons':
          - 'org.scala-lang:scala-library'
       'org.springframework.data:spring-data-gemfire':
@@ -846,7 +848,9 @@ platform_definition:
       - 'xml-apis:xml-apis'
   downgraded_dependencies:
     'com.fasterxml.jackson.core:jackson-annotations': '2.9.4'
+    'net.sourceforge.htmlunit:htmlunit': '2.30'
     'org.apache.logging.log4j:log4j-api': '2.11.0'
+    'org.seleniumhq.selenium:htmlunit-driver': '2.30.0'
     'org.yaml:snakeyaml': '1.20'
     'javax.servlet:javax.servlet-api': '4.0.0'
     'org.seleniumhq.selenium:selenium-java': '3.11.0'
