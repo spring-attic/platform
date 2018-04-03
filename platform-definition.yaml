@@ -140,53 +140,53 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.5.10.RELEASE
+      version: 1.5.11.BUILD-SNAPSHOT
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.13.10.RELEASE
+      version: 1.13.11.BUILD-SNAPSHOT
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 2.2.10.RELEASE
+      version: 2.2.11.BUILD-SNAPSHOT
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 2.1.10.RELEASE
+      version: 2.1.11.BUILD-SNAPSHOT
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 1.1.10.RELEASE
+      version: 1.1.11.BUILD-SNAPSHOT
       modules:
         - spring-data-envers
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.9.10.RELEASE
+      version: 1.9.11.BUILD-SNAPSHOT
       modules:
         - spring-data-gemfire
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.11.10.RELEASE
+      version: 1.11.11.BUILD-SNAPSHOT
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 1.2.10.RELEASE
+      version: 1.2.11.BUILD-SNAPSHOT
       modules:
         - spring-data-keyvalue
     - name: Spring Data LDAP
       groupId: org.springframework.data
-      version: 1.0.10.RELEASE
+      version: 1.0.11.BUILD-SNAPSHOT
       modules:
         - spring-data-ldap
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.10.10.RELEASE
+      version: 1.10.11.BUILD-SNAPSHOT
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -194,24 +194,24 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 4.2.10.RELEASE
+      version: 4.2.11.BUILD-SNAPSHOT
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.8.10.RELEASE
+      version: 1.8.11.BUILD-SNAPSHOT
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.6.10.RELEASE
+      version: 2.6.11.BUILD-SNAPSHOT
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 2.1.10.RELEASE
+      version: 2.1.11.BUILD-SNAPSHOT
       modules:
         - spring-data-solr
     - name: Spring Framework
@@ -245,7 +245,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.3.14.RELEASE
+      version: 4.3.15.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         runTestsWith:
@@ -370,7 +370,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 4.2.4.RELEASE
+      version: 4.2.5.RELEASE
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
@@ -739,7 +739,45 @@ platform_definition:
       - 'org.hibernate:hibernate-jpamodelgen'
       - 'org.hibernate:hibernate-validator-annotation-processor'
       - 'org.igniterealtime.smack:smack-resolver-javax'
+      - 'org.infinispan:infinispan-cachestore-jdbc'
+      - 'org.infinispan:infinispan-cachestore-jpa'
+      - 'org.infinispan:infinispan-cachestore-leveldb'
+      - 'org.infinispan:infinispan-cachestore-remote'
+      - 'org.infinispan:infinispan-cachestore-rest'
+      - 'org.infinispan:infinispan-cdi-common'
+      - 'org.infinispan:infinispan-cdi-embedded'
+      - 'org.infinispan:infinispan-cdi-remote'
+      - 'org.infinispan:infinispan-cli'
+      - 'org.infinispan:infinispan-client-hotrod'
+      - 'org.infinispan:infinispan-commons'
+      - 'org.infinispan:infinispan-core'
+      - 'org.infinispan:infinispan-directory-provider'
+      - 'org.infinispan:infinispan-embedded'
+      - 'org.infinispan:infinispan-embedded-query'
+      - 'org.infinispan:infinispan-jcache-commons'
+      - 'org.infinispan:infinispan-jcache-remote'
+      - 'org.infinispan:infinispan-lucene-directory'
+      - 'org.infinispan:infinispan-objectfilter'
+      - 'org.infinispan:infinispan-osgi'
+      - 'org.infinispan:infinispan-persistence-cli'
+      - 'org.infinispan:infinispan-persistence-soft-index'
+      - 'org.infinispan:infinispan-query'
+      - 'org.infinispan:infinispan-query-dsl'
+      - 'org.infinispan:infinispan-remote'
+      - 'org.infinispan:infinispan-remote-query-client'
+      - 'org.infinispan:infinispan-remote-query-server'
+      - 'org.infinispan:infinispan-scripting'
+      - 'org.infinispan:infinispan-server-core'
+      - 'org.infinispan:infinispan-server-hotrod'
+      - 'org.infinispan:infinispan-server-memcached'
+      - 'org.infinispan:infinispan-server-websocket'
+      - 'org.infinispan:infinispan-spring'
       - 'org.infinispan:infinispan-spring4-common'
+      - 'org.infinispan:infinispan-spring4-remote'
+      - 'org.infinispan:infinispan-tasks'
+      - 'org.infinispan:infinispan-tasks-api'
+      - 'org.infinispan:infinispan-tools'
+      - 'org.infinispan:infinispan-tree'
       - 'org.javassist:javassist'
       - 'org.jboss.logging:jboss-logging'
       - 'org.jooq:jooq-codegen'
