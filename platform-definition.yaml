@@ -216,7 +216,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.3.15.BUILD-SNAPSHOT
+      version: 4.3.15.RELEASE
       modules:
         - spring-aop
         - spring-aspects
