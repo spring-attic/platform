@@ -37,7 +37,7 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.7.6.RELEASE
+      version: 1.7.7.RELEASE
       modules:
         - spring-amqp
         - spring-rabbit
@@ -63,7 +63,7 @@ platform_definition:
           - jdk8
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 1.5.11.BUILD-SNAPSHOT
+      version: 1.5.11.RELEASE
       modules:
         - spring-boot
         - spring-boot-actuator
@@ -140,53 +140,53 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.5.11.BUILD-SNAPSHOT
+      version: 1.5.11.RELEASE
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.13.11.BUILD-SNAPSHOT
+      version: 1.13.11.RELEASE
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 2.2.11.BUILD-SNAPSHOT
+      version: 2.2.11.RELEASE
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 2.1.11.BUILD-SNAPSHOT
+      version: 2.1.11.RELEASE
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 1.1.11.BUILD-SNAPSHOT
+      version: 1.1.11.RELEASE
       modules:
         - spring-data-envers
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.9.11.BUILD-SNAPSHOT
+      version: 1.9.11.RELEASE
       modules:
         - spring-data-gemfire
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.11.11.BUILD-SNAPSHOT
+      version: 1.11.11.RELEASE
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 1.2.11.BUILD-SNAPSHOT
+      version: 1.2.11.RELEASE
       modules:
         - spring-data-keyvalue
     - name: Spring Data LDAP
       groupId: org.springframework.data
-      version: 1.0.11.BUILD-SNAPSHOT
+      version: 1.0.11.RELEASE
       modules:
         - spring-data-ldap
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.10.11.BUILD-SNAPSHOT
+      version: 1.10.11.RELEASE
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -194,24 +194,24 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 4.2.11.BUILD-SNAPSHOT
+      version: 4.2.11.RELEASE
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.8.11.BUILD-SNAPSHOT
+      version: 1.8.11.RELEASE
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.6.11.BUILD-SNAPSHOT
+      version: 2.6.11.RELEASE
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 2.1.11.BUILD-SNAPSHOT
+      version: 2.1.11.RELEASE
       modules:
         - spring-data-solr
     - name: Spring Framework
@@ -245,7 +245,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.3.15.BUILD-SNAPSHOT
+      version: 4.3.15.RELEASE
       build:
         checkout: '4.3.x'
         compileWith: jdk8
@@ -318,7 +318,7 @@ platform_definition:
         - spring-integration-splunk
     - name: Spring Kafka
       groupId: org.springframework.kafka
-      version: 1.1.7.RELEASE
+      version: 1.1.8.RELEASE
       modules:
         - spring-kafka
         - spring-kafka-test
