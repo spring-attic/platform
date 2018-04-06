@@ -24,12 +24,6 @@ part of the upgrade process.
 |===
 |Dependency | Explanation
 
-| `commons-dbcp:commons-dbcp`
-| No longer a direct dependency of any of the Platform's projects
-
-| `commons-digester:commons-digester`
-| No longer a direct dependency of any of the Platform's projects
-
 | `com.esotericsoftware:kryo`
 | No longer a direct dependency of any of the Platform's projects
 
@@ -45,13 +39,10 @@ part of the upgrade process.
 | `com.google.code.findbugs:annotations`
 | No longer a direct dependency of any of the Platform's projects
 
-| `com.jayway.restassured:rest-assured`
-| No longer a direct dependency of any of the Platform's projects
-
 | `com.lowagie:itext`
 | No longer a direct dependency of any of the Platform's projects
 
-| `com.rometools:rome-fetcher`
+| `com.mchange:c3p0`
 | No longer a direct dependency of any of the Platform's projects
 
 | `com.splunk:splunk`
@@ -60,8 +51,11 @@ part of the upgrade process.
 | `com.squareup.okhttp:okhttp`
 |  No longer a direct dependency of any of the Platform's projects
 
-| `com.zaxxer:HikariCP-java6`
-| The Platform now requires Java 8
+| `commons-dbcp:commons-dbcp`
+| No longer a direct dependency of any of the Platform's projects
+
+| `commons-digester:commons-digester`
+| No longer a direct dependency of any of the Platform's projects
 
 | `io.projectreactor.spring:reactor-spring-context`
 | Does not exist in the version of Reactor that is now used by the Platform
@@ -96,6 +90,9 @@ part of the upgrade process.
 | `javax.jdo:jdo-api`
 | No longer a direct dependency of any of the Platform's projects
 
+| `javax.jdo:jms-api`
+| No longer a direct dependency of any of the Platform's projects
+
 | `javax.portlet:portlet-api`
 | No longer a direct dependency of any of the Platform's projects
 
@@ -116,6 +113,27 @@ part of the upgrade process.
 
 | `opensymphony:ognl`
 | No longer a direct dependency of any of the Platform's projects
+
+| `org.apache.ibatis:ibatis-sqlmap`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.apache.logging.log4j:log4j-api-scala_2.10`
+| Does not exist in the version of Log4J that is now used by the Platform
+
+| `org.apache.logging.log4j:log4j-api-scala_2.11`
+| Does not exist in the version of Log4J that is now used by the Platform
+
+| `org.apache.logging.log4j:log4j-nosql`
+| Does not exist in the version of Log4J that is now used by the Platform
+
+| `org.apache.solr:solr-map-reduce`
+| Does not exist in the version of Solr that is now used by the Platform
+
+| `org.apache.solr:solr-morphlines-cell`
+| Does not exist in the version of Solr that is now used by the Platform
+
+| `org.apache.solr:solr-morphlines-core`
+| Does not exist in the version of Solr that is now used by the Platform
 
 | `org.apache.tiles:tiles-request-api`
 | No longer a direct dependency of any of the Platform's projects
@@ -156,8 +174,29 @@ part of the upgrade process.
 | `org.crashub:crash.shell`
 | No longer a direct dependency of any of the Platform's projects
 
-| `org.apache.ibatis:ibatis-sqlmap`
+| `org.jredis:jredis-core-api`
 | No longer a direct dependency of any of the Platform's projects
+
+| `org.eclipse.jetty:jetty-runner`
+| Not included in the Jetty bom that is now used by the Platform
+
+| `org.eclipse.jetty:jetty-start`
+| Not included in the Jetty bom that is now used by the Platform
+
+| `org.glassfish.jersey.bundles.repackaged:jersey-guava`
+| Does not exist in the version of Jersey that is now used by by Platform
+
+| `org.glassfish.tyrus:tyrus-core`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.glassfish.tyrus:tyrus-server`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.glassfish.tyrus:tyrus-spi`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.infinispan:infinispan-spring`
+| Does not exist in the version of Infinispan that is now used by the Platform
 
 | `org.jredis:jredis-core-api`
 | No longer a direct dependency of any of the Platform's projects
@@ -168,20 +207,77 @@ part of the upgrade process.
 | `org.jruby:jruby`
 | No longer a direct dependency of any of the Platform's projects
 
+| `org.json:json`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.neo4j:neo4j-ogm-compiler`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.spockframework:spock-core`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.spockframework:spock-spring`
+| No longer a direct dependency of any of the Platform's projects
+
+| `org.springframework.boot:spring-boot-actuator-docs`
+| Does not exist in the version of Spring Boot that is now used by the Platform
+
 | `org.springframework.boot:spring-boot-starter-data-gemfire`
+| Does not exist in the version of Spring Boot that is now used by the Platform
+
+| `org.springframework.boot:spring-boot-starter-mobile`
 | Does not exist in the version of Spring Boot that is now used by the Platform
 
 | `org.springframework.boot:spring-boot-starter-remote-shell`
 | Does not exist in the version of Spring Boot that is now used by the Platform
 
+| `org.springframework.boot:spring-boot-starter-social-facebook`
+| Does not exist in the version of Spring Boot that is now used by the Platform
+
+| `org.springframework.boot:spring-boot-starter-social-linkedin`
+| Does not exist in the version of Spring Boot that is now used by the Platform
+
+| `org.springframework.boot:spring-boot-starter-social-twitter`
+| Does not exist in the version of Spring Boot that is now used by the Platform
+
+| `org.springframework.cloud:spring-cloud-core`
+| Does not exist in the version of Spring Cloud Connectors that is now used by the Platform
+
 | `org.springframework.data:spring-cql`
 | Now included in the `org.springframework.data:spring-data-cassandra` module
 
-| `org.springframework.integration:spring-integration-java-dsl`
-| As of Spring Integration 5, the Java DSL is included in `spring-integration-core`
+| `org.springframework.data:spring-data-mongodb-log4j`
+| Does not exist in the version of Spring Data that is now used by the Platform
 
-| `org.springframework:springloaded`
-| Spring Loaded has been moved to the attic and is no longer being actively maintained
+| `org.springframework.integration:spring-integration-flow`
+| Spring Integration Flow is no longer part of the Spring IO Platform
+
+| `org.springframework.integration:spring-integration-kafka`
+| Spring Integration Kafka is no longer part of the Spring IO Platform
+
+| `org.springframework.integration:spring-integration-splunk`
+| Spring Integration Splunk is no longer part of the Spring IO Platform
+
+| `org.springframework.mobile:spring-mobile-device`
+| Spring Mobile is no longer part of the Spring IO Platform
+
+| `org.springframework.session:spring-session-data-gemfire`
+| Spring Session Data GemFire is no longer part of the Spring IO Platform
+
+| `org.springframework.social:spring-social-facebook`
+| Spring Social Facebook is no longer part of the Spring IO Platform
+
+| `org.springframework.social:spring-social-facebook-web`
+| Spring Social Facebook is no longer part of the Spring IO Platform
+
+| `org.springframework.social:spring-social-linkedin`
+| Spring Social LinkedIn is no longer part of the Spring IO Platform
+
+| `org.springframework.webflow:spring-js`
+| Does not exist in the version of Spring Web Flow that is now used by the Platform
+
+| `org.springframework.webflow:spring-js-resources`
+| Does not exist in the version of Spring Web Flow that is now used by the Platform
 
 | `org.springframework:spring-instrument-tomcat`
 | Does not exist in the version of Spring Framework that is now used by the Platform
@@ -189,11 +285,8 @@ part of the upgrade process.
 | `org.springframework:spring-webmvc-portlet`
 | Does not exist in the version of Spring Framework that is now used by the Platform
 
-| `org.springframework.webflow:spring-js`
-| Does not exist in the version of Spring Web Flow that is now used by the Platform
-
-| `org.springframework.webflow:spring-js-resources`
-| Does not exist in the version of Spring Web Flow that is now used by the Platform
+| `org.springframework:springloaded`
+| Spring Loaded has been moved to the attic and is no longer being actively maintained
 
 | `org.xerial.snappy:snappy-java`
 | No longer a direct dependency of any of the Platform's projects
@@ -217,6 +310,55 @@ replacements.
 |===
 | Dependency | Replacement
 
+| `aopalliance:aopalliance`
+| `org.springframework:spring-aop`
+
+| `biz.paluch.redis:lettuce`
+| `io.lettuce:lettuce-core`
+
+| `com.hazelcast:hazelcast-hibernate4`
+| `com.hazelcast:hazelcast-hibernate52`
+
+| `com.hazelcast:hazelcast-hibernate5`
+| `com.hazelcast:hazelcast-hibernate52`
+
+| `com.jayway.restassured:rest-assured`
+| `io.rest-assured:rest-assured`
+
+| `com.zaxxer:HikariCP-java6`
+| `com.zaxxer:HikariCP`
+
+| `com.zaxxer:HikariCP-java7`
+| `com.zaxxer:HikariCP`
+
 | `javax.jms:jms-api`
 | `javax.jms:javax.jms-api`
+
+| `org.firebirdsql.jdbc:jaybird-jdk16`
+| `org.firebirdsql.jdbc:jaybird-jdk18`
+
+| `org.glassfish.jersey.ext:jersey-spring3`
+| `org.glassfish.jersey.ext:jersey-spring4`
+
+| `org.hibernate:hibernate-validator-annotation-processor`
+| `org.hibernate.validator:hibernate-validator-annotation-processor`
+
+| `org.springframework.integration:spring-integration-java-dsl`
+| `org.springframework.integration:spring-integration-core`
+
+| `org.springframework.session:spring-session`
+| `org.springframework.session:spring-session-core`
+
+| `org.springframework.session:spring-session-data-mongo`
+| `org.springframework.session:spring-session-data-mongodb`
+
+| `org.thymeleaf.extras:thymeleaf-extras-conditionalcomments`
+| `org.thymeleaf:thymeleaf`
+
+| `org.thymeleaf:thymeleaf-spring4`
+| `org.thymeleaf:thymeleaf-spring5`
+
+| `org.webjars:webjars-locator`
+| `org.webjars:webjars-locator-core`
+
 |===
