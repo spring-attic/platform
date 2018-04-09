@@ -34,10 +34,6 @@ class AbstractDependenciesTests {
 	def eachDependency(Closure closure) {
 		def ignoredArtifacts = [
 			'cdi-full-servlet',
-			'jackson-dataformat-ion',
-			'jackson-module-scala_2.10',
-			'jackson-module-scala_2.11',
-			'jackson-module-scala_2.12',
 			'jetty-home',
 			'netty-example',
 			'spring-security-bom']
