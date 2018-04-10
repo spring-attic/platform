@@ -63,7 +63,7 @@ platform_definition:
           - jdk8
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 1.5.11.RELEASE
+      version: 1.5.12.RELEASE
       modules:
         - spring-boot
         - spring-boot-actuator
@@ -216,7 +216,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.3.15.RELEASE
+      version: 4.3.16.RELEASE
       modules:
         - spring-aop
         - spring-aspects
