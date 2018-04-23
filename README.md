@@ -5,6 +5,14 @@ for modern applications. On top of this foundation it also provides domain-speci
 optimized for specific application types. Please see the [Spring IO Platform website] for more
 information.
 
+## End of Life
+
+The Platform will reach the end of its supported life on 9 April 2019. Maintenence releases of both
+the Brussels and Cairo lines will continue to be published up until that time. Users of the Platform
+are encourage to start using Spring Boot's dependency management directory, either by using
+`spring-boot-starter-parent` as their Maven project's parent, or by importing the
+`spring-boot-dependencies` bom.
+
 ## Using the Platform
 
 How you use the platform depends on whether you're using Maven or Gradle to build your application.
