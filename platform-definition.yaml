@@ -234,6 +234,7 @@ platform_definition:
         runTestsWith:
           - jdk8
         repository: https://github.com/spring-projects/spring-integration
+        checkout: 5.0.x
       modules:
         - spring-integration-amqp
         - spring-integration-core
@@ -280,6 +281,7 @@ platform_definition:
         compileWith: jdk8
         runTestsWith:
           - jdk8
+        checkout: 2.1.x
     - name: Spring LDAP
       groupId: org.springframework.ldap
       version: 2.3.2.RELEASE
