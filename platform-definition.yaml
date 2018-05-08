@@ -859,7 +859,7 @@ platform_definition:
       - 'xml-apis:xml-apis'
   downgraded_dependencies:
     'com.nimbusds:oauth2-oidc-sdk': '5.57'
-    'javax.servlet:javax.servlet-api': '4.0'
+    'javax.servlet:javax.servlet-api': '4.0.1'
     'net.sourceforge.htmlunit:htmlunit': '2.30'
     'org.apache.logging.log4j:log4j-api': '2.11'
     'org.aspectj:aspectjrt': '1.9.0'
