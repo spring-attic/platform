@@ -104,7 +104,7 @@
 		<javax-jdo.version>3.0.1</javax-jdo.version>
 		<javax-jsp.version>2.3.2-b02</javax-jsp.version>
 		<javax-jstl.version>1.2.1</javax-jstl.version>
-		<javax-money.version>1.0.1</javax-money.version>
+		<javax-money.version>1.0.3</javax-money.version>
 		<javax-portlet.version>2.0</javax-portlet.version>
 		<javax-websocket.version>1.1</javax-websocket.version>
 		<jbatch-tck.version>1.0</jbatch-tck.version>
