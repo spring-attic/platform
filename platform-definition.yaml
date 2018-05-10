@@ -245,7 +245,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.3.16.BUILD-SNAPSHOT
+      version: 4.3.16.RELEASE
       build:
         checkout: '4.3.x'
         compileWith: jdk8
@@ -371,7 +371,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 4.2.5.RELEASE
+      version: 4.2.6.RELEASE
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
@@ -398,7 +398,7 @@ platform_definition:
        - spring-security-jwt
     - name: Spring Security OAuth
       groupId: org.springframework.security.oauth
-      version: 2.0.14.RELEASE
+      version: 2.0.15.RELEASE
       modules:
         - spring-security-oauth
         - spring-security-oauth2
