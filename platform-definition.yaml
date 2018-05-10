@@ -40,7 +40,7 @@ platform_definition:
           - jdk8
     - name: Spring Boot
       groupId: org.springframework.boot
-      version: 2.0.3.RELEASE
+      version: 2.0.4.BUILD-SNAPSHOT
       modules:
         - spring-boot
         - spring-boot-actuator
@@ -304,7 +304,7 @@ platform_definition:
         - spring-plugin-metadata
     - name: Spring REST Docs
       groupId: org.springframework.restdocs
-      version: 2.0.1.RELEASE
+      version: 2.0.2.BUILD-SNAPSHOT
       modules:
         - spring-restdocs-asciidoctor
         - spring-restdocs-core
