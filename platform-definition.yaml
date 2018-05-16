@@ -776,6 +776,7 @@ platform_definition:
       - 'org.hibernate:hibernate-proxool'
       - 'org.hibernate:hibernate-spatial'
       - 'org.hibernate:hibernate-testing'
+      - 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api'
       - 'org.igniterealtime.smack:smack-resolver-javax'
       - 'org.infinispan:infinispan-cachestore-jdbc'
       - 'org.infinispan:infinispan-cachestore-jpa'

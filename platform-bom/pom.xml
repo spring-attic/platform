@@ -50,7 +50,6 @@
 		<spring-social.version>1.1.6.RELEASE</spring-social.version>
 		<spring-social-twitter.version>1.1.2.RELEASE</spring-social-twitter.version>
 		<spring-web-flow.version>2.5.0.RELEASE</spring-web-flow.version>
-		<spring-web-services.version>${spring-ws.version}</spring-web-services.version>
 
 		<aalto-xml.version>1.0.0</aalto-xml.version>
 		<apacheds.version>1.5.5</apacheds.version>
@@ -224,13 +223,6 @@
 				<groupId>org.springframework.webflow</groupId>
 				<artifactId>spring-webflow</artifactId>
 				<version>${spring-web-flow.version}</version>
-			</dependency>
-
-			<!-- Spring Web Services -->
-			<dependency>
-				<groupId>org.springframework.ws</groupId>
-				<artifactId>spring-xml</artifactId>
-				<version>${spring-web-services.version}</version>
 			</dependency>
 
 			<!-- Third Party -->
