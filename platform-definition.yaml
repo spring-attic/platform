@@ -371,11 +371,12 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 4.2.6.RELEASE
+      version: 4.2.7.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
         tagPrefix:
+        checkout: 4.2.x
       modules:
         - spring-security-acl
         - spring-security-aspects
