@@ -9,7 +9,7 @@ information.
 
 The Platform will reach the end of its supported life on 9 April 2019. Maintenence releases of both
 the Brussels and Cairo lines will continue to be published up until that time. Users of the Platform
-are encourage to start using Spring Boot's dependency management directory, either by using
+are encouraged to start using Spring Boot's dependency management directory, either by using
 `spring-boot-starter-parent` as their Maven project's parent, or by importing the
 `spring-boot-dependencies` bom.
 
