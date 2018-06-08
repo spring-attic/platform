@@ -198,7 +198,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 5.0.6.RELEASE
+      version: 5.0.7.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
@@ -644,7 +644,6 @@ platform_definition:
       - 'org.apache.logging.log4j:log4j-iostreams'
       - 'org.apache.logging.log4j:log4j-jcl'
       - 'org.apache.logging.log4j:log4j-jmx-gui'
-      - 'org.apache.logging.log4j:log4j-jul'
       - 'org.apache.logging.log4j:log4j-liquibase'
       - 'org.apache.logging.log4j:log4j-mongodb'
       - 'org.apache.logging.log4j:log4j-nosql'
