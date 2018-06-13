@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 3.1.7.RELEASE
+      version: 3.1.8.RELEASE
       modules:
         - reactor-core
     - name: Spring AMQP
@@ -320,7 +320,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 5.0.5.RELEASE
+      version: 5.0.6.RELEASE
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
@@ -868,14 +868,16 @@ platform_definition:
       - 'org.xmlunit:xmlunit-legacy'
       - 'xml-apis:xml-apis'
   downgraded_dependencies:
-    'com.nimbusds:oauth2-oidc-sdk': '5.61'
+    'com.nimbusds:oauth2-oidc-sdk': '5.62'
     'javax.servlet:javax.servlet-api': '4.0.1'
-    'net.sourceforge.htmlunit:htmlunit': '2.30'
+    'net.sourceforge.htmlunit:htmlunit': '2.31'
+    'org.apache.derby:derby': '10.14.2.0'
+    'org.apache.derby:derbyclient': '10.14.2.0'
     'org.apache.logging.log4j:log4j-api': '2.11'
     'org.aspectj:aspectjrt': '1.9.1'
     'org.aspectj:aspectjweaver': '1.9.1'
     'org.seleniumhq.selenium:htmlunit-driver': '3.11.0'
-    'org.seleniumhq.selenium:selenium-java': '3.11.0'
+    'org.seleniumhq.selenium:selenium-java': '3.12.0'
     'org.yaml:snakeyaml': '1.20'
   repositories:
       - id: central
