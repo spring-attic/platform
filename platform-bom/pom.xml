@@ -101,7 +101,7 @@
 		<javax-jax-ws.version>2.3.0</javax-jax-ws.version>
 		<javax-jsp.version>2.3.2-b02</javax-jsp.version>
 		<javax-jstl.version>1.2.1</javax-jstl.version>
-		<javax-resource.version>1.7</javax-resource.version>
+		<javax-resource.version>1.7.1</javax-resource.version>
 		<javax-websocket.version>1.1</javax-websocket.version>
 		<jbatch-tck.version>1.0</jbatch-tck.version>
 		<jettison.version>1.2</jettison.version>
