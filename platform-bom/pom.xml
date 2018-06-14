@@ -119,7 +119,7 @@
 		<nimbus-jose-jwt.version>5.1</nimbus-jose-jwt.version>
 		<oauth2-oidc-sdk.version>5.54</oauth2-oidc-sdk.version>
 		<okhttp3.version>3.10.0</okhttp3.version>
-		<openjpa.version>2.4.2</openjpa.version>
+		<openjpa.version>2.4.3</openjpa.version>
 		<openpdf.version>1.0.5</openpdf.version>
 		<neo4j.version>2.3.2</neo4j.version>
 		<neo4j-cypher-dsl.version>2.0.1</neo4j-cypher-dsl.version>
@@ -136,7 +136,7 @@
 		<selenium-htmlunit-driver.version>${selenium.version}</selenium-htmlunit-driver.version>
 		<smack4.version>4.2.3</smack4.version>
 		<sun-facelets.version>1.1.14</sun-facelets.version>
-		<sun-jsf.version>2.2.16</sun-jsf.version>
+		<sun-jsf.version>2.2.17</sun-jsf.version>
 		<sun-saaj.version>1.4.0</sun-saaj.version>
 		<taglibs-standard.version>1.2.5</taglibs-standard.version>
 		<testng.version>6.14.3</testng.version>
@@ -149,7 +149,7 @@
 		<websphere-uow.version>6.0.2.17</websphere-uow.version>
 		<woodstox5.version>5.0.3</woodstox5.version>
 		<wss4j2.version>2.2.1</wss4j2.version>
-		<xmlprojector.version>1.4.15</xmlprojector.version>
+		<xmlprojector.version>1.4.16</xmlprojector.version>
 		<xmlschema.version>2.2.3</xmlschema.version>
 		<xmlunit.version>1.6</xmlunit.version>
 		<xom.version>1.2.5</xom.version>
