@@ -1,0 +1,102 @@
+From 7b475d5dad2709b223b7f4ced7024938d79fb822 Mon Sep 17 00:00:00 2001
+From: Artem Bilan <abilan@pivotal.io>
+Date: Thu, 14 Jun 2018 10:47:02 -0400
+Subject: [PATCH] Fix SimpleMessageListenerContainerLongTests fails
+
+https://build.spring.io/browse/PLATFORM-COM2-JOB1-605
+
+* A couple tests doesn't send to the proper queue for the
+consecutive consumers start logic to be triggered properly
+* The `testIncreaseMinAtMax()` used "too long"
+`startConsumerMinInterval` therefore existing consumers were able to
+consumer all the messages
+---
+ ...mpleMessageListenerContainerLongTests.java | 20 +++++++++++++++----
+ 1 file changed, 16 insertions(+), 4 deletions(-)
+
+diff --git a/spring-rabbit/src/test/java/org/springframework/amqp/rabbit/listener/SimpleMessageListenerContainerLongTests.java b/spring-rabbit/src/test/java/org/springframework/amqp/rabbit/listener/SimpleMessageListenerContainerLongTests.java
+index 935fdd21..dacd473c 100644
+--- a/spring-rabbit/src/test/java/org/springframework/amqp/rabbit/listener/SimpleMessageListenerContainerLongTests.java
++++ b/spring-rabbit/src/test/java/org/springframework/amqp/rabbit/listener/SimpleMessageListenerContainerLongTests.java
+@@ -98,7 +98,7 @@ public class SimpleMessageListenerContainerLongTests {
+ 			container.setMaxConcurrentConsumers(3);
+ 			RabbitTemplate template = new RabbitTemplate(singleConnectionFactory);
+ 			for (int i = 0; i < 20; i++) {
+-				template.convertAndSend("foo", "foo");
++				template.convertAndSend(QUEUE, "foo");
+ 			}
+ 			waitForNConsumers(container, 2);        // increased consumers due to work
+ 			waitForNConsumers(container, 1, 20000); // should stop the extra consumer after 10 seconds idle
+@@ -106,10 +106,10 @@ public class SimpleMessageListenerContainerLongTests {
+ 			waitForNConsumers(container, 3);
+ 			container.stop();
+ 			waitForNConsumers(container, 0);
+-			singleConnectionFactory.destroy();
+ 		}
+ 		finally {
+ 			container.stop();
++			singleConnectionFactory.destroy();
+ 		}
+ 	}
+ 
+@@ -141,6 +141,7 @@ public class SimpleMessageListenerContainerLongTests {
+ 		for (int i = 0; i < 20; i++) {
+ 			admin.deleteQueue("testAddQueuesAndStartInCycle" + i);
+ 		}
++
+ 		connectionFactory.destroy();
+ 	}
+ 
+@@ -148,7 +149,7 @@ public class SimpleMessageListenerContainerLongTests {
+ 	public void testIncreaseMinAtMax() throws Exception {
+ 		final SingleConnectionFactory singleConnectionFactory = new SingleConnectionFactory("localhost");
+ 		SimpleMessageListenerContainer container = new SimpleMessageListenerContainer(singleConnectionFactory);
+-		container.setStartConsumerMinInterval(100);
++		container.setStartConsumerMinInterval(1);
+ 		container.setConsecutiveActiveTrigger(1);
+ 		container.setMessageListener((MessageListener) m -> {
+ 			try {
+@@ -171,6 +172,9 @@ public class SimpleMessageListenerContainerLongTests {
+ 		container.setConcurrentConsumers(4);
+ 		Set<?> consumers = (Set<?>) TestUtils.getPropertyValue(container, "consumers");
+ 		assertThat(consumers.size(), equalTo(5));
++
++		container.stop();
++		singleConnectionFactory.destroy();
+ 	}
+ 
+ 	@Test
+@@ -200,6 +204,9 @@ public class SimpleMessageListenerContainerLongTests {
+ 		container.setConcurrentConsumers(1);
+ 		Set<?> consumers = (Set<?>) TestUtils.getPropertyValue(container, "consumers");
+ 		assertThat(consumers.size(), equalTo(3));
++
++		container.stop();
++		singleConnectionFactory.destroy();
+ 	}
+ 
+ 	@Test
+@@ -230,6 +237,9 @@ public class SimpleMessageListenerContainerLongTests {
+ 		container.setMaxConcurrentConsumers(1);
+ 		Set<?> consumers = (Set<?>) TestUtils.getPropertyValue(container, "consumers");
+ 		assertThat(consumers.size(), equalTo(1));
++
++		container.stop();
++		singleConnectionFactory.destroy();
+ 	}
+ 
+ 	public void handleMessage(String foo) {
+@@ -240,7 +250,9 @@ public class SimpleMessageListenerContainerLongTests {
+ 		this.waitForNConsumers(container, n, 10000);
+ 	}
+ 
+-	private void waitForNConsumers(SimpleMessageListenerContainer container, int n, int howLong) throws InterruptedException {
++	private void waitForNConsumers(SimpleMessageListenerContainer container, int n, int howLong)
++			throws InterruptedException {
++
+ 		int i = 0;
+ 		while (true) {
+ 			Set<?> consumers = (Set<?>) TestUtils.getPropertyValue(container, "consumers");
+-- 
+2.17.1
+
