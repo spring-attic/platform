@@ -90,12 +90,7 @@ def build(def project, def platformVersion, String jdk7Home, String jdk8Home) {
 	def compileWith = project.build['compileWith'] ?: 'jdk7'
 
 	def environment = [:]
-
-	if (compileWith == 'jdk7') {
-		environment['JAVA_HOME'] = jdk7Home
-	} else {
-		environment['JAVA_HOME'] = jdk8Home
-	}
+	environment['JAVA_HOME'] = jdk8Home
 
 	execute(command, dir, true, environment)
 }
