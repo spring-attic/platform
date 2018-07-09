@@ -198,7 +198,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 5.0.7.RELEASE
+      version: 5.0.8.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
@@ -877,7 +877,7 @@ platform_definition:
     'org.aspectj:aspectjrt': '1.9.1'
     'org.aspectj:aspectjweaver': '1.9.1'
     'org.seleniumhq.selenium:htmlunit-driver': '3.11.0'
-    'org.seleniumhq.selenium:selenium-java': '3.12.0'
+    'org.seleniumhq.selenium:selenium-java': '3.13.0'
     'org.yaml:snakeyaml': '1.20'
   repositories:
       - id: central
