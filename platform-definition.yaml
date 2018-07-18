@@ -755,6 +755,7 @@ platform_definition:
       - 'org.eclipse.persistence:org.eclipse.persistence.core'
       - 'org.ehcache:ehcache-clustered'
       - 'org.ehcache:ehcache-transactions'
+      - 'org.elasticsearch.distribution.integ-test-zip:elasticsearch'
       - 'org.firebirdsql.jdbc:jaybird-jdk16'
       - 'org.firebirdsql.jdbc:jaybird-jdk17'
       - 'org.firebirdsql.jdbc:jaybird-jdk18'
