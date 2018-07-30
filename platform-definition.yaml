@@ -37,7 +37,7 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.7.8.RELEASE
+      version: 1.7.9.RELEASE
       modules:
         - spring-amqp
         - spring-rabbit
@@ -141,53 +141,53 @@ platform_definition:
         checkout: v1.2.6.BUILD
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.5.13.RELEASE
+      version: 1.5.14.RELEASE
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.13.13.RELEASE
+      version: 1.13.14.RELEASE
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 2.2.13.RELEASE
+      version: 2.2.14.RELEASE
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 2.1.13.RELEASE
+      version: 2.1.14.RELEASE
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 1.1.13.RELEASE
+      version: 1.1.14.RELEASE
       modules:
         - spring-data-envers
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.9.13.RELEASE
+      version: 1.9.14.RELEASE
       modules:
         - spring-data-gemfire
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.11.13.RELEASE
+      version: 1.11.14.RELEASE
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 1.2.13.RELEASE
+      version: 1.2.14.RELEASE
       modules:
         - spring-data-keyvalue
     - name: Spring Data LDAP
       groupId: org.springframework.data
-      version: 1.0.13.RELEASE
+      version: 1.0.14.RELEASE
       modules:
         - spring-data-ldap
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.10.13.RELEASE
+      version: 1.10.14.RELEASE
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -195,24 +195,24 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 4.2.13.RELEASE
+      version: 4.2.14.RELEASE
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.8.13.RELEASE
+      version: 1.8.14.RELEASE
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.6.13.RELEASE
+      version: 2.6.14.RELEASE
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 2.1.13.RELEASE
+      version: 2.1.14.RELEASE
       modules:
         - spring-data-solr
     - name: Spring Framework
