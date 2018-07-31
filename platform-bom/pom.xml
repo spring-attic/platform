@@ -92,7 +92,7 @@
 		<javax-batch.version>1.0.1</javax-batch.version>
 		<javax-cdi.version>1.2</javax-cdi.version>
 		<javax-ejb.version>3.2.2</javax-ejb.version>
-		<javax-el.version>3.0.1-b04</javax-el.version>
+		<javax-el.version>3.0.1-b06</javax-el.version>
 		<javax-enterprise-concurrent.version>1.0</javax-enterprise-concurrent.version>
 		<javax-faces.version>2.2</javax-faces.version>
 		<javax-inject.version>1</javax-inject.version>
