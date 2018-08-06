@@ -523,6 +523,7 @@ platform_definition:
       - 'io.dropwizard.metrics:metrics-servlet'
       - 'io.dropwizard.metrics:metrics-servlets'
       - 'io.javaslang:javaslang-match'
+      - 'io.micrometer:micrometer-registry-cloudwatch'
       - 'io.netty:netty-codec'
       - 'io.netty:netty-codec-dns'
       - 'io.netty:netty-codec-haproxy'
