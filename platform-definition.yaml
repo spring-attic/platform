@@ -769,7 +769,6 @@ platform_definition:
       - 'org.hdrhistogram:HdrHistogram'
       - 'org.hibernate.validator:hibernate-validator-annotation-processor'
       - 'org.hibernate:hibernate-c3p0'
-      - 'org.hibernate:hibernate-ehcache'
       - 'org.hibernate:hibernate-hikaricp'
       - 'org.hibernate:hibernate-infinispan'
       - 'org.hibernate:hibernate-java8'
