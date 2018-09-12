@@ -115,7 +115,7 @@
 		<ldapbp.version>1.0</ldapbp.version>
 		<ldapsdk.version>4.1</ldapsdk.version>
 		<log4j.version>1.2.17</log4j.version>
-		<myfaces.version>2.3.1</myfaces.version>
+		<myfaces.version>2.3.2</myfaces.version>
 		<nimbus-jose-jwt.version>5.1</nimbus-jose-jwt.version>
 		<oauth2-oidc-sdk.version>5.54</oauth2-oidc-sdk.version>
 		<okhttp3.version>3.10.0</okhttp3.version>
