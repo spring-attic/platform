@@ -1,0 +1,36 @@
+From 31f8c4dd3de4f5cdf7097262306c55379fb94acd Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Wed, 12 Sep 2018 17:17:31 +0100
+Subject: [PATCH] Patch tests for broader Spring AMQP version compatibility
+
+---
+ .../service/rabbit/RabbitConnectionFactoryCreatorTest.java  | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/spring-cloud-spring-service-connector/src/test/java/org/springframework/cloud/service/rabbit/RabbitConnectionFactoryCreatorTest.java b/spring-cloud-spring-service-connector/src/test/java/org/springframework/cloud/service/rabbit/RabbitConnectionFactoryCreatorTest.java
+index 95a5f1b..455a2cb 100644
+--- a/spring-cloud-spring-service-connector/src/test/java/org/springframework/cloud/service/rabbit/RabbitConnectionFactoryCreatorTest.java
++++ b/spring-cloud-spring-service-connector/src/test/java/org/springframework/cloud/service/rabbit/RabbitConnectionFactoryCreatorTest.java
+@@ -16,7 +16,7 @@ import java.util.Arrays;
+ import java.util.List;
+ 
+ /**
+- * 
++ *
+  * @author Ramnivas Laddad
+  * @author Scott Frederick
+  *
+@@ -76,8 +76,8 @@ public class RabbitConnectionFactoryCreatorTest {
+ 		com.rabbitmq.client.ConnectionFactory rabbitConnectionFactory =
+ 				(com.rabbitmq.client.ConnectionFactory) ReflectionTestUtils.getField(connector, "rabbitConnectionFactory");
+ 		String[] userInfo = uri.getRawUserInfo().split(":");
+-		assertEquals(userInfo[0], ReflectionTestUtils.getField(rabbitConnectionFactory, "username"));
+-		assertEquals(userInfo[1], ReflectionTestUtils.getField(rabbitConnectionFactory, "password"));
++		assertEquals(userInfo[0], rabbitConnectionFactory.getUsername());
++		assertEquals(userInfo[1], rabbitConnectionFactory.getPassword());
+ 
+ 		assertTrue(uri.getPath().endsWith(connector.getVirtualHost()));
+ 	}
+-- 
+2.18.0
+
