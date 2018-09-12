@@ -37,7 +37,7 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.7.10.BUILD-SNAPSHOT
+      version: 1.7.10.RELEASE
       modules:
         - spring-amqp
         - spring-rabbit
@@ -372,7 +372,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 4.2.8.BUILD-SNAPSHOT
+      version: 4.2.8.RELEASE
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
