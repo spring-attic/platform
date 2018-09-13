@@ -40,7 +40,7 @@
 	</developers>
 
 	<properties>
-		<spring-boot.version>1.5.18.RELEASE</spring-boot.version>
+		<spring-boot.version>1.5.19.BUILD-SNAPSHOT</spring-boot.version>
 	</properties>
 
 	<dependencies>
