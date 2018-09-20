@@ -408,7 +408,7 @@ platform_definition:
         - spring-webflow
     - name: Spring Web Services
       groupId: org.springframework.ws
-      version: 3.0.3.RELEASE
+      version: 3.0.4.RELEASE
       modules:
         - spring-ws-core
         - spring-ws-security
@@ -440,6 +440,10 @@ platform_definition:
          - 'org.springframework:spring-webmvc-portlet'
       'org.springframework.webflow:spring-webflow':
          - 'org.springframework:spring-webmvc-portlet'
+      'org.springframework.ws:spring-ws-security':
+         - 'javax.mail:mail'
+         - 'org.apache.santuario:xmlsec'
+         - 'javax.xml.soap:javax.xml.soap-api'
     ignored_modules:
       - 'org.springframework.boot:spring-boot-cli' # The CLI doesn't expose its dependencies to applications
       - 'org.springframework.boot:spring-boot-configuration-metadata' # Used by the Boot build to generate metadata about @ConfigurationProperties
@@ -455,6 +459,9 @@ platform_definition:
       # that both it and the rest of the Platform do not depend upon directly
       - 'ch.qos.logback:logback-access'
       - 'ch.qos.logback:logback-core'
+      - 'com.github.ben-manes.caffeine:guava'
+      - 'com.github.ben-manes.caffeine:jcache'
+      - 'com.github.ben-manes.caffeine:simulator'
       - 'com.datastax.cassandra:cassandra-driver-mapping'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-avro'
       - 'com.fasterxml.jackson.dataformat:jackson-dataformat-csv'

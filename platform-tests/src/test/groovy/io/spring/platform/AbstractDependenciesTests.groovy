@@ -28,7 +28,8 @@ class AbstractDependenciesTests {
 	def exclusions = [
 		"openid4java-nodeps":["groupId":"com.google.code.guice", "artifactId":"guice"],
 		"xws-security":["groupId":"javax.xml.crypto", "artifactId":"xmldsig"],
-		"mariadb-java-client":["groupId":"net.java.dev.jna", "artifactId":"jna"]
+		"mariadb-java-client":["groupId":"net.java.dev.jna", "artifactId":"jna"],
+		"simulator":["groupId":"com.github.brianfrankcooper.ycsb", "artifactId":"core"]
 	]
 
 	def eachDependency(Closure closure) {
