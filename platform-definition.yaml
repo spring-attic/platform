@@ -462,7 +462,7 @@ platform_definition:
         - spring-webflow
     - name: Spring Web Services
       groupId: org.springframework.ws
-      version: 2.4.2.RELEASE
+      version: 2.4.3.RELEASE
       modules:
         - spring-ws-core
         - spring-ws-security
