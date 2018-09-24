@@ -847,6 +847,7 @@ platform_definition:
       - 'org.mongodb:mongodb-driver-core'
       - 'org.neo4j:neo4j-ogm-api'
       - 'org.neo4j:neo4j-ogm-compiler'
+      - 'org.neo4j:neo4j-ogm-embedded-driver'
       - 'org.neo4j:neo4j-ogm-http-driver'
       - 'org.postgresql:postgresql'
       - 'org.quartz-scheduler:quartz-jobs'
