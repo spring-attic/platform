@@ -364,7 +364,7 @@ platform_definition:
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-session
-        branch: 2.0.x
+        checkout: 2.0.x
         tagPrefix:
     - name: Spring Session Data GemFire
       groupId: org.springframework.session
