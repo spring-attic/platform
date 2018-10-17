@@ -49,7 +49,7 @@
 		<spring-security-oauth.version>2.2.3.RELEASE</spring-security-oauth.version>
 		<spring-social.version>1.1.6.RELEASE</spring-social.version>
 		<spring-social-twitter.version>1.1.2.RELEASE</spring-social-twitter.version>
-		<spring-web-flow.version>2.5.0.RELEASE</spring-web-flow.version>
+		<spring-web-flow.version>2.5.1.RELEASE</spring-web-flow.version>
 
 		<aalto-xml.version>1.0.0</aalto-xml.version>
 		<apacheds.version>1.5.5</apacheds.version>
