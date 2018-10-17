@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>io.spring.platform</groupId>
 		<artifactId>platform-build</artifactId>
-		<version>Brussels-BUILD-SNAPSHOT</version>
+		<version>Brussels-SR14</version>
 	</parent>
 
 	<artifactId>platform-tests</artifactId>
