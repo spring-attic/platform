@@ -1,0 +1,26 @@
+From 619261464ec0dc558b62925662863a3fdc78092c Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Wed, 17 Oct 2018 11:53:17 +0100
+Subject: [PATCH] Upgrade to latest Spring IO Plugin for Gradle 4.x
+ compatibility
+
+---
+ build.gradle | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/build.gradle b/build.gradle
+index 68639204..4b244759 100644
+--- a/build.gradle
++++ b/build.gradle
+@@ -4,7 +4,7 @@ buildscript {
+ 	}
+ 	dependencies {
+ 		classpath("org.springframework.build.gradle:propdeps-plugin:0.0.7")
+-		classpath("io.spring.gradle:spring-io-plugin:0.0.5.RELEASE")
++		classpath("io.spring.gradle:spring-io-plugin:0.0.8.RELEASE")
+ 		classpath("io.spring.gradle:docbook-reference-plugin:0.3.1")
+ 		classpath("me.champeau.gradle:gradle-javadoc-hotfix-plugin:0.1")
+ 	}
+-- 
+2.18.0
+
