@@ -895,7 +895,7 @@ platform_definition:
     'org.aspectj:aspectjrt': '1.9.1'
     'org.aspectj:aspectjweaver': '1.9.1'
     'org.bouncycastle:bcpkix-jdk15on': '1.60'
-    'org.projectlombok:lombok': '1.18.2'
+    'org.projectlombok:lombok': '1.18.4'
     'org.seleniumhq.selenium:htmlunit-driver': '3.11.0'
     'org.seleniumhq.selenium:selenium-java': '3.13.0'
     'org.yaml:snakeyaml': '1.20'
