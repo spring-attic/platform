@@ -15,7 +15,6 @@ platform_definition:
     - name: Spring AMQP
       groupId: org.springframework.amqp
       version: 2.0.10.BUILD-SNAPSHOT
-      checkout: 2.0.x
       modules:
         - spring-amqp
         - spring-rabbit
@@ -24,6 +23,7 @@ platform_definition:
       build:
         repository: https://github.com/spring-projects/spring-amqp
         compileWith: jdk8
+        checkout: 2.0.x
         runTestsWith:
           - jdk8
     - name: Spring Batch
