@@ -129,7 +129,7 @@ platform_definition:
         - spring-boot-starter-web-services
     - name: Spring Cloud Connectors
       groupId: org.springframework.cloud
-      version: 1.2.6.RELEASE
+      version: 1.2.7.RELEASE
       modules:
         - spring-cloud-core
         - spring-cloud-cloudfoundry-connector
@@ -217,7 +217,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.3.20.RELEASE
+      version: 4.3.21.BUILD-SNAPSHOT
       modules:
         - spring-aop
         - spring-aspects
@@ -246,7 +246,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.3.17.RELEASE
+      version: 4.3.18.RELEASE
       build:
         checkout: '4.3.x'
         compileWith: jdk8
@@ -406,7 +406,7 @@ platform_definition:
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 1.3.3.RELEASE
+      version: 1.3.4.RELEASE
       modules:
         - spring-session
         - spring-session-data-gemfire
