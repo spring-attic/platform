@@ -414,10 +414,6 @@ platform_definition:
         - spring-session-data-redis
         - spring-session-hazelcast
         - spring-session-jdbc
-      build:
-        compileWith: jdk8
-        repository: https://github.com/spring-projects/spring-session
-        tagPrefix:
     - name: Spring Social
       groupId: org.springframework.social
       version: 1.1.6.RELEASE
