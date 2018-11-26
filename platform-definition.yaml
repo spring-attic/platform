@@ -809,7 +809,7 @@ platform_definition:
     'com.rometools:rome': '1.7.4'
     'com.squareup.okhttp3:okhttp': '3.8.1'
     'com.unboundid:unboundid-ldapsdk': '4.0.8'
-    'io.netty:netty-all': '4.1.29.Final'
+    'io.netty:netty-all': '4.1.31.Final'
     'javax.jdo:jdo-api': '3.1'
     'net.sourceforge.htmlunit:htmlunit': '2.23'
     'org.apache.wss4j:wss4j-ws-security-dom': '2.2'
