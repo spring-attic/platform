@@ -886,6 +886,7 @@ platform_definition:
       - 'xml-apis:xml-apis'
   downgraded_dependencies:
     'com.nimbusds:oauth2-oidc-sdk': '5.64.4'
+    'com.squareup.okhttp3:okhttp': '3.12.0'
     'io.netty:netty-all': '4.1.31.Final'
     'io.netty:netty-buffer': '4.1.31.Final'
     'io.reactivex.rxjava2:rxjava': '2.1.17'
