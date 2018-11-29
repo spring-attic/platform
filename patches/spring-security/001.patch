@@ -1,0 +1,26 @@
+From d06ecf9b79e7b4e493c17260f11d928f109e6994 Mon Sep 17 00:00:00 2001
+From: Andy Wilkinson <awilkinson@pivotal.io>
+Date: Thu, 29 Nov 2018 16:25:34 +0000
+Subject: [PATCH] Patch version of mockwebserver to align with version of
+ OkHttp
+
+---
+ gradle/dependency-management.gradle | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/gradle/dependency-management.gradle b/gradle/dependency-management.gradle
+index d300a11ad..9ebe25e65 100644
+--- a/gradle/dependency-management.gradle
++++ b/gradle/dependency-management.gradle
+@@ -6,7 +6,7 @@ dependencyManagement {
+ 	}
+ 	dependencies {
+ 		dependency 'cglib:cglib-nodep:3.2.9'
+-		dependency 'com.squareup.okhttp3:mockwebserver:3.12.0'
++		dependency 'com.squareup.okhttp3:mockwebserver:3.10.0'
+ 		dependency 'opensymphony:sitemesh:2.4.2'
+ 		dependency 'org.gebish:geb-spock:0.10.0'
+ 		dependency 'org.jasig.cas:cas-server-webapp:4.2.7'
+-- 
+2.18.0
+
