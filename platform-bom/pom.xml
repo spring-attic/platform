@@ -114,7 +114,7 @@
 		<jopt-simple.version>5.0.4</jopt-simple.version>
 		<jredis.version>06052013</jredis.version>
 		<jruby.version>1.7.27</jruby.version>
-		<jsch.version>0.1.54</jsch.version>
+		<jsch.version>0.1.55</jsch.version>
 		<jsr250.version>1.0</jsr250.version>
 		<jxl.version>2.6.12</jxl.version>
 		<kafka.version>0.10.1.1</kafka.version>
