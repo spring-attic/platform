@@ -60,7 +60,7 @@
 		<boon.version>0.34</boon.version>
 		<bouncycastle.version>1.59</bouncycastle.version>
 		<bsh.version>2.0b5</bsh.version>
-		<cas-client.version>3.5.0</cas-client.version>
+		<cas-client.version>3.5.1</cas-client.version>
 		<castor.version>1.4.1</castor.version>
 		<commonj.version>1.1.1</commonj.version>
 		<commons-beanutils.version>1.9.3</commons-beanutils.version>
