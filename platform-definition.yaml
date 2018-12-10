@@ -141,53 +141,53 @@ platform_definition:
         checkout: v1.2.6.BUILD
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.5.17.RELEASE
+      version: 1.5.18.BUILD-SNAPSHOT
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.13.17.RELEASE
+      version: 1.13.18.BUILD-SNAPSHOT
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 2.2.17.RELEASE
+      version: 2.2.18.BUILD-SNAPSHOT
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 2.1.17.RELEASE
+      version: 2.1.18.BUILD-SNAPSHOT
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 1.1.17.RELEASE
+      version: 1.1.18.BUILD-SNAPSHOT
       modules:
         - spring-data-envers
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.9.17.RELEASE
+      version: 1.9.18.BUILD-SNAPSHOT
       modules:
         - spring-data-gemfire
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.11.17.RELEASE
+      version: 1.11.18.BUILD-SNAPSHOT
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 1.2.17.RELEASE
+      version: 1.2.18.BUILD-SNAPSHOT
       modules:
         - spring-data-keyvalue
     - name: Spring Data LDAP
       groupId: org.springframework.data
-      version: 1.0.17.RELEASE
+      version: 1.0.18.BUILD-SNAPSHOT
       modules:
         - spring-data-ldap
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.10.17.RELEASE
+      version: 1.10.18.BUILD-SNAPSHOT
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -195,24 +195,24 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 4.2.17.RELEASE
+      version: 4.2.18.BUILD-SNAPSHOT
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.8.17.RELEASE
+      version: 1.8.18.BUILD-SNAPSHOT
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.6.17.RELEASE
+      version: 2.6.18.BUILD-SNAPSHOT
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 2.1.17.RELEASE
+      version: 2.1.18.BUILD-SNAPSHOT
       modules:
         - spring-data-solr
     - name: Spring Framework
@@ -246,7 +246,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.3.18.RELEASE
+      version: 4.3.19.BUILD-SNAPSHOT
       build:
         checkout: '4.3.x'
         compileWith: jdk8
@@ -406,7 +406,7 @@ platform_definition:
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 1.3.4.RELEASE
+      version: 1.3.5.BUILD-SNAPSHOT
       modules:
         - spring-session
         - spring-session-data-gemfire
