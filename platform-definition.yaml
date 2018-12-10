@@ -14,7 +14,7 @@ platform_definition:
         - reactor-core
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 2.0.10.RELEASE
+      version: 2.0.11.BUILD-SNAPSHOT
       modules:
         - spring-amqp
         - spring-rabbit
@@ -120,81 +120,81 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 2.0.12.RELEASE
+      version: 2.0.13.BUILD-SNAPSHOT
       modules:
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 2.0.12.RELEASE
+      version: 2.0.13.BUILD-SNAPSHOT
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 3.0.12.RELEASE
+      version: 3.0.13.BUILD-SNAPSHOT
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 3.0.12.RELEASE
+      version: 3.0.13.BUILD-SNAPSHOT
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 2.0.12.RELEASE
+      version: 2.0.13.BUILD-SNAPSHOT
       modules:
         - spring-data-envers
     - name: Spring Data GemFire
       groupId: org.springframework.data
-      version: 2.0.12.RELEASE
+      version: 2.0.13.BUILD-SNAPSHOT
       modules:
         - spring-data-gemfire
     - name: Spring Data Geode
       groupId: org.springframework.data
-      version: 2.0.12.RELEASE
+      version: 2.0.13.BUILD-SNAPSHOT
       modules:
         - spring-data-geode
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 2.0.12.RELEASE
+      version: 2.0.13.BUILD-SNAPSHOT
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 2.0.12.RELEASE
+      version: 2.0.13.BUILD-SNAPSHOT
       modules:
         - spring-data-keyvalue
     - name: Spring Data LDAP
       groupId: org.springframework.data
-      version: 2.0.12.RELEASE
+      version: 2.0.13.BUILD-SNAPSHOT
       modules:
         - spring-data-ldap
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 2.0.12.RELEASE
+      version: 2.0.13.BUILD-SNAPSHOT
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-cross-store
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 5.0.12.RELEASE
+      version: 5.0.13.BUILD-SNAPSHOT
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 2.0.12.RELEASE
+      version: 2.0.13.BUILD-SNAPSHOT
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 3.0.12.RELEASE
+      version: 3.0.13.BUILD-SNAPSHOT
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 3.0.12.RELEASE
+      version: 3.0.13.BUILD-SNAPSHOT
       modules:
         - spring-data-solr
     - name: Spring Framework
@@ -229,7 +229,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 5.0.10.RELEASE
+      version: 5.0.11.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         runTestsWith:
@@ -321,7 +321,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 5.0.10.RELEASE
+      version: 5.0.11.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
