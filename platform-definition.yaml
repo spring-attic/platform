@@ -305,7 +305,7 @@ platform_definition:
         - spring-plugin-metadata
     - name: Spring REST Docs
       groupId: org.springframework.restdocs
-      version: 2.0.2.RELEASE
+      version: 2.0.3.RELEASE
       modules:
         - spring-restdocs-asciidoctor
         - spring-restdocs-core
@@ -325,6 +325,7 @@ platform_definition:
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
+        checkout: 5.0.x
         tagPrefix:
       modules:
         - spring-security-acl
