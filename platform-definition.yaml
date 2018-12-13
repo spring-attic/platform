@@ -542,6 +542,7 @@ platform_definition:
       - 'com.fasterxml.jackson.module:jackson-module-scala_2.12'
       - 'com.fasterxml:classmate'
       - 'com.google.appengine:appengine-api-1.0-sdk'
+      - 'com.google.code.findbugs:annotations'
       - 'com.hazelcast:hazelcast-client'
       - 'com.hazelcast:hazelcast-hibernate4'
       - 'com.hazelcast:hazelcast-hibernate5'
