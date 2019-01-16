@@ -1,33 +1,26 @@
-From ce709ec475993041ff671b4927ac63ebf07a1dbc Mon Sep 17 00:00:00 2001
+From 78e35d96074be057870e514df18ece898e455681 Mon Sep 17 00:00:00 2001
 From: Andy Wilkinson <awilkinson@pivotal.io>
-Date: Thu, 29 Nov 2018 16:40:30 +0000
-Subject: [PATCH] Fix test assertion to match behaviour
+Date: Wed, 16 Jan 2019 14:44:21 -0500
+Subject: [PATCH] Align mockwebserver's version with Platform's version of OK
+ HTTP
 
 ---
- .../configuration/EnableReactiveMethodSecurityTests.java       | 3 ++-
- 1 file changed, 2 insertions(+), 1 deletion(-)
+ gradle/dependency-management.gradle | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
-diff --git a/config/src/test/java/org/springframework/security/config/annotation/method/configuration/EnableReactiveMethodSecurityTests.java b/config/src/test/java/org/springframework/security/config/annotation/method/configuration/EnableReactiveMethodSecurityTests.java
-index 38207db5b..2473fe399 100644
---- a/config/src/test/java/org/springframework/security/config/annotation/method/configuration/EnableReactiveMethodSecurityTests.java
-+++ b/config/src/test/java/org/springframework/security/config/annotation/method/configuration/EnableReactiveMethodSecurityTests.java
-@@ -16,6 +16,7 @@
- 
- package org.springframework.security.config.annotation.method.configuration;
- 
-+import java.util.Arrays;
- import org.assertj.core.api.AssertionsForClassTypes;
- import org.junit.After;
- import org.junit.Test;
-@@ -66,7 +67,7 @@ public class EnableReactiveMethodSecurityTests {
- 		assertThatThrownBy(() -> this.messageService.notPublisherPreAuthorizeFindById(1L))
- 			.isInstanceOf(IllegalStateException.class)
- 			.extracting(Throwable::getMessage)
--			.isEqualTo("The returnType class java.lang.String on public abstract java.lang.String org.springframework.security.config.annotation.method.configuration.ReactiveMessageService.notPublisherPreAuthorizeFindById(long) must return an instance of org.reactivestreams.Publisher (i.e. Mono / Flux) in order to support Reactor Context");
-+			.isEqualTo(Arrays.asList("The returnType class java.lang.String on public abstract java.lang.String org.springframework.security.config.annotation.method.configuration.ReactiveMessageService.notPublisherPreAuthorizeFindById(long) must return an instance of org.reactivestreams.Publisher (i.e. Mono / Flux) in order to support Reactor Context"));
+diff --git a/gradle/dependency-management.gradle b/gradle/dependency-management.gradle
+index 6c9aa3f48..c9756331a 100644
+--- a/gradle/dependency-management.gradle
++++ b/gradle/dependency-management.gradle
+@@ -6,7 +6,7 @@ dependencyManagement {
  	}
- 
- 	@Test
+ 	dependencies {
+ 		dependency 'cglib:cglib-nodep:3.2.10'
+-		dependency 'com.squareup.okhttp3:mockwebserver:3.12.1'
++		dependency 'com.squareup.okhttp3:mockwebserver:3.10.0'
+ 		dependency 'opensymphony:sitemesh:2.4.2'
+ 		dependency 'org.gebish:geb-spock:0.10.0'
+ 		dependency 'org.jasig.cas:cas-server-webapp:4.2.7'
 -- 
 2.18.0
 
