@@ -37,7 +37,7 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.7.11.RELEASE
+      version: 1.7.12.RELEASE
       modules:
         - spring-amqp
         - spring-rabbit
@@ -50,7 +50,7 @@ platform_definition:
           - jdk8
     - name: Spring Batch
       groupId: org.springframework.batch
-      version: 3.0.9.RELEASE
+      version: 3.0.10.RELEASE
       modules:
         - spring-batch-core
         - spring-batch-infrastructure
@@ -246,9 +246,8 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.3.19.BUILD-SNAPSHOT
+      version: 4.3.19.RELEASE
       build:
-        checkout: '4.3.x'
         compileWith: jdk8
         runTestsWith:
           - jdk8
@@ -367,12 +366,12 @@ platform_definition:
         - spring-restdocs-restassured
     - name: Spring Retry
       groupId: org.springframework.retry
-      version: 1.2.2.RELEASE
+      version: 1.2.3.RELEASE
       modules:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 4.2.10.RELEASE
+      version: 4.2.11.RELEASE
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
@@ -406,7 +405,7 @@ platform_definition:
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 1.3.5.BUILD-SNAPSHOT
+      version: 1.3.5.RELEASE
       modules:
         - spring-session
         - spring-session-data-gemfire
@@ -805,6 +804,7 @@ platform_definition:
       - 'org.xerial:sqlite-jdbc'
       - 'xml-apis:xml-apis'
   downgraded_dependencies:
+    'commons-io:commons-io': '2.6'
     'com.fasterxml.jackson.core:jackson-annotations': '2.8.11'
     'com.jayway.jsonpath:json-path': '2.3.0'
     'com.rometools:rome': '1.7.4'
@@ -812,6 +812,7 @@ platform_definition:
     'com.unboundid:unboundid-ldapsdk': '4.0.8'
     'io.netty:netty-all': '4.1.32.Final'
     'javax.jdo:jdo-api': '3.1'
+    'net.sf.ehcache:ehcache': '2.10.6'
     'net.sourceforge.htmlunit:htmlunit': '2.23'
     'org.apache.poi:poi': '3.17'
     'org.apache.poi:poi-ooxml': '3.17'
@@ -821,6 +822,8 @@ platform_definition:
     'org.hibernate:hibernate-core': '5.2.10.Final'
     'org.projectlombok:lombok': '1.18.2'
     'org.seleniumhq.selenium:htmlunit-driver': '2.23.2'
+    'org.springframework:spring-context': '5.0.7.RELEASE' # Spring Retry
+    'org.springframework:spring-core': '5.0.7.RELEASE' # Spring Retry
     'org.webjars:hal-browser': '3325375'
   repositories:
       - id: central
