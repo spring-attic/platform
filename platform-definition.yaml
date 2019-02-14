@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 3.1.14.RELEASE
+      version: 3.1.15.RELEASE
       modules:
         - reactor-core
     - name: Spring AMQP
