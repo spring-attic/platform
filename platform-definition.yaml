@@ -399,7 +399,7 @@ platform_definition:
        - spring-security-jwt
     - name: Spring Security OAuth
       groupId: org.springframework.security.oauth
-      version: 2.0.16.RELEASE
+      version: 2.0.17.RELEASE
       modules:
         - spring-security-oauth
         - spring-security-oauth2
@@ -457,7 +457,7 @@ platform_definition:
         - spring-webflow
     - name: Spring Web Services
       groupId: org.springframework.ws
-      version: 2.4.4.RELEASE
+      version: 2.4.5.RELEASE
       modules:
         - spring-ws-core
         - spring-ws-security
