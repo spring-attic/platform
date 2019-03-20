@@ -38,9 +38,9 @@ Contributors to this project agree to uphold its [code of conduct][].
 Spring IO Platform is released under version 2.0 of the [Apache License][].
 
 [Spring IO Platform website]: https://platform.spring.io/platform/
-[Platform Maven docs]: http://docs.spring.io/platform/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started-using-spring-io-platform-maven
+[Platform Maven docs]: https://docs.spring.io/platform/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started-using-spring-io-platform-maven
 [dependency management plugin]: https://plugins.gradle.org/plugin/io.spring.dependency-management
-[Platform Gradle docs]: http://docs.spring.io/platform/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started-using-spring-io-platform-gradle
+[Platform Gradle docs]: https://docs.spring.io/platform/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started-using-spring-io-platform-gradle
 [code of conduct]: CODE_OF_CONDUCT.md
 [Pull requests]: https://help.github.com/articles/using-pull-requests/
 [contributor guidelines]: CONTRIBUTING.md
