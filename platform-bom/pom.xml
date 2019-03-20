@@ -46,7 +46,7 @@
 
 	<properties>
 		<spring-security-jwt.version>1.0.10.RELEASE</spring-security-jwt.version>
-		<spring-security-oauth.version>2.2.3.RELEASE</spring-security-oauth.version>
+		<spring-security-oauth.version>2.2.4.RELEASE</spring-security-oauth.version>
 		<spring-social.version>1.1.6.RELEASE</spring-social.version>
 		<spring-social-twitter.version>1.1.2.RELEASE</spring-social-twitter.version>
 		<spring-web-flow.version>2.5.1.RELEASE</spring-web-flow.version>
