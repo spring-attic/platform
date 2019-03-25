@@ -561,12 +561,12 @@ platform_definition:
       - 'xml-apis:xml-apis'
   repositories:
       - id: central
-        url: http://repo1.maven.org/maven2
+        url: https://repo1.maven.org/maven2
       - id: spring-snapshots
-        url: http://repo.spring.io/libs-snapshot
-      - id: jasper-reports
-        url: http://jasperreports.sourceforge.net/maven2
+        url: https://repo.spring.io/libs-snapshot
       - id: opengeo
-        url: http://repo.boundlessgeo.com
+        url: https://repo.boundlessgeo.com
       - id: geotools-webdav
-        url: http://download.osgeo.org/webdav/geotools
+        url: https://download.osgeo.org/webdav/geotools
+      - id: neo4j
+        url: https://m2.neo4j.org/content/repositories/releases/

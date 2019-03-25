@@ -17,9 +17,10 @@ dependencyManagement {
 
 repositories {
 	mavenLocal()
-	maven { url 'http://download.osgeo.org/webdav/geotools' }
-	maven { url 'http://repo.spring.io/libs-snapshot' }
-	maven { url 'http://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts' }
+	maven { url 'https://download.osgeo.org/webdav/geotools' }
+	maven { url 'https://repo.spring.io/libs-snapshot' }
+	maven { url 'https://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts' }
+	maven { url 'https://m2.neo4j.org/content/repositories/releases/' }
 	mavenCentral()
 }
 
