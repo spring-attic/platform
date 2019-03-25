@@ -44,4 +44,4 @@ Spring IO Platform is released under version 2.0 of the [Apache License][].
 [code of conduct]: CODE_OF_CONDUCT.md
 [Pull requests]: https://help.github.com/articles/using-pull-requests/
 [contributor guidelines]: CONTRIBUTING.md
-[Apache License]: http://www.apache.org/licenses/LICENSE-2.0
+[Apache License]: https://www.apache.org/licenses/LICENSE-2.0
