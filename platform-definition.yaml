@@ -909,10 +909,6 @@ platform_definition:
     'org.yaml:snakeyaml': '1.20'
   repositories:
       - id: central
-        url: http://repo1.maven.org/maven2
+        url: https://repo1.maven.org/maven2
       - id: spring-snapshots
-        url: http://repo.spring.io/libs-snapshot
-      - id: jasper-reports
-        url: http://jasperreports.sourceforge.net/maven2
-      - id: neo4j-snapshots
-        url: http://m2.neo4j.org/content/repositories/snapshots
+        url: https://repo.spring.io/libs-snapshot

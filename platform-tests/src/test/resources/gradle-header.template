@@ -18,7 +18,7 @@ dependencyManagement {
 repositories {
 	mavenCentral()
 	flatDir { dirs '../dependency' }
-	maven { url 'http://repo.spring.io/libs-snapshot' }
+	maven { url 'https://repo.spring.io/libs-snapshot' }
 }
 
 configurations {
