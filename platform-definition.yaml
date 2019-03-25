@@ -643,8 +643,6 @@ platform_definition:
     'org.springframework.ldap:spring-ldap-core': '2.2.0.RELEASE'
   repositories:
       - id: central
-        url: http://repo1.maven.org/maven2
+        url: https://repo1.maven.org/maven2
       - id: spring-snapshots
-        url: http://repo.spring.io/libs-snapshot
-      - id: jasper-reports
-        url: http://jasperreports.sourceforge.net/maven2
+        url: https://repo.spring.io/libs-snapshot

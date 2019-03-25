@@ -17,8 +17,8 @@ dependencyManagement {
 
 repositories {
 	mavenLocal()
-	maven { url 'http://repo.spring.io/libs-snapshot' }
-	maven { url 'http://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts' }
+	maven { url 'https://repo.spring.io/libs-snapshot' }
+	maven { url 'https://jaspersoft.artifactoryonline.com/jaspersoft/third-party-ce-artifacts' }
 	mavenCentral()
 }
 
