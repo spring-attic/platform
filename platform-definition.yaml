@@ -223,12 +223,12 @@ platform_definition:
         - spring-websocket
     - name: Spring HATEOAS
       groupId: org.springframework.hateoas
-      version: 0.25.0.RELEASE
+      version: 0.25.1.RELEASE
       modules:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 5.0.11.RELEASE
+      version: 5.0.12.RELEASE
       build:
         compileWith: jdk8
         runTestsWith:
@@ -406,7 +406,7 @@ platform_definition:
         - spring-webflow
     - name: Spring Web Services
       groupId: org.springframework.ws
-      version: 3.0.6.RELEASE
+      version: 3.0.7.RELEASE
       modules:
         - spring-ws-core
         - spring-ws-security
@@ -902,7 +902,7 @@ platform_definition:
     'org.eclipse.jetty:jetty-webapp': '9.4.14.v20181114'
     'org.eclipse.jetty.websocket:websocket-client': '9.4.14.v20181114'
     'org.eclipse.jetty.websocket:websocket-server': '9.4.14.v20181114'
-    'org.projectlombok:lombok': '1.18.4'
+    'org.projectlombok:lombok': '1.18.6'
     'org.seleniumhq.selenium:htmlunit-driver': '3.11.0'
     'org.seleniumhq.selenium:selenium-java': '3.13.0'
     'org.webjars:webjars-locator-core': '0.36'
