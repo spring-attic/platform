@@ -26,8 +26,8 @@ Copyright Notice, whether distributed in print or electronically.
 If you're having trouble with Spring IO Platform, we'd like to help:
 
 * Learn the Spring basics -- Spring IO Platform brings together many Spring projects, check the
-  http://spring.io[spring.io] website for a wealth of reference documentation. If you are just
-  starting out with Spring, try one of the http://spring.io/guides[guides].
+  https://spring.io[spring.io] website for a wealth of reference documentation. If you are just
+  starting out with Spring, try one of the https://spring.io/guides[guides].
 * Report bugs with the Spring IO Platform at {github-issues}.
 
 NOTE: All of Spring IO Platform is open source, including this documentation. If you find problems
