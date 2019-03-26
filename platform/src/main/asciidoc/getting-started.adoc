@@ -29,7 +29,7 @@ can import the Platform's pom into your application's pom:
 	<?xml version="1.0" encoding="UTF-8"?>
 	<project xmlns="http://maven.apache.org/POM/4.0.0"
 			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-			 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+			 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 		<modelVersion>4.0.0</modelVersion>
 
@@ -58,14 +58,14 @@ ifeval::["{platform-repo}" != "release"]
 ifeval::["{platform-repo}" == "snapshot"]
 			<repository>
 				<id>spring-snapshots</id>
-				<url>http://repo.spring.io/libs-snapshot</url>
+				<url>https://repo.spring.io/libs-snapshot</url>
 				<snapshots><enabled>true</enabled></snapshots>
 			</repository>
 endif::[]
 ifeval::["{platform-repo}" == "milestone"]
 			<repository>
 				<id>spring-milestones</id>
-				<url>http://repo.spring.io/libs-milestone</url>
+				<url>https://repo.spring.io/libs-milestone</url>
 			</repository>
 endif::[]
 		</repositories>
@@ -74,14 +74,14 @@ endif::[]
 ifeval::["{platform-repo}" == "snapshot"]
 			<pluginRepository>
 				<id>spring-snapshots</id>
-				<url>http://repo.spring.io/libs-snapshot</url>
+				<url>https://repo.spring.io/libs-snapshot</url>
 				<snapshots><enabled>true</enabled></snapshots>
 			</pluginRepository>
 endif::[]
 ifeval::["{platform-repo}" == "milestone"]
 			<pluginRepository>
 				<id>spring-milestones</id>
-				<url>http://repo.spring.io/libs-milestone</url>
+				<url>https://repo.spring.io/libs-milestone</url>
 			</pluginRepository>
 endif::[]
 		</pluginRepositories>
@@ -97,7 +97,7 @@ parent:
 	<?xml version="1.0" encoding="UTF-8"?>
 	<project xmlns="http://maven.apache.org/POM/4.0.0"
 			 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-			 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+			 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 		<modelVersion>4.0.0</modelVersion>
 
@@ -121,14 +121,14 @@ ifeval::["{platform-repo}" != "release"]
 ifeval::["{platform-repo}" == "snapshot"]
 			<repository>
 				<id>spring-snapshots</id>
-				<url>http://repo.spring.io/libs-snapshot</url>
+				<url>https://repo.spring.io/libs-snapshot</url>
 				<snapshots><enabled>true</enabled></snapshots>
 			</repository>
 endif::[]
 ifeval::["{platform-repo}" == "milestone"]
 			<repository>
 				<id>spring-milestones</id>
-				<url>http://repo.spring.io/libs-milestone</url>
+				<url>https://repo.spring.io/libs-milestone</url>
 			</repository>
 endif::[]
 		</repositories>
@@ -137,14 +137,14 @@ endif::[]
 ifeval::["{platform-repo}" == "snapshot"]
 			<pluginRepository>
 				<id>spring-snapshots</id>
-				<url>http://repo.spring.io/libs-snapshot</url>
+				<url>https://repo.spring.io/libs-snapshot</url>
 				<snapshots><enabled>true</enabled></snapshots>
 			</pluginRepository>
 endif::[]
 ifeval::["{platform-repo}" == "milestone"]
 			<pluginRepository>
 				<id>spring-milestones</id>
-				<url>http://repo.spring.io/libs-milestone</url>
+				<url>https://repo.spring.io/libs-milestone</url>
 			</pluginRepository>
 endif::[]
 		</pluginRepositories>
@@ -222,10 +222,10 @@ To use the plugin, you configure your build to apply the plugin and then in the
 	repositories {
 		mavenCentral()
 ifeval::["{platform-repo}" == "snapshot"]
-		maven { url 'http://repo.spring.io/libs-snapshot' }
+		maven { url 'https://repo.spring.io/libs-snapshot' }
 endif::[]
 ifeval::["{platform-repo}" == "milestone"]
-		maven { url 'http://repo.spring.io/libs-milestone' }
+		maven { url 'https://repo.spring.io/libs-milestone' }
 endif::[]
 	}
 
