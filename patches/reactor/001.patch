@@ -1,57 +1,24 @@
-From 6f59e766864165ae3ff0f4cbb429d9f2a30aa679 Mon Sep 17 00:00:00 2001
+From 29f543e3c86d58f4b20c8eac48c7dceeefdc7cb5 Mon Sep 17 00:00:00 2001
 From: Andy Wilkinson <awilkinson@pivotal.io>
-Date: Tue, 31 Jan 2017 09:51:46 +0000
+Date: Tue, 26 Mar 2019 08:40:37 +0000
 Subject: [PATCH] Remove tests that fail intermittently but not due to
  incompatibility
 
 ---
- .../src/test/java/reactor/fn/timer/TimerTests.java | 64 ----------------------
- .../java/reactor/io/net/tcp/TcpClientTests.java    | 22 --------
- 2 files changed, 86 deletions(-)
- delete mode 100644 reactor-core/src/test/java/reactor/fn/timer/TimerTests.java
+ .../java/reactor/fn/timer/TimerTests.java     | 27 -------------------
+ .../reactor/io/net/tcp/TcpClientTests.java    | 22 ---------------
+ 2 files changed, 49 deletions(-)
 
 diff --git a/reactor-core/src/test/java/reactor/fn/timer/TimerTests.java b/reactor-core/src/test/java/reactor/fn/timer/TimerTests.java
-deleted file mode 100644
-index 574402e7..00000000
+index 574402e7..6feb761e 100644
 --- a/reactor-core/src/test/java/reactor/fn/timer/TimerTests.java
-+++ /dev/null
-@@ -1,64 +0,0 @@
--/*
-- * Copyright (c) 2011-2015 Pivotal Software Inc, All Rights Reserved.
-- *
-- * Licensed under the Apache License, Version 2.0 (the "License");
-- * you may not use this file except in compliance with the License.
-- * You may obtain a copy of the License at
-- *
-- *       https://www.apache.org/licenses/LICENSE-2.0
-- *
-- * Unless required by applicable law or agreed to in writing, software
-- * distributed under the License is distributed on an "AS IS" BASIS,
-- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-- * See the License for the specific language governing permissions and
-- * limitations under the License.
-- */
--package reactor.fn.timer;
--
--import org.junit.Assert;
--import org.junit.Test;
--import reactor.fn.Pausable;
--
--import java.util.concurrent.Phaser;
--import java.util.concurrent.TimeUnit;
--import java.util.concurrent.atomic.AtomicInteger;
--import java.util.concurrent.atomic.AtomicLong;
--
--/**
-- * @author @masterav10
-- */
--public class TimerTests {
--
--	@Test
--	public void verifyPause() throws InterruptedException
--	{
++++ b/reactor-core/src/test/java/reactor/fn/timer/TimerTests.java
+@@ -32,33 +32,6 @@ public class TimerTests {
+ 	@Test
+ 	public void verifyPause() throws InterruptedException
+ 	{
 -		HashWheelTimer timer = new HashWheelTimer();
--
+ 
 -		AtomicInteger count = new AtomicInteger();
 -
 -		int tasks = 10;
@@ -78,16 +45,17 @@ index 574402e7..00000000
 -		Assert.assertTrue(time < TimeUnit.MILLISECONDS.toNanos(100));
 -		Assert.assertEquals(tasks, count.get());
 -		timer.cancel();
--	}
--}
+ 	}
+ }
 diff --git a/reactor-net/src/test/java/reactor/io/net/tcp/TcpClientTests.java b/reactor-net/src/test/java/reactor/io/net/tcp/TcpClientTests.java
 index 90cc6cd0..bc011d54 100644
 --- a/reactor-net/src/test/java/reactor/io/net/tcp/TcpClientTests.java
 +++ b/reactor-net/src/test/java/reactor/io/net/tcp/TcpClientTests.java
-@@ -235,28 +235,6 @@ public class TcpClientTests {
+@@ -234,28 +234,6 @@ public class TcpClientTests {
+ 		assertThat("totalDelay was >1.6s", totalDelay.get(), greaterThanOrEqualTo(1600L));
  	}
  
- 	@Test
+-	@Test
 -	public void connectionWillAttemptToReconnectWhenItIsDropped() throws InterruptedException, IOException {
 -		final CountDownLatch connectionLatch = new CountDownLatch(1);
 -		final CountDownLatch reconnectionLatch = new CountDownLatch(1);
@@ -109,10 +77,9 @@ index 90cc6cd0..bc011d54 100644
 -		assertTrue("A reconnect attempt was made", reconnectionLatch.await(5, TimeUnit.SECONDS));
 -	}
 -
--	@Test
+ 	@Test
  	public void consumerSpecAssignsEventHandlers() throws InterruptedException, IOException {
  		final CountDownLatch latch = new CountDownLatch(2);
- 		final CountDownLatch close = new CountDownLatch(1);
 -- 
-2.11.0
+2.18.0
 
