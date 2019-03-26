@@ -19,7 +19,7 @@ def listNewerVersions(def dependency) {
 	def versionScheme = new GenericVersionScheme()
 	def currentVersion = versionScheme.parseVersion(dependency.version as String)
 	String groupId = dependency.groupId
-	def url = "http://central.maven.org/maven2/${groupId.replace('.', '/')}/${dependency.artifactId}/maven-metadata.xml"
+	def url = "https://repo1.maven.org/maven2/${groupId.replace('.', '/')}/${dependency.artifactId}/maven-metadata.xml"
 	try {
 		def mavenMetadata = new XmlSlurper().parse(url)
 		def laterVersions = mavenMetadata.versioning.versions.version.list()
