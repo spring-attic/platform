@@ -2,7 +2,7 @@ platform_definition:
   projects:
     - name: Aspect J
       groupId: org.aspectj
-      version: 1.8.13
+      version: 1.8.14
       modules:
         - aspectjweaver
         - aspectjtools
@@ -129,7 +129,7 @@ platform_definition:
         - spring-boot-starter-web-services
     - name: Spring Cloud Connectors
       groupId: org.springframework.cloud
-      version: 1.2.7.RELEASE
+      version: 1.2.8.RELEASE
       modules:
         - spring-cloud-core
         - spring-cloud-cloudfoundry-connector
@@ -805,7 +805,9 @@ platform_definition:
       - 'xml-apis:xml-apis'
   downgraded_dependencies:
     'commons-io:commons-io': '2.6'
-    'com.fasterxml.jackson.core:jackson-annotations': '2.8.11'
+    'com.fasterxml.jackson.core:jackson-annotations': '2.8.5'
+    'com.fasterxml.jackson.core:jackson-core': '2.9.8'
+    'com.fasterxml.jackson.core:jackson-databind': '2.9.8'
     'com.jayway.jsonpath:json-path': '2.3.0'
     'com.rometools:rome': '1.7.4'
     'com.squareup.okhttp3:okhttp': '3.8.1'
@@ -822,8 +824,6 @@ platform_definition:
     'org.hibernate:hibernate-core': '5.2.10.Final'
     'org.projectlombok:lombok': '1.18.2'
     'org.seleniumhq.selenium:htmlunit-driver': '2.23.2'
-    'org.springframework:spring-context': '5.0.7.RELEASE' # Spring Retry
-    'org.springframework:spring-core': '5.0.7.RELEASE' # Spring Retry
     'org.webjars:hal-browser': '3325375'
   repositories:
       - id: central
