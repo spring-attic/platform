@@ -9,7 +9,7 @@ platform_definition:
         - aspectjrt
     - name: Reactor
       groupId: io.projectreactor
-      version: 3.1.15.RELEASE
+      version: 3.1.16.RELEASE
       modules:
         - reactor-core
     - name: Spring AMQP
@@ -108,7 +108,7 @@ platform_definition:
         - spring-boot-starter-web-services
     - name: Spring Cloud Connectors
       groupId: org.springframework.cloud
-      version: 2.0.4.RELEASE
+      version: 2.0.5.RELEASE
       modules:
         - spring-cloud-connectors-core
         - spring-cloud-cloudfoundry-connector
@@ -198,7 +198,7 @@ platform_definition:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 5.0.12.RELEASE
+      version: 5.0.13.RELEASE
       modules:
         - spring-aop
         - spring-aspects
@@ -884,7 +884,7 @@ platform_definition:
   downgraded_dependencies:
     'com.nimbusds:oauth2-oidc-sdk': '5.64.4'
     'com.rometools:rome': '1.12.0'
-    'com.squareup.okhttp3:okhttp': '3.12.1'
+    'com.squareup.okhttp3:okhttp': '3.12.2'
     'io.netty:netty-all': '4.1.32.Final'
     'io.netty:netty-buffer': '4.1.32.Final'
     'io.reactivex.rxjava2:rxjava': '2.1.17'
@@ -892,7 +892,7 @@ platform_definition:
     'net.sourceforge.htmlunit:htmlunit': '2.31'
     'org.apache.derby:derby': '10.14.2.0'
     'org.apache.derby:derbyclient': '10.14.2.0'
-    'org.apache.logging.log4j:log4j-api': '2.11.1'
+    'org.apache.logging.log4j:log4j-api': '2.11.2'
     'org.aspectj:aspectjrt': '1.9.2'
     'org.aspectj:aspectjweaver': '1.9.2'
     'org.bouncycastle:bcpkix-jdk15on': '1.60'
@@ -905,7 +905,7 @@ platform_definition:
     'org.projectlombok:lombok': '1.18.6'
     'org.seleniumhq.selenium:htmlunit-driver': '3.11.0'
     'org.seleniumhq.selenium:selenium-java': '3.13.0'
-    'org.webjars:webjars-locator-core': '0.36'
+    'org.webjars:webjars-locator-core': '0.37'
     'org.yaml:snakeyaml': '1.20'
   repositories:
       - id: central
