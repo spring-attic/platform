@@ -37,7 +37,7 @@ platform_definition:
           - jdk8
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 1.7.12.RELEASE
+      version: 1.7.13.BUILD-SNAPSHOT
       modules:
         - spring-amqp
         - spring-rabbit
@@ -45,6 +45,7 @@ platform_definition:
         - spring-rabbit-test
       build:
         repository: https://github.com/spring-projects/spring-amqp
+        checkout: 1.7.x
         compileWith: jdk8
         runTestsWith:
           - jdk8
@@ -138,56 +139,55 @@ platform_definition:
         - spring-cloud-spring-service-connector
       build:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
-        checkout: v1.2.6.BUILD
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 1.5.18.RELEASE
+      version: 1.5.19.BUILD-SNAPSHOT
       modules:
         - spring-cql
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 1.13.18.RELEASE
+      version: 1.13.19.BUILD-SNAPSHOT
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 2.2.18.RELEASE
+      version: 2.2.19.BUILD-SNAPSHOT
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 2.1.18.RELEASE
+      version: 2.1.19.BUILD-SNAPSHOT
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 1.1.18.RELEASE
+      version: 1.1.19.BUILD-SNAPSHOT
       modules:
         - spring-data-envers
     - name: Spring Data Gemfire
       groupId: org.springframework.data
-      version: 1.9.18.RELEASE
+      version: 1.9.19.BUILD-SNAPSHOT
       modules:
         - spring-data-gemfire
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 1.11.18.RELEASE
+      version: 1.11.19.BUILD-SNAPSHOT
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 1.2.18.RELEASE
+      version: 1.2.19.BUILD-SNAPSHOT
       modules:
         - spring-data-keyvalue
     - name: Spring Data LDAP
       groupId: org.springframework.data
-      version: 1.0.18.RELEASE
+      version: 1.0.19.BUILD-SNAPSHOT
       modules:
         - spring-data-ldap
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 1.10.18.RELEASE
+      version: 1.10.19.BUILD-SNAPSHOT
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-log4j
@@ -195,29 +195,29 @@ platform_definition:
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 4.2.18.RELEASE
+      version: 4.2.19.BUILD-SNAPSHOT
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 1.8.18.RELEASE
+      version: 1.8.19.BUILD-SNAPSHOT
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 2.6.18.RELEASE
+      version: 2.6.19.BUILD-SNAPSHOT
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 2.1.18.RELEASE
+      version: 2.1.19.BUILD-SNAPSHOT
       modules:
         - spring-data-solr
     - name: Spring Framework
       groupId: org.springframework
-      version: 4.3.22.RELEASE
+      version: 4.3.23.RELEASE
       modules:
         - spring-aop
         - spring-aspects
@@ -246,8 +246,9 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 4.3.19.RELEASE
+      version: 4.3.20.BUILD-SNAPSHOT
       build:
+        checkout: 4.3.x
         compileWith: jdk8
         runTestsWith:
           - jdk8
@@ -371,7 +372,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 4.2.11.RELEASE
+      version: 4.2.12.BUILD-SNAPSHOT
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
@@ -812,14 +813,14 @@ platform_definition:
     'com.rometools:rome': '1.7.4'
     'com.squareup.okhttp3:okhttp': '3.8.1'
     'com.unboundid:unboundid-ldapsdk': '4.0.8'
-    'io.netty:netty-all': '4.1.32.Final'
+    'io.netty:netty-all': '4.1.34.Final'
     'javax.jdo:jdo-api': '3.1'
     'net.sf.ehcache:ehcache': '2.10.6'
     'net.sourceforge.htmlunit:htmlunit': '2.23'
     'org.apache.poi:poi': '3.17'
     'org.apache.poi:poi-ooxml': '3.17'
     'org.apache.wss4j:wss4j-ws-security-dom': '2.2'
-    'org.bouncycastle:bcpkix-jdk15on': '1.60'
+    'org.bouncycastle:bcpkix-jdk15on': '1.61'
     'org.beanshell:bsh': '2.0b5'
     'org.hibernate:hibernate-core': '5.2.10.Final'
     'org.projectlombok:lombok': '1.18.2'
