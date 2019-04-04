@@ -14,7 +14,7 @@ platform_definition:
         - reactor-core
     - name: Spring AMQP
       groupId: org.springframework.amqp
-      version: 2.0.11.RELEASE
+      version: 2.0.12.RELEASE
       modules:
         - spring-amqp
         - spring-rabbit
@@ -27,7 +27,7 @@ platform_definition:
           - jdk8
     - name: Spring Batch
       groupId: org.springframework.batch
-      version: 4.0.2.RELEASE
+      version: 4.0.3.RELEASE
       modules:
         - spring-batch-core
         - spring-batch-infrastructure
@@ -119,81 +119,81 @@ platform_definition:
         repository: https://github.com/spring-cloud/spring-cloud-connectors
     - name: Spring Data Cassandra
       groupId: org.springframework.data
-      version: 2.0.13.RELEASE
+      version: 2.0.14.RELEASE
       modules:
         - spring-data-cassandra
     - name: Spring Data Commons
       groupId: org.springframework.data
-      version: 2.0.13.RELEASE
+      version: 2.0.14.RELEASE
       modules:
         - spring-data-commons
     - name: Spring Data Couchbase
       groupId: org.springframework.data
-      version: 3.0.13.RELEASE
+      version: 3.0.14.RELEASE
       modules:
         - spring-data-couchbase
     - name: Spring Data Elasticsearch
       groupId: org.springframework.data
-      version: 3.0.13.RELEASE
+      version: 3.0.14.RELEASE
       modules:
         - spring-data-elasticsearch
     - name: Spring Data Envers
       groupId: org.springframework.data
-      version: 2.0.13.RELEASE
+      version: 2.0.14.RELEASE
       modules:
         - spring-data-envers
     - name: Spring Data GemFire
       groupId: org.springframework.data
-      version: 2.0.13.RELEASE
+      version: 2.0.14.RELEASE
       modules:
         - spring-data-gemfire
     - name: Spring Data Geode
       groupId: org.springframework.data
-      version: 2.0.13.RELEASE
+      version: 2.0.14.RELEASE
       modules:
         - spring-data-geode
     - name: Spring Data JPA
       groupId: org.springframework.data
-      version: 2.0.13.RELEASE
+      version: 2.0.14.RELEASE
       modules:
         - spring-data-jpa
     - name: Spring Data Key Value
       groupId: org.springframework.data
-      version: 2.0.13.RELEASE
+      version: 2.0.14.RELEASE
       modules:
         - spring-data-keyvalue
     - name: Spring Data LDAP
       groupId: org.springframework.data
-      version: 2.0.13.RELEASE
+      version: 2.0.14.RELEASE
       modules:
         - spring-data-ldap
     - name: Spring Data MongoDB
       groupId: org.springframework.data
-      version: 2.0.13.RELEASE
+      version: 2.0.14.RELEASE
       modules:
         - spring-data-mongodb
         - spring-data-mongodb-cross-store
     - name: Spring Data Neo4j
       id: spring.data.neo4j
       groupId: org.springframework.data
-      version: 5.0.13.RELEASE
+      version: 5.0.14.RELEASE
       modules:
         - spring-data-neo4j
     - name: Spring Data Redis
       groupId: org.springframework.data
-      version: 2.0.13.RELEASE
+      version: 2.0.14.RELEASE
       modules:
         - spring-data-redis
     - name: Spring Data Rest
       groupId: org.springframework.data
-      version: 3.0.13.RELEASE
+      version: 3.0.14.RELEASE
       modules:
         - spring-data-rest-core
         - spring-data-rest-hal-browser
         - spring-data-rest-webmvc
     - name: Spring Data Solr
       groupId: org.springframework.data
-      version: 3.0.13.RELEASE
+      version: 3.0.14.RELEASE
       modules:
         - spring-data-solr
     - name: Spring Framework
@@ -228,7 +228,7 @@ platform_definition:
         - spring-hateoas
     - name: Spring Integration
       groupId: org.springframework.integration
-      version: 5.0.12.RELEASE
+      version: 5.0.13.RELEASE
       build:
         compileWith: jdk8
         runTestsWith:
@@ -318,7 +318,7 @@ platform_definition:
         - spring-retry
     - name: Spring Security
       groupId: org.springframework.security
-      version: 5.0.11.RELEASE
+      version: 5.0.12.RELEASE
       build:
         compileWith: jdk8
         repository: https://github.com/spring-projects/spring-security
@@ -353,7 +353,7 @@ platform_definition:
         - spring-security-oauth2
     - name: Spring Session
       groupId: org.springframework.session
-      version: 2.0.9.RELEASE
+      version: 2.0.10.RELEASE
       modules:
         - spring-session-core
         - spring-session-data-redis
@@ -365,12 +365,12 @@ platform_definition:
         tagPrefix:
     - name: Spring Session Data GemFire
       groupId: org.springframework.session
-      version: 2.0.7.RELEASE
+      version: 2.0.8.RELEASE
       modules:
         - spring-session-data-gemfire
     - name: Spring Session Data Geode
       groupId: org.springframework.session
-      version: 2.0.7.RELEASE
+      version: 2.0.8.RELEASE
       modules:
         - spring-session-data-gemfire
     - name: Spring Session Data MongoDB
@@ -895,13 +895,15 @@ platform_definition:
     'org.apache.logging.log4j:log4j-api': '2.11.2'
     'org.aspectj:aspectjrt': '1.9.2'
     'org.aspectj:aspectjweaver': '1.9.2'
-    'org.bouncycastle:bcpkix-jdk15on': '1.60'
+    'org.assertj:assertj-core': '3.12.2'
+    'org.bouncycastle:bcpkix-jdk15on': '1.61'
     'org.eclipse.jetty:jetty-client': '9.4.14.v20181114'
     'org.eclipse.jetty:jetty-server': '9.4.14.v20181114'
     'org.eclipse.jetty:jetty-servlet': '9.4.14.v20181114'
     'org.eclipse.jetty:jetty-webapp': '9.4.14.v20181114'
     'org.eclipse.jetty.websocket:websocket-client': '9.4.14.v20181114'
     'org.eclipse.jetty.websocket:websocket-server': '9.4.14.v20181114'
+    'org.mockito:mockito-core': '2.25.1'
     'org.projectlombok:lombok': '1.18.6'
     'org.seleniumhq.selenium:htmlunit-driver': '3.11.0'
     'org.seleniumhq.selenium:selenium-java': '3.13.0'
