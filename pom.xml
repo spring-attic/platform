@@ -5,7 +5,7 @@
 
 	<groupId>io.spring.platform</groupId>
 	<artifactId>platform-build</artifactId>
-	<version>Cairo-BUILD-SNAPSHOT</version>
+	<version>Cairo-SR8</version>
 	<packaging>pom</packaging>
 	<name>Spring IO Platform build</name>
 	<description>Spring IO Platform build</description>
